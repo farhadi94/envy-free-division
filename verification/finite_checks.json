@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-11-07T07:00:43.730341+00:00",
+  "checked_at_utc": "2026-11-07T07:49:36.058894+00:00",
   "checks": {
     "chore_ledger": {
       "status": "passed",
@@ -31,6 +31,12 @@
       "script": "experiments/upper/check_finite.py",
       "script_sha256": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
       "result": "experiments/upper/randomized_upper_result.json"
+    },
+    "upper_completion": {
+      "status": "passed",
+      "script": "experiments/upper/check_completion.py",
+      "script_sha256": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e",
+      "result": "experiments/upper/upper_completion_result.json"
     }
   },
   "scope": "Finite exact-arithmetic checks only; not proofs of the continuous theorems."

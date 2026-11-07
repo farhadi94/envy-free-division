@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "seed": 2026110701,
+  "counts": {
+    "transport_states": 68093,
+    "positive_residue_states": 37309,
+    "zero_residue_states": 30784,
+    "strict_new_target_states": 13380,
+    "shrink_transfer_cases": 4798,
+    "identity_first": 3453,
+    "rotation_first": 298,
+    "second_shrink": 1047
+  },
+  "source_sha256": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e",
+  "scope": "Independent integer row transport enumeration and exact rational two-shrink transfer. No author code or earlier backend imported; not a continuous-protocol proof."
+}

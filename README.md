@@ -4,28 +4,32 @@ This repository accompanies **The Query Complexity of Envy-Free Division:
 Cake, Chores, and Mixed Resources**, by Alireza Farhadi (Profound) and
 Mohammadtaghi Hajiaghayi (University of Maryland, College Park).
 
-It contains the Lean proofs of finite supporting results, a complete
-dependency manifest, an axiom-audit script, and reproducible finite checks
-for the four main results in the paper.
+It contains supporting Lean proofs, a complete dependency manifest, an
+axiom-audit script, and reproducible finite checks for the four main results
+in the paper. The post-review additions formalize concrete finite allocation
+transitions and measure-theoretic expectation arguments.
 
 **The four complete continuous/oracle/probability theorems are not fully
 formalized in Lean.** Their proofs are in the paper. Every included Lean
-theorem has a proof of its stated finite claim; the formalization does not
-establish the full allocation protocols or continuous probability arguments.
+theorem has a proof of its stated claim. The formalization does not establish
+the full allocation protocols, physical realization of every transition,
+or the oracle constructions supplying the probability hypotheses.
 
 ## Contents
 
 | Path | Contents |
 | --- | --- |
-| [`verification/lean/`](verification/lean/) | Lean project: 28 modules, pinned Lean/mathlib dependencies, and axiom audit |
+| [`verification/lean/`](verification/lean/) | Lean project: 31 modules, pinned Lean/mathlib dependencies, and axiom audit |
 | [`verification/coverage.json`](verification/coverage.json) | Main-result labels, supporting Lean declarations, and components outside formalization |
 | [`verification/lean_status.json`](verification/lean_status.json) | Source hashes and results from the recorded Lean build |
 | [`verification/lean.log`](verification/lean.log) | Build output and transitive axiom audit |
 | [`experiments/`](experiments/) | Exact-arithmetic finite checks for chores, randomized upper/lower bounds, and mixed comparisons |
 | [`scripts/`](scripts/) | Reproduction commands |
+| [`review/human_review_brief.md`](review/human_review_brief.md) | Focused proof obligations for an external expert; no human review is implied |
 
-The recorded audit covers **693 authored theorems** and **1,097 total
-theorem declarations**, including private/generated declarations. Only
+The recorded audit covers every included authored theorem and the
+private/generated theorem declarations; exact counts and source hashes are
+in `verification/lean_status.json`. Only
 `propext`, `Classical.choice`, and `Quot.sound` are allowed. The verifier
 rejects proof placeholders, project axioms, and unexpected transitive axioms.
 
@@ -33,6 +37,20 @@ The coverage record identifies the manuscript proof sections by label and
 hash; the manuscript is maintained separately. Historical module names such
 as `R6Upper` and `R8Chores` are retained so declaration names and source hashes
 agree with the checked artifact.
+
+The additional modules are:
+
+- `ChoreComposition`: concrete compensation records, committed transitions,
+  own-cost identities, and conservation of original-root IDs.
+- `GlobalCompletion`: finite bundle transport, frozen-agent guards,
+  zero-residue cases, and bounded progress under explicit primitive certificates.
+- `QueryProbability`: measurable success-event bounds, extended query-count
+  integrals, geometric waiting times, and an unbounded-supremum conclusion.
+
+These modules prove consequences of explicit hypotheses. The manuscript
+proves that the continuous protocols supply those hypotheses; that link is
+not fully formalized. The coverage record separates finite and
+measure-theoretic supporting results from the remaining obligations.
 
 ## Reproduce the Lean audit
 

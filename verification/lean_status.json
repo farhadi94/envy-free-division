@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "started_at_utc": "2026-11-07T07:00:41.472934+00:00",
+  "started_at_utc": "2026-11-07T07:48:09.579355+00:00",
   "lean_version_expected": "4.35.0",
   "mathlib_tag": "v4.35.0",
   "allowed_axioms": [
@@ -10,8 +10,11 @@
   ],
   "scope": "All selected .lean modules under verification/lean/EnvyFreeResearch",
   "source_sha256": {
+    "EnvyFreeResearch/ChoreComposition.lean": "117e580691cb0b15f0d3c5190cd4602155f4aa3f9a1b092668e25abb637b56f1",
+    "EnvyFreeResearch/GlobalCompletion.lean": "dab3c06a639377d8415d43286e4406212dfd47f1ccee938ee80886307ea0e54d",
     "EnvyFreeResearch/MixedApproximation.lean": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
     "EnvyFreeResearch/NearExact.lean": "fd4cb9e9d803ca2de3ff5c4ba59282c03e8a231d5ca27023c94e02af283df3c5",
+    "EnvyFreeResearch/QueryProbability.lean": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
     "EnvyFreeResearch/R2OnlinePotential.lean": "dcc272f129a51cb2dffa409e79fb5665be48ba929af479fa1e68813b1e344a65",
     "EnvyFreeResearch/R2Variation.lean": "0a9fa545e122d716e8efcb2d461425becdb8c82068efd1b3416347e3e38f94ad",
     "EnvyFreeResearch/R3ChoreAncestry.lean": "bbdb4b8e5ecc9de4eb967226c2e813dd4a5a9b3c0e7bf0c064a2ef4472f59c91",
@@ -39,8 +42,10 @@
     "EnvyFreeResearch/Signed.lean": "c7d94938de433d6c4422005f946741eb3f806aa99cd51dc284e37be0426b8199",
     "EnvyFreeResearch/SubmissionMonteCarlo.lean": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f"
   },
-  "authored_theorem_declaration_count": 693,
-  "module_count": 28,
-  "theorem_declaration_count": 1097,
-  "finished_at_utc": "2026-11-07T07:04:54.516459+00:00"
+  "authored_theorem_declaration_count": 815,
+  "module_count": 31,
+  "theorem_declaration_count": 1373,
+  "finished_at_utc": "2026-11-07T07:50:01.477766+00:00",
+  "verification_provenance": "Build and full axiom audit of the canonical focused artifact; every repository Lean module was then checked byte-for-byte against the audited source hashes.",
+  "log_command_path_normalization": "Absolute local lake executable paths in command headings are replaced by lake; mathematical audit output is unchanged."
 }

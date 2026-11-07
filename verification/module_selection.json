@@ -10,11 +10,17 @@
     "R8Upper",
     "R8Lower",
     "R6MixedMonteCarlo",
-    "MixedApproximation"
+    "MixedApproximation",
+    "ChoreComposition",
+    "GlobalCompletion",
+    "QueryProbability"
   ],
   "modules": [
+    "ChoreComposition",
+    "GlobalCompletion",
     "MixedApproximation",
     "NearExact",
+    "QueryProbability",
     "R2OnlinePotential",
     "R2Variation",
     "R3ChoreAncestry",
@@ -42,6 +48,6 @@
     "Signed",
     "SubmissionMonteCarlo"
   ],
-  "count": 28,
-  "scope": "Dependency closure of the finite statements backing the four main results. Some inherited modules contain additional lemmas; no extra allocation theorem is included in the article."
+  "count": 31,
+  "scope": "Dependency closure of supporting statements for the four main results, including concrete finite transition composition and measure-theoretic expectation steps. No complete main oracle theorem is claimed formalized."
 }

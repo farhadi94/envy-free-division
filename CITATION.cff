@@ -11,4 +11,4 @@ authors:
     affiliation: University of Maryland, College Park
 repository-code: "https://github.com/farhadi94/envy-free-division"
 url: "https://github.com/farhadi94/envy-free-division"
-abstract: "Finite Lean supporting proofs, dependency pins, axiom auditing, and exact-arithmetic checks for the accompanying paper on envy-free division. The complete continuous allocation and probability theorems are not fully formalized."
+abstract: "Supporting Lean proofs of finite allocation transitions and measure-theoretic expectation bounds, dependency pins, axiom auditing, and exact-arithmetic checks for the accompanying paper on envy-free division. The complete main oracle theorems are not fully formalized."

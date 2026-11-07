@@ -1,6 +1,6 @@
 {
   "status": "explicit_partial_formalization_coverage",
-  "updated_at_utc": "2026-11-07T06:34:03.257050+00:00",
+  "updated_at_utc": "2026-11-07T07:45:38.159978+00:00",
   "main_theorem_count": 4,
   "main_theorems_fully_formalized": 0,
   "coverage": [
@@ -27,15 +27,29 @@
           "core_transition_bound",
           "balanced_subset_state_count",
           "core_candidate_query_ledger"
+        ],
+        "ChoreComposition": [
+          "proposal_credit",
+          "proposal_debit_bound",
+          "package_close_valid",
+          "ordinary_tasks_payments",
+          "ordinary_tasks_extras",
+          "package_actual_own_identity",
+          "merge_open_valid",
+          "merge_closed_valid",
+          "execution_valid",
+          "execution_distinct",
+          "execution_budget"
         ]
       },
       "outside_lean": [
-        "Continuous physical implementation",
-        "Complete reachable-state compensation and pool-survival invariant",
-        "Global recursive allocation protocol"
+        "Continuous physical realization of root records, equalizers and masked SubCore outputs",
+        "SCC/path geometry and existence of every transition selected by the actual chore scheduler",
+        "Derivation of admissible transition conditions from physical allocation geometry",
+        "Full general chore protocol and its recursive domain construction"
       ],
       "proof_source_sha256": {
-        "chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+        "chore_proof.tex": "c05e3fc2c4aaf1cad20f000de2ffbd1ba31340623686b1638cfa1dd6b0762c7d",
         "core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
         "baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
         "offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
@@ -56,15 +70,36 @@
           "sample_mesh_identity",
           "correction_budget_identity",
           "query_and_cut_polynomial_ledger"
+        ],
+        "GlobalCompletion": [
+          "whole_addition_preserves_EF_guard",
+          "whole_addition_target_counts",
+          "concrete_step_composition",
+          "finite_run_iteration_bound",
+          "no_infinite_completed_events",
+          "atom_partition_identity",
+          "zero_chore_recipient_finishes",
+          "zero_cake_row_can_freeze",
+          "finite_global_completion"
         ]
       },
       "outside_lean": [
-        "Continuous sampling and endpoint-law arguments",
-        "Physical compensation and circular cuts",
-        "Full randomized caller and almost-sure termination"
+        "Continuous sampling, circular Cut realization and endpoint-law arguments",
+        "Construction of the safe shrink factor and graph-path transfer",
+        "Derivation of primitive conditional acceptance probabilities and survival contraction from actual oracle executions",
+        "Connecting the finite transition sequence and measured retry count to one complete randomized oracle protocol"
       ],
       "proof_source_sha256": {
-        "upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1"
+        "upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9"
+      },
+      "measure_theoretic_examples": {
+        "QueryProbability": [
+          "lintegral_enat_eq_tsum_survival",
+          "survival_mass_le_geometric",
+          "probability_waiting_time_expectation_le",
+          "expected_cost_le_of_attempt_budget",
+          "waiting_time_finite_ae"
+        ]
       }
     },
     {
@@ -88,7 +123,7 @@
         "Probability retention and averaging over fixed hard inputs"
       ],
       "proof_source_sha256": {
-        "nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa"
+        "nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e"
       }
     },
     {
@@ -109,14 +144,23 @@
       },
       "outside_lean": [
         "Continuous protected-interval and support construction",
-        "Borel root-selector patching",
+        "Borel root-selector patching and legality-preserving replay",
         "Dominated convergence and product-space selection of one fixed input",
-        "Full expected-query impossibility theorem"
+        "Derivation of the successful finite-horizon event hypothesis for the actual oracle strategy"
       ],
       "proof_source_sha256": {
-        "mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34"
+        "mixed_lower_proof.tex": "ec00572e5a7a96d4ee1fb95907f6b43e98b6ffbb3e81c20e6ce2aae70f4dd6f1"
+      },
+      "measure_theoretic_examples": {
+        "QueryProbability": [
+          "success_tail_mass",
+          "enat_expectation_lower_from_success",
+          "supremum_expectations_eq_top"
+        ]
       }
     }
   ],
-  "interpretation": "Every listed Lean theorem has a kernel-checked proof of its stated finite claim. The main continuous/oracle/probability theorems are written mathematical proofs and are not inferred solely from these certificates."
+  "interpretation": "Every listed theorem has a Lean proof of its stated claim. Finite transition results use explicit allocation tables and transition conditions; measure-theoretic results use actual measurable events and nonnegative integrals. Physical realization, transition selection, and oracle probability hypotheses are supplied by manuscript arguments. None of the four complete main theorems is fully formalized.",
+  "post_review_audit": "review/post_review_audit/",
+  "human_review_status": "not_performed; focused review brief prepared, no reviewer contacted"
 }

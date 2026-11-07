@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the five independent finite checks; no third-party Python packages needed."""
+"""Run the independent finite checks; no third-party Python packages needed."""
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 import hashlib
@@ -13,6 +13,7 @@ CHECKS = {
     "chore_primitives": "experiments/chores/check_primitives.py",
     "chore_ledger": "experiments/chores/check_ledger.py",
     "randomized_upper": "experiments/upper/check_finite.py",
+    "upper_completion": "experiments/upper/check_completion.py",
     "randomized_lower": "experiments/lower/check_lower.py",
     "mixed": "experiments/mixed/independent_checks.py",
 }
@@ -23,7 +24,7 @@ def run_one(name, relative):
     run = subprocess.run([sys.executable, str(source)], cwd=ROOT,
                          text=True, capture_output=True, check=True)
     result = json.loads(run.stdout)
-    if result.get("status", "passed") != "passed":
+    if str(result.get("status", "passed")).lower() not in {"pass", "passed"}:
         raise RuntimeError(f"{name}: check did not pass")
     target = source.with_name(name + "_result.json")
     target.write_text(json.dumps(result, indent=2) + "\n")
