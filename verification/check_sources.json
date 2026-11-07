@@ -6,6 +6,7 @@
     "experiments/upper/check_finite.py": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
     "experiments/lower/check_lower.py": "95d32156f471c67ec750fa90d1ecb311a923e40c67df7180b7b9c7952f6ce6e5",
     "experiments/mixed/independent_checks.py": "9d31aba58bde5288f25d191bf00c755214222fee2b936eadf6c2043f1cdd8098",
-    "experiments/upper/check_completion.py": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e"
+    "experiments/upper/check_completion.py": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e",
+    "experiments/mixed/root_preservation_checks.py": "e9a9330489d7cc639a1b59f596b93ab2a4b23e78f0fc68ed6583874ed37dab13"
   }
 }

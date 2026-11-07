@@ -13,7 +13,8 @@
     "MixedApproximation",
     "ChoreComposition",
     "GlobalCompletion",
-    "QueryProbability"
+    "QueryProbability",
+    "RootPreservation"
   ],
   "modules": [
     "ChoreComposition",
@@ -45,9 +46,10 @@
     "R8Core",
     "R8Lower",
     "R8Upper",
+    "RootPreservation",
     "Signed",
     "SubmissionMonteCarlo"
   ],
-  "count": 31,
-  "scope": "Dependency closure of supporting statements for the four main results, including concrete finite transition composition and measure-theoretic expectation steps. No complete main oracle theorem is claimed formalized."
+  "count": 32,
+  "scope": "Supporting statements for four main results, including finite transitions, measure-theoretic expectations, and continuous extremal-root barriers, preservation and reflection. No complete main oracle theorem is claimed formalized."
 }

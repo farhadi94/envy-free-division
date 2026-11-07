@@ -1,6 +1,6 @@
 {
   "status": "explicit_partial_formalization_coverage",
-  "updated_at_utc": "2026-11-07T07:45:38.159978+00:00",
+  "updated_at_utc": "2026-11-07T14:27:32.836599+00:00",
   "main_theorem_count": 4,
   "main_theorems_fully_formalized": 0,
   "coverage": [
@@ -49,7 +49,7 @@
         "Full general chore protocol and its recursive domain construction"
       ],
       "proof_source_sha256": {
-        "chore_proof.tex": "c05e3fc2c4aaf1cad20f000de2ffbd1ba31340623686b1638cfa1dd6b0762c7d",
+        "chore_proof.tex": "4e53573239e1f577e007b6feca9d7f566bbd1805b16974cec740e63c00f40712",
         "core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
         "baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
         "offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
@@ -128,7 +128,7 @@
     },
     {
       "theorem": "thm:mixed-mc",
-      "claim": "No uniform finite expected-query bound for signed relative multiplicative EF or net-one additive EF under stated oracle model",
+      "claim": "No uniform finite expected-query bound for signed-relative multiplicative or net-one additive EF, even with either prescribed bracket-sign extremal-root rule",
       "proof_sections": [
         "mixed_lower_proof.tex"
       ],
@@ -144,12 +144,12 @@
       },
       "outside_lean": [
         "Continuous protected-interval and support construction",
-        "Borel root-selector patching and legality-preserving replay",
+        "Borel selector measurability and full adaptive legality-preserving transcript replay",
         "Dominated convergence and product-space selection of one fixed input",
         "Derivation of the successful finite-horizon event hypothesis for the actual oracle strategy"
       ],
       "proof_source_sha256": {
-        "mixed_lower_proof.tex": "ec00572e5a7a96d4ee1fb95907f6b43e98b6ffbb3e81c20e6ce2aae70f4dd6f1"
+        "mixed_lower_proof.tex": "4349f15e31b5c34c57bacbd273df7eaaf128e63f772078cb181ff42a53793690"
       },
       "measure_theoretic_examples": {
         "QueryProbability": [
@@ -157,10 +157,25 @@
           "enat_expectation_lower_from_success",
           "supremum_expectations_eq_top"
         ]
+      },
+      "continuous_examples": {
+        "RootPreservation": [
+          "first_positive_barrier",
+          "first_negative_barrier",
+          "last_positive_barrier",
+          "last_negative_barrier",
+          "legal_target_preserved",
+          "bracket_up_reply_preserved",
+          "bracket_down_reply_preserved",
+          "reflected_target_legal",
+          "first_reflects_to_last",
+          "last_reflects_to_first"
+        ]
       }
     }
   ],
-  "interpretation": "Every listed theorem has a Lean proof of its stated claim. Finite transition results use explicit allocation tables and transition conditions; measure-theoretic results use actual measurable events and nonnegative integrals. Physical realization, transition selection, and oracle probability hypotheses are supplied by manuscript arguments. None of the four complete main theorems is fully formalized.",
+  "interpretation": "Every listed theorem has a Lean proof of its stated claim. Finite transitions use explicit allocation tables; probability results use measurable events and integrals; root-preservation results derive continuous barriers by the intermediate value theorem. Physical constructions, transcript measurability, and oracle probability hypotheses remain written arguments. None of the four complete main theorems is fully formalized.",
   "post_review_audit": "review/post_review_audit/",
-  "human_review_status": "not_performed; focused review brief prepared, no reviewer contacted"
+  "human_review_status": "not_performed; focused review brief prepared, no reviewer contacted",
+  "extremal_root_revision": "review/round9_extremal/"
 }

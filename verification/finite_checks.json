@@ -37,7 +37,14 @@
       "script": "experiments/upper/check_completion.py",
       "script_sha256": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e",
       "result": "experiments/upper/upper_completion_result.json"
+    },
+    "root_preservation": {
+      "status": "passed",
+      "script": "experiments/mixed/root_preservation_checks.py",
+      "script_sha256": "e9a9330489d7cc639a1b59f596b93ab2a4b23e78f0fc68ed6583874ed37dab13",
+      "result": "experiments/mixed/root_preservation_result.json",
+      "checked_at_utc": "2026-11-07T14:41:40.256480+00:00"
     }
   },
-  "scope": "Finite exact-arithmetic checks only; not proofs of the continuous theorems."
+  "scope": "Finite exact-arithmetic checks only; not proofs of the continuous theorems. The root-preservation check was added and executed on this revision; unchanged earlier checks retain their earlier receipts."
 }

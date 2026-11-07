@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "started_at_utc": "2026-11-07T07:48:09.579355+00:00",
+  "started_at_utc": "2026-11-07T14:27:33.010222+00:00",
   "lean_version_expected": "4.35.0",
   "mathlib_tag": "v4.35.0",
   "allowed_axioms": [
@@ -39,13 +39,12 @@
     "EnvyFreeResearch/R8Core.lean": "637396824085e0f3b0450a4dd4bcd518d271240b2f77d1897e8a2866f7e2cc3f",
     "EnvyFreeResearch/R8Lower.lean": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
     "EnvyFreeResearch/R8Upper.lean": "70afe251eae0767bdb3dc46ebabd1f87fbeea585dc1fe01ad7b77b52b9b4fa0d",
+    "EnvyFreeResearch/RootPreservation.lean": "56a0fb03138da1e852b3f0fdda8390ea693323290eefb238b24a657de813d723",
     "EnvyFreeResearch/Signed.lean": "c7d94938de433d6c4422005f946741eb3f806aa99cd51dc284e37be0426b8199",
     "EnvyFreeResearch/SubmissionMonteCarlo.lean": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f"
   },
-  "authored_theorem_declaration_count": 815,
-  "module_count": 31,
-  "theorem_declaration_count": 1373,
-  "finished_at_utc": "2026-11-07T07:50:01.477766+00:00",
-  "verification_provenance": "Build and full axiom audit of the canonical focused artifact; every repository Lean module was then checked byte-for-byte against the audited source hashes.",
-  "log_command_path_normalization": "Absolute local lake executable paths in command headings are replaced by lake; mathematical audit output is unchanged."
+  "authored_theorem_declaration_count": 844,
+  "module_count": 32,
+  "theorem_declaration_count": 1414,
+  "finished_at_utc": "2026-11-07T14:30:52.721948+00:00"
 }

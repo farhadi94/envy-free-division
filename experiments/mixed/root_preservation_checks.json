@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "arithmetic": "exact fractions; 18 signed net-one piecewise-linear cumulatives",
+  "preserved_root_checks": 5040,
+  "endpoint_target_checks": 2946,
+  "negative_total_bracket_checks": 1340,
+  "zero_total_bracket_checks": 1550,
+  "reflection_checks": 2520,
+  "pure_leftmost_counterexample": {
+    "old_first_root": "1/2",
+    "new_first_root": "1/6",
+    "old_root_equation_still_true": true,
+    "positive_then_negative_pulse_mass": "1"
+  },
+  "source_sha256": "e9a9330489d7cc639a1b59f596b93ab2a4b23e78f0fc68ed6583874ed37dab13",
+  "scope": "Finite exact checks of the root interfaces; the continuous root-preservation proof is in Lean. This does not test the complete adaptive probability construction."
+}

@@ -16,6 +16,7 @@ CHECKS = {
     "upper_completion": "experiments/upper/check_completion.py",
     "randomized_lower": "experiments/lower/check_lower.py",
     "mixed": "experiments/mixed/independent_checks.py",
+    "root_preservation": "experiments/mixed/root_preservation_checks.py",
 }
 
 

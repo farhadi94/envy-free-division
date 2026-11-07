@@ -28,5 +28,6 @@ import EnvyFreeResearch.R8Chores
 import EnvyFreeResearch.R8Core
 import EnvyFreeResearch.R8Lower
 import EnvyFreeResearch.R8Upper
+import EnvyFreeResearch.RootPreservation
 import EnvyFreeResearch.Signed
 import EnvyFreeResearch.SubmissionMonteCarlo

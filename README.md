@@ -7,7 +7,8 @@ Mohammadtaghi Hajiaghayi (University of Maryland, College Park).
 It contains supporting Lean proofs, a complete dependency manifest, an
 axiom-audit script, and reproducible finite checks for the four main results
 in the paper. The post-review additions formalize concrete finite allocation
-transitions and measure-theoretic expectation arguments.
+transitions, measure-theoretic expectation arguments, and continuous
+first/last-root preservation.
 
 **The four complete continuous/oracle/probability theorems are not fully
 formalized in Lean.** Their proofs are in the paper. Every included Lean
@@ -19,7 +20,7 @@ or the oracle constructions supplying the probability hypotheses.
 
 | Path | Contents |
 | --- | --- |
-| [`verification/lean/`](verification/lean/) | Lean project: 31 modules, pinned Lean/mathlib dependencies, and axiom audit |
+| [`verification/lean/`](verification/lean/) | Lean project: 32 modules, pinned Lean/mathlib dependencies, and axiom audit |
 | [`verification/coverage.json`](verification/coverage.json) | Main-result labels, supporting Lean declarations, and components outside formalization |
 | [`verification/lean_status.json`](verification/lean_status.json) | Source hashes and results from the recorded Lean build |
 | [`verification/lean.log`](verification/lean.log) | Build output and transitive axiom audit |
@@ -46,11 +47,16 @@ The additional modules are:
   zero-residue cases, and bounded progress under explicit primitive certificates.
 - `QueryProbability`: measurable success-event bounds, extended query-count
   integrals, geometric waiting times, and an unbounded-supremum conclusion.
+- `RootPreservation`: continuous first/last-root barriers, preservation under
+  one-sided cumulative perturbations, and reflection of signed queries.
+  These support the two prescribed bracket-sign extremal-root rules in the
+  mixed lower bound; they do not prove impossibility for always-leftmost or
+  always-rightmost rules.
 
 These modules prove consequences of explicit hypotheses. The manuscript
 proves that the continuous protocols supply those hypotheses; that link is
-not fully formalized. The coverage record separates finite and
-measure-theoretic supporting results from the remaining obligations.
+not fully formalized. The coverage record separates finite, measure-theoretic, and continuous
+supporting results from the remaining obligations.
 
 ## Reproduce the Lean audit
 
