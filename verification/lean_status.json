@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "started_at_utc": "2026-11-07T14:27:33.010222+00:00",
+  "started_at_utc": "2026-11-07T14:53:16.124929+00:00",
   "lean_version_expected": "4.35.0",
   "mathlib_tag": "v4.35.0",
   "allowed_axioms": [
@@ -11,6 +11,7 @@
   "scope": "All selected .lean modules under verification/lean/EnvyFreeResearch",
   "source_sha256": {
     "EnvyFreeResearch/ChoreComposition.lean": "117e580691cb0b15f0d3c5190cd4602155f4aa3f9a1b092668e25abb637b56f1",
+    "EnvyFreeResearch/CoordinatedFamily.lean": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451",
     "EnvyFreeResearch/GlobalCompletion.lean": "dab3c06a639377d8415d43286e4406212dfd47f1ccee938ee80886307ea0e54d",
     "EnvyFreeResearch/MixedApproximation.lean": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
     "EnvyFreeResearch/NearExact.lean": "fd4cb9e9d803ca2de3ff5c4ba59282c03e8a231d5ca27023c94e02af283df3c5",
@@ -41,10 +42,11 @@
     "EnvyFreeResearch/R8Upper.lean": "70afe251eae0767bdb3dc46ebabd1f87fbeea585dc1fe01ad7b77b52b9b4fa0d",
     "EnvyFreeResearch/RootPreservation.lean": "56a0fb03138da1e852b3f0fdda8390ea693323290eefb238b24a657de813d723",
     "EnvyFreeResearch/Signed.lean": "c7d94938de433d6c4422005f946741eb3f806aa99cd51dc284e37be0426b8199",
-    "EnvyFreeResearch/SubmissionMonteCarlo.lean": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f"
+    "EnvyFreeResearch/SubmissionMonteCarlo.lean": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+    "EnvyFreeResearch/TranscriptAdversary.lean": "a6f46cba0c168260e2863e0caf0fe9ec3d0d9e7ef1438e8adb2cc203d3a6bae3"
   },
-  "authored_theorem_declaration_count": 844,
-  "module_count": 32,
-  "theorem_declaration_count": 1414,
-  "finished_at_utc": "2026-11-07T14:30:52.721948+00:00"
+  "authored_theorem_declaration_count": 866,
+  "module_count": 34,
+  "theorem_declaration_count": 1448,
+  "finished_at_utc": "2026-11-07T14:56:34.974784+00:00"
 }

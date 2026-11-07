@@ -1,7 +1,7 @@
 $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake env lean --version
 Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
 $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake build
-⚠ [9046/9080] Replayed EnvyFreeResearch.R2OnlinePotential
+⚠ [9046/9082] Replayed EnvyFreeResearch.R2OnlinePotential
 warning: EnvyFreeResearch/R2OnlinePotential.lean: imports `Mathlib.Data.Finset.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/R2OnlinePotential.lean: imports `Mathlib.Algebra.Order.BigOperators.Group.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/R2OnlinePotential.lean: imports `Mathlib.GroupTheory.Perm.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -14,7 +14,7 @@ info: EnvyFreeResearch/R2OnlinePotential.lean:165:0: 'EnvyFreeResearch.R2OnlineP
 info: EnvyFreeResearch/R2OnlinePotential.lean:166:0: 'EnvyFreeResearch.R2OnlinePotential.accumulated_progress' depends on axioms: [propext, Quot.sound]
 info: EnvyFreeResearch/R2OnlinePotential.lean:167:0: 'EnvyFreeResearch.R2OnlinePotential.nonterminal_rounds_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R2OnlinePotential.lean:168:0: 'EnvyFreeResearch.R2OnlinePotential.all_rounds_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9047/9080] Replayed EnvyFreeResearch.NearExact
+⚠ [9047/9082] Replayed EnvyFreeResearch.NearExact
 warning: EnvyFreeResearch/NearExact.lean: imports `Mathlib.Algebra.Order.BigOperators.Group.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/NearExact.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/NearExact.lean: imports `Mathlib.Tactic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -25,7 +25,7 @@ info: EnvyFreeResearch/NearExact.lean:103:0: 'EnvyFreeResearch.NearExact.designa
  Classical.choice,
  Quot.sound]
 info: EnvyFreeResearch/NearExact.lean:104:0: 'EnvyFreeResearch.NearExact.envy_error_from_common_target' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9048/9080] Replayed EnvyFreeResearch.R3Refinement
+⚠ [9048/9082] Replayed EnvyFreeResearch.R3Refinement
 warning: EnvyFreeResearch/R3Refinement.lean: imports `Mathlib.Data.Fintype.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/R3Refinement.lean: imports `Mathlib.Tactic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/R3Refinement.lean:333:0: 'EnvyFreeResearch.R3Refinement.fractional_row_has_two_variables' depends on axioms: [propext,
@@ -38,7 +38,7 @@ info: EnvyFreeResearch/R3Refinement.lean:337:0: 'EnvyFreeResearch.R3Refinement.e
 info: EnvyFreeResearch/R3Refinement.lean:338:0: 'EnvyFreeResearch.R3Refinement.forbidden_scale_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R3Refinement.lean:339:0: 'EnvyFreeResearch.R3Refinement.exists_bracket_robust_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R3Refinement.lean:340:0: 'EnvyFreeResearch.R3Refinement.finite_stage_iteration_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9049/9080] Replayed EnvyFreeResearch.R4Refinement
+⚠ [9049/9082] Replayed EnvyFreeResearch.R4Refinement
 warning: EnvyFreeResearch/R4Refinement.lean: imports `Mathlib.Algebra.Order.Floor.Semiring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/R4Refinement.lean: imports `Mathlib.Data.Fintype.Fin` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: EnvyFreeResearch/R4Refinement.lean: imports `Mathlib.Tactic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -54,11 +54,11 @@ info: EnvyFreeResearch/R4Refinement.lean:476:0: 'EnvyFreeResearch.R4Refinement.a
  Classical.choice,
  Quot.sound]
 info: EnvyFreeResearch/R4Refinement.lean:477:0: 'EnvyFreeResearch.R4Refinement.convex_normalization_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9051/9080] Replayed EnvyFreeResearch.R3ChoreAncestry
+⚠ [9051/9082] Replayed EnvyFreeResearch.R3ChoreAncestry
 warning: EnvyFreeResearch/R3ChoreAncestry.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9052/9080] Replayed EnvyFreeResearch.R5ChoreSchedule
+⚠ [9052/9082] Replayed EnvyFreeResearch.R5ChoreSchedule
 warning: EnvyFreeResearch/R5ChoreSchedule.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-ℹ [9053/9080] Replayed EnvyFreeResearch.R7Chores
+ℹ [9053/9082] Replayed EnvyFreeResearch.R7Chores
 info: EnvyFreeResearch/R7Chores.lean:439:0: 'EnvyFreeResearch.R7Chores.complementary_deficit_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Chores.lean:440:0: 'EnvyFreeResearch.R7Chores.positive_clipped_target_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Chores.lean:441:0: 'EnvyFreeResearch.R7Chores.skip_forbid_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -71,61 +71,9 @@ info: EnvyFreeResearch/R7Chores.lean:447:0: 'EnvyFreeResearch.R7Chores.component
  Classical.choice,
  Quot.sound]
 info: EnvyFreeResearch/R7Chores.lean:448:0: 'EnvyFreeResearch.R7Chores.component_scarce_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9054/9080] Replayed EnvyFreeResearch.R8Chores
+⚠ [9054/9082] Replayed EnvyFreeResearch.R8Chores
 warning: EnvyFreeResearch/R8Chores.lean: imports `Mathlib.Data.Nat.Choose.Sum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9056/9080] Replayed EnvyFreeResearch.R3QueryLower
-warning: EnvyFreeResearch/R3QueryLower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-info: EnvyFreeResearch/R3QueryLower.lean:414:0: 'EnvyFreeResearch.R3QueryLower.owners_le_atoms_of_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:415:0: 'EnvyFreeResearch.R3QueryLower.mixed_atom_with_rival' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:416:0: 'EnvyFreeResearch.R3QueryLower.density_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:417:0: 'EnvyFreeResearch.R3QueryLower.bump_integral_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:418:0: 'EnvyFreeResearch.R3QueryLower.transfer_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:419:0: 'EnvyFreeResearch.R3QueryLower.cake_strict_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:420:0: 'EnvyFreeResearch.R3QueryLower.chore_strict_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:421:0: 'EnvyFreeResearch.R3QueryLower.atom_union_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:422:0: 'EnvyFreeResearch.R3QueryLower.owner_totals_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:423:0: 'EnvyFreeResearch.R3QueryLower.endpoint_union_card' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:424:0: 'EnvyFreeResearch.R3QueryLower.short_total_has_mixed_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:425:0: 'EnvyFreeResearch.R3QueryLower.ordinary_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:426:0: 'EnvyFreeResearch.R3QueryLower.bracketed_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:427:0: 'EnvyFreeResearch.R3QueryLower.rational_kernel_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:428:0: 'EnvyFreeResearch.R3QueryLower.rational_normalized_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:429:0: 'EnvyFreeResearch.R3QueryLower.zero_sum_has_distinct_coordinate' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:430:0: 'EnvyFreeResearch.R3QueryLower.rational_oriented_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:431:0: 'EnvyFreeResearch.R3QueryLower.signed_density_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:432:0: 'EnvyFreeResearch.R3QueryLower.linear_answers_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:433:0: 'EnvyFreeResearch.R3QueryLower.normalized_equations_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R3QueryLower.lean:434:0: 'EnvyFreeResearch.R3QueryLower.rank_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9057/9080] Replayed EnvyFreeResearch.R4GlobalPotential
-warning: EnvyFreeResearch/R4GlobalPotential.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-info: EnvyFreeResearch/R4GlobalPotential.lean:451:0: 'EnvyFreeResearch.R4GlobalPotential.cake_guard_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:452:0: 'EnvyFreeResearch.R4GlobalPotential.chore_guard_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:453:0: 'EnvyFreeResearch.R4GlobalPotential.cake_global_EF' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:454:0: 'EnvyFreeResearch.R4GlobalPotential.chore_global_EF' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:455:0: 'EnvyFreeResearch.R4GlobalPotential.cake_whole_label_transport' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:456:0: 'EnvyFreeResearch.R4GlobalPotential.chore_whole_label_transport' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:457:0: 'EnvyFreeResearch.R4GlobalPotential.row_card_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:458:0: 'EnvyFreeResearch.R4GlobalPotential.strict_global_progress' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:459:0: 'EnvyFreeResearch.R4GlobalPotential.additive_zero_strict_progress' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:460:0: 'EnvyFreeResearch.R4GlobalPotential.anchored_iterations_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:461:0: 'EnvyFreeResearch.R4GlobalPotential.interleaved_progress_bound' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:462:0: 'EnvyFreeResearch.R4GlobalPotential.zero_row_invalidates_universal_image' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: EnvyFreeResearch/R4GlobalPotential.lean:463:0: 'EnvyFreeResearch.R4GlobalPotential.public_rank_query_count' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9058/9080] Replayed EnvyFreeResearch.GlobalCompletion
-warning: EnvyFreeResearch/GlobalCompletion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9059/9080] Replayed EnvyFreeResearch.SubmissionMonteCarlo
+⚠ [9056/9082] Replayed EnvyFreeResearch.SubmissionMonteCarlo
 warning: EnvyFreeResearch/SubmissionMonteCarlo.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/SubmissionMonteCarlo.lean:210:0: 'EnvyFreeResearch.SubmissionMonteCarlo.eventMass_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/SubmissionMonteCarlo.lean:211:0: 'EnvyFreeResearch.SubmissionMonteCarlo.failure_mass_after_two_exceptions' depends on axioms: [propext,
@@ -155,7 +103,7 @@ info: EnvyFreeResearch/SubmissionMonteCarlo.lean:220:0: 'EnvyFreeResearch.Submis
 info: EnvyFreeResearch/SubmissionMonteCarlo.lean:221:0: 'EnvyFreeResearch.SubmissionMonteCarlo.uniform_expected_budget_contradiction' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [9060/9080] Replayed EnvyFreeResearch.R6MixedMonteCarlo
+ℹ [9057/9082] Replayed EnvyFreeResearch.R6MixedMonteCarlo
 info: EnvyFreeResearch/R6MixedMonteCarlo.lean:329:0: 'EnvyFreeResearch.R6MixedMonteCarlo.coassigned_pulse_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6MixedMonteCarlo.lean:330:0: 'EnvyFreeResearch.R6MixedMonteCarlo.owned_mass_abs_le_variation' depends on axioms: [propext,
  Classical.choice,
@@ -193,7 +141,7 @@ info: EnvyFreeResearch/R6MixedMonteCarlo.lean:346:0: 'EnvyFreeResearch.R6MixedMo
  Classical.choice,
  Quot.sound]
 info: EnvyFreeResearch/R6MixedMonteCarlo.lean:347:0: 'EnvyFreeResearch.R6MixedMonteCarlo.finite_four_event_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9061/9080] Replayed EnvyFreeResearch.MixedApproximation
+⚠ [9058/9082] Replayed EnvyFreeResearch.MixedApproximation
 warning: EnvyFreeResearch/MixedApproximation.lean:179:5: Variable name `ha` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -219,9 +167,61 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [DecidableEq Agent] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9062/9080] Replayed EnvyFreeResearch.QueryProbability
+⚠ [9059/9082] Replayed EnvyFreeResearch.R3QueryLower
+warning: EnvyFreeResearch/R3QueryLower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: EnvyFreeResearch/R3QueryLower.lean:414:0: 'EnvyFreeResearch.R3QueryLower.owners_le_atoms_of_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:415:0: 'EnvyFreeResearch.R3QueryLower.mixed_atom_with_rival' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:416:0: 'EnvyFreeResearch.R3QueryLower.density_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:417:0: 'EnvyFreeResearch.R3QueryLower.bump_integral_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:418:0: 'EnvyFreeResearch.R3QueryLower.transfer_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:419:0: 'EnvyFreeResearch.R3QueryLower.cake_strict_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:420:0: 'EnvyFreeResearch.R3QueryLower.chore_strict_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:421:0: 'EnvyFreeResearch.R3QueryLower.atom_union_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:422:0: 'EnvyFreeResearch.R3QueryLower.owner_totals_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:423:0: 'EnvyFreeResearch.R3QueryLower.endpoint_union_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:424:0: 'EnvyFreeResearch.R3QueryLower.short_total_has_mixed_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:425:0: 'EnvyFreeResearch.R3QueryLower.ordinary_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:426:0: 'EnvyFreeResearch.R3QueryLower.bracketed_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:427:0: 'EnvyFreeResearch.R3QueryLower.rational_kernel_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:428:0: 'EnvyFreeResearch.R3QueryLower.rational_normalized_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:429:0: 'EnvyFreeResearch.R3QueryLower.zero_sum_has_distinct_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:430:0: 'EnvyFreeResearch.R3QueryLower.rational_oriented_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:431:0: 'EnvyFreeResearch.R3QueryLower.signed_density_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:432:0: 'EnvyFreeResearch.R3QueryLower.linear_answers_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:433:0: 'EnvyFreeResearch.R3QueryLower.normalized_equations_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R3QueryLower.lean:434:0: 'EnvyFreeResearch.R3QueryLower.rank_query_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9060/9082] Replayed EnvyFreeResearch.R4GlobalPotential
+warning: EnvyFreeResearch/R4GlobalPotential.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: EnvyFreeResearch/R4GlobalPotential.lean:451:0: 'EnvyFreeResearch.R4GlobalPotential.cake_guard_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:452:0: 'EnvyFreeResearch.R4GlobalPotential.chore_guard_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:453:0: 'EnvyFreeResearch.R4GlobalPotential.cake_global_EF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:454:0: 'EnvyFreeResearch.R4GlobalPotential.chore_global_EF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:455:0: 'EnvyFreeResearch.R4GlobalPotential.cake_whole_label_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:456:0: 'EnvyFreeResearch.R4GlobalPotential.chore_whole_label_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:457:0: 'EnvyFreeResearch.R4GlobalPotential.row_card_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:458:0: 'EnvyFreeResearch.R4GlobalPotential.strict_global_progress' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:459:0: 'EnvyFreeResearch.R4GlobalPotential.additive_zero_strict_progress' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:460:0: 'EnvyFreeResearch.R4GlobalPotential.anchored_iterations_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:461:0: 'EnvyFreeResearch.R4GlobalPotential.interleaved_progress_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:462:0: 'EnvyFreeResearch.R4GlobalPotential.zero_row_invalidates_universal_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/R4GlobalPotential.lean:463:0: 'EnvyFreeResearch.R4GlobalPotential.public_rank_query_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9061/9082] Replayed EnvyFreeResearch.GlobalCompletion
+warning: EnvyFreeResearch/GlobalCompletion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9062/9082] Replayed EnvyFreeResearch.QueryProbability
 warning: EnvyFreeResearch/QueryProbability.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9063/9080] Replayed EnvyFreeResearch.R2Variation
+⚠ [9063/9082] Replayed EnvyFreeResearch.R2Variation
 warning: EnvyFreeResearch/R2Variation.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/R2Variation.lean:306:0: 'EnvyFreeResearch.R2Variation.outside_difference_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R2Variation.lean:307:0: 'EnvyFreeResearch.R2Variation.ownership_forcing_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -233,12 +233,12 @@ info: EnvyFreeResearch/R2Variation.lean:312:0: 'EnvyFreeResearch.R2Variation.bra
 info: EnvyFreeResearch/R2Variation.lean:313:0: 'EnvyFreeResearch.R2Variation.variation_recurrence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R2Variation.lean:314:0: 'EnvyFreeResearch.R2Variation.normalized_variation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R2Variation.lean:315:0: 'EnvyFreeResearch.R2Variation.logarithmic_landmark_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9064/9080] Replayed EnvyFreeResearch.R3PrioritySelector
+⚠ [9064/9082] Replayed EnvyFreeResearch.R3PrioritySelector
 warning: EnvyFreeResearch/R3PrioritySelector.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/R3PrioritySelector.lean:62:0: 'RealRandomMixedFinite.large_integer_avoids_affine_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R3PrioritySelector.lean:63:0: 'RealRandomMixedFinite.forced_split_with_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R3PrioritySelector.lean:64:0: 'RealRandomMixedFinite.finite_priority_index_preserved' does not depend on any axioms
-⚠ [9065/9080] Replayed EnvyFreeResearch.Signed
+⚠ [9065/9082] Replayed EnvyFreeResearch.Signed
 warning: EnvyFreeResearch/Signed.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/Signed.lean:336:0: 'EnvyFreeResearch.Signed.envyFree_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/Signed.lean:337:0: 'EnvyFreeResearch.Signed.sign_cell_routing' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -249,7 +249,7 @@ info: EnvyFreeResearch/Signed.lean:341:0: 'EnvyFreeResearch.Signed.hahn_partitio
 info: EnvyFreeResearch/Signed.lean:342:0: 'EnvyFreeResearch.Signed.robust_completion_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/Signed.lean:343:0: 'EnvyFreeResearch.Signed.excluded_observer_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/Signed.lean:344:0: 'EnvyFreeResearch.Signed.net_zero_residue_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9066/9080] Replayed EnvyFreeResearch.R4SignedLinear
+ℹ [9066/9082] Replayed EnvyFreeResearch.R4SignedLinear
 info: EnvyFreeResearch/R4SignedLinear.lean:689:0: 'EnvyFreeResearch.R4SignedLinear.query_projection_annihilates' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -277,9 +277,9 @@ info: EnvyFreeResearch/R4SignedLinear.lean:698:0: 'EnvyFreeResearch.R4SignedLine
 info: EnvyFreeResearch/R4SignedLinear.lean:699:0: 'EnvyFreeResearch.R4SignedLinear.public_coefficient_row_dichotomy' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [9068/9080] Replayed EnvyFreeResearch.R5RankRefinement
+⚠ [9068/9082] Replayed EnvyFreeResearch.R5RankRefinement
 warning: EnvyFreeResearch/R5RankRefinement.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-ℹ [9069/9080] Replayed EnvyFreeResearch.R6Chores
+ℹ [9069/9082] Replayed EnvyFreeResearch.R6Chores
 info: EnvyFreeResearch/R6Chores.lean:490:0: 'EnvyFreeResearch.R6Chores.terminal_refresh_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Chores.lean:491:0: 'EnvyFreeResearch.R6Chores.distinct_visited_resets' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Chores.lean:492:0: 'EnvyFreeResearch.R6Chores.initial_pivot_extraction' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -289,7 +289,7 @@ info: EnvyFreeResearch/R6Chores.lean:495:0: 'EnvyFreeResearch.R6Chores.refreshed
 info: EnvyFreeResearch/R6Chores.lean:496:0: 'EnvyFreeResearch.R6Chores.signed_blocks_exact_or_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Chores.lean:497:0: 'EnvyFreeResearch.R6Chores.unequal_share_refutes_span' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Chores.lean:498:0: 'EnvyFreeResearch.R6Chores.audited_window_eval_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9070/9080] Replayed EnvyFreeResearch.R6Core
+⚠ [9070/9082] Replayed EnvyFreeResearch.R6Core
 warning: EnvyFreeResearch/R6Core.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: EnvyFreeResearch/R6Core.lean:344:0: 'EnvyFreeResearch.R6Core.matching_cut_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Core.lean:345:0: 'EnvyFreeResearch.R6Core.hybrid_matching_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -300,7 +300,7 @@ info: EnvyFreeResearch/R6Core.lean:349:0: 'EnvyFreeResearch.R6Core.anchored_pref
 info: EnvyFreeResearch/R6Core.lean:350:0: 'EnvyFreeResearch.R6Core.backward_anchor_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Core.lean:351:0: 'EnvyFreeResearch.R6Core.core_transition_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Core.lean:352:0: 'EnvyFreeResearch.R6Core.core_candidate_query_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9071/9080] Replayed EnvyFreeResearch.R6Lower
+ℹ [9071/9082] Replayed EnvyFreeResearch.R6Lower
 info: EnvyFreeResearch/R6Lower.lean:354:0: 'EnvyFreeResearch.R6Lower.all_prefixes_determined' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Lower.lean:355:0: 'EnvyFreeResearch.R6Lower.all_bundles_determined' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R6Lower.lean:356:0: 'EnvyFreeResearch.R6Lower.verified_comparisons_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -325,9 +325,9 @@ info: EnvyFreeResearch/R6Lower.lean:370:0: 'EnvyFreeResearch.R6Lower.central_row
 info: EnvyFreeResearch/R6Lower.lean:371:0: 'EnvyFreeResearch.R6Lower.all_virtual_guards_iff_hard_geometry' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [9072/9080] Replayed EnvyFreeResearch.R6Upper
+⚠ [9072/9082] Replayed EnvyFreeResearch.R6Upper
 warning: EnvyFreeResearch/R6Upper.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-ℹ [9073/9080] Replayed EnvyFreeResearch.R7Core
+ℹ [9073/9082] Replayed EnvyFreeResearch.R7Core
 info: EnvyFreeResearch/R7Core.lean:176:0: 'EnvyFreeResearch.R7Core.fixed_order_canonical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Core.lean:177:0: 'EnvyFreeResearch.R7Core.only_agent_zero_owns_whole' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Core.lean:178:0: 'EnvyFreeResearch.R7Core.fixed_first_agent_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -335,7 +335,7 @@ info: EnvyFreeResearch/R7Core.lean:179:0: 'EnvyFreeResearch.R7Core.rectangular_j
 info: EnvyFreeResearch/R7Core.lean:180:0: 'EnvyFreeResearch.R7Core.rectangular_Y_extends' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Core.lean:181:0: 'EnvyFreeResearch.R7Core.rectangular_X_cannot_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Core.lean:182:0: 'EnvyFreeResearch.R7Core.rectangular_X_no_EF_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9074/9080] Replayed EnvyFreeResearch.R7Lower
+ℹ [9074/9082] Replayed EnvyFreeResearch.R7Lower
 info: EnvyFreeResearch/R7Lower.lean:180:0: 'EnvyFreeResearch.R7Lower.robust_linear_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Lower.lean:181:0: 'EnvyFreeResearch.R7Lower.robust_equality_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Lower.lean:182:0: 'EnvyFreeResearch.R7Lower.ownership_comparison_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -344,7 +344,7 @@ info: EnvyFreeResearch/R7Lower.lean:184:0: 'EnvyFreeResearch.R7Lower.success_cou
 info: EnvyFreeResearch/R7Lower.lean:185:0: 'EnvyFreeResearch.R7Lower.weighted_success_fraction_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Lower.lean:186:0: 'EnvyFreeResearch.R7Lower.weighted_clipped_success_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R7Lower.lean:187:0: 'EnvyFreeResearch.R7Lower.two_disjoint_successes_half' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9076/9080] Replayed EnvyFreeResearch.R8Lower
+ℹ [9076/9082] Replayed EnvyFreeResearch.R8Lower
 info: EnvyFreeResearch/R8Lower.lean:347:0: 'EnvyFreeResearch.R8Lower.weighted_aggregate' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R8Lower.lean:348:0: 'EnvyFreeResearch.R8Lower.aggregate_total' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R8Lower.lean:349:0: 'EnvyFreeResearch.R8Lower.aggregate_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -372,12 +372,33 @@ info: EnvyFreeResearch/R8Lower.lean:370:0: 'EnvyFreeResearch.R8Lower.retained_wi
 info: EnvyFreeResearch/R8Lower.lean:371:0: 'EnvyFreeResearch.R8Lower.retained_optimized_value' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R8Lower.lean:372:0: 'EnvyFreeResearch.R8Lower.retained_square_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: EnvyFreeResearch/R8Lower.lean:373:0: 'EnvyFreeResearch.R8Lower.retained_window_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9077/9080] Replayed EnvyFreeResearch.R8Upper
+⚠ [9077/9082] Replayed EnvyFreeResearch.R8Upper
 warning: EnvyFreeResearch/R8Upper.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9078/9080] Built EnvyFreeResearch.RootPreservation (59s)
+⚠ [9078/9082] Replayed EnvyFreeResearch.RootPreservation
 warning: EnvyFreeResearch/RootPreservation.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-✔ [9079/9080] Built EnvyFreeResearch (43s)
-Build completed successfully (9080 jobs).
+ℹ [9079/9082] Built EnvyFreeResearch.CoordinatedFamily (66s)
+info: EnvyFreeResearch/CoordinatedFamily.lean:126:0: 'EnvyFreeResearch.CoordinatedFamily.nonpositive_pair_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:127:0: 'EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:128:0: 'EnvyFreeResearch.CoordinatedFamily.cell_condition_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:129:0: 'EnvyFreeResearch.CoordinatedFamily.cell_transfer_nonpositive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:130:0: 'EnvyFreeResearch.CoordinatedFamily.two_nonowners_envy_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:131:0: 'EnvyFreeResearch.CoordinatedFamily.two_nonowners_force_violation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EnvyFreeResearch/CoordinatedFamily.lean:132:0: 'EnvyFreeResearch.CoordinatedFamily.cell_condition_force_violation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [9080/9082] Built EnvyFreeResearch.TranscriptAdversary (67s)
+✔ [9081/9082] Built EnvyFreeResearch (58s)
+Build completed successfully (9082 jobs).
 $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake env lean AxiomAudit.lean
 #print axioms EnvyFreeResearch.R6Upper.reserve_mass_failure_small._simp_1_2: [propext]
 #print axioms EnvyFreeResearch.R4Refinement.zero_coefficient_has_no_bad_event: [propext, Classical.choice, Quot.sound]
@@ -403,6 +424,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R4SignedLinear.negative_inner_strict_gram._simp_1_4: [propext]
 #print axioms EnvyFreeResearch.R5RankRefinement.repairMesh._proof_1: [propext]
 #print axioms EnvyFreeResearch.ChoreComposition.package_close_live: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_new_cell: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.finite_scarce_fiber_count: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.initial_envy_identity: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.normalizedThreshold_normalizes._simp_1_4: [propext]
@@ -419,6 +441,9 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.ChoreComposition.reset_reserve: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.retainedCredit.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.max_cell_weighted_error: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.terminal_root_target_positive: [propext,
+ Classical.choice,
+ Quot.sound]
 #print axioms EnvyFreeResearch.R8Lower.weighted_aggregate: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3QueryLower.bounded_bump_amplitude: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.MixedApproximation.correct_perturbation_implies_agreement: [propext,
@@ -510,6 +535,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R7Core.rectangular_Y_neat: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4Refinement.affine_pair_difference: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Chores.omitted_pivot_prefix: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_tail_slope_positive: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.positive_child: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Core.canonicalOwn.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2OnlinePotential.all_rounds_le_from_start_guard._proof_1_1: [propext, Quot.sound]
@@ -550,6 +576,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.MixedApproximation.exact_comparison_implies_mult: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3ChoreAncestry.exclusive_payment: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.ConcreteStep.mk.sizeOf_spec: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.cell_condition_force_violation: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ChoreComposition.total_mono: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.separator_iff_not_opposite: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.queue_union_after_consumption: [propext, Classical.choice, Quot.sound]
@@ -703,6 +730,9 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.R8Upper.centered_before_mean: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Lower.query_tail_markov._simp_1_2: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.anchored_prefix_cut_and_choose: [propext,
+ Classical.choice,
+ Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.reserve_mass_failure_small._simp_1_4: [propext]
 #print axioms EnvyFreeResearch.ChoreComposition.package_reset_ids: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.CohortTree.leafOccurrences.eq_1: [propext, Classical.choice, Quot.sound]
@@ -786,6 +816,8 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R4Refinement.rounded_probability_sum._simp_1_3: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.atomic_mask_class_count._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.GlobalCompletion.finite_atom_transition._proof_2: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_new_level_lt_one: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_continuous._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.R7Chores.component_cycle_strictly_reduces_count._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R3Refinement.exists_safe_geometric_scale: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3Refinement.later_scale_not_forbidden: [propext, Classical.choice, Quot.sound]
@@ -841,6 +873,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R4SignedLinear.integer_pulse_meets_guards_and_exclusions: [propext,
  Classical.choice,
  Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_3: [propext]
 #print axioms EnvyFreeResearch.R3Refinement.geometricScale._proof_2: [propext]
 #print axioms EnvyFreeResearch.ChoreComposition.package_reset_valid: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.variation_exact: [propext, Classical.choice, Quot.sound]
@@ -862,6 +895,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R4Refinement.midpoint_closed_cdf_upper: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.coefficient_row_sum_zero: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.chore_ef_iff: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.tailTable._proof_1: [propext]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.reserve_ge_bad._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.basis_split_conserves_every_row: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.combined_potential_cap: [propext, Classical.choice, Quot.sound]
@@ -918,6 +952,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.ownership_forcing_gap: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.query_projection_annihilates: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.nonpositive_pair_coefficients: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4Refinement.midpoint_open_interval_count: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Chores.terminal_refresh_margin: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.correction_budget_identity._simp_1_5: [propext]
@@ -947,6 +982,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R5RankRefinement.aggregate_endpoint_density: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.transferred_witness_margin: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.high_roots_after_reservation._proof_1_1: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.first_reply_preserved: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3Refinement.geometricScale._proof_1: [propext]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.PoolOp.merge.inj: []
 #print axioms EnvyFreeResearch.R8Lower.aggregate_total: [propext, Classical.choice, Quot.sound]
@@ -1027,6 +1063,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R8Lower.query_lower_from_retention._simp_1_4: [propext]
 #print axioms EnvyFreeResearch.R8Chores.smaller_side_step._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R3Refinement.scale_ratio_ge_one: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_endpoint: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.cycle_remainder_bound._simp_1_2: [propext]
 #print axioms EnvyFreeResearch.R6Upper.type_split_cell_lower_bound._simp_1_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.atom_partition_identity._simp_1_1: [propext]
@@ -1040,6 +1077,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R8Upper.last_three_swap_second: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Chores.window_eval_sum_aux: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.cycle_failure_small: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.two_nonowners_force_violation: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Chores.chore_scale_lower._proof_1_2: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.SubmissionMonteCarlo.uniform_observer_exclusion: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Upper.fixture_normalized_outside._simp_1_3: [propext]
@@ -1095,6 +1133,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.R8Core.three_parent_target_fits: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Lower.decoder_probability_constant: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_continuous: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.real_kernel_exists: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3QueryLower.zero_sum_has_distinct_coordinate: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.CohortTree.brecOn.eq: []
@@ -1166,6 +1205,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.ChoreComposition.Package.debit.congr_simp: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.ConcreteStep.before_partition: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.exhausted_mask_class_count: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.two_nonowners_envy_sum._simp_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.gap_class_extraction: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.common_moments_force_half: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.zero_own_all_zero: [propext, Classical.choice, Quot.sound]
@@ -1227,11 +1267,15 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.Signed.assignedValue_le_positiveMass: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Upper.centered_before_cross_mean: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.prefix_certificate_from_first_roots: [propext,
+ Classical.choice,
+ Quot.sound]
 #print axioms _private.EnvyFreeResearch.GlobalCompletion.0.EnvyFreeResearch.GlobalCompletion.CompletionEvent.charge.match_1.eq_1: [propext,
  Classical.choice,
  Quot.sound]
 #print axioms EnvyFreeResearch.ExtremalRoots.LastRoot.location: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.affine_retention_keeps_whole: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.two_nonowners_envy_sum: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.paymentWeight.congr_simp: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.rank_two_interpolation_budget._simp_1_3: [propext]
 #print axioms EnvyFreeResearch.R4GlobalPotential.zero_row_invalidates_universal_image: [propext,
@@ -1246,6 +1290,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.GlobalCompletion.ConcreteStep.anchor_missing: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.CohortTree.base.inj: []
 #print axioms EnvyFreeResearch.ChoreComposition.ordinary_tasks_payments: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.tailTable.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.runCharge.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Upper.fixture_normalized_outside._simp_1_7: [propext]
 #print axioms EnvyFreeResearch.ExtremalRoots.reverse_pulses_nonpositive: [propext, Classical.choice, Quot.sound]
@@ -1289,8 +1334,10 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R2Variation.normalizedThreshold_positive: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.runPool.eq_def: []
 #print axioms EnvyFreeResearch.R5RankRefinement.seed_score_spacing._proof_1_4: [propext, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Upper.random_order_weighted_mean: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.Signed.robust_pair_completion: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.cell_transfer_nonpositive: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2OnlinePotential.accumulated_progress: [propext, Quot.sound]
 #print axioms _private.EnvyFreeResearch.R8Chores.0.EnvyFreeResearch.R8Chores.MergeTree.leaves.match_1.eq_1: []
 #print axioms EnvyFreeResearch.R5RankRefinement.support_elimination_count._proof_1_3: [propext, Quot.sound]
@@ -1298,9 +1345,11 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R7Chores.recipient_reserve_nonnegative: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.real_kernel_exists._proof_1_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.separated_owners_force_gap: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.frozen_bundle_value: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.reserve_table_identity: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.QueryProbability.expectation_lower_from_success: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.batchLoss.eq_1: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_5: [propext]
 #print axioms EnvyFreeResearch.R8Lower.simple_unqueried_row_count: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.component_cycle_strictly_reduces_count: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4GlobalPotential.frozen_value_unchanged: [propext, Classical.choice, Quot.sound]
@@ -1316,6 +1365,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R6Upper.paymentAccuracy.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ChoreComposition.package_close_valid._simp_1_3: [propext]
 #print axioms EnvyFreeResearch.R4SignedLinear.gram_residual_identity: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_prefix: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.physical_prefix_credit: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.stripped_ef_payment: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Lower.success_count_bound._proof_1_1: [propext, Classical.choice, Quot.sound]
@@ -1343,6 +1393,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R4SignedLinear.splitValue.congr_simp: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4Refinement.midpoint_strict_cdf_lower: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ChoreComposition.committed_round_distinct: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.ChoreComposition.Frame.mk.inj: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.weighted_coordinate_envelope: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.QueryProbability.nat_expectation_lower_from_success._simp_1_1: [propext,
@@ -1364,6 +1415,9 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.selected_parent_failure_identity._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.R2OnlinePotential.all_rounds_le_from_start_guard._proof_1_4: [propext, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.legal_target_preserved_on_frozen_coordinates: [propext,
+ Classical.choice,
+ Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.queue_union_after_consumption._simp_1_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R3QueryLower.transfer_sum: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.QueryProbability.waiting_time_finite_ae: [propext, Classical.choice, Quot.sound]
@@ -1426,6 +1480,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Quot.sound]
 #print axioms EnvyFreeResearch.R4Refinement.convex_denominator_positive: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.rank_two_correction_budget: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_4: [propext]
 #print axioms EnvyFreeResearch.R8Lower.owner_comparison_refinement: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.coefficient_pulse_value: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ExtremalRoots.first_positive_preserved_down: [propext, Classical.choice, Quot.sound]
@@ -1457,6 +1512,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.QueryProbability.enat_lt_successor_iff._proof_1_1: [propext,
  Classical.choice,
  Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.frozen_coordinate_value: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.QueryProbability.successful_cost_tail_le_lintegral._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.R2OnlinePotential.accumulated_progress._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R8Lower.exists_positive_refinement: [propext, Classical.choice, Quot.sound]
@@ -1555,6 +1611,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R3QueryLower.short_total_has_mixed_atom: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.cycle_remainder_bound._simp_1_6: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.distinct_max_min: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_7: [propext]
 #print axioms EnvyFreeResearch.R6Chores.refreshed_full_pool_budget: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4GlobalPotential.interleaved_progress_bound._proof_1_2: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.grouped_payment_failure_small: [propext, Classical.choice, Quot.sound]
@@ -1565,6 +1622,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R5RankRefinement.support_elimination_count._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R5ChoreMatching.reserve.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.paymentWeight.eq_1: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.cell_condition_coefficients: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ChoreComposition.proposal_zero_is_unchanged: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.revelations_bound: [propext, Quot.sound]
 #print axioms _private.EnvyFreeResearch.R5ChoreSchedule.0.EnvyFreeResearch.R5ChoreSchedule.runPool.match_1.eq_2: []
@@ -1610,6 +1668,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R5RankRefinement.no_infinite_support_elimination._proof_1_1: [propext, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.seed_score_increment: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Core.nonempty_core_state_count: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.rebuild_terminal_ceiling: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.no_infinite_support_elimination: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Chores.basic_window_eval_closed._proof_1_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.ChoreComposition.protected_component_zero: [propext, Classical.choice, Quot.sound]
@@ -1698,6 +1757,9 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.GlobalCompletion.event_preserves_valid: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R6Core.matching_cut_membership: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2OnlinePotential.accumulated_progress._proof_1_2: [propext, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
 #print axioms EnvyFreeResearch.R5RankRefinement.supply_error_identity._simp_1_7: [propext]
 #print axioms EnvyFreeResearch.R6MixedMonteCarlo.pulse.eq_1: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.finite_run_event_bound._proof_1_1: [propext,
@@ -1730,6 +1792,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
  Classical.choice,
  Quot.sound]
 #print axioms EnvyFreeResearch.R6Upper.correction_budget_identity._simp_1_6: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients._simp_1_2: [propext]
 #print axioms EnvyFreeResearch.R6Chores.remaining_after_removals: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.MixedApproximation.comparison_discrepancy: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R4SignedLinear.nonzero_perturbation_changes_comparison: [propext,
@@ -1864,6 +1927,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R5ChoreMatching.sum_small_removals: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Chores.MergeTree.leaves.eq_def: []
 #print axioms EnvyFreeResearch.R6MixedMonteCarlo.commonMass_positive: [propext, Classical.choice, Quot.sound]
+#print axioms EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.PoolOp.merge.injEq: [propext]
 #print axioms EnvyFreeResearch.R8Lower.query_lower_from_retention._simp_1_1: [propext]
 #print axioms EnvyFreeResearch.R5ChoreSchedule.revelations_bound._proof_1_1: [propext, Quot.sound]
@@ -1897,6 +1961,7 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.ExtremalRoots.ordered_pair_cumulative_nonnegative: [propext,
  Classical.choice,
  Quot.sound]
+#print axioms EnvyFreeResearch.TranscriptAdversary.frozen_interval_value: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Chores.affine_closed_payment: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.GlobalCompletion.ConcreteStep.snapshot_frozen: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R2Variation.threshold_inequality_iff: [propext, Classical.choice, Quot.sound]
@@ -2025,4 +2090,4 @@ $ /Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake en
 #print axioms EnvyFreeResearch.R6Chores.retained_window_boundary_count: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R8Lower.measurement_equal_iff: [propext, Classical.choice, Quot.sound]
 #print axioms EnvyFreeResearch.R7Core.rectangular_X_neat: [propext, Classical.choice, Quot.sound]
-AXIOM AUDIT PASSED: 1414 theorem declarations; only propext, Classical.choice, Quot.sound allowed.
+AXIOM AUDIT PASSED: 1448 theorem declarations; only propext, Classical.choice, Quot.sound allowed.

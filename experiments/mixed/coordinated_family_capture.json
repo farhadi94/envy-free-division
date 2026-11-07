@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational",
+  "n": 3,
+  "alpha": "1",
+  "tapes": 24,
+  "queries_per_tape": 4,
+  "batches": [
+    {
+      "new_tapes": [
+        0,
+        9,
+        18
+      ],
+      "captured_total": 3,
+      "resolved_cells": 5
+    },
+    {
+      "new_tapes": [
+        4,
+        13,
+        22
+      ],
+      "captured_total": 6,
+      "resolved_cells": 10
+    },
+    {
+      "new_tapes": [
+        2,
+        11,
+        20
+      ],
+      "captured_total": 9,
+      "resolved_cells": 15
+    },
+    {
+      "new_tapes": [
+        3,
+        12,
+        21
+      ],
+      "captured_total": 12,
+      "resolved_cells": 20
+    },
+    {
+      "new_tapes": [
+        1,
+        10,
+        19
+      ],
+      "captured_total": 15,
+      "resolved_cells": 25
+    },
+    {
+      "new_tapes": [
+        5,
+        14,
+        23
+      ],
+      "captured_total": 18,
+      "resolved_cells": 30
+    },
+    {
+      "new_tapes": [
+        6,
+        15
+      ],
+      "captured_total": 20,
+      "resolved_cells": 35
+    },
+    {
+      "new_tapes": [
+        7,
+        16
+      ],
+      "captured_total": 22,
+      "resolved_cells": 40
+    },
+    {
+      "new_tapes": [
+        8,
+        17
+      ],
+      "captured_total": 24,
+      "resolved_cells": 45
+    }
+  ],
+  "updates": 45,
+  "negative_target_stages": 8,
+  "profile_sha256": "abfd7325499243b65535675d36c0df14264c94d997f53a1f2eaf18a0bd0a586c",
+  "max_fraction_digit_count": 21,
+  "checks": [
+    "every intermediate profile has the density cone, positive tail, strict cumulative ceiling and total1",
+    "new queried row unchanged",
+    "every selected query prefix replays",
+    "every previously captured full transcript and output replays",
+    "every previously captured bundle table unchanged",
+    "every captured output has average signed envy at least alpha"
+  ],
+  "scope": "Finite-tape regression only; measurable arbitrary-tape construction is a separate written proof."
+}

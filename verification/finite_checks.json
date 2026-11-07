@@ -44,7 +44,21 @@
       "script_sha256": "e9a9330489d7cc639a1b59f596b93ab2a4b23e78f0fc68ed6583874ed37dab13",
       "result": "experiments/mixed/root_preservation_result.json",
       "checked_at_utc": "2026-11-07T14:41:40.256480+00:00"
+    },
+    "frontier_replay": {
+      "status": "passed",
+      "script": "experiments/mixed/transcript_adversary_replay.py",
+      "script_sha256": "68d17a537812b45c9d3a1c7442175a4e3bba15c384c01a3dc19c5e750bc7ee5a",
+      "result": "experiments/mixed/frontier_replay_result.json",
+      "checked_at_utc": "2026-11-07T14:56:12.075830+00:00"
+    },
+    "frontier_capture": {
+      "status": "passed",
+      "script": "experiments/mixed/coordinated_family_capture.py",
+      "script_sha256": "948b7967a0f5c6018a5fc929fde3e8fa7ae6fcf604137e7371ee2e5f0973b94a",
+      "result": "experiments/mixed/frontier_capture_result.json",
+      "checked_at_utc": "2026-11-07T14:56:13.887279+00:00"
     }
   },
-  "scope": "Finite exact-arithmetic checks only; not proofs of the continuous theorems. The root-preservation check was added and executed on this revision; unchanged earlier checks retain their earlier receipts."
+  "scope": "Finite exact-arithmetic checks only. New frontier replay/capture checks were executed on this revision; unchanged earlier checks retain their previous receipts. These are not proofs of the full randomized construction."
 }

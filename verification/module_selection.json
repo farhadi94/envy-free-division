@@ -14,10 +14,13 @@
     "ChoreComposition",
     "GlobalCompletion",
     "QueryProbability",
-    "RootPreservation"
+    "RootPreservation",
+    "TranscriptAdversary",
+    "CoordinatedFamily"
   ],
   "modules": [
     "ChoreComposition",
+    "CoordinatedFamily",
     "GlobalCompletion",
     "MixedApproximation",
     "NearExact",
@@ -48,8 +51,9 @@
     "R8Upper",
     "RootPreservation",
     "Signed",
-    "SubmissionMonteCarlo"
+    "SubmissionMonteCarlo",
+    "TranscriptAdversary"
   ],
-  "count": 32,
-  "scope": "Supporting statements for four main results, including finite transitions, measure-theoretic expectations, and continuous extremal-root barriers, preservation and reflection. No complete main oracle theorem is claimed formalized."
+  "count": 34,
+  "scope": "Supporting finite, continuous, and measure-theoretic statements for four main results. Includes the finite signed envy obstruction, first-root replay, affine frontier updates, and frozen-endpoint bundle preservation. No complete main oracle theorem is claimed formalized."
 }

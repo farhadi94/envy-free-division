@@ -17,6 +17,8 @@ CHECKS = {
     "randomized_lower": "experiments/lower/check_lower.py",
     "mixed": "experiments/mixed/independent_checks.py",
     "root_preservation": "experiments/mixed/root_preservation_checks.py",
+    "frontier_replay": "experiments/mixed/transcript_adversary_replay.py",
+    "frontier_capture": "experiments/mixed/coordinated_family_capture.py",
 }
 
 

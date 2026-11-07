@@ -1,6 +1,6 @@
 {
   "status": "explicit_partial_formalization_coverage",
-  "updated_at_utc": "2026-11-07T14:27:32.836599+00:00",
+  "updated_at_utc": "2026-11-07T14:53:16.037018+00:00",
   "main_theorem_count": 4,
   "main_theorems_fully_formalized": 0,
   "coverage": [
@@ -128,28 +128,31 @@
     },
     {
       "theorem": "thm:mixed-mc",
-      "claim": "No uniform finite expected-query bound for signed-relative multiplicative or net-one additive EF, even with either prescribed bracket-sign extremal-root rule",
+      "claim": "No uniform finite expected-query bound for signed-relative multiplicative or net-one additive EF, under either always-leftmost or always-rightmost Cut replies",
       "proof_sections": [
         "mixed_lower_proof.tex"
       ],
       "finite_examples": {
         "MixedApproximation": [
           "exact_ef_implies_relative",
-          "relative_iff_cake_comparisons",
-          "coarse_forcing",
-          "comparison_discrepancy",
-          "explicit_mass_suffices",
-          "correct_perturbation_implies_agreement"
+          "relative_iff_cake_comparisons"
+        ],
+        "CoordinatedFamily": [
+          "cell_condition_coefficients",
+          "cell_transfer_nonpositive",
+          "two_nonowners_envy_sum",
+          "two_nonowners_force_violation",
+          "cell_condition_force_violation"
         ]
       },
       "outside_lean": [
-        "Continuous protected-interval and support construction",
-        "Borel selector measurability and full adaptive legality-preserving transcript replay",
-        "Dominated convergence and product-space selection of one fixed input",
+        "Construction of the entire signed-measure profile and its complete oracle execution",
+        "Borel least-root measurability and full adaptive transcript replay",
+        "Measurable coordinate quantiles and finite batches selecting one fixed hard input independently of the realized tape",
         "Derivation of the successful finite-horizon event hypothesis for the actual oracle strategy"
       ],
       "proof_source_sha256": {
-        "mixed_lower_proof.tex": "4349f15e31b5c34c57bacbd273df7eaaf128e63f772078cb181ff42a53793690"
+        "mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43"
       },
       "measure_theoretic_examples": {
         "QueryProbability": [
@@ -159,14 +162,16 @@
         ]
       },
       "continuous_examples": {
+        "TranscriptAdversary": [
+          "first_reply_preserved",
+          "legal_target_preserved_on_frozen_coordinates",
+          "frozen_interval_value",
+          "frozen_bundle_value",
+          "rebuild_terminal_ceiling",
+          "rebuild_tail_slope_positive",
+          "rebuild_continuous"
+        ],
         "RootPreservation": [
-          "first_positive_barrier",
-          "first_negative_barrier",
-          "last_positive_barrier",
-          "last_negative_barrier",
-          "legal_target_preserved",
-          "bracket_up_reply_preserved",
-          "bracket_down_reply_preserved",
           "reflected_target_legal",
           "first_reflects_to_last",
           "last_reflects_to_first"
@@ -174,8 +179,8 @@
       }
     }
   ],
-  "interpretation": "Every listed theorem has a Lean proof of its stated claim. Finite transitions use explicit allocation tables; probability results use measurable events and integrals; root-preservation results derive continuous barriers by the intermediate value theorem. Physical constructions, transcript measurability, and oracle probability hypotheses remain written arguments. None of the four complete main theorems is fully formalized.",
+  "interpretation": "Every listed Lean theorem proves its stated claim. Finite allocation tables establish an envy obstruction; continuous functions establish root replay and affine updates; measurable-event and integral lemmas establish expectation consequences. Full oracle executions and the finite-batch selection of one fixed hard input remain written arguments. None of the four complete main theorems is fully formalized.",
   "post_review_audit": "review/post_review_audit/",
   "human_review_status": "not_performed; focused review brief prepared, no reviewer contacted",
-  "extremal_root_revision": "review/round9_extremal/"
+  "extremal_root_revision": "review/round10_pure_extremal/"
 }
