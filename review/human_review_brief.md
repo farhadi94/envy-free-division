@@ -10,10 +10,11 @@ do not substitute for that review.
 
 The manuscript is `paper/paper.pdf`; its main source is `paper/paper.tex`.
 The current formalization coverage is recorded in `verification/coverage.json`.
-The three additional modules are `ChoreComposition.lean`,
-`GlobalCompletion.lean`, and `QueryProbability.lean`, under
-`verification/lean/EnvyFreeResearch/`. Their author notes distinguish checked
-statements from their physical and probabilistic prerequisites. Build and
+The supporting modules include `ChoreComposition`, `GlobalCompletion`,
+`QueryProbability`, `RootPreservation`, `TranscriptAdversary`, and
+`CoordinatedFamily`, under `verification/lean/EnvyFreeResearch/`.
+Their scoped receipts distinguish checked statements from the remaining
+continuous, oracle, and probabilistic obligations. Build and
 review receipts identify the exact versions checked.
 
 The priority is the deterministic chore upper bound and the randomized
@@ -91,16 +92,26 @@ nonnegative lower proof uses a fixed endpoint list on its null event of
 infinite-query tapes. Check the common-width choice before sampling the
 perturbed profile and the integration over fixed inputs.
 
-In the mixed proof, a retained Cut root requires a query legal for both the
-old and new profiles, and the truncation guard checks the bracket and row
-before issuing an extra Eval. The protected-history construction must
-preserve these conditions. Its final profile and selector must be fixed
-independently of the realized tape.
+The mixed proof now treats always-leftmost roots and, separately,
+always-rightmost roots. Check the moving-frontier invariant, the weighted
+envy obstruction even when every resolved cell is divided arbitrarily,
+and preservation of roots at the endpoint by the strict cumulative ceiling.
+The construction must preserve previously captured failures, including
+their bundle values, throughout every subsequent refinement.
 
-The mixed theorem concerns bracketed signed queries with arbitrary legal
-roots and no common total-variation ceiling. It does not establish a lower
-bound for prescribed first/last-root oracles, a class with a fixed common
-variation bound, or variation-normalized approximation.
+For randomized protocols, check the measurable finite-coordinate quantiles
+and the positive fraction captured in each batch. Missing-call descriptors
+are analytical notation, not a procedure detecting nontermination. The
+legality-checking simulation permits all query-free computation after its
+last allowed call and uses at most twice the original query budget. Only
+finitely many batches are used; the resulting profile is fixed before the
+actual execution tape is sampled.
+
+No common total-variation ceiling is imposed. The theorem does not establish
+hardness for an oracle offering both extrema on demand, a fixed common
+variation bound, or variation-normalized approximation. It rules out a
+uniform finite expected-query bound, not finite termination on each fixed
+profile.
 
 ## Requested report
 
