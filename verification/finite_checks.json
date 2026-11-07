@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T07:00:43.730341+00:00",
+  "checks": {
+    "chore_ledger": {
+      "status": "passed",
+      "script": "experiments/chores/check_ledger.py",
+      "script_sha256": "c3f55c5879c0b29eeb967e91737ff3adffd5982c886d1ca9db55865c9fcf3349",
+      "result": "experiments/chores/chore_ledger_result.json"
+    },
+    "chore_primitives": {
+      "status": "passed",
+      "script": "experiments/chores/check_primitives.py",
+      "script_sha256": "e51f0ce9f9bd2daeea26c3571924489c590b65e12bd507d470882857f82e1631",
+      "result": "experiments/chores/chore_primitives_result.json"
+    },
+    "mixed": {
+      "status": "passed",
+      "script": "experiments/mixed/independent_checks.py",
+      "script_sha256": "9d31aba58bde5288f25d191bf00c755214222fee2b936eadf6c2043f1cdd8098",
+      "result": "experiments/mixed/mixed_result.json"
+    },
+    "randomized_lower": {
+      "status": "passed",
+      "script": "experiments/lower/check_lower.py",
+      "script_sha256": "95d32156f471c67ec750fa90d1ecb311a923e40c67df7180b7b9c7952f6ce6e5",
+      "result": "experiments/lower/randomized_lower_result.json"
+    },
+    "randomized_upper": {
+      "status": "passed",
+      "script": "experiments/upper/check_finite.py",
+      "script_sha256": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
+      "result": "experiments/upper/randomized_upper_result.json"
+    }
+  },
+  "scope": "Finite exact-arithmetic checks only; not proofs of the continuous theorems."
+}

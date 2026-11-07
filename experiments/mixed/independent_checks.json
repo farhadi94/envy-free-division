@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "Finite exact-rational probes plus floating-point budget smoke tests; no continuous proof certification.",
+  "counts": {
+    "signed_pair_equivalence_cases": 19520,
+    "positive_total_row_cases": 9300,
+    "positive_total_hypothesis_necessary_example": {
+      "row": [
+        -1,
+        -1,
+        -1
+      ],
+      "alpha": "1/2",
+      "relative_EF": true,
+      "usual_cake_comparisons": false
+    },
+    "coarse_allocation_assignments_after_insertions": 8635,
+    "pure_pulse_owner_pattern_cases": 32805,
+    "sampling_and_replay_budget_cases_float_smoke_test": 720
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 2718281828,
+  "core_profiles": 180,
+  "subcore_profiles": {
+    "clipped": 600,
+    "affine": 600
+  },
+  "calls": 1533,
+  "chain_repairs": 1,
+  "record_insertions": 4468,
+  "cuts": 3456
+}

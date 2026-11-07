@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "population_range": [
+    3,
+    100
+  ],
+  "subcore_recurrence_range": [
+    2,
+    30
+  ],
+  "arithmetic": "exact integers",
+  "least_L": "bounded using the manuscript's 14*n*W upper bound"
+}

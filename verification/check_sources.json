@@ -1,0 +1,10 @@
+{
+  "scope": "Exact copies of the finite check programs used during independent review; checks do not replace proofs.",
+  "sha256": {
+    "experiments/chores/check_primitives.py": "e51f0ce9f9bd2daeea26c3571924489c590b65e12bd507d470882857f82e1631",
+    "experiments/chores/check_ledger.py": "c3f55c5879c0b29eeb967e91737ff3adffd5982c886d1ca9db55865c9fcf3349",
+    "experiments/upper/check_finite.py": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
+    "experiments/lower/check_lower.py": "95d32156f471c67ec750fa90d1ecb311a923e40c67df7180b7b9c7952f6ce6e5",
+    "experiments/mixed/independent_checks.py": "9d31aba58bde5288f25d191bf00c755214222fee2b936eadf6c2043f1cdd8098"
+  }
+}

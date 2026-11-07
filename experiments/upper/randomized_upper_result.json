@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "transport": {
+    "cake_EF_rows": 6570,
+    "cake_zero_residue_self_images": 104,
+    "chores_EF_rows": 6570,
+    "chores_zero_residue_self_images": 76
+  },
+  "transfer": {
+    "second_shrink": 2117,
+    "identity_crossing": 5225,
+    "nonidentity_rotation": 658
+  },
+  "parameters": {
+    "original_populations": [
+      3,
+      4,
+      5,
+      10,
+      100,
+      1000
+    ]
+  },
+  "scope_limit": "Finite stress checks only; no continuous or probability theorem verified."
+}
