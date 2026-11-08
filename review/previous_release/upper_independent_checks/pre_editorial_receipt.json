@@ -1,0 +1,151 @@
+{
+  "reviewer": "focused_review_upper",
+  "created_at_utc": "2026-11-07T06:35:47.155284+00:00",
+  "status": "complete",
+  "verdict": "no_blocking_mathematical_issue_identified_in_final_snapshot",
+  "final_snapshot": {
+    "path": "research/submission_focused/review/final_snapshot.json",
+    "sha256": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+    "pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+    "all_audited_paper_input_hashes_match": true
+  },
+  "report": {
+    "path": "research/submission_focused/review/upper_independent.md",
+    "sha256": "eb8ae53661af55672c90824a51733b05cea2014e59c883f01be3bed2ada592ea"
+  },
+  "claim_audited": {
+    "theorem": "thm:general-upper / r6u:general (Theorem F.1)",
+    "domain": "Arbitrary finite nonnegative nonatomic Borel measures; cake and chore orientations; complete finite-union output.",
+    "randomness_and_oracle": "Independent ideal uniform-real draws; exact real arithmetic; legal measurable nonanticipating Cut policies, including arbitrary legal plateau roots.",
+    "guarantee": "Almost-sure exact EF return; E[Q]=O(n^21 log^2(2n)); E[C]=O(n^20 log^2(2n)); all rejected work included."
+  },
+  "precise_audited_scope": [
+    {
+      "path": "research/submission_focused/paper/sections/upper_proof.tex",
+      "scope": "All 1146 lines, all local lemmas, parameter substitutions, caller, frozen guards, zero cases, domination transport, almost-sure termination, expected accounting, and optional failure wrapper."
+    },
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "scope": "Rendered upper-bound theorem/overview and Appendix F, printed pages 37-52; final scope wording checked in rebuilt PDF."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "scope": "Complete file read; independent mathematical audit restricted to thm:general-upper and its explanatory paragraph."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/upper_overview.tex",
+      "scope": "Complete file and agreement with Appendix F."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "scope": "Complete file; query and output conventions used in the upper theorem."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/proof_overviews.tex",
+      "scope": "Complete file read to establish inclusion/context; unrelated results not independently audited."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "scope": "Complete file; checked limitation of Lean claims; no full continuous theorem inferred."
+    },
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "scope": "Complete file; theorem/abstract statement and inclusion structure."
+    },
+    {
+      "path": "research/submission_focused/paper/references.bib",
+      "scope": "Relevant cited primary-source entries."
+    }
+  ],
+  "primary_source_scopes": {
+    "research/library/2026_mackenzie_suzuki_expected.pdf": "Main theorem and Remark 1.1; physical repair Sections 5.1-5.5; comparison with snapshot and adaptive endpoint mechanisms. Not a complete audit of that paper.",
+    "research/library/2026_psomas_elementary.pdf": "Section 3, especially Lemma 5 and the whole-label domination transport and termination argument.",
+    "research/library/1993_shmoys_tardos_generalized_assignment.pdf": "Section 2, sorted slots, fractional matching, Lemma 2.2, and the neighboring-slot load comparison (printed pages 463-465).",
+    "research/library/2021_musco_musco_woodruff_yasuda_sensitivity_v1.pdf": "Lemma 2.6 and its immediate context, printed page 12."
+  },
+  "input_sha256": {
+    "research/submission_focused/paper/paper.pdf": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+    "research/submission_focused/paper/paper.tex": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+    "research/submission_focused/paper/references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+    "research/submission_focused/paper/sections/general_results.tex": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+    "research/submission_focused/paper/sections/upper_overview.tex": "c525c3fc092d3795e25916512ec2a16005637c7b79e85e52b91a33a5f0bc8cd6",
+    "research/submission_focused/paper/sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "research/submission_focused/paper/sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "research/submission_focused/paper/sections/proof_overviews.tex": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+    "research/submission_focused/paper/sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+    "research/library/2026_mackenzie_suzuki_expected.pdf": "1d278f2673ef52bb4744c1cd975f7a8ddb269af01573ca1a97f06e52d254b812",
+    "research/library/2026_psomas_elementary.pdf": "bbbae3df9ef0c7438d0a2be95edbbb7f67a2c4510a8b0c4f86c8b86f37955c76",
+    "research/library/1993_shmoys_tardos_generalized_assignment.pdf": "a7495d8be833d156aa9b4ce9c9c0615a7d333f484f7ced3515275b37880669c1",
+    "research/library/2021_musco_musco_woodruff_yasuda_sensitivity_v1.pdf": "cefd32de9889121c93bd161e9de0900e77c8510642151f94f29e8ff04eaa2394"
+  },
+  "version_closure": {
+    "initial_pdf_sha256": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2",
+    "initial_upper_proof_sha256": "dbe3505636ec4028f0271efd478201a34ba38502026645d6ccd8dfa8113f3252",
+    "final_upper_proof_sha256": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "inspected_delta": "Only Appendix F delta is the phrase specifying active populations k>=3 before r6u:shrink-cost.",
+    "reverse_delta_reproduces_initial_source_hash": true,
+    "all_other_audited_paper_source_hashes_unchanged": true
+  },
+  "findings": [
+    {
+      "id": "U-01",
+      "severity": "minor_scope_clarification",
+      "status": "resolved",
+      "location": "paper/sections/upper_proof.tex:959-961, r6u:shrink-cost",
+      "finding": "The displayed comparison (12k+34) ell <= 32k ell requires k>=2; the actual caller always invokes shrinking at k>=3.",
+      "effect_on_main_theorem": "None; one- and two-agent bases already bypass shrinking.",
+      "resolution": "Explicit k>=3 caller scope added by coordinating author and inspected in actual TeX and final PDF.",
+      "remaining_action": null
+    }
+  ],
+  "blocking_findings": [],
+  "unresolved_issues": [],
+  "independent_checks": {
+    "script": "research/submission_focused/review/upper_independent_checks/check_finite.py",
+    "script_sha256": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
+    "result": "research/submission_focused/review/upper_independent_checks/results.json",
+    "result_sha256": "b4c0047d0acbca860049862beaf7a1e3308f985e7acc9a094ae51667b211ce8a",
+    "command": "python3 research/submission_focused/review/upper_independent_checks/check_finite.py",
+    "exit_code": 0,
+    "results": {
+      "status": "passed",
+      "transport": {
+        "cake_EF_rows": 6570,
+        "cake_zero_residue_self_images": 104,
+        "chores_EF_rows": 6570,
+        "chores_zero_residue_self_images": 76
+      },
+      "transfer": {
+        "second_shrink": 2117,
+        "identity_crossing": 5225,
+        "nonidentity_rotation": 658
+      },
+      "parameters": {
+        "original_populations": [
+          3,
+          4,
+          5,
+          10,
+          100,
+          1000
+        ]
+      },
+      "scope_limit": "Finite stress checks only; no continuous or probability theorem verified."
+    },
+    "finite_only": true,
+    "lean_compiled_or_used_as_correctness_evidence": false
+  },
+  "review_limits": [
+    "Independent mathematical audit, not formal verification of the continuous protocol or its probability theorems.",
+    "Finite stress checks are not substitutes for the manuscript proofs.",
+    "No bit-complexity or executable full-protocol implementation certified.",
+    "Appendices A-E are not dependencies of the audited self-contained Appendix F and were not audited for their separate results.",
+    "Unrelated deterministic and lower-bound theorems were outside scope."
+  ],
+  "independence": {
+    "prior_author_notes_or_review_conclusions_used_as_evidence": false,
+    "subagents_spawned": false,
+    "manuscript_or_other_reviewer_files_edited_by_this_reviewer": false,
+    "own_outputs_only": true
+  }
+}

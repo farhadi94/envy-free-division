@@ -1,0 +1,164 @@
+{
+  "status": "passed_frozen",
+  "source": "/Users/alireza/temp/ef/research/rounds/round10_pure_extremal/lean/TranscriptAdversary.lean",
+  "source_sha256": "a6f46cba0c168260e2863e0caf0fe9ec3d0d9e7ef1438e8adb2cc203d3a6bae3",
+  "theorem_count": 15,
+  "theorems": [
+    "frozen_coordinate_value",
+    "terminal_root_target_positive",
+    "first_reply_preserved",
+    "legal_target_preserved_on_frozen_coordinates",
+    "frozen_interval_value",
+    "frozen_bundle_value",
+    "rebuild_prefix",
+    "rebuild_new_cell",
+    "rebuild_endpoint",
+    "rebuild_new_level_lt_one",
+    "rebuild_terminal_ceiling",
+    "rebuild_tail_slope_positive",
+    "rebuild_continuous",
+    "anchored_prefix_cut_and_choose",
+    "prefix_certificate_from_first_roots"
+  ],
+  "lean": "4.35.0",
+  "mathlib": "v4.35.0",
+  "coverage": {
+    "pure_first_root_replay": [
+      "frozen_coordinate_value",
+      "terminal_root_target_positive",
+      "first_reply_preserved",
+      "legal_target_preserved_on_frozen_coordinates"
+    ],
+    "affine_rebuild": [
+      "rebuild_prefix",
+      "rebuild_new_cell",
+      "rebuild_endpoint",
+      "rebuild_new_level_lt_one",
+      "rebuild_terminal_ceiling",
+      "rebuild_tail_slope_positive",
+      "rebuild_continuous"
+    ],
+    "permanent_output_value_preservation": [
+      "frozen_interval_value",
+      "frozen_bundle_value"
+    ],
+    "independent_adversary_stress_test": [
+      "anchored_prefix_cut_and_choose",
+      "prefix_certificate_from_first_roots"
+    ]
+  },
+  "limitations": "Does not encode adaptive protocols, the measure representation of finite interval unions, or the randomized measurable finite-batch construction.",
+  "clean_compile": true,
+  "exit_code": 0,
+  "axiom_audit": {
+    "EnvyFreeResearch.TranscriptAdversary.frozen_coordinate_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.terminal_root_target_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.first_reply_preserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.legal_target_preserved_on_frozen_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.frozen_interval_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.frozen_bundle_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_new_cell": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_new_level_lt_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_terminal_ceiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_tail_slope_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.rebuild_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.anchored_prefix_cut_and_choose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.TranscriptAdversary.prefix_certificate_from_first_roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "audit_log_sha256": "167e3bdc92fb69ab5d9961a5cc12ee0150688abd4ad44b1a707d31d2fe7dfaaf",
+  "candidate_correspondence": {
+    "source": "/Users/alireza/temp/ef/research/rounds/round10_pure_extremal/paper_candidate/sections/mixed_lower_proof.tex",
+    "sha256": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+    "mappings": {
+      "r6m:advance": [
+        "rebuild_prefix",
+        "rebuild_new_cell",
+        "rebuild_endpoint",
+        "rebuild_terminal_ceiling",
+        "rebuild_tail_slope_positive",
+        "rebuild_continuous"
+      ],
+      "r6m:selector": [
+        "first_reply_preserved",
+        "terminal_root_target_positive",
+        "legal_target_preserved_on_frozen_coordinates"
+      ],
+      "permanent_failure_output_values": [
+        "frozen_interval_value",
+        "frozen_bundle_value"
+      ]
+    },
+    "review": "Actual candidate H inspected: exact replay, affine rebuild, and finite-output stability correspond to these interfaces. Measurable batching remains a written proof, not an end-to-end Lean theorem."
+  },
+  "authored_dependency": {
+    "path": "/Users/alireza/temp/ef/research/submission_focused/verification/lean/EnvyFreeResearch/RootPreservation.lean",
+    "sha256": "56a0fb03138da1e852b3f0fdda8390ea693323290eefb238b24a657de813d723"
+  }
+}

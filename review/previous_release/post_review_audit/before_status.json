@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "phase": "delivered",
+  "started_at_utc": "2026-11-07T06:07:20.776512+00:00",
+  "scope": "Four main results only: deterministic chores; randomized cake/chore upper; randomized cake/chore lower; mixed impossibility including additive and multiplicative approximation after review.",
+  "requirements": [
+    "Comparison table within first four PDF pages",
+    "Concise main exposition and complete necessary proof appendices",
+    "Standard CS/fair-division terminology checked against primary literature",
+    "Helpful original proof schematics only",
+    "All included Lean source proofs and axioms checked; explicit finite formal scope",
+    "Fresh independent proof audit after revised draft and checks; repair findings",
+    "Deliver updated PDF, TeX, Bib and Lean ZIP"
+  ],
+  "removed_from_submission": [
+    "Separated-record deterministic branch",
+    "Partial finite-seed derandomization",
+    "Additional pointwise chore theorem",
+    "Signed-query menus",
+    "Few-unknown signed variants",
+    "Unequal entitlements",
+    "Pareto efficiency",
+    "Incentive results"
+  ],
+  "frozen_round8_zip_sha256": "0aa7a381b3554b347414e6ad5ac7af21b952184c749e8efd1347b1709c40f792",
+  "fresh_independent_review": "Five reviews completed and reconciled; no required repairs remain.",
+  "authors": [
+    "Alireza Farhadi (Profound)",
+    "Mohammadtaghi Hajiaghayi (University of Maryland, College Park)"
+  ],
+  "remaining": [],
+  "current_pdf_pages": 67,
+  "comparison_table_page": 3,
+  "new_user_steering": "Use signed relative envy: other-own <= (1-alpha)*max(abs(own),abs(other)); preserve additive net-one clause separately; prove equivalence on positive-total hard profiles.",
+  "requested_independent_reviewers": [
+    {
+      "role": "Deterministic chore upper bound",
+      "fresh": true
+    },
+    {
+      "role": "Randomized cake/chore upper bounds",
+      "fresh": true
+    },
+    {
+      "role": "Randomized nonnegative lower bound",
+      "fresh": true
+    },
+    {
+      "role": "Mixed relative/additive impossibility",
+      "fresh": true
+    },
+    {
+      "role": "Overall model, citation and formalization consistency",
+      "fresh": true
+    }
+  ],
+  "review_timing": "After initial focused revision and checks; parallel per-result reviews plus overall review.",
+  "updated_at_utc": "2026-11-07T07:07:06.222595+00:00",
+  "review_agents": [
+    "focused_review_chores",
+    "focused_review_upper",
+    "focused_review_lower",
+    "focused_review_mixed",
+    "focused_review_whole"
+  ],
+  "lean_audit": {
+    "status": "passed",
+    "modules": 28,
+    "authored_theorems": 693,
+    "all_theorems": 1097,
+    "scope": "Selected finite supporting statements, not full continuous/probability main theorems."
+  },
+  "opened_current_pdf_in_firefox": true,
+  "current_pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+  "figure_count": 0,
+  "completed_at_utc": "2026-11-07T06:47:55.305342+00:00",
+  "delivered_pdf": "/Users/alireza/temp/ef/research/submission_focused/dist/envy_free_focused.pdf",
+  "artifact_zip": "/Users/alireza/temp/ef/research/submission_focused/dist/envy_free_focused_submission.zip",
+  "artifact_zip_sha256": "d8c8f5b73fa2f68cddc7f2ad92caa175c279139fd976aa8666b72cfd072923c0",
+  "zip_verification": "Updated package passed a fresh extraction check and the verifier contained in the extracted archive.",
+  "formalization_scope": "28 modules; 693 authored finite supporting theorems and 1097 total theorem declarations audited. None of the four complete continuous/oracle main theorems is fully formalized.",
+  "user_presentation_requests_completed": [
+    "Academic introduction and proof overview polished; procedural roadmap removed.",
+    "No AI-methodology mention in introduction; closing disclosure retained.",
+    "Arbitrarily many output cuts at no query cost clarified throughout main exposition.",
+    "Thin horizontal separators added between comparison-table rows.",
+    "Figure removed and unused figure dependencies removed.",
+    "AI disclosure omits parallel-agent details.",
+    "Appendix I table has matching thin row separators.",
+    "Accompanying GitHub repository cited in Appendix I and bibliography.",
+    "AI methodology explicitly identifies Astra."
+  ],
+  "repository_url": "https://github.com/farhadi94/envy-free-division",
+  "repository_commit": "a004bd1a630e55ebcbce8f4bac64c56baef067ec",
+  "repository_transport": "SSH",
+  "repository_publication_status": "pushed_and_fresh_clone_verified",
+  "repository_lean_audit": {
+    "status": "passed",
+    "modules": 28,
+    "authored_theorems": 693,
+    "all_theorem_declarations": 1097,
+    "fresh_project_build": true,
+    "dependency_cache_reused": true
+  }
+}

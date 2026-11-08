@@ -1,0 +1,10 @@
+{
+  "reviewer": "/root/r9_extremal_algorithms",
+  "status": "accept",
+  "source": "research/rounds/round10_pure_extremal/paper_candidate/sections/mixed_lower_proof.tex",
+  "sha256": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+  "report": "research/rounds/round10_pure_extremal/review/constructive_candidate.md",
+  "unresolved_required_findings": [],
+  "scope": "actual replacement LaTeX appendix, including relative approximation, finite-horizon randomized proof, legality wrapper, expected queries, rightmost reflection",
+  "formalization_claim": "internal mathematical review; not full Lean formalization"
+}

@@ -1,0 +1,161 @@
+{
+  "status": "accepted",
+  "reviewer": "chore_audit",
+  "review_type": "fresh internal AI mathematical and formal-scope audit; read-only paper/Lean sources",
+  "created_at_utc": "2026-11-07T07:52:34.377586+00:00",
+  "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "reviewed_snapshot": "review/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "unresolved_required_findings": [],
+  "report": "review/post_review_audit/chores_independent.md",
+  "report_sha256": "dbba373d8037411ee1c5ef60ade64fb415e4cb30d202acdadd4560072f8c5701",
+  "scope": [
+    "Appendix A.2-A.6 actual reachable package states, root/label domains, owner bijections and exact complements",
+    "actual credit/debit identities and reset, closure, ordinary group, atomic and exhausted transitions",
+    "whole-pool synchronous commit, pending proposals, allowed/forbidden/frontier updates, legal schedule and integer pool floors",
+    "final ChoreComposition theorem assumptions, task-sum bridge, immutable/mode guards, own-cost identity and finite committed-round induction",
+    "final proof/source/PDF hash reconciliation and limited PDF text confirmation"
+  ],
+  "findings_resolved": [
+    "Local group output is staged until every old-pool group and leftover closure are complete; no mixed-partition active state.",
+    "State now records actual original domains, prefixes, complements, owner bijections and immutable ancestry.",
+    "Actual delta/lambda sums and exclusive donor-versus-survivor inequalities derive the invariant.",
+    "Schedule quantifiers cover only guarded progress operations; no repeatable standalone resets.",
+    "Finite Lean task sums are connected to the clipped comparison certificate; survivor baseline/equalizer tables and execution modes are preserved.",
+    "Two notation ambiguities corrected: observer-versus-rival indices and t>=1 in the floor step."
+  ],
+  "mathematical_verdict": {
+    "state_and_physical_composition": "ACCEPT",
+    "atomic_and_exhausted_closures": "ACCEPT",
+    "guarded_synchronous_schedule_and_pool_floors": "ACCEPT",
+    "finite_Lean_statement_scope": "ACCEPT",
+    "counterexample_to_revised_protocol_found": false,
+    "general_asymptotic_bounds_changed": false
+  },
+  "independent_compile": {
+    "source": "verification/lean/EnvyFreeResearch/ChoreComposition.lean",
+    "source_sha256": "117e580691cb0b15f0d3c5190cd4602155f4aa3f9a1b092668e25abb637b56f1",
+    "toolchain": "Lean 4.35.0 / mathlib v4.35.0",
+    "command": "/Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake env lean EnvyFreeResearch/ChoreComposition.lean",
+    "working_directory": "verification/lean",
+    "exit_code": 0,
+    "lean_stdout": "",
+    "lean_stderr": "",
+    "uses_existing_import_dependency_artifacts": true,
+    "aggregate_dependency_rebuild_is_separate_coordinator_check": true
+  },
+  "aggregate_verification": {
+    "status": "passed",
+    "module_count": 31,
+    "authored_theorems": 815,
+    "all_theorems": 1373,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "status_path": "verification/lean_status.json",
+    "status_sha256": "f37b31bada58284bc214fb4a6b2f2bce332571b2d077278f8e406b37fe93c7c3"
+  },
+  "version_reconciliation": {
+    "paper_snapshot_items_checked": 23,
+    "lean_snapshot_sources_checked": 31,
+    "all_hashes_match": true,
+    "pdf_pages": 71,
+    "pdf_text_checked": [
+      "Finite package state",
+      "inactive outputs until whole-pool commit",
+      "Preservation at committed boundaries",
+      "No complete main theorem formalized"
+    ],
+    "mathematical_chore_source_sha256": "e8f8b47ab08d2459c588b4e03b4572e9ed91a672dbe5f645e0f1737f0e15776c",
+    "final_layout_chore_source_sha256": "c05e3fc2c4aaf1cad20f000de2ffbd1ba31340623686b1638cfa1dd6b0762c7d",
+    "typography_delta_independently_reversed": "four table row separators and one math font command only"
+  },
+  "formalization_boundary": {
+    "computed_finite_credits_deficits_and_own_costs": true,
+    "conditional_finite_committed_sequence_preservation": true,
+    "root_id_multiset_conservation_and_distinctness": true,
+    "continuous_measure_and_Cut_realization_formalized": false,
+    "SCC_paths_and_common_component_scheduler_formalized_by_new_module": false,
+    "active_pool_survival_and_termination_formalized_by_new_module": false,
+    "complete_main_theorem_formalized": false,
+    "physical_instance_of_local_conditions_supplied_in_paper": true
+  },
+  "human_certification": false,
+  "external_peer_review_claim": false,
+  "artifacts": {
+    "paper/sections/chore_proof.tex": {
+      "sha256": "c05e3fc2c4aaf1cad20f000de2ffbd1ba31340623686b1638cfa1dd6b0762c7d",
+      "bytes": 49657
+    },
+    "paper/sections/core_proof.tex": {
+      "sha256": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "bytes": 25303
+    },
+    "paper/sections/baseline_subcore.tex": {
+      "sha256": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "bytes": 10606
+    },
+    "paper/sections/offset_subcore_proof.tex": {
+      "sha256": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "bytes": 13693
+    },
+    "paper/sections/baseline_completion.tex": {
+      "sha256": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "bytes": 5232
+    },
+    "paper/sections/model.tex": {
+      "sha256": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+      "bytes": 2197
+    },
+    "paper/sections/formal_scope.tex": {
+      "sha256": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a",
+      "bytes": 2732
+    },
+    "paper/sections/general_results.tex": {
+      "sha256": "1aec573fa9119d53d4fe04bc7d4a7224b588bf82da9df9517726023426b48d9a",
+      "bytes": 5306
+    },
+    "verification/lean/EnvyFreeResearch/ChoreComposition.lean": {
+      "sha256": "117e580691cb0b15f0d3c5190cd4602155f4aa3f9a1b092668e25abb637b56f1",
+      "bytes": 40467
+    },
+    "verification/lean/EnvyFreeResearch/R7Chores.lean": {
+      "sha256": "207c22120b5e112fdcb4298c6840de4fecf8745db838492ab545384d4d23815b",
+      "bytes": 21577
+    },
+    "verification/lean/EnvyFreeResearch/R8Chores.lean": {
+      "sha256": "7b8ae721a9304f0eb82c20ebde2f0d4307efd74052aadbd45561dcd9bbd91eba",
+      "bytes": 20917
+    },
+    "verification/lean/lean-toolchain": {
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25
+    },
+    "verification/lean/lake-manifest.json": {
+      "sha256": "e48be196c9ad41a2f9b940b02619118cc034dcd8545cfdddcbf1c7be12b67fdc",
+      "bytes": 3140
+    },
+    "verification/lean_status.json": {
+      "sha256": "f37b31bada58284bc214fb4a6b2f2bce332571b2d077278f8e406b37fe93c7c3",
+      "bytes": 3904
+    },
+    "verification/coverage.json": {
+      "sha256": "65d423a6f71965307665f5ec36a8229acf94c41d36e317246448799741e9778d",
+      "bytes": 6830
+    },
+    "review/final_snapshot.json": {
+      "sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+      "bytes": 6440
+    },
+    "review/post_review_audit/final_snapshot.json": {
+      "sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+      "bytes": 6440
+    },
+    "review/post_review_audit/chores_independent.md": {
+      "sha256": "dbba373d8037411ee1c5ef60ade64fb415e4cb30d202acdadd4560072f8c5701",
+      "bytes": 22146
+    }
+  }
+}

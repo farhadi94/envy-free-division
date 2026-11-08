@@ -1,0 +1,39 @@
+{
+  "status": "presentation_only_changes_after_substantive_reviews",
+  "reviewed_snapshot": "review/pre_table_snapshot.json",
+  "reviewed_pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+  "final_pdf_sha256": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c",
+  "changed_files": [
+    "figures/mixed_pulses.tex",
+    "paper.pdf",
+    "paper.tex",
+    "sections/mixed_overview.tex",
+    "sections/results_table.tex"
+  ],
+  "changes": [
+    "Four thin table rules added, with no table text changes.",
+    "Signed-pulse figure and its two textual references removed at user request.",
+    "Unused TikZ imports removed."
+  ],
+  "unchanged_proof_and_statement_sha256": {
+    "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+    "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+    "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+    "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+    "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+    "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+    "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1"
+  },
+  "all_lean_sources_unchanged": true,
+  "final_figure_count": 0
+}

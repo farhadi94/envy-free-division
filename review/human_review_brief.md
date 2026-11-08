@@ -1,123 +1,151 @@
-# Focused expert review of the two upper bounds
+# External expert review brief
 
-This packet identifies the main proof obligations in *The Query Complexity
-of Envy-Free Division: Cake, Chores, and Mixed Resources*, by Alireza Farhadi
-and Mohammadtaghi Hajiaghayi. No human expert has reviewed this revision as
-part of the present audit. The accompanying internal reviews and Lean checks
-do not substitute for that review.
+This brief concerns *The Query Complexity of Envy-Free Division: Cake,
+Chores, and Mixed Resources*, by Alireza Farhadi and Mohammadtaghi Hajiaghayi.
+The repository contains Lean proofs and supporting materials; the manuscript
+is maintained separately and should be obtained from the authors for a
+paper-to-formalization review. No completed human peer review is claimed.
+Internal source reviews and compiler checks are distinct forms of evidence.
 
-## Materials and scope
+## Materials and review scope
 
-The manuscript is `paper/paper.pdf`; its main source is `paper/paper.tex`.
-The current formalization coverage is recorded in `verification/coverage.json`.
-The supporting modules include `ChoreComposition`, `GlobalCompletion`,
-`QueryProbability`, `RootPreservation`, `TranscriptAdversary`, and
-`CoordinatedFamily`, under `verification/lean/EnvyFreeResearch/`.
-Their scoped receipts distinguish checked statements from the remaining
-continuous, oracle, and probabilistic obligations. Build and
-review receipts identify the exact versions checked.
+Start with [`verification/main_results.json`](../verification/main_results.json)
+and [`verification/coverage.json`](../verification/coverage.json). They identify
+the four public endpoints, hypothesis summaries and conservative formal variants.
+The Lean sources contain the exact statements.
+The public source modules are under
+[`verification/lean/EnvyFreeResearch/Full/`](../verification/lean/EnvyFreeResearch/Full/):
 
-The priority is the deterministic chore upper bound and the randomized
-cake/chore upper bound. The lower bounds also received a focused audit of
-measurability and the order of quantifiers. None of the four full main
-theorems is claimed to be formalized in Lean.
+- `ChoresMain.lean`: `Chores.Main.deterministic_chores`.
+- `UpperGlobalOraclePublic.lean`:
+  `UpperGlobalPhysical.randomized_exact_envy_free_oracle`, with actual-cost
+  measurability and expectation companions in `UpperGlobalOracleCostMeasurable.lean`.
+- `NonnegativeRawMain.lean`: `optimized_attempted` and `quadratic`.
+- `MixedIntervalMain.lean`: `attempted_expectations_unbounded` and
+  `relative_attempted_expectations_unbounded`.
 
-## Deterministic chores: compensation and pool survival
+Declaration names above have prefix `EnvyFreeResearch.Full`.
+[`verification/lean_status.json`](../verification/lean_status.json) and
+[`verification/lean.log`](../verification/lean.log) record build/audit evidence;
+[`review/formalization/`](formalization/) contains scoped internal reviews.
+Their exact source hashes and limitations matter more than the number of
+reports or declarations. The frozen-source cold build and axiom audit passed
+for all 1,188 project modules and 12,374 theorem declarations, using only the
+three standard Lean axioms. The original evidence is retained in
+`review/final_cold_audit/`; this brief is a guide for further expert review.
 
-Read Appendix A, especially the root-local state, masked compensation,
-component-cycle advance, atomic and exhausted exits, and pool-floor induction.
-The underlying Core, SubCore, and completion interfaces are proved in
-Appendices B--E.
+The four complete main results are now represented by public Lean statements.
+An expert review should assess the mathematical statements and their match to
+the intended query model, rather than assume that compiling a differently
+scoped theorem proves the paper. The original 34 supporting modules remain
+byte-identical; [`verification/original34.json`](../verification/original34.json)
+records their hashes. Historical partial-coverage reports concern those older
+snapshots, not the completed development.
 
-Please check the following against the actual physical allocations:
+## Deterministic chores
 
-1. Every reachable committed state satisfies the reserve inequality
-   `L(i,p) >= D(i,j,p) + H(i,j,p)`, the exact own-baseline identity, and
-   disjoint ownership of original material. The ledgers must be computed
-   from actual allocations, including privately reserved complements.
-2. Reset and closure use only available original material. A root that
-   supplied a donor modification is never made live again.
-3. The same compensation credit is sufficient for every rival comparison
-   without being used twice within one comparison. Check the exclusive
-   internal-rival and outside-rival cases, zero clipped utilities, and
-   affine-zero assignments at closed exits.
-4. A component merger reserves disjoint groups and commits the complete
-   pool round together. The common component partition is an invariant
-   of committed states; transient input and output buffers must not be
-   treated as one active pool.
-5. Atomic and exhausted exits satisfy their completion interfaces for
-   the entire physical residue. Large atoms, unused tails, and old
-   private complements are all accounted for.
-6. The integer pool-floor induction applies to every permitted schedule,
-   with the stated prefix bounds on revelations and mergers, including
-   the final closed class.
+Read the paper's pooled compensation, Core/SubCore and completion arguments,
+and trace the actual program behind `deterministic_chores`. Check:
 
-A useful review should identify any failing transition together with a
-reachable predecessor, or explain why the physical construction supplies
-each hypothesis in the finite transition lemmas. An abstract counterexample
-that violates reachability should be distinguished from a protocol defect.
+1. Every reached state preserves physical ownership, the exact own-baseline
+   identity and reserve inequalities for all relevant rival comparisons,
+   including private complements and frozen roots.
+2. Masked/affine compensation uses ordinary interval queries and actual
+   available material. Zero clipped utilities and affine-zero assignments
+   do not invalidate nominal donor accounting or whole-parent guarantees.
+3. Component mergers commit disjoint groups together. The original-root
+   multiset is conserved; removed material is neither lost nor counted twice.
+4. Atomic and exhausted exits control the entire remaining domain, not only
+   an active cohort. Recursive calls use strictly smaller populations, with
+   their specifications discharged by induction in the public theorem.
+5. The pool-floor/rank argument forces termination for every legal response
+   history, including plateau roots, rather than assuming future success.
+6. Ordinary queries and endpoint recording are charged through the actual
+   execution. The formal fixed clearance length and additional recording
+   overhead prove both the explicit envelope and leading exponent; they do
+   not assert literal equality with every sharper paper ledger.
 
-## Randomized upper bounds: primitive composition
+A useful counterexample identifies a reachable predecessor and failing
+transition. Distinguish an abstract invariant counterexample that violates
+reachability from a defect in the actual protocol.
 
-Read Appendix F's interfaces for Repair, Snapshot, and prescribed shrinking,
-then its global-completion argument. Please check:
+## Randomized cake and chores
 
-1. Every invocation meets the primitive's hypotheses with the correct
-   per-agent normalization. Any lower probability bound used after a
-   conditioning step is uniform over the full allowed preceding history.
-2. A rejected trial leaves the committed allocation unchanged. Its oracle
-   queries, endpoint records, and any deterministic preparation are charged.
-3. At most two successful shrinking requests produce the claimed transfer.
-   No later shrink invalidates a previously small loss after a nonidentity
-   transfer.
-4. Whole-bundle transport preserves old domination counts, including
-   frozen agents and zero residue rows. The new witness is a proper target
-   and is not merely the image of a previously counted target.
-5. Progress is measured against the saved committed allocation. Population
-   changes, additive exits, and zero-residue cases preserve the same global
-   bound of `n(n-1)` iterations.
-6. Conditional trial-success bounds justify almost-sure return and the
-   expected query bound. No independence between successive requests,
-   polynomial bit-complexity claim, or uncharged oracle is needed.
+Read the Repair, Snapshot, Shrink and global-completion chain, then the
+ordinary-protocol bridge and cost-measurability companion. Check:
 
-Please trace the numerical/physical compensation interfaces back to their
-proofs, rather than treating the interface table as an additional assumption.
+1. The public `next` function is independent of valuations and the oracle
+   policy, jointly measurable in tape/transcript, and linked to actual
+   ordinary Option-oracle execution, not merely separate finite phase runs.
+2. Each call meets the primitive's hypotheses on its actual physical input.
+   Acceptance bounds hold on the original independent-sample law, after
+   conditioning on the allowed past, including candidate rejection work.
+3. The legal oracle observes the answered query transcript and current
+   query. No stronger access to private random coordinates or future samples
+   is silently assumed or silently granted.
+4. At most two successful shrinking requests yield the transfer. Whole
+   bundles remain physical, frozen-agent guards hold, zero rows are handled,
+   and progress is measured against the saved committed anchor.
+5. Almost-sure return is established separately from expected cost. Query-free
+   stalling cannot be hidden by a finite query expectation.
+6. Costs are the actual supremum over fuel bounds on one tape. They are
+   almost-everywhere measurable under the stated answer-policy hypothesis,
+   and expectations are unconditional; unsuccessful trials are retained.
+7. Charging every normalization step is conservative and preserves the main
+   exponents 21 and 20. The endpoint does not certify every sharper additive
+   constant, optional tail bound or storage claim in the written argument.
 
-## Lower-bound precision and scope
+Exact real computation and ideal random sampling are part of the model;
+polynomial bit complexity is not claimed.
 
-The revised measurable-protocol definition requires joint measurability in
-the input-independent random tape and finite transcript. It does not assume
-the tape space is standard Borel or require decidable nonreturn. The
-nonnegative lower proof uses a fixed endpoint list on its null event of
-infinite-query tapes. Check the common-width choice before sampling the
-perturbed profile and the integration over fixed inputs.
+## Nonnegative lower bound
 
-The mixed proof now treats always-leftmost roots and, separately,
-always-rightmost roots. Check the moving-frontier invariant, the weighted
-envy obstruction even when every resolved cell is divided arbitrarily,
-and preservation of roots at the endpoint by the strict cumulative ceiling.
-The construction must preserve previously captured failures, including
-their bundle values, throughout every subsequent refinement.
+Check that success is required on the entire normalized finite-step density
+class in `[1/2, 3/2]`, while the expected cost is charged on the uniform input.
+The pulse width and hard-input law must be fixed before the execution tape
+is sampled. Replay must retain old failures as well as create new envy on
+previously successful tapes, including finite-query nonreturn and a terminal
+illegal request. The quantitative threshold is `np ≥ 3 − 2/n`; the optimized
+lower bound is `n(np − 1)^2 / (2(n − 1))`.
 
-For randomized protocols, check the measurable finite-coordinate quantiles
-and the positive fraction captured in each batch. Missing-call descriptors
-are analytical notation, not a procedure detecting nontermination. The
-legality-checking simulation permits all query-free computation after its
-last allowed call and uses at most twice the original query budget. Only
-finitely many batches are used; the resulting profile is fixed before the
-actual execution tape is sampled.
+The random tape may be an arbitrary probability space; next actions are
+jointly measurable. Finite interval outputs may have arbitrarily many
+components and unqueried endpoints. Geometric validation must not perform a
+fairness-dependent repair or lose cost. The typed disjoint-record encoding is
+explicit; no universal parser for redundant unions or program bytes is claimed.
+This is an exact-EF quadratic result, not a superquadratic or fixed-positive-
+tolerance lower bound.
 
-No common total-variation ceiling is imposed. The theorem does not establish
-hardness for an oracle offering both extrema on demand, a fixed common
-variation bound, or variation-normalized approximation. It rules out a
-uniform finite expected-query bound, not finite termination on each fixed
-profile.
+## Mixed impossibility
+
+Trace the moving frontier, strict cumulative barrier, physical unsplit-tail
+obstruction and preservation of roots at the endpoint. Check that later
+updates preserve every previously captured failure and that finite-coordinate
+quantiles are measurable without a bound on the number of output endpoints.
+The hard profile is selected by finitely many batches and is fixed before the
+actual tape is drawn; no infinite limiting profile or tape-dependent input
+is allowed. Finite-step densities must remain finite-step through reflection
+and every update.
+
+The public result uses attempted calls, including failures, and separately
+prescribes always-leftmost and always-rightmost roots. The formal rightmost
+proof may use direct mirrored capture rather than the paper's extra-Eval
+simulation. Both must establish the claimed original ordinary-query model.
+
+Every hard input has net totals one, while total variation is unbounded across
+inputs. The signed relative guarantee for `0 < α ≤ 1` is reduced to the usual
+α-cake comparisons on these positive-net profiles; additive approximation
+uses `0 ≤ ε < 1`. The conclusion is no uniform finite expected-query bound,
+not one input with infinite expectation or nonexistence of fair allocations.
+No hardness with a fixed common variation ceiling or an oracle supplying both
+extrema on demand is asserted.
 
 ## Requested report
 
-For each substantive finding, provide the lemma or source location, the
-missing implication or counterexample, and whether a local repair suffices
-or a theorem statement must change. Separate verified proof obligations
-from unexamined ones. Record the manuscript and relevant source hashes.
-This packet requests mathematical assessment, not certification based on
-the number of prior reviews or supporting Lean declarations.
+For each substantive finding, give the source declaration or manuscript
+location, the missing implication or counterexample, and whether a local
+repair suffices or the theorem statement must change. Separate examined
+obligations from unexamined ones and record exact source/manuscript hashes.
+Assess the public hypotheses and conclusions as well as their proofs. Neither
+finite experiments, a compiler pass nor a count of internal reviews substitutes
+for that assessment.

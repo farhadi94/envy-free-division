@@ -1,0 +1,31 @@
+{
+  "completed_at_utc": "2026-11-07T06:34:15.054400+00:00",
+  "status": "passed",
+  "compilation": "Fresh local project sources compiled into reviewer-owned directory; installed mathlib dependencies reused; shared source/cache not modified.",
+  "records": [
+    {
+      "source": "research/submission_focused/verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean",
+      "sha256": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+      "exit_code": 0,
+      "log": "SubmissionMonteCarlo_fresh_lean.log"
+    },
+    {
+      "source": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "exit_code": 0,
+      "log": "R6MixedMonteCarlo_fresh_lean.log"
+    },
+    {
+      "source": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "exit_code": 0,
+      "log": "MixedApproximation_fresh_lean.log"
+    },
+    {
+      "source": "research/submission_focused/review/mixed_independent_checks/audit_finite.lean",
+      "sha256": "993dc1e017a9462f8d167d3f824963bc926cc3a7a0488cdee601e532d4376219",
+      "exit_code": 0,
+      "log": "finite_axiom_audit.log"
+    }
+  ]
+}

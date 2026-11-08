@@ -1,0 +1,10 @@
+{
+  "status": "accept",
+  "reviewer": "/root/r9_extremal_algorithms",
+  "source": "research/rounds/round10_pure_extremal/lean/CoordinatedFamily.lean",
+  "sha256": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451",
+  "authored_theorems": 7,
+  "scope": "independent finite-statement and proof-correspondence review; no duplicate compilation",
+  "report": "research/rounds/round10_pure_extremal/review/constructive_lean_correspondence.md",
+  "unresolved_required_findings": []
+}

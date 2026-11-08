@@ -1,0 +1,16 @@
+{
+  "status": "accepted_no_unresolved_required_findings",
+  "reviewed_at_utc": "2026-11-07T14:25:30.824376+00:00",
+  "reviewed_sources_sha256": {
+    "paper_candidate/sections/mixed_lower_proof.tex": "4349f15e31b5c34c57bacbd273df7eaaf128e63f772078cb181ff42a53793690",
+    "paper_candidate/sections/general_results.tex": "f28accd8f0dfe42aef78f273d942ffa28a4a503d768e67858f7d68d7d50ded2d"
+  },
+  "resolved_findings": [
+    "HF-1: stale pulse orientation corrected and checked",
+    "HF-2: transcript-preservation sentence repaired and checked"
+  ],
+  "unresolved_required_findings": [],
+  "mathematical_obstruction_found": false,
+  "report_sha256": "5bea497c347a9320334200f8a7e594ad5365a6ca44cab3e09891ba792594fd97",
+  "scope": "Independent internal review of actual candidate mixed TeX and main theorem, including changed proof bridges and supporting dependencies; no complete Lean certification or human peer review."
+}

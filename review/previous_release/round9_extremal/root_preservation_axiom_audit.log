@@ -1,0 +1,35 @@
+'EnvyFreeResearch.ExtremalRoots.first_positive_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_negative_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_positive_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_negative_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_negative_preserved_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_positive_preserved_up' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_positive_preserved_down' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_negative_preserved_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.legal_target_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_root_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_zero_eq_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_zero_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_root_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_total_eq_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.bracket_up_reply_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.bracket_down_reply_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.up_reply_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.down_reply_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.ordered_pair_cumulative_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.cumulative_pair_zero_when_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.finite_sum_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.reverse_pulses_nonpositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.reflected_query_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.reflected_bracket_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.reflected_target_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.first_reflects_to_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.last_reflects_to_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.bracket_up_reflects_to_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.ExtremalRoots.bracket_down_reflects_to_up' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,43 @@
+{
+  "status": "passed_clean",
+  "created_at_utc": "2026-11-07T14:51:37.374854+00:00",
+  "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "source_sha256": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451",
+  "log_sha256": "4472c5cdc62ea8a5e47ae16e07a8fca5270e3007470ed23a118cd4aa6be762d2",
+  "build_exit_code": 0,
+  "warnings": 0,
+  "authored_theorem_count": 7,
+  "authored_theorems": [
+    "EnvyFreeResearch.CoordinatedFamily.nonpositive_pair_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.cell_condition_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.cell_transfer_nonpositive",
+    "EnvyFreeResearch.CoordinatedFamily.two_nonowners_envy_sum",
+    "EnvyFreeResearch.CoordinatedFamily.two_nonowners_force_violation",
+    "EnvyFreeResearch.CoordinatedFamily.cell_condition_force_violation"
+  ],
+  "definitions": [
+    "PairCoefficients",
+    "PairCellCondition"
+  ],
+  "axiom_roots_audited": [
+    "EnvyFreeResearch.CoordinatedFamily.nonpositive_pair_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.dominated_pair_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.cell_condition_coefficients",
+    "EnvyFreeResearch.CoordinatedFamily.cell_transfer_nonpositive",
+    "EnvyFreeResearch.CoordinatedFamily.two_nonowners_envy_sum",
+    "EnvyFreeResearch.CoordinatedFamily.two_nonowners_force_violation",
+    "EnvyFreeResearch.CoordinatedFamily.cell_condition_force_violation"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_holes": false,
+  "build_command": "/Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake env lean /Users/alireza/temp/ef/research/rounds/round10_pure_extremal/lean/CoordinatedFamily.lean",
+  "build_workdir": "/Users/alireza/temp/ef/research/submission_focused/verification/lean",
+  "scope": "Full finite two-nonowner allocation obstruction: density cone implies coefficient signs, arbitrary fractional cell transfers cannot reduce the signed-envy sum below2\u03b1, and \u03b5<\u03b1 forces a violated comparison. Does not formalize continuous profile updates, root replay, measurable batch selection, or the full randomized lower bound.",
+  "note_sha256": "2c6b3f7f74c04bf4baf82fa4d92ae1db304739434087d8dc1d90d05d72c4bf01",
+  "finite_capture_fixture_sha256": "00da3778e68fd1e0e06675a9124e81448f035880377c6d18ddec1490ca12fb05"
+}

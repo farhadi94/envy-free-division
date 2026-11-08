@@ -1,0 +1,37 @@
+'EnvyFreeResearch.R6MixedMonteCarlo.coassigned_pulse_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.owned_mass_abs_le_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.pulse_value_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.pulse_comparison_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.separated_pulse_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.all_coassigned_preserves_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.exists_largest_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.comparison_sum_at_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.last_separated_pulse_forces_envy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.any_separated_pulse_forces_envy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.perturbed_correct_implies_base_correct_and_agreement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.no_repair_of_incorrect_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.commonMass_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.commonMass_budget_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.commonMass_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.commonMass_exceeds_strong_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.success_event_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.mass_le_four_event_masses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.R6MixedMonteCarlo.finite_four_event_budget' depends on axioms: [propext, Classical.choice, Quot.sound]

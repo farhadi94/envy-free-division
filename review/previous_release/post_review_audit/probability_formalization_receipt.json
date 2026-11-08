@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-07T07:39:12.280393+00:00",
+  "finished_utc": "2026-11-07T07:39:29.356614+00:00",
+  "source": "verification/lean/EnvyFreeResearch/QueryProbability.lean",
+  "source_sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+  "authored_theorems": 15,
+  "definitions": 1,
+  "import": [
+    "Mathlib"
+  ],
+  "audit_source": "review/post_review_audit/probability_formalization_axioms.lean",
+  "audit_source_sha256": "1b79f0e6a28939922441a7a6a4428959d9e05efd9a7ccc3117f8035c1a09344a",
+  "audit_log": "review/post_review_audit/probability_formalization_axioms.log",
+  "audit_log_sha256": "3eb54cbc945eade317f0c5c36bd6ef06d36b8a89cf5d9612001912690384f0a3",
+  "command": [
+    "/Users/alireza/temp/ef/research/tooling/lean-4.35.0-darwin_aarch64/bin/lake",
+    "env",
+    "lean",
+    "/Users/alireza/temp/ef/research/submission_focused/review/post_review_audit/probability_formalization_axioms.lean"
+  ],
+  "cwd": "/Users/alireza/temp/ef/research/submission_focused/verification/lean",
+  "exit_code": 0,
+  "theorem_axioms": {
+    "EnvyFreeResearch.QueryProbability.success_tail_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.successful_cost_tail_le_lintegral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.expectation_lower_from_success": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.enat_lt_successor_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.enat_expectation_lower_from_success": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.nat_expectation_lower_from_success": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.supremum_expectations_eq_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.measurable_survival": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.enat_eq_tsum_tails": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.lintegral_enat_eq_tsum_survival": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.survival_mass_le_geometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.waiting_time_expectation_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.probability_waiting_time_expectation_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.expected_cost_le_of_attempt_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EnvyFreeResearch.QueryProbability.waiting_time_finite_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "missing": [],
+  "nonstandard_axioms": {},
+  "forbidden_tokens": [],
+  "global_verifier_run": false,
+  "scope": "Actual measures, measurable success/survival events, extended query-count lintegrals, and geometric waiting bounds; no full oracle construction or conditional-kernel formalization."
+}

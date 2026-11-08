@@ -1,0 +1,13 @@
+{
+  "status": "accepted_no_unresolved_required_findings",
+  "reviewed_at_utc": "2026-11-07T14:42:05.602360+00:00",
+  "reviewed_sources_sha256": {
+    "paper/sections/mixed_lower_proof.tex": "4349f15e31b5c34c57bacbd273df7eaaf128e63f772078cb181ff42a53793690",
+    "paper/sections/general_results.tex": "f28accd8f0dfe42aef78f273d942ffa28a4a503d768e67858f7d68d7d50ded2d"
+  },
+  "pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+  "pdf_path": "paper/paper.pdf",
+  "candidate_review_receipt_sha256": "db61a3a1df03d8191ce7676fa34dd505e9d9203e3cbac59ba951eb760f3e0a10",
+  "unresolved_required_findings": [],
+  "scope": "Delivery reconciliation: canonical mixed theorem/proof are byte-identical to independently reviewed round9 candidate; canonical build PDF hash pinned. Distribution copy not covered by this receipt. No new proof review or complete Lean certification is asserted."
+}

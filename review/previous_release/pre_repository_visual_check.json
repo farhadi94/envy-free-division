@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T06:53:06.276897+00:00",
+  "pdf_sha256": "2058f4bf04128fb3afafeb2891010ede4eef2cfbb64d3e7682bffd079e66d994",
+  "pages": 67,
+  "final_rendered_pages_checked": [
+    67
+  ],
+  "previous_visual_review": "review/pre_disclosure_visual_check.json",
+  "scope": "Direct visual inspection of the only affected page after the two requested editorial edits. Only the AI disclosure wording and Appendix I table rules changed.",
+  "observations": [
+    "Three thin table row separators render clearly.",
+    "AI methodology contains no mention of parallel or separate agents.",
+    "Disclosure retains the substantive OpenAI Codex contribution and formalization scope.",
+    "No clipping, overlapping content, or build diagnostics."
+  ],
+  "render_sha256": {
+    "disclosure_page67.png": "633ea6476559346775e29ef2f3d4fb9f150f3cb0cea12a7bf477deab2a809cbd"
+  }
+}

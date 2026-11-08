@@ -1,0 +1,25 @@
+/Users/alireza/temp/ef/research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean:179:5: warning: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/alireza/temp/ef/research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean:222:0: warning: automatically included section variable(s) unused in theorem `EnvyFreeResearch.MixedApproximation.exact_ef_implies_relative`:
+  [DecidableEq Agent]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Agent] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/alireza/temp/ef/research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean:243:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/Users/alireza/temp/ef/research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean:235:0: warning: automatically included section variable(s) unused in theorem `EnvyFreeResearch.MixedApproximation.relative_iff_cake_comparisons`:
+  [DecidableEq Agent]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Agent] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

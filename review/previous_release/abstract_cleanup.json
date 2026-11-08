@@ -1,0 +1,19 @@
+{
+  "status": "editorial_only",
+  "created_at_utc": "2026-11-07T08:13:10.856926+00:00",
+  "reviewed_snapshot": "review/post_review_audit/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "reviewed_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "pdf_sha256": "ca97f80c40937081a1b5ed6b9ec24b9ea1dedbe22cf5b2060b4fd323f83ff3fb",
+  "edits": {
+    "sections/chore_proof.tex": {
+      "before_text": "\\end{equation}\nUnselected snapshots and clearance allocations stay fixed.  A live reset\n",
+      "after_text": "\\end{equation}\nHere $\\sqcup$ denotes disjoint union.\nUnselected snapshots and clearance allocations stay fixed.  A live reset\n"
+    },
+    "paper.tex": {
+      "before_text": "holds on the same normalized domain. The signed domain\nhas no common total-variation ceiling. All allocations are complete,\nand disconnected shares are allowed. The proofs provide the physical\nprotocols and complete query accounting; a Lean artifact verifies\nspecified supporting invariants and probability bounds.\n",
+      "after_text": "holds on the same normalized domain.\n"
+    }
+  },
+  "scope": "Cumulative editorial changes since the preserved independent-review snapshot: explain disjoint-union notation after equation (4), and remove the three closing abstract sentences at the author request. Model assumptions remain in the model and theorem statements; formalization coverage remains in Appendix I. No new proof review or Lean build is claimed."
+}

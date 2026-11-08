@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T14:40:21.951593+00:00",
+  "pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+  "pages": 72,
+  "comparison_table_page": 3,
+  "inspected_pages": [
+    1,
+    3,
+    5,
+    63,
+    72
+  ],
+  "scope": "Rendered visual inspection of abstract, comparison table, revised mixed theorem, root-preservation proof, and final formal-scope table. Mathematical acceptance is recorded separately.",
+  "findings": [
+    "The comparison table remains on page 3 with readable row separators.",
+    "The fixed bracket-sign policies and the open always-leftmost/rightmost boundary are stated in the theorem discussion.",
+    "The root-preservation lemma and final formal-scope table have no clipping or visible layout defect.",
+    "The article has 72 pages and no build diagnostics."
+  ]
+}

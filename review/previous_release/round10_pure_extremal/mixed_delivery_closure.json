@@ -1,0 +1,36 @@
+{
+  "status": "accept",
+  "reviewer": "/root/r9_extremal_algorithms",
+  "scope": "Final scoped delivery reconciliation of mixed Theorem 2.4 and Appendix H; no new research or whole-paper review",
+  "pdf_path": "research/submission_focused/paper/paper.pdf",
+  "pdf_sha256": "18391fbfee679da13264a31441dfc167cb69bfa0fa9a6d2a385b270d7d9f76c6",
+  "pdf_pages": 66,
+  "reviewed_sources_sha256": {
+    "paper_candidate/sections/general_results.tex": "cf6772ce8e8b944300a46ca41f754177bd4c284499aad3d708564701aa58cbfc",
+    "paper_candidate/sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43"
+  },
+  "canonical_sources_sha256": {
+    "paper/sections/general_results.tex": "cf6772ce8e8b944300a46ca41f754177bd4c284499aad3d708564701aa58cbfc",
+    "paper/sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43"
+  },
+  "candidate_and_canonical_sources_byte_identical": true,
+  "frozen_appendix_review": {
+    "path": "research/rounds/round10_pure_extremal/review/constructive_candidate.json",
+    "reviewed_source_sha256": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+    "status": "accept"
+  },
+  "mixed_statement_checked": true,
+  "pdf_text_confirmation": [
+    "Theorem 2.4 mixed conclusion",
+    "Appendix H relative-approximation lemma",
+    "Finite-horizon hardness for leftmost roots",
+    "Always-leftmost and always-rightmost qualifications"
+  ],
+  "global_34_module_audit": {
+    "status": "outside_this_closure",
+    "axiom_audit_pass_claimed": false
+  },
+  "unresolved_required_findings": [],
+  "report": "research/submission_focused/review/round10_pure_extremal/mixed_delivery_closure.md",
+  "frozen_reviews_modified": false
+}

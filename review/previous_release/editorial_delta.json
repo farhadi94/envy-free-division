@@ -1,0 +1,35 @@
+{
+  "status": "editorial_delta_for_independent_review",
+  "changes": {
+    "paper.tex": {
+      "before": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+      "after": "539c3d4faf409fe5895275cd32f9557ca4e673c8fc801a90e2693fa4bd52956e"
+    },
+    "sections/general_results.tex": {
+      "before": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "after": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8"
+    },
+    "sections/introduction.tex": {
+      "before": "4b9601c45492c002d49e18856fa60641bb9deab58d2b61ace37436d4c60fdb41",
+      "after": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802"
+    },
+    "sections/proof_overviews.tex": {
+      "before": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+      "after": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de"
+    },
+    "sections/related_work.tex": {
+      "before": "518d79c0d77c5bca4538f7a300d408920103eab2249758a24a801fecdb2c97f5",
+      "after": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e"
+    },
+    "sections/upper_overview.tex": {
+      "before": "c525c3fc092d3795e25916512ec2a16005637c7b79e85e52b91a33a5f0bc8cd6",
+      "after": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781"
+    },
+    "paper.pdf": {
+      "before": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+      "after": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90"
+    }
+  },
+  "proof_appendices_unchanged": true,
+  "lean_unchanged": true
+}

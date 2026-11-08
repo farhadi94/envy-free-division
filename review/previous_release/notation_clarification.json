@@ -1,0 +1,15 @@
+{
+  "status": "editorial_only",
+  "created_at_utc": "2026-11-07T08:03:50.035008+00:00",
+  "reviewed_snapshot": "review/post_review_audit/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "reviewed_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "pdf_sha256": "7261a247db909be53848ce4f716170a5e183c776c9b7b074ad97c20eb4f878f4",
+  "edits": {
+    "sections/chore_proof.tex": {
+      "before_text": "\\end{equation}\nUnselected snapshots and clearance allocations stay fixed.  A live reset\n",
+      "after_text": "\\end{equation}\nHere $\\sqcup$ denotes disjoint union.\nUnselected snapshots and clearance allocations stay fixed.  A live reset\n"
+    }
+  },
+  "scope": "Added one sentence explaining disjoint-union notation after equation (4). The previous independent reviews remain pinned to their reviewed version. No new independent mathematical review or Lean build is claimed."
+}

@@ -1,0 +1,35 @@
+'EnvyFreeResearch.QueryProbability.success_tail_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.QueryProbability.successful_cost_tail_le_lintegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.expectation_lower_from_success' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.enat_lt_successor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.QueryProbability.enat_expectation_lower_from_success' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.nat_expectation_lower_from_success' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.supremum_expectations_eq_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.measurable_survival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.QueryProbability.enat_eq_tsum_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.QueryProbability.lintegral_enat_eq_tsum_survival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.survival_mass_le_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.waiting_time_expectation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.probability_waiting_time_expectation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.expected_cost_le_of_attempt_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.QueryProbability.waiting_time_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]

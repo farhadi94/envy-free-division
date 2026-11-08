@@ -1,0 +1,11 @@
+{
+  "reviewer": "/root/r9_extremal_algorithms",
+  "scope": "independent mathematical audit of pure-leftmost moving-frontier lower bound",
+  "status": "accept",
+  "source": "research/rounds/round10_pure_extremal/notes/coordinated_family.md",
+  "sha256": "2c6b3f7f74c04bf4baf82fa4d92ae1db304739434087d8dc1d90d05d72c4bf01",
+  "report": "research/rounds/round10_pure_extremal/review/constructive_escape_hard_family.md",
+  "unresolved_required_findings": [],
+  "formalization_scope": "written mathematical proof audited; full randomized protocol theorem not mechanized here",
+  "reviewed_revision": "Explicitly restricts captured query-coordinate invariant to the first q calls/attempts and treats malformed outputs as terminal failures."
+}

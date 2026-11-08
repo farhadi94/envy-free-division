@@ -1,0 +1,46 @@
+[
+  {
+    "module": "UpperGlobalProtocolSnapshotPhysical",
+    "source": "EnvyFreeResearch/Full/UpperGlobalProtocolSnapshotPhysical.lean",
+    "sha256": "d0fa8a8b5db64a5db16fedded259da2db938707dc3e768e078f43315423e87a9",
+    "theorems": [
+      "snapshot_extension_activeEF",
+      "snapshot_extension_separate",
+      "snapshotPending_physical",
+      "snapshotPending_snapshot_activeEF",
+      "snapshotPending_shrunk_activeEF",
+      "snapshot_terminal"
+    ]
+  },
+  {
+    "module": "UpperGlobalProtocolSnapshotPhysicalMargin",
+    "source": "EnvyFreeResearch/Full/UpperGlobalProtocolSnapshotPhysicalMargin.lean",
+    "sha256": "3b989b9d5d843b8f6a2032194d98ef3e2c84fcbfdb2612cc0389deabeaf1f32d",
+    "theorems": [
+      "snapshotPending_localGap",
+      "snapshotPending_localBuffer",
+      "snapshotPending_positive",
+      "snapshotPending_positive_active",
+      "snapshotPending_selected"
+    ]
+  },
+  {
+    "module": "UpperGlobalProtocolSnapshotPhysicalReady",
+    "source": "EnvyFreeResearch/Full/UpperGlobalProtocolSnapshotPhysicalReady.lean",
+    "sha256": "7a2e324db6737c44b949011bcdda7eaf35c23e3b45b347c4ec691a2446d2219a",
+    "theorems": [
+      "snapshotPending_local_positive",
+      "snapshotPending_local_nonnegative"
+    ]
+  },
+  {
+    "module": "UpperGlobalProtocolSnapshotPhysicalValidity",
+    "source": "EnvyFreeResearch/Full/UpperGlobalProtocolSnapshotPhysicalValidity.lean",
+    "sha256": "ebbb5ac9c1a7a890c3a2f3a002a8bde6b37e6573d1a13f4b275bf2e2cc1694bc",
+    "theorems": [
+      "refresh_snapshot_valid",
+      "finishSnapshot_accepted_valid",
+      "finishSnapshot_valid"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T07:03:19.244411+00:00",
+  "pdf_sha256": "4bae918ec557b24d3a8c701c493a0e0afcf02c7f67069ef827cae62b270ba3f5",
+  "pages": 67,
+  "final_rendered_pages_checked": [
+    9,
+    66,
+    67
+  ],
+  "previous_visual_review": "review/pre_repository_visual_check.json",
+  "scope": "Repository citation and artifact appendix visually inspected; mathematical source files are unchanged.",
+  "observations": [
+    "Repository bibliography entry [FH26] has the correct authors, title, and GitHub URL.",
+    "Appendix I cites [FH26] and retains its explicit finite-formalization scope.",
+    "Table separators and final disclosure render cleanly.",
+    "Build diagnostics are empty."
+  ],
+  "render_sha256": {
+    "page9.png": "e3fb4d72181862f8e4911a0ec64336acc4e195cd830f26ac9ec9da82a17b20f0",
+    "page66.png": "f2e94cedfdb3e2e1ef7e6cc7bfae55cc650d719f50e03a6ba0f60f8dd824784d",
+    "page67.png": "31df94027ea4e17bc783f4c85922c3d8d621a46516980fab0ddb6a55a2b2996d",
+    "page10.png": "7f39589c539f490266c354d2c2a6fd42d518f0aad137540d64e340236b8a1fb0"
+  }
+}

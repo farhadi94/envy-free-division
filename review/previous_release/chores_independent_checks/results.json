@@ -1,0 +1,29 @@
+{
+  "primitives": {
+    "status": "passed",
+    "seed": 2718281828,
+    "core_profiles": 180,
+    "subcore_profiles": {
+      "clipped": 600,
+      "affine": 600
+    },
+    "calls": 1533,
+    "chain_repairs": 1,
+    "record_insertions": 4468,
+    "cuts": 3456,
+    "scope": "Independent rational finite-record simulator; not a full pooled protocol simulation."
+  },
+  "ledger": {
+    "status": "passed",
+    "population_range": [
+      3,
+      100
+    ],
+    "subcore_recurrence_range": [
+      2,
+      30
+    ],
+    "arithmetic": "exact integers",
+    "least_L": "bounded using 14*n*W"
+  }
+}

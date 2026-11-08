@@ -1,0 +1,18 @@
+{
+  "status": "editorial_only",
+  "base_snapshot": "review/pre_disclosure_snapshot.json",
+  "base_pdf_sha256": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c",
+  "pdf_sha256": "2058f4bf04128fb3afafeb2891010ede4eef2cfbb64d3e7682bffd079e66d994",
+  "changes": {
+    "sections/ai_methodology.tex": {
+      "before_text": "\\section*{AI methodology}\n\\phantomsection\\label{sec:ai-methodology}\nOpenAI Codex with parallel agents materially supported literature discovery\nand comparison, conjecture and proof development, checks by separate agents,\nexact experiments, Lean formalization, and drafting throughout this article. The artifact preserves sources and review reports. Lean\nchecks the stated finite lemmas; complete continuous oracle protocols and\nprobability arguments are not claimed to be fully formalized.\n",
+      "after_text": "\\section*{AI methodology}\n\\phantomsection\\label{sec:ai-methodology}\nOpenAI Codex materially supported literature discovery and comparison,\nconjecture and proof development, proof checks, exact experiments, Lean\nformalization, and drafting throughout this article. The artifact preserves\nsources and review reports. Lean\nchecks the stated finite lemmas; complete continuous oracle protocols and\nprobability arguments are not claimed to be fully formalized.\n"
+    },
+    "sections/formal_scope.tex": {
+      "change": "Added three \\midrule[.25pt] lines; reversing exactly reproduces the preceding file.",
+      "before_sha256": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "after_sha256": "17f4a7864da1c3a5638a5006f323352175c8afe64c0c0272af45b7f630589471"
+    }
+  },
+  "all_other_paper_and_lean_sources_unchanged": true
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/focused_review_lower",
+  "completed_at_utc": "2026-11-07T07:53:01.902716+00:00",
+  "status": "accepted_scoped_final_snapshot",
+  "verdict": "All 15 supporting probability theorems were independently read and compiled. No blocking defect, circular expectation premise, hidden termination premise, or mismatch with the stated F/H uses was found.",
+  "findings": [],
+  "unresolved_findings": 0,
+  "scope": {
+    "module": "EnvyFreeResearch/QueryProbability.lean",
+    "module_lines_read": "1-248, entire module",
+    "theorem_count": 15,
+    "theorems": [
+      "success_tail_mass",
+      "successful_cost_tail_le_lintegral",
+      "expectation_lower_from_success",
+      "enat_lt_successor_iff",
+      "enat_expectation_lower_from_success",
+      "nat_expectation_lower_from_success",
+      "supremum_expectations_eq_top",
+      "measurable_survival",
+      "enat_eq_tsum_tails",
+      "lintegral_enat_eq_tsum_survival",
+      "survival_mass_le_geometric",
+      "waiting_time_expectation_le",
+      "probability_waiting_time_expectation_le",
+      "expected_cost_le_of_attempt_budget",
+      "waiting_time_finite_ae"
+    ],
+    "checked_topics": [
+      "measurable success tails and actual nonnegative integrals",
+      "unconditional costs including incorrect returns and nonreturn",
+      "extended-natural infinite counts and q+1 conversion",
+      "pointwise and integrated tail-sum formulas",
+      "survival-mass contraction without independence",
+      "derived finite integral and almost-sure finite waiting",
+      "pointwise per-attempt cost budget integrated to expected-cost bound",
+      "unbounded supremum over cutoff-dependent fixed inputs"
+    ],
+    "manuscript_comparison": [
+      {
+        "source": "sections/upper_proof.tex",
+        "scope": "Repair interface 620-674; Shrink interface/accounting 979-1028; completion statement 1031-1068 and probability/cost/termination argument 1249-1305. Only mapping to the probability module audited."
+      },
+      {
+        "source": "sections/mixed_lower_proof.tex",
+        "scope": "Expected-query conclusion 712-754, including guarded simulation event and fixed-input supremum. Full hard-input construction outside this audit."
+      },
+      {
+        "source": "sections/nonnegative_lower_proof.tex",
+        "scope": "Formalization boundary: new module does not claim continuous Appendix G replay, common-width, or fixed-input comparison."
+      },
+      {
+        "source": "sections/formal_scope.tex",
+        "scope": "Probability-specific coverage claims and exclusions; unrelated composition modules not independently checked here."
+      }
+    ],
+    "excluded": [
+      "global artifact verifier",
+      "complete main-theorem formalization",
+      "caller conditional-acceptance construction",
+      "finite-trial physical termination proof beyond reading its stated role",
+      "mixed finite-horizon hard-input construction"
+    ]
+  },
+  "independent_compilation": {
+    "performed": true,
+    "method": "Read actual module source; append #print axioms for every theorem; submit through lake env lean --stdin without modifying module or manuscript.",
+    "working_directory": "research/submission_focused/verification/lean",
+    "lake_binary": "research/tooling/lean-4.35.0-darwin_aarch64/bin/lake",
+    "lean_binary": "research/tooling/lean-4.35.0-darwin_aarch64/bin/lean",
+    "lean_version": "4.35.0",
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "platform": "arm64-apple-darwin24.6.0",
+    "exit_code": 0,
+    "warnings": 0,
+    "errors": 0,
+    "all_theorems_axiom_checked": true,
+    "axioms_by_theorem": {
+      "success_tail_mass": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "successful_cost_tail_le_lintegral": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expectation_lower_from_success": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "enat_lt_successor_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "enat_expectation_lower_from_success": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "nat_expectation_lower_from_success": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supremum_expectations_eq_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "measurable_survival": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "enat_eq_tsum_tails": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "lintegral_enat_eq_tsum_survival": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "survival_mass_le_geometric": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "waiting_time_expectation_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "probability_waiting_time_expectation_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expected_cost_le_of_attempt_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "waiting_time_finite_ae": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "project_axioms_or_placeholders_found": false,
+    "full_artifact_verifier_run": false,
+    "mathlib_manifest_version": "v4.35.0",
+    "mathlib_manifest_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+  },
+  "scope_observations_not_defects": [
+    {
+      "id": "P-SCOPE-01",
+      "observation": "The survival recurrence is an explicit probabilistic premise; F supplies its derivation from conditional acceptance by iterated conditioning.",
+      "repair_required": false
+    },
+    {
+      "id": "P-SCOPE-02",
+      "observation": "Finite T implies actual finite return when T is the accepted-attempt index with infinity if no acceptance, and finite trials terminate. F supplies finite-trial termination separately.",
+      "repair_required": false
+    },
+    {
+      "id": "P-SCOPE-03",
+      "observation": "The cost theorem is valid as a lower-lintegral inequality for arbitrary C; its expected-query-cost interpretation uses measurable actual execution cost supplied by the caller.",
+      "repair_required": false
+    },
+    {
+      "id": "P-SCOPE-04",
+      "observation": "The hard-input/selector construction and successful guarded-event equivalence are external. The supremum theorem asserts no single input of infinite expectation.",
+      "repair_required": false
+    }
+  ],
+  "edge_cases_checked_analytically": [
+    "positive-mass infinite counts",
+    "finite counts with infinite expectation",
+    "zero attempts",
+    "r>=1 gives only an infinite bound",
+    "r<1 plus finite measure derives null infinite waiting",
+    "0 times infinity conventions",
+    "finite-query nonreturn retains actual finite Q outside S",
+    "hard input may depend on cutoff"
+  ],
+  "source_hashes": [
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/QueryProbability.lean",
+      "sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+      "verified_at_closure": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a",
+      "verified_at_closure": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/upper_proof.tex",
+      "sha256": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+      "verified_at_closure": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+      "sha256": "ec00572e5a7a96d4ee1fb95907f6b43e98b6ffbb3e81c20e6ce2aae70f4dd6f1",
+      "verified_at_closure": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/nonnegative_lower_proof.tex",
+      "sha256": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e",
+      "verified_at_closure": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "verified_at_closure": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lakefile.lean",
+      "sha256": "70ef281da1b10ed52b6a9933f0217b1f7e069f068b2c011bae9adcb5d9d562c8",
+      "verified_at_closure": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lake-manifest.json",
+      "sha256": "e48be196c9ad41a2f9b940b02619118cc034dcd8545cfdddcbf1c7be12b67fdc",
+      "verified_at_closure": true,
+      "current_hash_verified_at_final_closure": true
+    }
+  ],
+  "source_reconciliation": {
+    "formal_scope_initial_sha256": "682328938e917d53458a67388201ffa8e6ab4d3a65b0ab3976132553cc6ec496",
+    "formal_scope_final_sha256": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a",
+    "change_checked": "Closing generic coverage-record paragraph removed; probability-specific coverage statements and exclusions unchanged."
+  },
+  "independence": {
+    "author_compilation_claim_used_as_substitute": false,
+    "prior_acceptance_used_as_evidence": false,
+    "module_modified": false,
+    "manuscript_modified": false,
+    "historical_receipts_modified": false,
+    "agents_spawned": false
+  },
+  "report": {
+    "path": "research/submission_focused/review/post_review_audit/probability_independent.md",
+    "sha256": "97d9dd5672b907f74f1b47c9603523fcdf74208fcda3ed5c9fa199eb36292033"
+  },
+  "proof_audit_status": "passed_scoped_probability_audit",
+  "proof_audit_completed_at_utc": "2026-11-07T07:45:59.143478+00:00",
+  "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "reviewed_snapshot": "review/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "unresolved_required_findings": 0,
+  "scoped_final_verdict": "Accepted for all 15 QueryProbability supporting theorems and their stated F/H application interfaces; no unresolved required findings.",
+  "closure_level": "Exact final PDF/snapshot reconciled for the stated audit scope; no repeat proof or compilation required because all audited sources are unchanged.",
+  "final_closure": {
+    "completed_at_utc": "2026-11-07T07:53:01.902716+00:00",
+    "snapshot_copy_byte_identical": true,
+    "snapshot_copy": "review/post_review_audit/final_snapshot.json",
+    "pdf_pages": 71,
+    "audited_source_hashes_unchanged": true,
+    "model_and_appendix_g_hashes_match_snapshot": true,
+    "query_probability_hash_matches_snapshot": true,
+    "pdf_text_checks": {
+      "joint_measurability_model_page": 3,
+      "appendix_g1_protocol_invocation_page": 56,
+      "fixed_null_set_extension_and_almost_sure_replay_page": 59,
+      "probability_formal_scope_and_exclusions_page": 71
+    },
+    "proofs_or_compilations_repeated": false,
+    "global_audit_context": {
+      "reported_status": "passed",
+      "modules": 31,
+      "authored_theorems": 815,
+      "total_theorems": 1373,
+      "independently_rerun_by_this_reviewer": false,
+      "provenance": "parent final-closure report; counts match the pinned snapshot"
+    },
+    "main_theorems_fully_formalized_claimed": 0
+  }
+}

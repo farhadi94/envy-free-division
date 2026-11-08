@@ -1,0 +1,12 @@
+[
+  {
+    "module": "UpperGlobalProtocolSnapshotPhysicalActual",
+    "sha256": "fbd36845e50075f97651a481d4543aeb94718875908e929352ae7d864d3256f5",
+    "source": "EnvyFreeResearch/Full/UpperGlobalProtocolSnapshotPhysicalActual.lean"
+  },
+  {
+    "module": "UpperGlobalNormalizePotential",
+    "sha256": "fede6268ca8e521b4f58a5626175e1cfe53c1d4d32429fbaf830c2bcba6b0ac8",
+    "source": "EnvyFreeResearch/Full/UpperGlobalNormalizePotential.lean"
+  }
+]

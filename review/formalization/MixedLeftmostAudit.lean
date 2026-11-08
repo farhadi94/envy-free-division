@@ -1,0 +1,9 @@
+import EnvyFreeResearch.Full.MixedCorrespondence
+
+#print axioms EnvyFreeResearch.Full.MixedLeftmostMain.finite_horizon_hard_input_of_runs
+#print axioms EnvyFreeResearch.Full.MixedLeftmostMain.expected_queries_unbounded_of_runs
+#print axioms EnvyFreeResearch.Full.MixedCorrespondence.value_Ioc
+#print axioms EnvyFreeResearch.Full.MixedCorrespondence.value_Icc
+#print axioms EnvyFreeResearch.Full.MixedCorrespondence.sum_value_share
+#print axioms EnvyFreeResearch.Full.MixedCorrespondence.relative_iff_approximate
+#print axioms EnvyFreeResearch.Full.MixedCorrespondence.relative_expected_queries_unbounded

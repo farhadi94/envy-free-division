@@ -1,0 +1,42 @@
+{
+  "status": "accepted_final_editorial_reconciliation",
+  "reviewed_at_utc": "2026-11-07T14:56:03.269239+00:00",
+  "reviewer": "r9_extremal_outside_box",
+  "scope": "Final2-file editorial reconciliation; all6other files and2supporting Lean sources unchanged from the complete prior scoped proof/source review.",
+  "candidate_source_sha256": {
+    "paper.tex": "5fea7cd8956f9d6d01e3b18722214057de1f90364ab784bff88b5202b9cec590",
+    "sections/introduction.tex": "9819b6cef6459c045e32a7bbec61965e67815c06baedf28a7785d87cd1a403fa",
+    "sections/results_table.tex": "81584644dab5388e8284571744ca2ae8abb2ee9e5385ac40af0a8ca362b6adae",
+    "sections/general_results.tex": "cf6772ce8e8b944300a46ca41f754177bd4c284499aad3d708564701aa58cbfc",
+    "sections/mixed_overview.tex": "3c354a9219e6b922d06b6ce59bf2ef34c00d95ba2a827bfb18a84668b639bde3",
+    "sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+    "sections/formal_scope.tex": "4e28ad65559c00e53331804377d4d044f711d46d208cb54c86f6dbcd08ea1050",
+    "sections/related_work.tex": "f005fb958c3decb84ab1b4d93bde619ce4f9eed285805070af270f7bbf8c34e2"
+  },
+  "supporting_lean_source_sha256": {
+    "lean/TranscriptAdversary.lean": "a6f46cba0c168260e2863e0caf0fe9ec3d0d9e7ef1438e8adb2cc203d3a6bae3",
+    "lean/CoordinatedFamily.lean": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451"
+  },
+  "supporting_lean_audit_receipt_sha256": {
+    "experiments/transcript_adversary_lean_receipt.json": "55e763d42b8bc642b43838bb835f06d57e0e6e9e97bc81d05a5186af0848589e",
+    "experiments/coordinated_family_author_receipt.json": "72558eeea9d745b1fbb2a93e9908fdb5ddea0e1e98a2c39c77e974613d381b58"
+  },
+  "primary_literature_checked_sha256": {
+    "research/library/2020_okano_manabe_discrete_mixed.pdf": "9266479faa1363778973c716df9e6ad3e60b71130574f15907e068ad6b044777"
+  },
+  "unresolved_required_findings": [],
+  "optional_editorial_findings": [],
+  "candidate_pdf_inspected": false,
+  "candidate_lean_rebuilt_by_this_reviewer": false,
+  "author_compile_and_axiom_receipts_reconciled": true,
+  "always_leftmost_and_rightmost_separately": true,
+  "queryable_both_extrema_lower_bound_claimed": false,
+  "four_main_results_preserved": true,
+  "full_randomized_construction_formalized": false,
+  "whole_candidate_review_sha256": "d402a240af1e038b9e3e8f50938d86c64cd9d2aa8863dc1e0f95f50e571e72cd",
+  "preceding_frozen_review_sha256": "f4df933d643612ffd7aa0b522666e8dd5f290104ced893d857d42408b3523f6b",
+  "editorial_source_changes": [
+    "sections/results_table.tex",
+    "sections/formal_scope.tex"
+  ]
+}

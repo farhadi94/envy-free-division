@@ -1,0 +1,30 @@
+{
+  "recorded_at_utc": "2026-11-08T03:00:02.428092+00:00",
+  "scope": "Final strict-protocol addendum source snapshot, including concrete actual-cost AEMeasurable companion. Read-only semantic review; no independent builds. Audit sources hashed; existing scoped cost audit log read. Root owns cold closure rebuild.",
+  "changed_from_first_strict_snapshot": [],
+  "sha256": {
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCost.lean": "f1c1400578492aa7d314f4a9081bcc47c9c0e20255496e71d261e03400caf019",
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCostAE.lean": "3fd053783fc0487d94be6b0954a048fc875266930e81021a1d1df3841464a98a",
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCostMeasurable.lean": "a11ef376345202ab4dddbd0d4d9a0c8e4152fc525a03c34c75117b9e2c50b3a3",
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCostReplay.lean": "9173d4e7477cdc3464c083db9a670da190345f904d287a5a00ce82412a822d0d",
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCostSup.lean": "9abbf3460dd37e60d50dd87e5919ea89d320b8a334b02496e3ceb39a5add4467",
+    "verification/lean/EnvyFreeResearch/Full/AdaptiveOracleReturnedCostTotalized.lean": "ce63de4df0c76136a0f6723cc05bd99f78cbd73ad397cd67a8262c0d57b1f774",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleCostAudit.lean": "1a04f9276ad71f65d1e4b00cf32e491fd48820ff3fdf0c83720f570a5e4d05d6",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleCostMeasurable.lean": "fb23c935364c2eaa24987e40a9f23419cab45e19c36d96edc717a15c7f6bff44",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleExecution.lean": "318c4a9129379b6a680698e5f2e05373ae33e23e89c7da67ba2b9a49c91b45e3",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleExecutionCounts.lean": "51911ffc380a33b12dafc371c13f14c9d0809631ff575b1805af9a5f7a18c3f4",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleExecutionUnit.lean": "1e6c24617bbb1019981394115726294396932278fe62427a515a82d1d1aaa588",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleNext.lean": "f999ee201bd09fedd99b381c218ba41efc4534a2884d3742643b894934725ad4",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleNextAudit.lean": "291dfb399fad100b704d4e19b8d85cbc9ea18ff27a772de49e832f9e2b72da18",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleNextMeasurable.lean": "e660e7ef4f1800cab5e0889b9be6512dc7a4d324112a2fc25bae9f0a2b689d5b",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOraclePublic.lean": "b35f14c1e0aa9ec72b55010bb6ea406f316885165ea76c378f87173866b8cb99",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOraclePublicAudit.lean": "57cfe58c26601abead47355d5f8b73bc0f112c85e8f0fb5062a25d52b15376dd",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleStability.lean": "b3b7896feb4bfd349f23f180d20c067c6095e2eb33bdd0db8d526f969c4a7127",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleStabilityAudit.lean": "455250ae90613b348f7541d8eb4252c14f98eba6d6849180a1f7b5a08ff0ca91",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleStabilityBasic.lean": "67ecff2b6420e3868708cd9b03c714a4077d7478de196fd612def7d17839b6f0",
+    "verification/lean/EnvyFreeResearch/Full/UpperGlobalOracleStabilityNext.lean": "8917d795c2c9c18336d9fd099e2132361db112ff5d74b9ad5d97b812a71d5a00"
+  },
+  "evidence_log_sha256": {
+    "formalization/logs/upper_global_oracle_cost_audit.log": "70e0a84a99c68213025f6de4bc02a63b3df294837f6c698d042ffb6ae3c89fbc"
+  }
+}

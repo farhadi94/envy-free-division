@@ -1,0 +1,10 @@
+{
+  "status": "accepted_actual_candidate_appendix",
+  "source_receipt": "review/round10_pure_extremal/constructive_candidate.json",
+  "source_receipt_sha256": "304fc94e69dcf3615dab001650e63e1466e4b10f9a75315eede00404c7314e02",
+  "reviewed_sources_sha256": {
+    "paper_candidate/sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43"
+  },
+  "unresolved_required_findings": [],
+  "scope": "Exact-source index to the independent LaTeX appendix review; theorem statement is covered by the whole change review."
+}

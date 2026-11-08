@@ -1,0 +1,81 @@
+{
+  "status": "accepted",
+  "reviewer": "cross_disciplinary",
+  "review_type": "Fresh independent agent correctness audit of randomized upper composition; not human peer review",
+  "created_at_utc": "2026-11-07T07:52:09.075512+00:00",
+  "reviewed_snapshot": "review/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "final_pdf_pages": 71,
+  "unresolved_required_findings": [],
+  "report": "review/post_review_audit/upper_independent.md",
+  "report_sha256": "0b9c1784326411f05523d8fe1aec371c7d6bf62d9f345c18826c019949850a79",
+  "primary_source": "paper/sections/upper_proof.tex",
+  "primary_source_sha256": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+  "accepted_scope": [
+    "Repair, Snapshot and prescribed Shrink interfaces as proved in the reviewed upper appendix",
+    "Row-specific normalization and the safe-factor/path argument using at most two successful Shrink requests",
+    "Physical whole-old-label transport and full row balance for original and frozen observers",
+    "Global EF and directional frozen guards derived from active EF",
+    "Positive-residue proper-target injection and zero-residue saturation",
+    "Strict saved-anchor potential increase and the full-population iteration bound",
+    "Rejected-trial retention, legal nonanticipating roots and full-history conditional acceptance",
+    "Conditional geometric waiting, almost-sure request return and expected full-trial/query composition",
+    "Scoped semantic integration of GlobalCompletion and QueryProbability"
+  ],
+  "independent_checks": {
+    "status": "PASS",
+    "seed": 2026110701,
+    "counts": {
+      "transport_states": 68093,
+      "positive_residue_states": 37309,
+      "zero_residue_states": 30784,
+      "strict_new_target_states": 13380,
+      "shrink_transfer_cases": 4798,
+      "identity_first": 3453,
+      "rotation_first": 298,
+      "second_shrink": 1047
+    },
+    "scope": "Independent integer row transport enumeration and exact rational two-shrink transfer. No author code or earlier backend imported; not a continuous-protocol proof.",
+    "no_author_implementation_imported": true
+  },
+  "formalization_scope": {
+    "GlobalCompletion": "Finite certificates derive global EF/guards, transported targets, zero-row saturation, witness growth and bounded finite runs. The safe-factor/path construction supplies small_own_loss and large_snapshot_gap.",
+    "QueryProbability": "Actual measurable extended-natural survival events, nonnegative tail-sum integral, geometric expectation and a.e. finite waiting from an explicit survival contraction.",
+    "not_formalized": [
+      "Full continuous oracle protocol",
+      "Physical two-shrink construction",
+      "Conditional history kernel and protocol acceptance derivation",
+      "Complete global expected-query theorem",
+      "Coverage of physical null fragments"
+    ],
+    "complete_main_theorem_formalized": false
+  },
+  "aggregate_verification": {
+    "record": "verification/lean_status.json",
+    "status": "passed",
+    "modules": 31,
+    "authored_theorems": 815,
+    "total_theorem_declarations": 1373,
+    "run_by_this_reviewer": false,
+    "source_hashes_match_final_snapshot": true
+  },
+  "files_sha256": {
+    "paper/sections/upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+    "paper/sections/model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+    "paper/sections/general_results.tex": "1aec573fa9119d53d4fe04bc7d4a7224b588bf82da9df9517726023426b48d9a",
+    "paper/sections/formal_scope.tex": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a",
+    "verification/lean/EnvyFreeResearch/GlobalCompletion.lean": "dab3c06a639377d8415d43286e4406212dfd47f1ccee938ee80886307ea0e54d",
+    "verification/lean/EnvyFreeResearch/QueryProbability.lean": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+    "verification/lean/EnvyFreeResearch/R4GlobalPotential.lean": "304a4cfae6634b7c2bd0ed5dfcb1c72a3e938b45dbdbb963e4b9afd473406963",
+    "review/post_review_audit/upper_independent.md": "0b9c1784326411f05523d8fe1aec371c7d6bf62d9f345c18826c019949850a79",
+    "review/post_review_audit/upper_independent_checks.py": "031f51b2a77f250c66f1e9e3d5e0dd38f9dc1ef9e35b0a1a294f8d6ecfeefd6e",
+    "review/post_review_audit/upper_independent_checks.json": "0242711bd15537c99155e2780679168e988d9ea244cc8b6c0764d1e52b5b1fc3",
+    "review/post_review_audit/upper_formalization.md": "83cae82373a7a20f74957a4b02368f3d02aeb37aaedd10adc1edd29412429d58",
+    "review/post_review_audit/probability_formalization.md": "b1c5eee531abb5eaf188b14b108de5421c14a1bb53acbb412659d5ae8afa0071",
+    "review/post_review_audit/probability_formalization_receipt.json": "67df3eff1ea14f2d11a00f1f1e715bebe1891f995df296c58e4f0f853f692c79",
+    "verification/lean_status.json": "f37b31bada58284bc214fb4a6b2f2bce332571b2d077278f8e406b37fe93c7c3"
+  },
+  "manuscript_or_lean_modified_by_reviewer": false,
+  "all_snapshot_source_and_pdf_hashes_match_disk": true
+}

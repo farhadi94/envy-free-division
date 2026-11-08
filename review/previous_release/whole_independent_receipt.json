@@ -1,0 +1,535 @@
+{
+  "reviewer": "/root/focused_review_whole",
+  "status": "review_complete_no_blocking_cross_result_defect_identified",
+  "completed_at_utc": "2026-11-07T07:05:49.828467+00:00",
+  "report": "research/submission_focused/review/whole_independent.md",
+  "report_sha256": "b7c5603c32dcdadf34a9e6e15dec3c9961f13a81929fa8df237166c9b989feea",
+  "initial_manuscript_sha256": {
+    "figures/mixed_pulses.tex": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+    "paper.tex": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+    "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+    "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+    "sections/general_results.tex": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+    "sections/introduction.tex": "af621052def6b0d7e435ed174427833010509101d735601ea1e8e4cf6a69a029",
+    "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "sections/mixed_lower_proof.tex": "0806e0944f8384b9452367c9de45ff900cfcdd94dbf654147b51032df642dae3",
+    "sections/mixed_overview.tex": "5bd25ef982a425f4f095c62298dd34086923e5538d82cad130bbe796d4ca6cfb",
+    "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "sections/nonnegative_lower_proof.tex": "2bf3cbcbdaed8a902ca51959c3dbace47af99823c057a4b7562308a9d3a90fe9",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/proof_overviews.tex": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+    "sections/related_work.tex": "1a8c377ae9107bc30eecda045c0d5a4d22fb2d5a9b2372f88957e58f16a76776",
+    "sections/results_table.tex": "4eb637648d87e5eaf22261d7d38235eb47fe2f456e5a7a416e5cef146b779bb4",
+    "sections/upper_overview.tex": "c525c3fc092d3795e25916512ec2a16005637c7b79e85e52b91a33a5f0bc8cd6",
+    "sections/upper_proof.tex": "dbe3505636ec4028f0271efd478201a34ba38502026645d6ccd8dfa8113f3252",
+    "paper.pdf": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2"
+  },
+  "final_manuscript_sha256": {
+    "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+    "paper.tex": "6123e1c5841e8944798d59e52574e86d072cf02f5fddb1e7d780361f3095f322",
+    "references.bib": "555f856da871a17b246aedea6b8d363379a46ba6316d9e5825d5eca3d454e2e4",
+    "sections/ai_methodology.tex": "e506f2faf43222ec4009be93e28dbf320820f67e22cd0278ce3e11a4681044d6",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/formal_scope.tex": "e44b00d5ef0f38f3ac1149ac93131b7b943ee367af0f0526b41ccd9a1f16ceab",
+    "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+    "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+    "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+    "sections/mixed_overview.tex": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+    "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+    "sections/results_table.tex": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+    "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+    "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "paper.pdf": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099"
+  },
+  "final_pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+  "final_candidate_hashes_checked_against_actual_files": true,
+  "review_scope": {
+    "full_initial_read": "paper.tex, all sections/*.tex, and figures/mixed_pulses.tex; all four main statements and every proof appendix.",
+    "bibliography": "Cited benchmark entries and selected technical dependencies; not every unused bibliography entry.",
+    "pdf": "Initial 67-page PDF text extraction and page-location checks; rendered initial pages 3, 7, 67. Editorial checks included pages 1\u20138, table-rule revision page 3, figure-removal revision pages 3, 7, 8, disclosure revision page 67, and repository-citation pages 9\u201310 and 66\u201367. Final 57a922d5 PDF text-extracted and page 67 visually inspected for the author-supplied Astra disclosure: 67 pages and no unresolved cross-references. Earlier checked table/reference/appendix placement unchanged.",
+    "whole_paper_focus": [
+      "Theorem/proof dependencies",
+      "Cross-result mathematical consistency",
+      "Signed relative definition at negative and zero values",
+      "Query conventions, root policies and zero cases",
+      "Randomization, fixed-input quantifiers and free output endpoints",
+      "Query accounting and exponent consistency",
+      "Primary-source comparisons",
+      "Finite Lean scope",
+      "Figure correctness and academic prose"
+    ],
+    "full_lean_modules_read": [
+      "MixedApproximation.lean",
+      "SubmissionMonteCarlo.lean"
+    ],
+    "selected_lean_module_excerpts_or_declaration_checks": [
+      "R7Chores.lean",
+      "R8Chores.lean",
+      "R8Upper.lean",
+      "R8Lower.lean",
+      "R6Upper.lean",
+      "R6Core.lean"
+    ],
+    "lean_build_rerun": false,
+    "paper_build_rerun": false,
+    "full_continuous_formalization_claimed": false,
+    "novelty_certified": false,
+    "exhaustive_literature_audit": false,
+    "earlier_author_or_reviewer_reports_used_as_correctness_evidence": false,
+    "other_result_review_reports_read": false,
+    "final_editorial_pass": "Reread paper.tex and the complete main exposition: introduction, model, results table, general results, all four proof overviews, and related work; inspected rendered pages 1\u20138 at the editorial checkpoint. Later presentation-only changes were checked in the affected sources and pages as separately recorded."
+  },
+  "final_amendment_checks": [
+    {
+      "file": "sections/introduction.tex",
+      "scope": "Full final file; requested output-cut wording and removal of AI pointer."
+    },
+    {
+      "file": "sections/results_table.tex",
+      "scope": "Full final file and rendered final page 3; requested output-cut wording."
+    },
+    {
+      "file": "sections/related_work.tex",
+      "scope": "Full final file; repository-abstract clarification."
+    },
+    {
+      "file": "sections/mixed_overview.tex",
+      "scope": "Changed no-repair paragraph and rendered page 7; replay and support-purity condition."
+    },
+    {
+      "file": "sections/mixed_lower_proof.tex",
+      "scope": "Query-protection cover passage; explicit restriction to (0,1) outside protected intervals."
+    },
+    {
+      "file": "sections/upper_proof.tex",
+      "scope": "Shrinking-cost passage; k>=3 qualifier consistent with caller."
+    },
+    {
+      "file": "sections/nonnegative_lower_proof.tex",
+      "scope": "All-outcome replay lemma wording and proof; object/nonreturn preservation."
+    },
+    {
+      "file": "verification/coverage.json",
+      "scope": "All named declarations checked for existence, every proof-source hash checked, explicit zero fully formalized main theorems checked."
+    },
+    {
+      "file": "sections/introduction.tex",
+      "scope": "Full revised exposition; removal of roadmap/artifact paragraph, grouped contributions, substantive closing proof-ideas paragraph."
+    },
+    {
+      "file": "sections/proof_overviews.tex",
+      "scope": "Full revised exposition; standardized headings and concise dependency/navigation prose."
+    },
+    {
+      "file": "sections/upper_overview.tex",
+      "scope": "Full revised exposition; shortened reserve-cell envelope description remains consistent with the proof estimate."
+    },
+    {
+      "file": "sections/related_work.tex",
+      "scope": "Full revised exposition; shortened citation bookkeeping preserves source attribution and repository-abstract distinction."
+    },
+    {
+      "file": "paper.tex and sections/general_results.tex",
+      "scope": "Final output-cut wording in the abstract and Theorems 2.3 and 2.4; endpoint choice without oracle calls is explicit, while the unchanged model requires finite-union allocations. Rendered final pages 1, 4, and 5 checked."
+    },
+    {
+      "file": "review/editorial_delta.json",
+      "scope": "Compared actual final file hashes with the pre-editorial snapshot. Only the four stated exposition files, abstract/main-statements source wording, and PDF changed. All proof appendix and Lean hashes remained identical; all actual final sources, all 28 Lean hashes, and the coverage file hash were verified."
+    },
+    {
+      "file": "sections/results_table.tex",
+      "scope": "Final layout-only change: visually inspected page 3, counted exactly four added midrule[.25pt] lines, verified their removal reproduces the accepted table SHA-256, and checked all other paper sources, every Lean hash, and coverage are unchanged. No mathematical re-audit needed for this delta."
+    },
+    {
+      "file": "paper.tex, sections/mixed_overview.tex, removed figures/mixed_pulses.tex",
+      "scope": "Read current two edited sources, verified restoring only TikZ imports and the removed figure references/input exactly reproduces accepted file hashes, and visually inspected final pages 3, 7, and 8. All other paper sources, all 28 Lean source hashes, and coverage checked unchanged. Confirmed zero figures and no stale figure references or unresolved cross-references."
+    },
+    {
+      "file": "sections/ai_methodology.tex and sections/formal_scope.tex",
+      "scope": "Read both complete final files and inspected final rendered page 67. Checked disclosed before/after AI text against actual current file and previous source hash. Verified exactly three added midrule[.25pt] lines and that removing them reproduces the previous formal-scope source hash. All other paper sources, all Lean source hashes, and coverage unchanged. No mathematical re-audit or Lean rerun required for this editorial delta."
+    },
+    {
+      "file": "references.bib and sections/formal_scope.tex",
+      "scope": "Checked authors, title, year and exact repository URL in FHArtifact26; inspected rendered bibliography pages 9\u201310 and artifact pages 66\u201367. Independently verified that removing only the bibliography entry and the two-line citation reproduces both previous source hashes. All mathematical sources, all Lean sources, and coverage unchanged. Remote upload/public availability was outside this citation-formatting check."
+    },
+    {
+      "file": "sections/ai_methodology.tex",
+      "scope": "Inspected full final source and rendered page 67. Removing exactly the inserted phrase \", using the Astra model,\" reproduces the previous source hash. All other manuscript sources, all Lean source hashes, and coverage unchanged. Model identification is supplied by explicit author instruction, not independently inferred or certified by the reviewer."
+    }
+  ],
+  "findings": [
+    {
+      "id": "W1",
+      "severity": "documentation",
+      "status": "resolved",
+      "summary": "Initially missing source-to-theorem coverage record; supplied and verified during review."
+    },
+    {
+      "id": "W2",
+      "severity": "minor",
+      "status": "resolved",
+      "summary": "Thesis repository abstract distinguished from abstracts inside the public PDF."
+    },
+    {
+      "id": "W3",
+      "severity": "optional",
+      "status": "open_optional",
+      "summary": "State v_i=-c_i explicitly in the chore interpretation of the signed-relative comparison."
+    },
+    {
+      "id": "W4",
+      "severity": "optional",
+      "status": "open_optional",
+      "summary": "Replace positive algorithms with upper-bound protocols."
+    }
+  ],
+  "blocking_findings": [],
+  "required_mathematical_repairs_from_this_review": [],
+  "requirement_checks": {
+    "main_theorem_count": 4,
+    "pdf_pages": 67,
+    "comparison_table_page": 3,
+    "references_begin_page": 9,
+    "appendices_begin_page": 11,
+    "bracketed_expectations": true,
+    "authors_and_affiliations_match_request": true,
+    "hajiaghayi_spelling_consistent_in_manuscript": true,
+    "ideal_real_computation_explicit": true,
+    "signed_root_policy_explicit": true,
+    "no_common_variation_ceiling_explicit": true,
+    "success_and_failure_conventions_explicit": true,
+    "free_finite_output_endpoints_explicit": true,
+    "intro_AI_pointer_removed": true,
+    "closing_disclosure_retained": true,
+    "introduction_roadmap_artifact_paragraph_removed": true,
+    "final_main_exposition_professional_and_mathematically_consistent": true,
+    "output_cut_wording_consistent_across_abstract_intro_table_and_lower_theorems": true,
+    "final_table_four_light_row_separators_legible_no_overflow": true,
+    "initial_figure_mathematics_and_rendering_previously_checked": true,
+    "final_figure_count": 0,
+    "figure_removed_at_user_request": true,
+    "no_stale_figure_references": true,
+    "parallel_agent_references_removed_from_disclosure": true,
+    "AI_material_support_and_finite_Lean_scope_still_disclosed": true,
+    "appendix_I_three_thin_row_separators_legible_no_overflow": true,
+    "artifact_repository_citation_correct_URL_and_rendering": true
+  },
+  "artifact_inputs_sha256": {
+    "README.md": "ecb7d28e0a0125a5f87ec66f2345a4ff30ee96eff239ebd75b175e44435d12a8",
+    "verification/coverage.json": "b727b4def853f089992621cb89522ec8cd7db265048c7592af9691422c2c71c0",
+    "verification/module_selection.json": "7d5b8fdf9e6dd5b0f60d9a6c16bf1ce9dc245bce88f6236442030bb213c56d1b",
+    "verification/lean/AxiomAudit.lean": "5678ac684794753574be36e42fcdf3cc4ffdaeac77651c490483e2b617932554",
+    "verification/lean/EnvyFreeResearch.lean": "907f25f55a8f203dfec186bc1b610aeacf06a6eee35bffce119a58102d004fa6",
+    "verification/lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "verification/lean/lakefile.lean": "70ef281da1b10ed52b6a9933f0217b1f7e069f068b2c011bae9adcb5d9d562c8",
+    "scripts/verify_lean.py": "c4b51a74c1355f52dc0e54273b02904cab7103b889978871074a50fdf9423dad",
+    "review/final_snapshot.json": "857fa5beea4c8e01d470cb75cfd91b63d3ea5b7e308ec7645a14f84bf907fb41",
+    "verification/lean/EnvyFreeResearch/MixedApproximation.lean": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+    "verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+    "verification/lean/EnvyFreeResearch/R7Chores.lean": "207c22120b5e112fdcb4298c6840de4fecf8745db838492ab545384d4d23815b",
+    "verification/lean/EnvyFreeResearch/R8Chores.lean": "7b8ae721a9304f0eb82c20ebde2f0d4307efd74052aadbd45561dcd9bbd91eba",
+    "verification/lean/EnvyFreeResearch/R8Upper.lean": "70afe251eae0767bdb3dc46ebabd1f87fbeea585dc1fe01ad7b77b52b9b4fa0d",
+    "verification/lean/EnvyFreeResearch/R8Lower.lean": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
+    "verification/lean/EnvyFreeResearch/R6Upper.lean": "b98c2d9960f93c358befcd49ffa12a6b25d855c3ff0448db10a13921b6d37978",
+    "verification/lean/EnvyFreeResearch/R6Core.lean": "d5382e40c65750c19eed71a932fab26af8f20e938f008f8a2a26564c667495a3",
+    "review/pre_editorial_snapshot.json": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+    "review/editorial_delta.json": "7e2faf099b5c53fadadef62a1ac51cb98398791f62ec58dfa954dfb9faa837e9",
+    "review/pre_table_snapshot.json": "8be54c01332c36af773dbf2008d153500996d8a672cc71a154adae82dbeef526",
+    "review/table_layout_reconciliation.json": "537fc185b4c09aefcf2c878533b2fb0b7b55e1665af5b13c01a8614b32a2f627",
+    "review/presentation_reconciliation.json": "b568cede157666cd56a8c3e6dbd31042767666adb6f22923d713e22d104ad492",
+    "review/pre_disclosure_snapshot.json": "ce8e40c288bb789ea8cb54a32da7d6d49f870d93d252bb593bf7e184deb938f9",
+    "review/disclosure_amendment.json": "40c9e3670e0ddf46bc81ea3e1f270d5ddd09e1c34d9accf585952669d4e9ac9e",
+    "review/pre_repository_snapshot.json": "5c621dbac0a9f11c965814d7c86f3187cabc0336600e430888d5b66dd59c83e8",
+    "review/repository_citation_amendment.json": "2ea687d42820190fa791bcae2b1b36144588a25da39ad000ebe85b054261298b",
+    "review/pre_astra_snapshot.json": "a537c5e907ec8a1da07e343bcb1140ca908f511b00a5b25b8a359e54f3aec5a7",
+    "review/astra_disclosure_amendment.json": "395e9032777de7618f082b56fc91e47d8a65492779040cd71560bf39e697ccfa"
+  },
+  "local_primary_sources": {
+    "research/library/2017_mackenzie_thesis.pdf": {
+      "sha256": "5ebe2444409405460707e202d57a8f6d47bce61dc6356e2f36f834d64cfa2502",
+      "scope": "Abstracts, table of contents, structure, and lower-bound passages; 88-page public PDF."
+    },
+    "research/library/2026_aziz_lu_mackenzie_suzuki_mixed_resources_v2.pdf": {
+      "sha256": "990fe45fb1d79e5f4012cfcd2afc4d435f37fba9e6263ebff4b5267eb940c7ab",
+      "scope": "Opening abstract and introduction checked to distinguish mixed divisible/indivisible resources from signed divisible valuations."
+    }
+  },
+  "web_primary_sources": [
+    {
+      "key": "MS26",
+      "url": "https://arxiv.org/html/2610.28535v1",
+      "checked": "Theorem 1, Remark 1.1, stated model and bound."
+    },
+    {
+      "key": "YB26",
+      "url": "https://arxiv.org/html/2609.05191v2",
+      "checked": "Theorem 1.1 and Appendix F/SubCore discussion."
+    },
+    {
+      "key": "DFHY18",
+      "url": "https://obj.umiacs.umd.edu/papers_for_stories/envy_free_chore_division_Hajiaghayi.pdf",
+      "checked": "Authorship, venue/pages, bounded chore claim."
+    },
+    {
+      "key": "Procaccia09",
+      "url": "https://ijcai.org/Proceedings/09/Papers/049.pdf",
+      "checked": "Quadratic deterministic cake-query benchmark."
+    },
+    {
+      "key": "BK23",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2023.16",
+      "checked": "Published metadata, guarantees and nonnegative multiplicative definition in linked PDF."
+    },
+    {
+      "key": "BV26",
+      "url": "https://arxiv.org/html/2501.14609v4",
+      "checked": "Theorem 10 and globally nonnegative/c-sigma-subadditive assumptions."
+    },
+    {
+      "key": "Psomas26",
+      "url": "https://arxiv.org/html/2610.30370v1",
+      "checked": "Nondomination graph and bundle-transport potential framework."
+    },
+    {
+      "key": "MMWY21",
+      "url": "https://arxiv.org/pdf/2111.04888v1",
+      "checked": "Lemma 2.6 sum-of-sensitivities bound."
+    },
+    {
+      "key": "AM17",
+      "url": "https://www.cse.unsw.edu.au/~haziz/efcake_sigecom.pdf",
+      "checked": "Footnote 2 cubic announcement."
+    },
+    {
+      "key": "Mac17",
+      "url": "https://unsworks.unsw.edu.au/entities/publication/93329007-57f8-4202-8144-c4ac7530198e",
+      "checked": "Repository abstract fetched directly after browser-tool handle URL failed."
+    },
+    {
+      "key": "Mac17_metadata",
+      "url": "https://api.datacite.org/dois/10.26190/unsworks/19831",
+      "checked": "Repository abstract independently confirmed in deposited metadata."
+    }
+  ],
+  "limitations": [
+    "No claim that an independent read eliminates every possible local proof error.",
+    "No complete main theorem was formalized or kernel-checked by this reviewer.",
+    "No exhaustive originality search or complete proof audit of prior papers was performed.",
+    "Final source amendments were reviewed in their affected passages; unchanged initial proofs were not needlessly reread.",
+    "The four concurrent local reviews are separate evidence and were not read or incorporated into the mathematical assessment."
+  ],
+  "pre_editorial_checkpoint": {
+    "pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "figures/mixed_pulses.tex": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+      "paper.tex": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+      "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "sections/general_results.tex": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "sections/introduction.tex": "4b9601c45492c002d49e18856fa60641bb9deab58d2b61ace37436d4c60fdb41",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "711f44bb4e9ed454558efccf6dd28d3da3cd7c31bfe57febf9534cbdaf4aca25",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+      "sections/related_work.tex": "518d79c0d77c5bca4538f7a300d408920103eab2249758a24a801fecdb2c97f5",
+      "sections/results_table.tex": "159df48038b491c4cef06173d35fce14f10174b612fa4a351122bb6f604772e1",
+      "sections/upper_overview.tex": "c525c3fc092d3795e25916512ec2a16005637c7b79e85e52b91a33a5f0bc8cd6",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8"
+    },
+    "snapshot_path": "review/pre_editorial_snapshot.json",
+    "snapshot_sha256": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+    "status": "Full mathematical review and initial amendment check complete before final exposition pass."
+  },
+  "pre_table_checkpoint": {
+    "pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "figures/mixed_pulses.tex": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+      "paper.tex": "539c3d4faf409fe5895275cd32f9557ca4e673c8fc801a90e2693fa4bd52956e",
+      "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "711f44bb4e9ed454558efccf6dd28d3da3cd7c31bfe57febf9534cbdaf4aca25",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+      "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+      "sections/results_table.tex": "159df48038b491c4cef06173d35fce14f10174b612fa4a351122bb6f604772e1",
+      "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90"
+    },
+    "snapshot_path": "review/pre_table_snapshot.json",
+    "snapshot_sha256": "8be54c01332c36af773dbf2008d153500996d8a672cc71a154adae82dbeef526",
+    "status": "Accepted complete review before the four table row separators were added."
+  },
+  "pre_figure_removal_checkpoint": {
+    "pdf_sha256": "151b40a104bead8c90f3d128368fc89767388c64e6ee1ed2c5d4f40ea218d123",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "figures/mixed_pulses.tex": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+      "paper.tex": "539c3d4faf409fe5895275cd32f9557ca4e673c8fc801a90e2693fa4bd52956e",
+      "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "711f44bb4e9ed454558efccf6dd28d3da3cd7c31bfe57febf9534cbdaf4aca25",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+      "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+      "sections/results_table.tex": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "151b40a104bead8c90f3d128368fc89767388c64e6ee1ed2c5d4f40ea218d123"
+    },
+    "status": "Accepted review after four light table rules and before figure removal."
+  },
+  "pre_disclosure_checkpoint": {
+    "pdf_sha256": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "paper.tex": "6123e1c5841e8944798d59e52574e86d072cf02f5fddb1e7d780361f3095f322",
+      "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sections/ai_methodology.tex": "4aa6e33b6dd45528184b36e33f8c5adf62ba2f61b27c0b2c76c15df56dcfd7f5",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+      "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+      "sections/results_table.tex": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c"
+    },
+    "snapshot_path": "review/pre_disclosure_snapshot.json",
+    "snapshot_sha256": "ce8e40c288bb789ea8cb54a32da7d6d49f870d93d252bb593bf7e184deb938f9",
+    "status": "Accepted whole-paper review before the final disclosure wording and Appendix I table separators."
+  },
+  "pre_repository_checkpoint": {
+    "pdf_sha256": "2058f4bf04128fb3afafeb2891010ede4eef2cfbb64d3e7682bffd079e66d994",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "paper.tex": "6123e1c5841e8944798d59e52574e86d072cf02f5fddb1e7d780361f3095f322",
+      "references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sections/ai_methodology.tex": "ee7aa60398040088240507b004473d232a173ec3f8cc4c8fea3e32575b1212bb",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "17f4a7864da1c3a5638a5006f323352175c8afe64c0c0272af45b7f630589471",
+      "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+      "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+      "sections/results_table.tex": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "2058f4bf04128fb3afafeb2891010ede4eef2cfbb64d3e7682bffd079e66d994"
+    },
+    "snapshot_path": "review/pre_repository_snapshot.json",
+    "snapshot_sha256": "5c621dbac0a9f11c965814d7c86f3187cabc0336600e430888d5b66dd59c83e8",
+    "status": "Accepted whole-paper review before repository citation addition."
+  },
+  "repository_citation_review": {
+    "url": "https://github.com/farhadi94/envy-free-division",
+    "bib_key": "FHArtifact26",
+    "rendered_label": "FH26",
+    "bibliography_page": 9,
+    "artifact_citation_page": 66,
+    "remote_upload_audited_by_this_reviewer": false
+  },
+  "pre_astra_checkpoint": {
+    "pdf_sha256": "4bae918ec557b24d3a8c701c493a0e0afcf02c7f67069ef827cae62b270ba3f5",
+    "manuscript_sha256": {
+      "alphaurl-safe.bst": "904d999422959b5c06012cffdc5997ed595419a5aad9b1487c9a23c25910b8f4",
+      "paper.tex": "6123e1c5841e8944798d59e52574e86d072cf02f5fddb1e7d780361f3095f322",
+      "references.bib": "555f856da871a17b246aedea6b8d363379a46ba6316d9e5825d5eca3d454e2e4",
+      "sections/ai_methodology.tex": "ee7aa60398040088240507b004473d232a173ec3f8cc4c8fea3e32575b1212bb",
+      "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+      "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+      "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+      "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+      "sections/formal_scope.tex": "e44b00d5ef0f38f3ac1149ac93131b7b943ee367af0f0526b41ccd9a1f16ceab",
+      "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "sections/mixed_overview.tex": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+      "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+      "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+      "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+      "sections/results_table.tex": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+      "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+      "paper.pdf": "4bae918ec557b24d3a8c701c493a0e0afcf02c7f67069ef827cae62b270ba3f5"
+    },
+    "snapshot_path": "review/pre_astra_snapshot.json",
+    "snapshot_sha256": "a537c5e907ec8a1da07e343bcb1140ca908f511b00a5b25b8a359e54f3aec5a7",
+    "status": "Accepted whole-paper review before author-supplied model attribution."
+  },
+  "author_supplied_model_attribution": {
+    "model_name": "Astra",
+    "source": "Explicit author instruction, recorded in review/astra_disclosure_amendment.json",
+    "independently_verified_by_reviewer": false,
+    "wording_and_layout_checked": true
+  }
+}

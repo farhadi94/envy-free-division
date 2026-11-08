@@ -1,0 +1,164 @@
+{
+  "role": "author_audit_and_implementation_not_independent_review",
+  "author_agent": "focused_review_upper",
+  "created_at_utc": "2026-11-07T07:38:28.660096+00:00",
+  "status": "author_work_complete_source_held_for_independent_review",
+  "input": {
+    "path": "research/submission_focused/paper/sections/upper_proof.tex",
+    "sha256": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "lines": 1146
+  },
+  "output": {
+    "path": "research/submission_focused/paper/sections/upper_proof.tex",
+    "sha256": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+    "lines": 1305
+  },
+  "report": {
+    "path": "research/submission_focused/review/post_review_audit/upper_author.md",
+    "sha256": "3c08a54fcf00cc26d6b6abb03494e7f6544b791b36a92ea1498e4d582f55672d"
+  },
+  "claim_status": "Original complete Las Vegas cake/chore theorem and expected O(n^21 log^2(2n)) query / O(n^20 log^2(2n)) Cut bounds retained; no weakening or stronger performance claim.",
+  "owned_files_edited": [
+    "research/submission_focused/paper/sections/upper_proof.tex",
+    "research/submission_focused/review/post_review_audit/upper_author.md",
+    "research/submission_focused/review/post_review_audit/upper_author_receipt.json"
+  ],
+  "coverage": {
+    "completion": "Every line of original 967-1146 and resulting complete completion proposition/proof, including optional failure wrapper.",
+    "upstream": "Ordinary Cut and circular laws; interpolation/endpoint charging; reserve labels and witnesses; assignment isolation; cake credits and chore taxes; physical rounding/corrections and supply; parameters and conditional acceptance; Snapshot branches; one-sided refinement and Shrink.",
+    "interfaces": [
+      "r6u:repair-contract",
+      "r6u:snapshot",
+      "r6u:shrink-contract",
+      "r6u:completion-contract"
+    ],
+    "new_transition_identities": [
+      "r6u:physical-balance",
+      "r6u:own-transport"
+    ],
+    "not_audited_as_new_result": "Unrelated deterministic chore and lower-bound theorems."
+  },
+  "substantive_exposition_changes": [
+    "Explicit input, output, rejection/commit effect, full-history acceptance probability and cost for all three primitives.",
+    "Physical additions in Repair explicitly include seeds and reserve payments.",
+    "Snapshot/Shrink partial returns remain temporary until final Repair commit.",
+    "Both safe-factor implications and the explicit return-path rotation are displayed.",
+    "Second-shrink input/factor/rho update and identity-only branch are explicit.",
+    "Approximate-EF Repair applicability follows from an exact signed-margin identity.",
+    "Whole-label mass balance is recorded for every original observer.",
+    "Own bounds are derived from active-only EF before proving global EF; chore own-cost increase is allowed within the correct bound.",
+    "Zero-residue target saturation and new-witness properness are preserved.",
+    "Optional mid-iteration zero exits removed; concrete protocol tests zeros only at committed EF anchors.",
+    "Conditional geometric tails and summation over reached iterations are explicit."
+  ],
+  "mathematical_gaps_found": [],
+  "unresolved_author_issues": [],
+  "validation": {
+    "tex_environment_nesting": "passed",
+    "labels_unique_in_source": true,
+    "references_resolve_in_paper_sources": true,
+    "global_tex_build_run": false,
+    "finite_existing_script": {
+      "path": "research/submission_focused/review/upper_independent_checks/check_finite.py",
+      "sha256": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
+      "exit_code": 0,
+      "transport_states": 13140,
+      "transfer_states": 8000,
+      "transfer_branches": {
+        "identity_crossing": 5225,
+        "nonidentity_rotation": 658,
+        "second_shrink": 2117
+      },
+      "original_populations": [
+        3,
+        4,
+        5,
+        10,
+        100,
+        1000
+      ]
+    },
+    "additional_exact_guard_check": {
+      "method": "Exhaustive finite row-value check deriving global EF/guards from old global EF/guards and only active-active final EF.",
+      "original_indices": [
+        0,
+        1,
+        2
+      ],
+      "active": [
+        0,
+        1
+      ],
+      "frozen": [
+        2
+      ],
+      "old_row_values": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "active_label_additions": [
+        0,
+        1,
+        2
+      ],
+      "frozen_label_addition": 0,
+      "new_residue_values": [
+        0,
+        1,
+        2
+      ],
+      "label_permutations": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "old_residue": "sum(label additions)+new residue",
+      "cake_states": 2168,
+      "chore_states": 2064,
+      "positive_new_residue_states": 2624,
+      "zero_new_residue_states": 1608,
+      "status": "passed"
+    },
+    "finite_checks_are_continuous_proof": false
+  },
+  "formalization_coordination": {
+    "agent": "mixed_signed",
+    "owned_module": "verification/lean/EnvyFreeResearch/GlobalCompletion.lean",
+    "obligations_sent": [
+      "Concrete whole-label identity and exact mass balance",
+      "Active-only final EF, fixed frozen labels, nonnegative values/additions",
+      "Derived cake/chore own bounds",
+      "Derived global EF and frozen guards",
+      "Proper-target transport and zero-row saturation",
+      "Quarter-spending witness gain and strict anchor potential increase",
+      "Finite iteration potential cap"
+    ],
+    "status_at_author_closure": "Agent implementing; no compilation or theorem coverage claimed by this author receipt."
+  },
+  "independent_review": {
+    "agent": "cross_disciplinary",
+    "requested_source_sha256": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+    "report_path": "review/post_review_audit/upper_independent.md",
+    "status_at_author_closure": "Separate review in progress; this author receipt does not substitute for acceptance."
+  },
+  "residual_continuous_probabilistic_scope": [
+    "Nonnegative nonatomic Borel measures, finite-union ordinary Cut realization and retention of null fragments.",
+    "Circular inclusion and endpoint laws, including foreign mass on cutter-null intervals and arbitrary legal plateau roots.",
+    "Measurability of finite choices and behavior under measurable nonanticipating Cut policies.",
+    "Exchangeability, integrated interpolation, predictable endpoint domination and all rejected-candidate probability accounting.",
+    "Continuous construction of physical Snapshot, Shrink and Repair partitions supplying finite value-table mass identities.",
+    "Safe-factor selection and strongly connected graph paths constructing a valid snapshot permutation unless separately formalized.",
+    "Uniform conditional acceptance and geometric retry tails; conversion from full trials to oracle counts.",
+    "Exact real arithmetic and independent ideal uniform-real draws remain explicit model assumptions."
+  ],
+  "publication_or_global_artifact_build_performed": false
+}

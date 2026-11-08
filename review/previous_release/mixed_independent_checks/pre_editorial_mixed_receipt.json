@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/focused_review_mixed",
+  "completed_at_utc": "2026-11-07T06:37:14.423491+00:00",
+  "verdict": "no_blocking_mathematical_gap_found",
+  "blocking_findings": [],
+  "unresolved_findings": [],
+  "fresh_independent_review": true,
+  "prior_author_notes_or_review_conclusions_used": false,
+  "further_agents_spawned": false,
+  "manuscript_edited_by_this_reviewer": false,
+  "full_continuous_theorem_machine_certified": false,
+  "scope": {
+    "main_theorem": "thm:mixed-mc / Theorem 2.4",
+    "appendix": "Appendix H / mixed_lower_proof.tex complete",
+    "parameters": "n >= 3; 0 < p <= 1; 0 <= epsilon < alpha <= 1",
+    "hard_subclass": "Finite piecewise-constant signed profiles, net totals one, no common variation ceiling.",
+    "model": "Signed bracketed Eval/Cut, fixed Borel arbitrary-root selectors, input-independent measurable ideal-real tapes, arbitrary free finite output endpoints.",
+    "expected_cost": "Unconditional attempted-call count; supremum over fixed profile/selector pairs."
+  },
+  "source_pins": [
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+      "bytes": 407738
+    },
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "sha256": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+      "bytes": 3488,
+      "lines": 83
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "bytes": 5093,
+      "lines": 100
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+      "sha256": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "bytes": 34788,
+      "lines": 764
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_overview.tex",
+      "sha256": "711f44bb4e9ed454558efccf6dd28d3da3cd7c31bfe57febf9534cbdaf4aca25",
+      "bytes": 2410,
+      "lines": 40
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "bytes": 1697,
+      "lines": 29
+    },
+    {
+      "path": "research/submission_focused/paper/sections/introduction.tex",
+      "sha256": "4b9601c45492c002d49e18856fa60641bb9deab58d2b61ace37436d4c60fdb41",
+      "bytes": 3007,
+      "lines": 48
+    },
+    {
+      "path": "research/submission_focused/paper/sections/related_work.tex",
+      "sha256": "518d79c0d77c5bca4538f7a300d408920103eab2249758a24a801fecdb2c97f5",
+      "bytes": 2754,
+      "lines": 46
+    },
+    {
+      "path": "research/submission_focused/paper/sections/results_table.tex",
+      "sha256": "159df48038b491c4cef06173d35fce14f10174b612fa4a351122bb6f604772e1",
+      "bytes": 1754,
+      "lines": 21
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "bytes": 2360,
+      "lines": 33
+    },
+    {
+      "path": "research/submission_focused/paper/sections/proof_overviews.tex",
+      "sha256": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+      "bytes": 2509,
+      "lines": 46
+    },
+    {
+      "path": "research/submission_focused/paper/figures/mixed_pulses.tex",
+      "sha256": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+      "bytes": 1929,
+      "lines": 44
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "bytes": 11167,
+      "lines": 261
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "bytes": 17518,
+      "lines": 347
+    },
+    {
+      "path": "research/submission_focused/paper/references.bib",
+      "sha256": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "bytes": 31226,
+      "lines": 710
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean",
+      "sha256": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+      "bytes": 9977,
+      "lines": 221
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "lines": 1
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lakefile.lean",
+      "sha256": "70ef281da1b10ed52b6a9933f0217b1f7e069f068b2c011bae9adcb5d9d562c8",
+      "bytes": 227,
+      "lines": 11
+    },
+    {
+      "path": "research/submission_focused/verification/lean/lake-manifest.json",
+      "sha256": "e48be196c9ad41a2f9b940b02619118cc034dcd8545cfdddcbf1c7be12b67fdc",
+      "bytes": 3140,
+      "lines": 96
+    }
+  ],
+  "initial_source_manifest": "research/submission_focused/review/mixed_independent_checks/source_hashes_initial.json",
+  "final_pdf": {
+    "sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+    "pages": 67,
+    "main_statement_pages": [
+      4,
+      5
+    ],
+    "overview_and_figure_pages": [
+      7,
+      8
+    ],
+    "appendix_h_pages": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "inspection": "Complete extracted Appendix H and main mixed statement; visual pulse figure. Final Appendix H text diff has only the reviewed endpoint-exemption change."
+  },
+  "coverage": [
+    {
+      "component": "signed_relative_definition",
+      "source_location": "general_results.tex:57-77; mixed_lower_proof.tex:11-38",
+      "status": "verified",
+      "details": "All signs and zero; exact EF; chore reduction; positive-total global equivalence and own-value bound."
+    },
+    {
+      "component": "main_theorem_quantifiers",
+      "source_location": "general_results.tex:78-100; mixed_lower_proof.tex:101-119,713-end",
+      "status": "verified",
+      "details": "Pair chosen before realized tape; unbounded supremum rather than one infinite-cost input."
+    },
+    {
+      "component": "signed_oracle_model",
+      "source_location": "model.tex; mixed_lower_proof.tex:40-99",
+      "status": "verified",
+      "details": "Bracketed legality, fixed Borel arbitrary roots, attempted calls, nonreturn, finite canonical outputs."
+    },
+    {
+      "component": "borel_selector_patch",
+      "source_location": "mixed_lower_proof.tex:124-152",
+      "status": "verified",
+      "details": "Borel least root and retained old roots on new-legal replay queries."
+    },
+    {
+      "component": "separated_coverage",
+      "source_location": "mixed_lower_proof.tex:154-185",
+      "status": "verified",
+      "details": "Atomic/singular coordinate laws; atomless variation; finite separated compact intervals."
+    },
+    {
+      "component": "coarse_insertion",
+      "source_location": "mixed_lower_proof.tex:187-272",
+      "status": "verified",
+      "details": "Margin alpha; two nondistinguished rows; weighted forcing; cumulative/restriction distinction; physical supports."
+    },
+    {
+      "component": "legal_query_protection",
+      "source_location": "mixed_lower_proof.tex:274-345",
+      "status": "verified",
+      "details": "Adaptive groups; fresh root law; original-measure losses; endpoint exemption; early return and nonreturn."
+    },
+    {
+      "component": "output_coverage",
+      "source_location": "mixed_lower_proof.tex:347-409",
+      "status": "verified",
+      "details": "Finite-return quantile; choice order; new variation budget; retained histories; fixed anchors."
+    },
+    {
+      "component": "ownership_discrepancy",
+      "source_location": "mixed_lower_proof.tex:411-477",
+      "status": "verified",
+      "details": "Variation-weighted disagreement; K new intervals; indicator bound; gamma>0; V<c case."
+    },
+    {
+      "component": "sampling_and_replay",
+      "source_location": "mixed_lower_proof.tex:479-543",
+      "status": "verified",
+      "details": "Independent variation samples; miss bound; 3h occupancy; L/V cancellation; fixed corridors."
+    },
+    {
+      "component": "physical_pulses_and_purity",
+      "source_location": "mixed_lower_proof.tex:545-601",
+      "status": "verified",
+      "details": "Measurable positive supports; deterministic width via product dominated convergence; finite variation and net totals."
+    },
+    {
+      "component": "no_repair",
+      "source_location": "mixed_lower_proof.tex:603-639",
+      "status": "verified",
+      "details": "Weighted mass surplus; largest split pair; common-row perturbations; overlap; preservation of prior failure."
+    },
+    {
+      "component": "fixed_input_averaging",
+      "source_location": "mixed_lower_proof.tex:641-710",
+      "status": "verified",
+      "details": "Explicit measurable majorant; no abstract-input joint measurability; Tonelli fixes profile and selector."
+    },
+    {
+      "component": "expected_query_transfer",
+      "source_location": "mixed_lower_proof.tex:712-end",
+      "status": "verified",
+      "details": "2q legalizing wrapper; hidden Evals and fixed selectors; exact truncation event; unconditional expectation."
+    },
+    {
+      "component": "overview_and_figure",
+      "source_location": "mixed_overview.tex; figures/mixed_pulses.tex; PDF pages 7-8",
+      "status": "verified",
+      "details": "Full sources and final rendered figure; correct (1+alpha)M; no-repair qualification fixed."
+    },
+    {
+      "component": "finite_lean_scope",
+      "source_location": "MixedApproximation.lean; R6MixedMonteCarlo.lean; formal_scope.tex",
+      "status": "verified",
+      "details": "Complete source audit; fresh compilation; axiom audit; finite/continuous scope distinction."
+    }
+  ],
+  "checks": {
+    "rational_and_budget_probes": {
+      "status": "passed",
+      "scope": "Finite exact-rational probes plus floating-point budget smoke tests; no continuous proof certification.",
+      "counts": {
+        "signed_pair_equivalence_cases": 19520,
+        "positive_total_row_cases": 9300,
+        "positive_total_hypothesis_necessary_example": {
+          "row": [
+            -1,
+            -1,
+            -1
+          ],
+          "alpha": "1/2",
+          "relative_EF": true,
+          "usual_cake_comparisons": false
+        },
+        "coarse_allocation_assignments_after_insertions": 8635,
+        "pure_pulse_owner_pattern_cases": 32805,
+        "sampling_and_replay_budget_cases_float_smoke_test": 720
+      }
+    },
+    "fresh_lean_compilation": {
+      "completed_at_utc": "2026-11-07T06:34:15.054400+00:00",
+      "status": "passed",
+      "compilation": "Fresh local project sources compiled into reviewer-owned directory; installed mathlib dependencies reused; shared source/cache not modified.",
+      "records": [
+        {
+          "source": "research/submission_focused/verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean",
+          "sha256": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+          "exit_code": 0,
+          "log": "SubmissionMonteCarlo_fresh_lean.log"
+        },
+        {
+          "source": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+          "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+          "exit_code": 0,
+          "log": "R6MixedMonteCarlo_fresh_lean.log"
+        },
+        {
+          "source": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+          "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+          "exit_code": 0,
+          "log": "MixedApproximation_fresh_lean.log"
+        },
+        {
+          "source": "research/submission_focused/review/mixed_independent_checks/audit_finite.lean",
+          "sha256": "993dc1e017a9462f8d167d3f824963bc926cc3a7a0488cdee601e532d4376219",
+          "exit_code": 0,
+          "log": "finite_axiom_audit.log"
+        }
+      ]
+    },
+    "finite_axiom_audit": {
+      "status": "passed",
+      "namespace_theorem_declarations": 48,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "continuous_scope_excluded": true
+    }
+  },
+  "resolved_findings": [
+    {
+      "id": "MIXED-EDITORIAL-01",
+      "severity": "nonblocking",
+      "source": "paper/sections/mixed_overview.tex",
+      "issue": "Unqualified no-repair wording broader than pure-support lemma.",
+      "resolution": "Statement conditioned on preserved query history and single-owner supports.",
+      "final_tex_and_pdf_rechecked": true
+    },
+    {
+      "id": "MIXED-EDITORIAL-02",
+      "severity": "nonblocking",
+      "source": "paper/sections/mixed_lower_proof.tex",
+      "issue": "Coordinate-law wording omitted that cake endpoints need no cover.",
+      "resolution": "Pushforwards restricted to U=(0,1) minus protected intervals; 0,1 explicitly exempt.",
+      "final_tex_and_pdf_rechecked": true
+    }
+  ],
+  "external_primary_sources": [
+    {
+      "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol261-icalp2023/LIPIcs.ICALP.2023.16/LIPIcs.ICALP.2023.16.pdf",
+      "title": "Barman and Kulkarni, Approximation Algorithms for Envy-Free Cake Division with Connected Pieces (ICALP 2023)",
+      "pages_reviewed": [
+        "16:2"
+      ],
+      "purpose": "Verify cited nonnegative multiplicative convention; no use as proof of signed lower bound."
+    }
+  ],
+  "limitations": [
+    "Independent mathematical review is not formal certification of the continuous theorem.",
+    "Finite probes are error detectors, not exhaustive checks of arbitrary profiles, protocols, or tape laws.",
+    "Fresh project sources compiled against installed Lean 4.35.0/mathlib artifacts; library sources were not independently rebuilt.",
+    "No verdict on other main theorems or full literature novelty."
+  ],
+  "review_artifact_pins": [
+    {
+      "path": "research/submission_focused/review/mixed_independent.md",
+      "sha256": "e774568a8e1db3239fe3efdf5505e875908bebdb817e060e5cc782009854c0e9",
+      "bytes": 19295,
+      "lines": 103
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/independent_checks.py",
+      "sha256": "9d31aba58bde5288f25d191bf00c755214222fee2b936eadf6c2043f1cdd8098",
+      "bytes": 5614,
+      "lines": 146
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/independent_checks.json",
+      "sha256": "063e7a333d845c0d8a107f0fe4b2bb697a7b1d7e972687573583b3594a76c6a6",
+      "bytes": 616,
+      "lines": 21
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/audit_finite.lean",
+      "sha256": "993dc1e017a9462f8d167d3f824963bc926cc3a7a0488cdee601e532d4376219",
+      "bytes": 1037,
+      "lines": 24
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/finite_lean_check.json",
+      "sha256": "acb69de74805a207ec08ad84122bd2c1cf2732af53ead05201d34a2770228e0e",
+      "bytes": 1341,
+      "lines": 31
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/finite_axiom_audit.log",
+      "sha256": "071a2b295b386663d7c39fe900b2ebee7cc3f72f00f69a2461c2de8db19452f9",
+      "bytes": 4920,
+      "lines": 51
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/SubmissionMonteCarlo_fresh_lean.log",
+      "sha256": "3edbb7a832e3986da1606d6c97b6208645e397a58287c1ef9a6f42a6cfddce5d",
+      "bytes": 1515,
+      "lines": 28
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/R6MixedMonteCarlo_fresh_lean.log",
+      "sha256": "a618a1a9834eceac11f2d36161ebe69b717e85e983e5cf6149062729ed6503b3",
+      "bytes": 2350,
+      "lines": 37
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/MixedApproximation_fresh_lean.log",
+      "sha256": "260579e8dfdf4a7761a549263417a242b926299eb7a501f69f832c831c0ebd68",
+      "bytes": 1876,
+      "lines": 25
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/paper_layout_final.txt",
+      "sha256": "b25319ed57958456e36f0cd74d71ef89658d3fba2f04006e386c8cada8100221",
+      "bytes": 240109,
+      "lines": 3453
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/page7_final.png",
+      "sha256": "ead094724bbb31ff6efd88032fca50656b19304db6287c3ecfe63f0d511f60e8",
+      "bytes": 282648
+    },
+    {
+      "path": "research/submission_focused/review/mixed_independent_checks/generate_receipt.py",
+      "sha256": "85073dc34805d2f316c3895674d0f5f00c0f14986c2ccc34a451c24a5696037c",
+      "bytes": 9028,
+      "lines": 134
+    }
+  ]
+}

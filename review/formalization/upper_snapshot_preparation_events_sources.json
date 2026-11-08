@@ -1,0 +1,12 @@
+[
+  {
+    "module": "UpperSnapshotProtocolPreparationEvents",
+    "sha256": "20de01f3a12f1e38a251e7a45f41748ae4f805c062a771c9e3bd2487ad1c5a11",
+    "source": "EnvyFreeResearch/Full/UpperSnapshotProtocolPreparationEvents.lean"
+  },
+  {
+    "module": "UpperSnapshotProtocolPreparationEventsUnion",
+    "sha256": "8fb10fd89d9ce35c0ed4594c222977f2f928998e3bb88ecfd902cf73eb9d91a9",
+    "source": "EnvyFreeResearch/Full/UpperSnapshotProtocolPreparationEventsUnion.lean"
+  }
+]

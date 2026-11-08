@@ -1,0 +1,131 @@
+{
+  "status": "all_five_reviews_closed_no_required_repairs",
+  "closed_at_utc": "2026-11-07T14:42:33.063588+00:00",
+  "pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+  "final_snapshot_sha256": "fd54a7dd08cfa472f555a11f3277140223226c00cd140c414b52cf03a3c03dda",
+  "reviews": [
+    {
+      "role": "chores",
+      "accepted": true,
+      "verdict": "accepted",
+      "unresolved_required_findings": [],
+      "receipt": "review/post_review_audit/chores_independent_receipt.json",
+      "report": "review/post_review_audit/chores_independent.md",
+      "receipt_pdf_field": [
+        "final_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+      "reviewed_snapshot": "review/post_review_audit/final_snapshot.json",
+      "files_sha256": {
+        "review/post_review_audit/chores_independent_receipt.json": "51e6206f20878118999ddd182f86c568f55513595d726e3db7f6de65840a87cd",
+        "review/post_review_audit/chores_independent.md": "dbba373d8037411ee1c5ef60ade64fb415e4cb30d202acdadd4560072f8c5701"
+      },
+      "version_reconciliation": "Historical review retained for unchanged theorem and proof. The other three theorem statements are verified unchanged through the mixed-subsection boundary. Chore notation clarification is checked by exact source reversal. All historically audited Lean modules remain byte-identical."
+    },
+    {
+      "role": "upper",
+      "accepted": true,
+      "verdict": "accepted",
+      "unresolved_required_findings": [],
+      "receipt": "review/post_review_audit/upper_independent_receipt.json",
+      "report": "review/post_review_audit/upper_independent.md",
+      "receipt_pdf_field": [
+        "final_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+      "reviewed_snapshot": "review/post_review_audit/final_snapshot.json",
+      "files_sha256": {
+        "review/post_review_audit/upper_independent_receipt.json": "18490dc29b280f2ca74d9e673b937045ae1be70871c0f5ab6c6a5a53b68c2ddd",
+        "review/post_review_audit/upper_independent.md": "0b9c1784326411f05523d8fe1aec371c7d6bf62d9f345c18826c019949850a79"
+      },
+      "version_reconciliation": "Historical review retained for unchanged theorem and proof. The other three theorem statements are verified unchanged through the mixed-subsection boundary. Chore notation clarification is checked by exact source reversal. All historically audited Lean modules remain byte-identical."
+    },
+    {
+      "role": "lower",
+      "accepted": true,
+      "verdict": "accepted_scoped_final_snapshot",
+      "unresolved_required_findings": [],
+      "receipt": "review/post_review_audit/lower_measurability.json",
+      "report": "review/post_review_audit/lower_measurability.md",
+      "receipt_pdf_field": [
+        "final_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+      "reviewed_snapshot": "review/post_review_audit/final_snapshot.json",
+      "files_sha256": {
+        "review/post_review_audit/lower_measurability.json": "6dd4f4ace4463a1b1a099aae29d6d703bf576a6a0983bed990a8fc76da903cb1",
+        "review/post_review_audit/lower_measurability.md": "a4046e0a54519f486ba196e315e31f633c528837d0d9b033c1002340a64d1a02",
+        "review/post_review_audit/probability_independent.md": "97d9dd5672b907f74f1b47c9603523fcdf74208fcda3ed5c9fa199eb36292033",
+        "review/post_review_audit/probability_independent.json": "86a6ae67cee43902256942edd50db2e900386d9b06b4eb58db8562e50357f303"
+      },
+      "version_reconciliation": "Historical review retained for unchanged theorem and proof. The other three theorem statements are verified unchanged through the mixed-subsection boundary. Chore notation clarification is checked by exact source reversal. All historically audited Lean modules remain byte-identical."
+    },
+    {
+      "role": "mixed",
+      "accepted": true,
+      "verdict": "accepted_no_unresolved_required_findings",
+      "unresolved_required_findings": [],
+      "receipt": "review/round9_extremal/mixed_delivery_closure.json",
+      "report": "review/round9_extremal/mixed_delivery_closure.md",
+      "receipt_pdf_field": [
+        "pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+      "reviewed_snapshot": "review/final_snapshot.json",
+      "files_sha256": {
+        "review/round9_extremal/mixed_delivery_closure.json": "51b4cc72031562c289a946c86b56ad4f5278765adbd16c29d14f95b2f1c9efa1",
+        "review/round9_extremal/mixed_delivery_closure.md": "9d30938aa82449dddb9e5326b09cd2e45a489cd95a053863fe95825290d8348f"
+      },
+      "version_reconciliation": "New scoped review of the mixed-root revision, followed by exact-source and current-PDF delivery reconciliation. The frozen candidate review records the mathematical scope; this is not a fresh audit of all four full proofs."
+    },
+    {
+      "role": "whole",
+      "accepted": true,
+      "verdict": "accepted_scoped_delivery_closure",
+      "unresolved_required_findings": [],
+      "receipt": "review/round9_extremal/whole_delivery_closure.json",
+      "report": "review/round9_extremal/whole_delivery_closure.md",
+      "receipt_pdf_field": [
+        "pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+      "reviewed_snapshot": "review/final_snapshot.json",
+      "files_sha256": {
+        "review/round9_extremal/whole_delivery_closure.json": "c96b6bf7e7145d44a3e28976fa4cebdb26737ee0ca50a35a72380d9da584cd89",
+        "review/round9_extremal/whole_delivery_closure.md": "6f15d754c822b8d105668de9eda7e89335bc62782618fc6a9627a71900fe88b5"
+      },
+      "version_reconciliation": "New scoped review of the mixed-root revision, followed by exact-source and current-PDF delivery reconciliation. The frozen candidate review records the mathematical scope; this is not a fresh audit of all four full proofs."
+    }
+  ],
+  "unchanged_proof_and_statement_sha256": {
+    "sections/ai_methodology.tex": "d43b15cd749f4d77060d09c7832b3e725cc5010e12d5fef16ccdfd2030eeb4ff",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "sections/model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+    "sections/nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+    "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+    "sections/upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9"
+  },
+  "resolved_required_findings": [
+    "Specified whole-pool commitment and derived explicit chore reserve transitions from actual credits/deficits.",
+    "Clarified reattachment of formerly private original material in donor prefixes.",
+    "Provided exact Repair/Snapshot/Shrink interfaces and composed global completion proof.",
+    "Specified joint tape/transcript measurability and a fixed null-event endpoint-list extension.",
+    "Required old/new signed-query legality for selector preservation and checked row/bracket syntax before the wrapper Eval.",
+    "Expanded finite transition and measure-theoretic formalization with explicit physical/oracle conditions outside scope.",
+    "Replaced arbitrary selector patching with two prescribed bracket-sign extremal-root policies and an IVT preservation proof.",
+    "Oriented every final signed pair spatially, and repaired the matching purity and replay statements."
+  ],
+  "scope": "Three earlier internal AI reviews remain applicable to unchanged nonmixed results; two new internal AI reviews cover the substantive mixed-root revision, its interfaces, and delivered presentation. All receipts pin their actual reviewed version. No human review, exhaustive novelty certification, or full formalization of the main oracle theorems is claimed.",
+  "main_theorems_fully_formalized": 0,
+  "human_review_status": "not_performed; focused expert-review brief prepared",
+  "scoped_revision": {
+    "path": "review/round9_extremal/revision.json",
+    "sha256": "0a189978e768551ff4acca18d2738713591ce7eaeca70d27c6a488fb601a963a"
+  }
+}

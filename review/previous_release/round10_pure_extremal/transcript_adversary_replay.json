@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "arithmetic": "exact fractions.Fraction throughout",
+  "counts": {
+    "positive_targets": 205,
+    "negative_targets": 290,
+    "zero_targets": 189,
+    "terminal_replies": 165,
+    "nonzero_starts": 621,
+    "replayed_queries": 10800,
+    "weighted_pair_checks": 6720,
+    "fragmented_allocations": 1440,
+    "finite_profiles": 36
+  },
+  "scope": "Finite deterministic transcript replay and weighted-cell checks only; no randomized lower bound.",
+  "source_sha256": "68d17a537812b45c9d3a1c7442175a4e3bba15c384c01a3dc19c5e750bc7ee5a"
+}

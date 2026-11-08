@@ -1,0 +1,28 @@
+'EnvyFreeResearch.SubmissionMonteCarlo.eventMass_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.failure_mass_after_two_exceptions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.eventMass_sdiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.uniform_observer_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.eligible_observer_mass_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.optimized_window_legal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.optimized_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.optimized_square_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.optimized_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.optimized_constant_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.remove_arbitrary_boundary_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.SubmissionMonteCarlo.uniform_expected_budget_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

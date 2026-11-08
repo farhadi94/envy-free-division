@@ -1,0 +1,206 @@
+{
+  "reviewer": "focused_review_upper",
+  "created_at_utc": "2026-11-07T06:35:47.155284+00:00",
+  "status": "complete",
+  "verdict": "no_blocking_mathematical_issue_identified_in_final_snapshot",
+  "final_snapshot": {
+    "path": "research/submission_focused/review/final_snapshot.json",
+    "sha256": "8be54c01332c36af773dbf2008d153500996d8a672cc71a154adae82dbeef526",
+    "pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+    "all_audited_paper_input_hashes_match": true
+  },
+  "report": {
+    "path": "research/submission_focused/review/upper_independent.md",
+    "sha256": "92883a6bb83845e3ab9a168e5621a91415097a148b90e5ec063a412b4643e1e3"
+  },
+  "claim_audited": {
+    "theorem": "thm:general-upper / r6u:general (Theorem F.1)",
+    "domain": "Arbitrary finite nonnegative nonatomic Borel measures; cake and chore orientations; complete finite-union output.",
+    "randomness_and_oracle": "Independent ideal uniform-real draws; exact real arithmetic; legal measurable nonanticipating Cut policies, including arbitrary legal plateau roots.",
+    "guarantee": "Almost-sure exact EF return; E[Q]=O(n^21 log^2(2n)); E[C]=O(n^20 log^2(2n)); all rejected work included."
+  },
+  "precise_audited_scope": [
+    {
+      "path": "research/submission_focused/paper/sections/upper_proof.tex",
+      "scope": "All 1146 lines, all local lemmas, parameter substitutions, caller, frozen guards, zero cases, domination transport, almost-sure termination, expected accounting, and optional failure wrapper."
+    },
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "scope": "Rendered upper-bound theorem/overview and Appendix F, printed pages 37-52; final editorial overview checked; normalized entire Appendix F text identical to pre-editorial accepted PDF."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "scope": "Complete original file read; independent mathematical audit restricted to thm:general-upper and its explanatory paragraph; that subsection reinspected and unchanged in final editorial source."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/upper_overview.tex",
+      "scope": "Complete original and editorially revised file; agreement with accepted Appendix F and rendered final PDF."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "scope": "Complete file; query and output conventions used in the upper theorem."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/proof_overviews.tex",
+      "scope": "Complete original and editorially revised file read for inclusion/context and upper-bound heading/dependency agreement; unrelated results not independently audited."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "scope": "Complete file; checked limitation of Lean claims; no full continuous theorem inferred."
+    },
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "scope": "Complete original file; theorem/abstract upper-bound statement and inclusion structure; final abstract changes concern other results and leave the audited upper claim unchanged."
+    },
+    {
+      "path": "research/submission_focused/paper/references.bib",
+      "scope": "Relevant cited primary-source entries."
+    }
+  ],
+  "primary_source_scopes": {
+    "research/library/2026_mackenzie_suzuki_expected.pdf": "Main theorem and Remark 1.1; physical repair Sections 5.1-5.5; comparison with snapshot and adaptive endpoint mechanisms. Not a complete audit of that paper.",
+    "research/library/2026_psomas_elementary.pdf": "Section 3, especially Lemma 5 and the whole-label domination transport and termination argument.",
+    "research/library/1993_shmoys_tardos_generalized_assignment.pdf": "Section 2, sorted slots, fractional matching, Lemma 2.2, and the neighboring-slot load comparison (printed pages 463-465).",
+    "research/library/2021_musco_musco_woodruff_yasuda_sensitivity_v1.pdf": "Lemma 2.6 and its immediate context, printed page 12."
+  },
+  "input_sha256": {
+    "research/submission_focused/paper/paper.pdf": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+    "research/submission_focused/paper/paper.tex": "539c3d4faf409fe5895275cd32f9557ca4e673c8fc801a90e2693fa4bd52956e",
+    "research/submission_focused/paper/references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+    "research/submission_focused/paper/sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+    "research/submission_focused/paper/sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+    "research/submission_focused/paper/sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "research/submission_focused/paper/sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "research/submission_focused/paper/sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "research/submission_focused/paper/sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+    "research/library/2026_mackenzie_suzuki_expected.pdf": "1d278f2673ef52bb4744c1cd975f7a8ddb269af01573ca1a97f06e52d254b812",
+    "research/library/2026_psomas_elementary.pdf": "bbbae3df9ef0c7438d0a2be95edbbb7f67a2c4510a8b0c4f86c8b86f37955c76",
+    "research/library/1993_shmoys_tardos_generalized_assignment.pdf": "a7495d8be833d156aa9b4ce9c9c0615a7d333f484f7ced3515275b37880669c1",
+    "research/library/2021_musco_musco_woodruff_yasuda_sensitivity_v1.pdf": "cefd32de9889121c93bd161e9de0900e77c8510642151f94f29e8ff04eaa2394"
+  },
+  "version_closure": {
+    "initial_pdf_sha256": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2",
+    "initial_upper_proof_sha256": "dbe3505636ec4028f0271efd478201a34ba38502026645d6ccd8dfa8113f3252",
+    "final_upper_proof_sha256": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1",
+    "inspected_delta": "Only Appendix F delta is the phrase specifying active populations k>=3 before r6u:shrink-cost.",
+    "reverse_delta_reproduces_initial_source_hash": true,
+    "all_other_audited_paper_source_hashes_unchanged_through_initial_closure": true,
+    "editorial_overview_changes_inspected_and_accepted": true,
+    "upper_theorem_text_model_and_proof_appendices_unchanged_since_initial_closure": true
+  },
+  "findings": [
+    {
+      "id": "U-01",
+      "severity": "minor_scope_clarification",
+      "status": "resolved",
+      "location": "paper/sections/upper_proof.tex:959-961, r6u:shrink-cost",
+      "finding": "The displayed comparison (12k+34) ell <= 32k ell requires k>=2; the actual caller always invokes shrinking at k>=3.",
+      "effect_on_main_theorem": "None; one- and two-agent bases already bypass shrinking.",
+      "resolution": "Explicit k>=3 caller scope added by coordinating author and inspected in actual TeX and final PDF.",
+      "remaining_action": null
+    }
+  ],
+  "blocking_findings": [],
+  "unresolved_issues": [],
+  "independent_checks": {
+    "script": "research/submission_focused/review/upper_independent_checks/check_finite.py",
+    "script_sha256": "f4090b1289aaeea904d2cd69117eddf9a1bae67c34f26d24d193c9a6db247566",
+    "result": "research/submission_focused/review/upper_independent_checks/results.json",
+    "result_sha256": "b4c0047d0acbca860049862beaf7a1e3308f985e7acc9a094ae51667b211ce8a",
+    "command": "python3 research/submission_focused/review/upper_independent_checks/check_finite.py",
+    "exit_code": 0,
+    "results": {
+      "status": "passed",
+      "transport": {
+        "cake_EF_rows": 6570,
+        "cake_zero_residue_self_images": 104,
+        "chores_EF_rows": 6570,
+        "chores_zero_residue_self_images": 76
+      },
+      "transfer": {
+        "second_shrink": 2117,
+        "identity_crossing": 5225,
+        "nonidentity_rotation": 658
+      },
+      "parameters": {
+        "original_populations": [
+          3,
+          4,
+          5,
+          10,
+          100,
+          1000
+        ]
+      },
+      "scope_limit": "Finite stress checks only; no continuous or probability theorem verified."
+    },
+    "finite_only": true,
+    "lean_compiled_or_used_as_correctness_evidence": false
+  },
+  "review_limits": [
+    "Independent mathematical audit, not formal verification of the continuous protocol or its probability theorems.",
+    "Finite stress checks are not substitutes for the manuscript proofs.",
+    "No bit-complexity or executable full-protocol implementation certified.",
+    "Appendices A-E are not dependencies of the audited self-contained Appendix F and were not audited for their separate results.",
+    "Unrelated deterministic and lower-bound theorems were outside scope."
+  ],
+  "independence": {
+    "prior_author_notes_or_review_conclusions_used_as_evidence": false,
+    "subagents_spawned": false,
+    "manuscript_or_other_reviewer_files_edited_by_this_reviewer": false,
+    "own_outputs_only": true
+  },
+  "updated_at_utc": "2026-11-07T06:42:12.450508+00:00",
+  "audit_history": [
+    {
+      "stage": "initial_complete_proof_audit_and_scope_resolution",
+      "closed_at_utc": "2026-11-07T06:35:47.155284+00:00",
+      "snapshot": {
+        "path": "research/submission_focused/review/pre_editorial_snapshot.json",
+        "sha256": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+        "pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8"
+      },
+      "archived_receipt": {
+        "path": "research/submission_focused/review/upper_independent_checks/pre_editorial_receipt.json",
+        "sha256": "a5e008c5fa58c7dbb745d115d49251e868043039ffbdad8f44fd58bc8a1c1dcf"
+      },
+      "archived_report": {
+        "path": "research/submission_focused/review/upper_independent_checks/pre_editorial_report.md",
+        "sha256": "eb8ae53661af55672c90824a51733b05cea2014e59c883f01be3bed2ada592ea"
+      },
+      "verdict": "no_blocking_mathematical_issue_identified_in_final_snapshot",
+      "open_findings": 0
+    },
+    {
+      "stage": "final_academic_exposition_reconciliation",
+      "closed_at_utc": "2026-11-07T06:42:12.450508+00:00",
+      "pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+      "verdict": "revised_upper_overview_agrees_with_accepted_Appendix_F_no_new_mismatch",
+      "open_findings": 0
+    }
+  ],
+  "editorial_reconciliation": {
+    "requested_scope": [
+      "paper/sections/upper_overview.tex",
+      "paper/sections/proof_overviews.tex"
+    ],
+    "actual_scope": "Both revised files read fully, upper-overview agreement checked against Appendix F and rendered PDF, upper theorem paragraph reinspected, all snapshot hashes reconciled; no repeat full proof audit.",
+    "envelope_sentence": "Agrees with H_j(E)<=1, integral_R h_j<=N_R, and observer-simultaneous correction control in r6u:envelope and r6u:estimated-failure.",
+    "headings_and_navigation": "No new upper-bound claim or proof dependency.",
+    "new_findings": [],
+    "editorial_delta": {
+      "path": "research/submission_focused/review/editorial_delta.json",
+      "sha256": "7e2faf099b5c53fadadef62a1ac51cb98398791f62ec58dfa954dfb9faa837e9"
+    },
+    "snapshot_paper_file_hashes_independently_checked": 24,
+    "snapshot_lean_file_hashes_independently_checked_and_unchanged": 28,
+    "only_enumerated_seven_editorial_files_changed": true,
+    "intermediate_editorial_pdf_inspected_sha256": "11f7134516c4919b389fadfaaf692ca484267a80f9540eadb2f15b271219c21f",
+    "final_rebuild_reconciliation": "Additional output-cut wording changes in abstract and lower/mixed statements do not alter the upper theorem or Appendix F.",
+    "rendered_appendix_F_normalized_text_identical_to_pre_editorial_pdf": true,
+    "rendered_appendix_F_normalized_text_sha256": "01f9d296baa8da49b71e0fa2c444a1a4b48226ac5f0e9c73b4ced590e7e3335b",
+    "finite_checks_rerun": false,
+    "reason_checks_not_rerun": "Proof, parameters, and test source unchanged; existing finite checks remain applicable.",
+    "semantic_scope_exclusion": "Revised introduction, related-work, and other results prose were not independently re-audited in this focused follow-up."
+  }
+}

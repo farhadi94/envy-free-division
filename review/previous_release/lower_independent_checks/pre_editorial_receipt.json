@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/focused_review_lower",
+  "completed_at_utc": "2026-11-07T06:36:17.243079+00:00",
+  "status": "pass_no_substantive_gap_found",
+  "status_meaning": "Independent mathematical audit found no substantive defect; all findings resolved. Not a complete machine-checked proof or exhaustive novelty review.",
+  "final_pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+  "final_snapshot": {
+    "path": "research/submission_focused/review/final_snapshot.json",
+    "sha256": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+    "all_scoped_current_hashes_match": true
+  },
+  "scope": {
+    "main_theorem": "thm:nonnegative-lower (Theorem 2.3)",
+    "full_appendix": "sections/nonnegative_lower_proof.tex, all 350 lines (Appendix G)",
+    "other_manuscript_sources": [
+      "sections/model.tex",
+      "sections/general_results.tex",
+      "sections/lower_overview.tex"
+    ],
+    "pdf_pages_reviewed": [
+      "3",
+      "4",
+      "6-7",
+      "52-57"
+    ],
+    "claim": "For each fixed p>0, unconditional expected ordinary interval-query cost on the uniform profile is Omega_p(n^2), assuming success probability at least p on all normalized finite-step cake or chore profiles with densities in [1/2,3/2].",
+    "details": [
+      "arbitrary ideal-real tape space",
+      "joint measurability",
+      "input independence",
+      "Eval and root-only Cut replay",
+      "terminal uncounted illegal request",
+      "arbitrary free finite output fragmentation",
+      "fixed-width dominated convergence",
+      "preservation of prior failures",
+      "Tonelli over fixed inputs",
+      "all-window inequality",
+      "optimized inequality and asymptotic conclusion"
+    ],
+    "literature_check": "Archived Procaccia 2009 primary PDF: model, free finite-union output, classical quadratic theorem; no exhaustive novelty search.",
+    "requested_wording_check": "The final introduction/table phrase even with arbitrarily many output cuts at no query cost accurately conveys the allowed freedom; the precise model and theorem retain finite-output restrictions."
+  },
+  "independence": {
+    "earlier_review_conclusions_used_as_evidence": false,
+    "author_notes_used_as_evidence": false,
+    "final_snapshot_used_as_mathematical_evidence": false,
+    "final_snapshot_used_for_hash_reconciliation_only": true,
+    "manuscript_modified_by_this_reviewer": false,
+    "other_agents_files_modified": false,
+    "further_agents_spawned": false
+  },
+  "findings": [
+    {
+      "id": "L-01",
+      "severity": "informational",
+      "blocking": false,
+      "status": "resolved",
+      "source": "research/submission_focused/paper/sections/nonnegative_lower_proof.tex",
+      "lines": "105-108; intended interpretation also explicit at 116-120",
+      "issue": "The original phrase subsequent outcome could be read as preserving fairness classification, whereas replay preserves the returned object and termination behavior.",
+      "resolution": "Final source and PDF say returned object or nonreturn behavior; verified exact replacement.",
+      "mathematical_impact": "None; the original proof already used and explained the correct interpretation."
+    }
+  ],
+  "blocking_findings": 0,
+  "major_findings": 0,
+  "unresolved_findings": 0,
+  "counterexamples_found": 0,
+  "source_hashes": [
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "sha256_initial_review": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2",
+      "sha256_final_review": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+      "unchanged_during_review": false,
+      "reconciliation": "Final rebuild: scoped model/theorem/overview unchanged; Appendix G differs only by resolved L-01; unrelated sections outside this audit also changed."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256_initial_review": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "sha256_final_review": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/nonnegative_lower_proof.tex",
+      "sha256_initial_review": "2bf3cbcbdaed8a902ca51959c3dbace47af99823c057a4b7562308a9d3a90fe9",
+      "sha256_final_review": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "unchanged_during_review": false,
+      "reconciliation": "Only L-01 wording changed; reversing that exact replacement reproduces the initial source hash."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/lower_overview.tex",
+      "sha256_initial_review": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "sha256_final_review": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256_initial_review": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sha256_final_review": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R8Lower.lean",
+      "sha256_initial_review": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
+      "sha256_final_review": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean",
+      "sha256_initial_review": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+      "sha256_final_review": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256_initial_review": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "sha256_final_review": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/submission_focused/paper/references.bib",
+      "sha256_initial_review": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "sha256_final_review": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    },
+    {
+      "path": "research/library/2009_procaccia_covet.pdf",
+      "sha256_initial_review": "bcde0dd339abccaea6df1d628a27ce06608387832346b5e8136debbaee00ea70",
+      "sha256_final_review": "bcde0dd339abccaea6df1d628a27ce06608387832346b5e8136debbaee00ea70",
+      "unchanged_during_review": true,
+      "reconciliation": "Unchanged during review."
+    }
+  ],
+  "final_changes_reconciled": true,
+  "independent_checks": {
+    "status": "passed",
+    "arithmetic": "fractions.Fraction exact rational arithmetic",
+    "equal_length_owner_words": 4360,
+    "continuous_owner_collision_checks": 27840,
+    "ordinary_interval_separation_checks": 192,
+    "normalized_two_pulse_profiles": 1024,
+    "exact_eval_and_cut_replay_checks": 32640,
+    "changed_bracket_total_cut_examples": 2,
+    "wrapped_and_overlapping_pulse_profiles": 36,
+    "cake_and_chore_decoder_checks": 2926,
+    "failure_retention_scalar_checks": 864,
+    "infinite_mean_endpoint_count_loss_examples": {
+      "4": 0.29791666666666666,
+      "16": 0.06316342784444735,
+      "64": 0.01563302697734644,
+      "256": 0.0039063706418272885
+    },
+    "limitation": "Finite stress checks; not a full proof of continuous randomized adaptive protocols."
+  },
+  "formalization": {
+    "selected_lean_sources_inspected": [
+      "R8Lower.lean",
+      "SubmissionMonteCarlo.lean"
+    ],
+    "lean_build_rerun": false,
+    "reason_not_rerun": "lean/lake absent from command path and ~/.elan/bin; this reviewer did not install dependencies or claim a build result.",
+    "full_probability_theorem_formalized": false,
+    "evidence_used": "Finite statement scope inspected; main conclusion independently audited in handwritten proof."
+  },
+  "limitations": [
+    "Finite exact-rational checks do not establish the arbitrary adaptive continuous theorem.",
+    "The review is tied to the recorded final source hashes.",
+    "No claim of exhaustive novelty search or complete main-theorem Lean formalization."
+  ],
+  "artifacts": [
+    {
+      "path": "research/submission_focused/review/lower_independent.md",
+      "sha256": "b81e623340861f1a3ae0f4cde4209543843c42e47590aeb2d7b823ada25048f6"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/check_lower.py",
+      "sha256": "95d32156f471c67ec750fa90d1ecb311a923e40c67df7180b7b9c7952f6ce6e5"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/checks_result.json",
+      "sha256": "2afe004ed90ed2734db08ba29fe8f5d64dcb66d18e9d4ab2b916235410d44297"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/paper_extracted.txt",
+      "sha256": "2f6690bb9d8dc8f0e4c8d42b61c0e6314f5972f8b93e65b54da36de7ced29df6"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/paper_extracted_final.txt",
+      "sha256": "b25319ed57958456e36f0cd74d71ef89658d3fba2f04006e386c8cada8100221"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/final_pdf_comparison.json",
+      "sha256": "03c79de0d0395bc007c4f4c41b2b38734f01b71bdae625a889b2eceff0bbb019"
+    },
+    {
+      "path": "research/submission_focused/review/lower_independent_checks/procaccia2009_extracted.txt",
+      "sha256": "f0bee1598684d108b0bf24bb4431a04b88a770802dd05956f95960ff29d7de4b"
+    }
+  ]
+}

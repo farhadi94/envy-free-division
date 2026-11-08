@@ -11,4 +11,15 @@ authors:
     affiliation: University of Maryland, College Park
 repository-code: "https://github.com/farhadi94/envy-free-division"
 url: "https://github.com/farhadi94/envy-free-division"
-abstract: "Supporting Lean proofs of finite allocation transitions, measure-theoretic expectation bounds, and continuous root-preservation lemmas, dependency pins, axiom auditing, and exact-arithmetic checks for the accompanying paper on envy-free division. The complete main oracle theorems are not fully formalized."
+abstract: >-
+  Lean formalizations of four main query-complexity results for envy-free
+  division: deterministic exact chores, randomized exact cake and chores,
+  a randomized quadratic exact lower bound, and mixed-resource impossibility
+  for prescribed leftmost-root and rightmost-root oracles. The repository
+  includes explicit model and endpoint manifests, pinned dependencies,
+  axiom-audit scripts, scoped correspondence reviews, and exact-arithmetic
+  finite checks. Conservative formal upper-bound variants preserve the main
+  bounds without claiming every sharper auxiliary ledger verbatim. The
+  manuscript is maintained separately. Recorded source hashes and build
+  status identify the verified revision; internal reviews are not human
+  peer review.

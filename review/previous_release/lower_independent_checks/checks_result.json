@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction exact rational arithmetic",
+  "equal_length_owner_words": 4360,
+  "continuous_owner_collision_checks": 27840,
+  "ordinary_interval_separation_checks": 192,
+  "normalized_two_pulse_profiles": 1024,
+  "exact_eval_and_cut_replay_checks": 32640,
+  "changed_bracket_total_cut_examples": 2,
+  "wrapped_and_overlapping_pulse_profiles": 36,
+  "cake_and_chore_decoder_checks": 2926,
+  "failure_retention_scalar_checks": 864,
+  "infinite_mean_endpoint_count_loss_examples": {
+    "4": 0.29791666666666666,
+    "16": 0.06316342784444735,
+    "64": 0.01563302697734644,
+    "256": 0.0039063706418272885
+  },
+  "limitation": "Finite stress checks; not a full proof of continuous randomized adaptive protocols."
+}

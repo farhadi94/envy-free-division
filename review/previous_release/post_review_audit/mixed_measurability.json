@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/focused_review_mixed",
+  "review_kind": "fresh_ai_assisted_targeted_mathematical_audit",
+  "completed_at_utc": "2026-11-07T07:53:18.748614+00:00",
+  "verdict": "no_remaining_defect_found_within_explicit_model_after_two_precision_repairs",
+  "human_review_performed": false,
+  "full_formalization": false,
+  "lean_recompiled_in_this_audit": false,
+  "prior_reviews_used_as_evidence": false,
+  "full_paper_review": false,
+  "further_agents_spawned": false,
+  "manuscript_edited_by_this_reviewer": false,
+  "old_audit_reports_modified": false,
+  "owned_outputs_only": [
+    "research/submission_focused/review/post_review_audit/mixed_measurability.md",
+    "research/submission_focused/review/post_review_audit/mixed_measurability.json"
+  ],
+  "external_comment_addressed": "Measurability details. The row-group processing in H.6 and the arguments in G.6 are plausible but technical.",
+  "external_comment_scope_note": "This audit addresses Appendix H; no concrete external counterexample was supplied. G.6 is outside this report.",
+  "source_pins": [
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "sha256": "cbdd3f312fdb3ed3b82722d58f9f4061c85e73b3c34cdacebbdffd04ac5047a8",
+      "bytes": 3470,
+      "lines": 82,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+      "bytes": 2197,
+      "lines": 37,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256": "1aec573fa9119d53d4fe04bc7d4a7224b588bf82da9df9517726023426b48d9a",
+      "bytes": 5306,
+      "lines": 102,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/results_table.tex",
+      "sha256": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "bytes": 1818,
+      "lines": 25,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/introduction.tex",
+      "sha256": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "bytes": 2919,
+      "lines": 47,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_overview.tex",
+      "sha256": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+      "bytes": 2307,
+      "lines": 37,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+      "sha256": "ec00572e5a7a96d4ee1fb95907f6b43e98b6ffbb3e81c20e6ce2aae70f4dd6f1",
+      "bytes": 34880,
+      "lines": 765,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a",
+      "bytes": 2732,
+      "lines": 43,
+      "inspection": "current source inspected"
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "bytes": 11167,
+      "lines": 261,
+      "inspection": "hash and stated-scope reference only; not evidence for continuous proof"
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "bytes": 17518,
+      "lines": 347,
+      "inspection": "hash and stated-scope reference only; not evidence for continuous proof"
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/QueryProbability.lean",
+      "sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+      "bytes": 12621,
+      "lines": 248,
+      "inspection": "Conditional mixed event-to-expectation and unbounded-supremum interfaces and proofs (lines 1-124) inspected for scope; no repeated build or full module audit."
+    }
+  ],
+  "initial_source_pins": [
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+      "bytes": 405385
+    },
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "sha256": "6123e1c5841e8944798d59e52574e86d072cf02f5fddb1e7d780361f3095f322",
+      "bytes": 3440
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "bytes": 1697
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "bytes": 5181
+    },
+    {
+      "path": "research/submission_focused/paper/sections/results_table.tex",
+      "sha256": "0829226d535f9c0521e2ec7c9a7d0916f82432c1e76eac307eb7f3084e8b7be1",
+      "bytes": 1818
+    },
+    {
+      "path": "research/submission_focused/paper/sections/introduction.tex",
+      "sha256": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+      "bytes": 2919
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_overview.tex",
+      "sha256": "7a6eabb2c8c6d060de532b9c9982db7341901d316428024d41762915f5c41d8e",
+      "bytes": 2307
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+      "sha256": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+      "bytes": 34788
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256": "e44b00d5ef0f38f3ac1149ac93131b7b943ee367af0f0526b41ccd9a1f16ceab",
+      "bytes": 2516
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "bytes": 11167
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "bytes": 17518
+    }
+  ],
+  "report": {
+    "path": "research/submission_focused/review/post_review_audit/mixed_measurability.md",
+    "sha256": "132d325ca703b2f5ecb1b08af556592eccbcff0bd6382f9b526b68b4a04e9fac",
+    "bytes": 17876,
+    "lines": 83,
+    "words": 2568
+  },
+  "coverage": [
+    {
+      "component": "H.6 row-group induction",
+      "status": "rederived",
+      "details": "Measurable fixed stage-start row groups; shrinking retained set; coordinate law under then-current fixed pair; finite aggregate pushforward; original-probability losses; old-prefix and current-row preservation."
+    },
+    {
+      "component": "measurable histories",
+      "status": "rederived",
+      "details": "No partition into individual transcript atoms and no conditional distribution on a transcript. Current common model's joint tape/finite-transcript action rule is compatible with H.1 and H.8."
+    },
+    {
+      "component": "finite interval and pulse construction",
+      "status": "rederived",
+      "details": "Finite separated covers for singular/atomic coordinate laws; variation preserved on reserved restrictions; positive Borel support widths; finite piecewise-constant densities per sample."
+    },
+    {
+      "component": "Borel selector patch",
+      "status": "rederived_and_domain_clarified",
+      "details": "Least-root Borelness via compact residual minima and rational thresholds; legal-on-both-profiles clause verified; all applications preserve bracket legality and old root equation."
+    },
+    {
+      "component": "product-space upper bound",
+      "status": "rederived",
+      "details": "Canonical ownership, impurity, occupancy and base correctness measurable in base tape and finite sample. Pointwise domination by explicit Z avoids joint abstract-profile success measurability."
+    },
+    {
+      "component": "fixed hard pair",
+      "status": "rederived",
+      "details": "Construction choices depend on whole strategy and tape law, not realized tape; deterministic width; Tonelli selects one fixed sample and one fixed Borel selector."
+    },
+    {
+      "component": "expected-count truncation",
+      "status": "rederived_and_guard_clarified",
+      "details": "Syntax, row and bracket checks precede extra Eval; <=2q legal calls; hidden Evals preserve fixed-selector responses; exact truncated success event; unconditional tail bound."
+    },
+    {
+      "component": "main abstract table scope",
+      "status": "checked_current_sources",
+      "details": "Bracketed arbitrary-root model and absence of common variation ceiling explicit. Main theorem paragraph excludes prescribed first/last roots and a fixed common variation cap."
+    },
+    {
+      "component": "formalization limits",
+      "status": "explicitly_recorded",
+      "details": "No human review and no full formalization. Finite Lean support is not used to certify continuous measurability, dominated convergence or input selection."
+    },
+    {
+      "component": "final snapshot and expanded formal scope",
+      "status": "closed",
+      "details": "Exact snapshot and 71-page PDF matched. Mixed proof/model/scope unchanged; QueryProbability expected-cost bridge acknowledged without treating oracle construction as formalized."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "H-SELECTOR-DOMAIN",
+      "severity": "precision_issue_not_a_counterexample_to_main_theorem",
+      "location": "mixed_lower_proof.tex, r6m:selector, lines 124-151",
+      "original_issue": "Old root equation can survive while a bracketed query becomes illegal in the new profile.",
+      "repair": "Require q legal for both P and P' and S(q) to satisfy the P' root equation.",
+      "status": "repaired_by_root_and_rechecked",
+      "counterexample": {
+        "old_density": "1",
+        "query": {
+          "a": "0",
+          "b": "1/2",
+          "t": "1/4",
+          "old_root": "1/4"
+        },
+        "new_density": [
+          "[0,1/4]: 1",
+          "(1/4,1/2]: -3/5",
+          "(1/2,1]: 9/5"
+        ],
+        "new_whole_total": "1",
+        "new_value_at_old_root": "1/4",
+        "new_bracket_total": "1/10",
+        "old_root_equation_survives": true,
+        "new_query_legal": false
+      },
+      "all_patch_applications_meet_repaired_hypotheses": true,
+      "verified_in_final_pdf": true
+    },
+    {
+      "id": "H-GUARD-ORDER",
+      "severity": "implementation_order_precision",
+      "location": "mixed_lower_proof.tex, final expected-query proof, lines 719-727",
+      "original_issue": "The phrase malformed syntax should explicitly include row and bracket-range checks before evaluating a requested bracket.",
+      "repair": "Abort on malformed syntax, invalid row or bracket endpoints not satisfying 0<=a<=b<=1 before extra Eval.",
+      "status": "repaired_by_root_and_rechecked",
+      "adversarial_request": "Cut(i,-1/10,1/2,0)",
+      "quantitative_bound_unchanged": "At most 2q calls",
+      "verified_in_final_pdf": true
+    }
+  ],
+  "additional_clarifications_verified": [
+    "Common model specifies standard Borel action/encoding spaces and joint tape/finite-transcript next-action rules, including query-free nonreturn without requiring decidability.",
+    "Abstract explicitly says signed bracketed arbitrary-root model.",
+    "Main mixed result explicitly does not address prescribed first/last roots or a fixed common total-variation bound."
+  ],
+  "adversarial_cases_checked": [
+    "h=0",
+    "empty row groups",
+    "early return",
+    "internal nonreturn after finitely many calls",
+    "repeated identical query tuples",
+    "uncountably many possible histories",
+    "atomic and singular coordinate laws",
+    "coordinates at 0,1 or protected endpoints",
+    "zero targets and zero-length brackets",
+    "flat cumulative regions",
+    "old intervals with zero variation",
+    "V=0 and V=c",
+    "unbounded expected finite output fragmentation",
+    "samples arbitrarily close to excluded endpoints",
+    "sample exactly at output boundary",
+    "overlapping pulse supports",
+    "new root equation valid but new bracket illegal",
+    "invalid bracket before guard Eval",
+    "prescribed first-root incompatibility"
+  ],
+  "exact_arithmetic_checks": {
+    "selector_domain_example": "passed using Python fractions",
+    "first_root_example": {
+      "status": "passed using Python fractions",
+      "baseline": "F(x)=x; query [0,1], t=1/2",
+      "perturbation": "+1 uniformly on (1/10,1/5), -1 uniformly on (3/10,2/5)",
+      "old_root": "1/2",
+      "new_first_root": "3/22",
+      "old_root_still_valid": true
+    }
+  },
+  "unresolved_findings": [],
+  "limitations": [
+    "No claim of human peer review or full formal certification.",
+    "The conclusion is limited to the explicit bracketed arbitrary-root model without common variation ceiling.",
+    "No extension to prescribed extremal roots, fixed variation-cap classes or variation-relative error.",
+    "No new Lean build or broad numerical proof search was performed.",
+    "Final PDF closure covers the audited mixed material; it is not a new audit of the entire paper or all 31 Lean modules."
+  ],
+  "targeted_audit_completed_at_utc": "2026-11-07T07:35:54.159098+00:00",
+  "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "reviewed_snapshot": "review/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "unresolved_required_findings": [],
+  "initial_pdf_observation": {
+    "path": "research/submission_focused/paper/paper.pdf",
+    "sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+    "bytes": 405385,
+    "inspection": "Lemma H.6 as rendered on pages 60-61, before the two source precision edits; final rebuilt PDF/snapshot closure is separate.",
+    "attests_final_rebuilt_pdf": false
+  },
+  "pdf_observation": {
+    "path": "research/submission_focused/paper/paper.pdf",
+    "sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+    "bytes": 433016,
+    "pages": 71,
+    "inspection": "Final mixed scope, repaired selector lemma and explicit invalid-row/bracket guard present in extracted PDF; Appendix H starts page 61, selector lemma page 63, H.6 page 65, expected-query reduction page 70.",
+    "attests_pinned_pdf_for_mixed_scope": true,
+    "full_paper_reaudit": false
+  },
+  "final_closure": {
+    "status": "closed_against_exact_snapshot_no_required_findings",
+    "snapshot_pins": [
+      {
+        "path": "research/submission_focused/review/final_snapshot.json",
+        "sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+        "bytes": 6440,
+        "lines": 71
+      },
+      {
+        "path": "research/submission_focused/review/post_review_audit/final_snapshot.json",
+        "sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+        "bytes": 6440,
+        "lines": 71
+      }
+    ],
+    "unchanged_core_sources": [
+      "sections/model.tex",
+      "sections/general_results.tex",
+      "sections/results_table.tex",
+      "sections/mixed_overview.tex",
+      "sections/mixed_lower_proof.tex",
+      "EnvyFreeResearch/MixedApproximation.lean",
+      "EnvyFreeResearch/R6MixedMonteCarlo.lean"
+    ],
+    "changed_since_targeted_audit": [
+      {
+        "path": "research/submission_focused/paper/paper.tex",
+        "before": "7bd941f1abd6f3fbb8803af8148ff80a9b174301a2375eb662576804bf6a1d79",
+        "after": "cbdd3f312fdb3ed3b82722d58f9f4061c85e73b3c34cdacebbdffd04ac5047a8"
+      },
+      {
+        "path": "research/submission_focused/paper/sections/formal_scope.tex",
+        "before": "e44b00d5ef0f38f3ac1149ac93131b7b943ee367af0f0526b41ccd9a1f16ceab",
+        "after": "211b7b16d5e623a0bf3420eeb924c58f22211f8a9ddd8f6fc4f4c3af87248d5a"
+      }
+    ],
+    "changes_reviewed": "Abstract and formal-scope wording acknowledge probability support; no mixed proof change.",
+    "query_probability_scope": {
+      "source_sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+      "theorems_inspected": [
+        "enat_expectation_lower_from_success",
+        "supremum_expectations_eq_top"
+      ],
+      "bridge": "Actual measurable event/integral inequalities and infinite supremum derived from supplied success and finite-horizon hardness hypotheses.",
+      "oracle_construction_formalized": false,
+      "selector_patches_formalized": false,
+      "dominated_convergence_for_pulses_formalized": false,
+      "fixed_input_selection_formalized": false,
+      "separate_independent_module_audit": "Reported by coordinating reviewer; not repeated here."
+    },
+    "global_lean_audit": {
+      "status": "passed",
+      "metadata_verified": true,
+      "module_count": 31,
+      "authored_theorem_count": 815,
+      "total_theorem_count": 1373,
+      "repeated_by_this_reviewer": false,
+      "status_file_pin": {
+        "path": "research/submission_focused/verification/lean_status.json",
+        "sha256": "f37b31bada58284bc214fb4a6b2f2bce332571b2d077278f8e406b37fe93c7c3",
+        "bytes": 3904,
+        "lines": 49
+      }
+    },
+    "new_full_proof_audit_or_testing_run": false,
+    "human_review_performed": false,
+    "main_theorems_fully_formalized": 0
+  }
+}

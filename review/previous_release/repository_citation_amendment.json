@@ -1,0 +1,13 @@
+{
+  "status": "citation_only",
+  "base_snapshot": "review/pre_repository_snapshot.json",
+  "base_pdf_sha256": "2058f4bf04128fb3afafeb2891010ede4eef2cfbb64d3e7682bffd079e66d994",
+  "pdf_sha256": "4bae918ec557b24d3a8c701c493a0e0afcf02c7f67069ef827cae62b270ba3f5",
+  "repository_url": "https://github.com/farhadi94/envy-free-division",
+  "git_remote": "git@github.com:farhadi94/envy-free-division.git",
+  "changed_sources": [
+    "references.bib",
+    "sections/formal_scope.tex"
+  ],
+  "all_mathematical_and_lean_sources_unchanged": true
+}

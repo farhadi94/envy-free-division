@@ -1,0 +1,47 @@
+{
+  "status": "mixed_extremal_revision_reviewed",
+  "created_at_utc": "2026-11-07T14:40:21.951593+00:00",
+  "baseline_snapshot": "review/round9_extremal/before_snapshot.json",
+  "baseline_snapshot_sha256": "7280ac9aab94d07025efd676df162594ef57e44588c5c7913d37626c625afc12",
+  "changed_source_sha256": {
+    "paper.tex": "1ebbed918435ba326eb56e47891cba8a6a9d45524e91aadc4d60e00b15c93113",
+    "sections/formal_scope.tex": "8e4158dd84586ab6fdae50a01121eff5b9a3b2aff2c94dc6ad762660f321d4e7",
+    "sections/general_results.tex": "f28accd8f0dfe42aef78f273d942ffa28a4a503d768e67858f7d68d7d50ded2d",
+    "sections/introduction.tex": "6075602129fcd2baa41d506b87defa7b30c4fd16976db885e856df67060a9260",
+    "sections/mixed_lower_proof.tex": "4349f15e31b5c34c57bacbd273df7eaaf128e63f772078cb181ff42a53793690",
+    "sections/mixed_overview.tex": "a1f9359ac24c9abe3893f6bb44a45ac9462d5d7188cf2d961867ee3f7c1cef9e",
+    "sections/results_table.tex": "5aa63cf12cbfbca1b7fce9ebcd35e5975673c41eefc371c532983e32cf990dbc"
+  },
+  "pdf_sha256": "2085d0199482f1e5c12db7b402bcef2e45393022fd809804a1f69c99b28345fa",
+  "baseline_statements": "review/round9_extremal/before_main_statements.json",
+  "unchanged_nonmixed_proof_sha256": {
+    "sections/chore_proof.tex": "4e53573239e1f577e007b6feca9d7f566bbd1805b16974cec740e63c00f40712",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+    "sections/nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e"
+  },
+  "new_lean_source_sha256": {
+    "EnvyFreeResearch/RootPreservation.lean": "56a0fb03138da1e852b3f0fdda8390ea693323290eefb238b24a657de813d723"
+  },
+  "whole_source_receipt": "review/round9_extremal/whole_candidate_review.json",
+  "mixed_source_receipt": "review/round9_extremal/hard_family_candidate_review.json",
+  "proof_files_by_role": {
+    "chores": [
+      "sections/chore_proof.tex",
+      "sections/core_proof.tex",
+      "sections/baseline_subcore.tex",
+      "sections/offset_subcore_proof.tex",
+      "sections/baseline_completion.tex"
+    ],
+    "upper": [
+      "sections/upper_proof.tex"
+    ],
+    "lower": [
+      "sections/nonnegative_lower_proof.tex"
+    ]
+  },
+  "scope": "Substantive revision of the mixed theorem from arbitrary legal selectors to two fixed bracket-sign extremal-root rules. The other three theorem statements and proof sources are preserved from the delivered baseline. Full always-leftmost and always-rightmost impossibility remains open. Historical reviews are retained for unchanged results; two new scoped reviews cover the revision."
+}

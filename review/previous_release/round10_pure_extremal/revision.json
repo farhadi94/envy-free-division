@@ -1,0 +1,50 @@
+{
+  "status": "mixed_extremal_revision_reviewed",
+  "created_at_utc": "2026-11-07T14:57:37.399536+00:00",
+  "baseline_snapshot": "review/round10_pure_extremal/before_final_snapshot.json",
+  "baseline_snapshot_sha256": "fd54a7dd08cfa472f555a11f3277140223226c00cd140c414b52cf03a3c03dda",
+  "changed_source_sha256": {
+    "paper.tex": "5fea7cd8956f9d6d01e3b18722214057de1f90364ab784bff88b5202b9cec590",
+    "sections/formal_scope.tex": "4e28ad65559c00e53331804377d4d044f711d46d208cb54c86f6dbcd08ea1050",
+    "sections/general_results.tex": "cf6772ce8e8b944300a46ca41f754177bd4c284499aad3d708564701aa58cbfc",
+    "sections/introduction.tex": "9819b6cef6459c045e32a7bbec61965e67815c06baedf28a7785d87cd1a403fa",
+    "sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+    "sections/mixed_overview.tex": "3c354a9219e6b922d06b6ce59bf2ef34c00d95ba2a827bfb18a84668b639bde3",
+    "sections/related_work.tex": "f005fb958c3decb84ab1b4d93bde619ce4f9eed285805070af270f7bbf8c34e2",
+    "sections/results_table.tex": "81584644dab5388e8284571744ca2ae8abb2ee9e5385ac40af0a8ca362b6adae"
+  },
+  "pdf_sha256": "18391fbfee679da13264a31441dfc167cb69bfa0fa9a6d2a385b270d7d9f76c6",
+  "baseline_statements": "review/round10_pure_extremal/before_main_statements.json",
+  "historical_statements": "review/round9_extremal/before_main_statements.json",
+  "unchanged_nonmixed_proof_sha256": {
+    "sections/chore_proof.tex": "4e53573239e1f577e007b6feca9d7f566bbd1805b16974cec740e63c00f40712",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9",
+    "sections/nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e"
+  },
+  "new_lean_source_sha256": {
+    "EnvyFreeResearch/CoordinatedFamily.lean": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451",
+    "EnvyFreeResearch/TranscriptAdversary.lean": "a6f46cba0c168260e2863e0caf0fe9ec3d0d9e7ef1438e8adb2cc203d3a6bae3"
+  },
+  "whole_source_receipt": "review/round10_pure_extremal/whole_candidate_review_final.json",
+  "mixed_source_receipt": "review/round10_pure_extremal/mixed_delivery_closure.json",
+  "proof_files_by_role": {
+    "chores": [
+      "sections/chore_proof.tex",
+      "sections/core_proof.tex",
+      "sections/baseline_subcore.tex",
+      "sections/offset_subcore_proof.tex",
+      "sections/baseline_completion.tex"
+    ],
+    "upper": [
+      "sections/upper_proof.tex"
+    ],
+    "lower": [
+      "sections/nonnegative_lower_proof.tex"
+    ]
+  },
+  "scope": "Replacement mixed lower proof for always-leftmost roots and, separately, always-rightmost roots. The same randomized and approximate guarantees hold. The other three main statements and proofs remain unchanged. No result is claimed for an oracle offering both extrema on demand, or for a fixed common total-variation ceiling."
+}

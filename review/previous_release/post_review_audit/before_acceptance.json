@@ -1,0 +1,137 @@
+{
+  "status": "all_five_reviews_closed_no_required_repairs",
+  "closed_at_utc": "2026-11-07T07:06:47.387618+00:00",
+  "pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+  "final_snapshot_sha256": "857fa5beea4c8e01d470cb75cfd91b63d3ea5b7e308ec7645a14f84bf907fb41",
+  "reviews": [
+    {
+      "role": "chores",
+      "accepted": true,
+      "verdict": "accepted within audited scope",
+      "unresolved_required_findings": [],
+      "receipt": "review/chores_independent_receipt.json",
+      "report": "review/chores_independent.md",
+      "receipt_pdf_field": [
+        "reviewed_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c",
+      "reviewed_snapshot": "review/pre_disclosure_snapshot.json",
+      "files_sha256": {
+        "review/chores_independent_receipt.json": "667fbaadb5d6c887fc062c52f8fce8a28e4f0aecd590482c55d220260f3586bd",
+        "review/chores_independent.md": "39cdff9c0f77cf5588a3627d7a2a4be4c4e21f542bee6d53006157646bce9d42"
+      },
+      "version_reconciliation": "Final presentation changes reviewed by the whole-paper reviewer; all theorem, model and proof sources in the consolidated coverage map are identical to this reviewer\u2019s accepted snapshot."
+    },
+    {
+      "role": "upper",
+      "accepted": true,
+      "verdict": "no_blocking_mathematical_issue_identified_in_final_snapshot",
+      "unresolved_required_findings": [],
+      "receipt": "review/upper_independent_receipt.json",
+      "report": "review/upper_independent.md",
+      "receipt_pdf_field": [
+        "final_snapshot",
+        "pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+      "reviewed_snapshot": "review/pre_table_snapshot.json",
+      "files_sha256": {
+        "review/upper_independent_receipt.json": "5f30543faa26a1a9b7926ac18a03d2fb64d7b669256b047284adb2319891213f",
+        "review/upper_independent.md": "92883a6bb83845e3ab9a168e5621a91415097a148b90e5ec063a412b4643e1e3"
+      },
+      "version_reconciliation": "Final presentation changes reviewed by the whole-paper reviewer; all theorem, model and proof sources in the consolidated coverage map are identical to this reviewer\u2019s accepted snapshot."
+    },
+    {
+      "role": "lower",
+      "accepted": true,
+      "verdict": "pass_no_substantive_gap_found",
+      "unresolved_required_findings": [],
+      "receipt": "review/lower_independent.receipt.json",
+      "report": "review/lower_independent.md",
+      "receipt_pdf_field": [
+        "final_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+      "reviewed_snapshot": "review/pre_table_snapshot.json",
+      "files_sha256": {
+        "review/lower_independent.receipt.json": "c6ea7696a2bdec78868963e65ea5d659b64ba7545be4d8ad8436d8e89be190e3",
+        "review/lower_independent.md": "495aaeac57294a5aae500c07b846a06c2d215dc18710103646202402727e18d1"
+      },
+      "version_reconciliation": "Final presentation changes reviewed by the whole-paper reviewer; all theorem, model and proof sources in the consolidated coverage map are identical to this reviewer\u2019s accepted snapshot."
+    },
+    {
+      "role": "mixed",
+      "accepted": true,
+      "verdict": "no_blocking_mathematical_gap_found",
+      "unresolved_required_findings": [],
+      "receipt": "review/mixed_independent_receipt.json",
+      "report": "review/mixed_independent.md",
+      "receipt_pdf_field": [
+        "final_pdf",
+        "sha256"
+      ],
+      "reviewed_pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+      "reviewed_snapshot": "review/pre_table_snapshot.json",
+      "files_sha256": {
+        "review/mixed_independent_receipt.json": "a6fc8050c63b825ac7023c046e56864c858b4e65e811718111666a8bd7cfd8e0",
+        "review/mixed_independent.md": "5e4948e06bedbfcbf49031bf122c7550bb6499a8d37dc915a5774da1b266ec43"
+      },
+      "version_reconciliation": "Final presentation changes reviewed by the whole-paper reviewer; all theorem, model and proof sources in the consolidated coverage map are identical to this reviewer\u2019s accepted snapshot."
+    },
+    {
+      "role": "whole",
+      "accepted": true,
+      "verdict": "review_complete_no_blocking_cross_result_defect_identified",
+      "unresolved_required_findings": [],
+      "receipt": "review/whole_independent_receipt.json",
+      "report": "review/whole_independent.md",
+      "receipt_pdf_field": [
+        "final_pdf_sha256"
+      ],
+      "reviewed_pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+      "reviewed_snapshot": "review/final_snapshot.json",
+      "files_sha256": {
+        "review/whole_independent_receipt.json": "d3a14e02c3aa51628a483d61fafa201b21cfb2d66a548a0d554f4ad4fd006b01",
+        "review/whole_independent.md": "b7c5603c32dcdadf34a9e6e15dec3c9961f13a81929fa8df237166c9b989feea"
+      },
+      "version_reconciliation": "The whole-paper reviewer checked the repository citation and author-supplied Astra attribution in the final PDF; mathematical and Lean sources are unchanged."
+    }
+  ],
+  "unchanged_proof_and_statement_sha256": {
+    "sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+    "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "sections/general_results.tex": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+    "sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+    "sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "sections/mixed_lower_proof.tex": "418e175f8952c6a1b1f7af6fddd522c6b49d92d01abd5a86cee170e47e11ec34",
+    "sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "sections/nonnegative_lower_proof.tex": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+    "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+    "sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781",
+    "sections/upper_proof.tex": "bd52ff2087132a2631398e8a04419b8d9cb9833b780dad064aec651a6c56c5d1"
+  },
+  "presentation_reconciliation": "review/presentation_reconciliation.json",
+  "resolved_required_findings": [
+    "Added explicit finite-Lean coverage map with components outside formalization.",
+    "Specified repository abstract for the cubic-bound announcement.",
+    "Qualified mixed no-repair overview by replay and pure pulse supports.",
+    "Exempted endpoints 0 and 1 explicitly in the query-coordinate cover.",
+    "Specified active population k>=3 in the shrinking-cost estimate.",
+    "Clarified that replay preserves the returned object/nonreturn rather than fairness classification."
+  ],
+  "optional_presentation_notes_not_required_for_correctness": [
+    "Chore reviewer: the union-of-perfect-matchings SCC fact could be stated explicitly.",
+    "Chore reviewer: a global endpoint-ownership convention could be repeated.",
+    "Whole reviewer: the chore comparison could explicitly write v=-c.",
+    "Whole reviewer: positive algorithms could be called upper-bound protocols."
+  ],
+  "scope": "Five independent internal agent reviews, with direct mathematical proof audits; no claim of external peer review, exhaustive novelty verification, or full Lean formalization.",
+  "main_theorems_fully_formalized": 0,
+  "editorial_amendment": "review/disclosure_amendment.json",
+  "repository_citation_amendment": "review/repository_citation_amendment.json",
+  "astra_disclosure_amendment": "review/astra_disclosure_amendment.json"
+}

@@ -1,0 +1,75 @@
+{
+  "captured_at_utc": "2026-11-07T06:27:16.812933+00:00",
+  "sources": [
+    {
+      "path": "research/submission_focused/paper/paper.pdf",
+      "sha256": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2",
+      "bytes": 407495
+    },
+    {
+      "path": "research/submission_focused/paper/paper.tex",
+      "sha256": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+      "bytes": 3488
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+      "bytes": 5093
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+      "sha256": "0806e0944f8384b9452367c9de45ff900cfcdd94dbf654147b51032df642dae3",
+      "bytes": 34694
+    },
+    {
+      "path": "research/submission_focused/paper/sections/mixed_overview.tex",
+      "sha256": "5bd25ef982a425f4f095c62298dd34086923e5538d82cad130bbe796d4ca6cfb",
+      "bytes": 2312
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "bytes": 1697
+    },
+    {
+      "path": "research/submission_focused/paper/sections/introduction.tex",
+      "sha256": "af621052def6b0d7e435ed174427833010509101d735601ea1e8e4cf6a69a029",
+      "bytes": 3133
+    },
+    {
+      "path": "research/submission_focused/paper/sections/related_work.tex",
+      "sha256": "1a8c377ae9107bc30eecda045c0d5a4d22fb2d5a9b2372f88957e58f16a76776",
+      "bytes": 2741
+    },
+    {
+      "path": "research/submission_focused/paper/sections/results_table.tex",
+      "sha256": "4eb637648d87e5eaf22261d7d38235eb47fe2f456e5a7a416e5cef146b779bb4",
+      "bytes": 1732
+    },
+    {
+      "path": "research/submission_focused/paper/sections/formal_scope.tex",
+      "sha256": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+      "bytes": 2360
+    },
+    {
+      "path": "research/submission_focused/paper/sections/proof_overviews.tex",
+      "sha256": "f7ff33175fd666ed98c5eef14da4d390329672b4b39fa34f06b3f3833d779dd4",
+      "bytes": 2509
+    },
+    {
+      "path": "research/submission_focused/paper/figures/mixed_pulses.tex",
+      "sha256": "b0466dfa92a813aa4e131f688bb3df13f6496930ce2b75c4e12cc70c1ae19209",
+      "bytes": 1929
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "bytes": 11167
+    },
+    {
+      "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "bytes": 17518
+    }
+  ]
+}

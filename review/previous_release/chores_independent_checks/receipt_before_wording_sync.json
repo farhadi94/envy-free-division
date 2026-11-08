@@ -1,0 +1,186 @@
+{
+  "reviewer": "/root/focused_review_chores",
+  "role": "fresh independent mathematical reviewer assigned to deterministic chore theorem",
+  "completed_at_utc": "2026-11-07T06:35:58.716296+00:00",
+  "final_status": "accepted within audited scope",
+  "theorem_labels": [
+    "thm:deterministic-chores",
+    "r8c:theorem"
+  ],
+  "report": "research/submission_focused/review/chores_independent.md",
+  "report_sha256": "7a16df0cd5505668d641915af4caa59c7b8dada252435cb35dd3ed0eec419b29",
+  "final_snapshot_receipt": "research/submission_focused/review/final_snapshot.json",
+  "final_snapshot_receipt_sha256": "089d47523f1510ac6ddaa8871655c6f0740ae56fb9a800e3bdb029b11d5dd9e7",
+  "source_hash_algorithm": "SHA-256",
+  "reviewed_pdf_sha256": "11f7134516c4919b389fadfaaf692ca484267a80f9540eadb2f15b271219c21f",
+  "initial_pdf_sha256": "6fcdffcb341c059ed699c81c940af89b150c7efcc89bcc814401fceb2eb382b2",
+  "intermediate_pdf_sha256": "12fa56b38e4d99aeb86b19532543d051203793369fcfc2c90006997bfa14ebff",
+  "pdf_appendices_A_E_unchanged": true,
+  "pdf_appendices_A_E_extracted_text_sha256": "33cb32d08d1007f07705348593b832ba11e251f255d30259f483c7a5b8e40458",
+  "source_hashes": {
+    "research/submission_focused/paper/paper.tex": "381d307cbafd17279462fbaf0717f4214663e6775bfb771382dfdfe8d4da9077",
+    "research/submission_focused/paper/references.bib": "1ff8683bfd58818cf91a653df2a9f66882b896bd8f788d798b60be4edb213cd7",
+    "research/submission_focused/paper/sections/model.tex": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+    "research/submission_focused/paper/sections/general_results.tex": "543df043f77726b70c0234bf2c5b1266de6525b5446eb222c4c8d0c465849585",
+    "research/submission_focused/paper/sections/chore_proof.tex": "f9b805f6f5e6a37c7de31466f8a330d3e3123a8a5cedc0798699b6b2593b035e",
+    "research/submission_focused/paper/sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
+    "research/submission_focused/paper/sections/baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
+    "research/submission_focused/paper/sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
+    "research/submission_focused/paper/sections/baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52",
+    "research/submission_focused/paper/sections/formal_scope.tex": "39c319362c86ce7fd60f34f4c44318f7006bdcaf51a4260958541b6db7ae8346",
+    "research/submission_focused/paper/sections/introduction.tex": "dff58b1d581ea2cd9751716c248b295cde701517fee0520b0a28748d45050802",
+    "research/submission_focused/paper/sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
+    "research/submission_focused/paper/sections/related_work.tex": "708de35bd5d296bd4f082d96007130b580ab83006bb3fcde2496067cc2e7f32e",
+    "research/submission_focused/paper/sections/upper_overview.tex": "d5eaf935e36e642be2a9fb00d102f9165905752d7fde50b653d414683e46c781"
+  },
+  "reviewed_scope": [
+    "Model and deterministic theorem statement, with final PDF comparison",
+    "All of Appendices A-E in actual TeX",
+    "Hungry existence, canonical prefix DP, simultaneous formal-record realization, arbitrary legal plateau roots",
+    "Many-parent SubCore, inherited benchmark allocation, equal-value chain, parent-dependent offsets, masked pooled queries",
+    "Exact reserve/deficit/credit invariants, reset and closure, physical residue, zero stripping, atomic and exhausted batches",
+    "Root-local SCC synchronization, pending proposal validity, floor-sensitive pool survival",
+    "Whole-cell rounding, reserved-piece augmentation, recursive completion, null material and base cases",
+    "Complete query count, explicit envelope and sharper asymptotic leading exponent",
+    "Selected finite Lean statements inspected only for scope; not a full source verification or compilation",
+    "Final editorial reconciliation: chore-facing introduction, overview and related-work wording; mathematical proof scope unchanged"
+  ],
+  "primary_sources": [
+    {
+      "pdf": "research/library/2026_ye_bai_single_exponential.pdf",
+      "pdf_sha256": "92385a9b33f30b6b4b435cb3cedf440128a3c0a647cb0b087b2f67d5c8807393",
+      "text": "research/library/2026_ye_bai_single_exponential.md",
+      "text_sha256": "364453a42cde4f76070188b919090d4151122efd998e9d652a1674ad2a04328a",
+      "consulted_scope": "Appendix F, Algorithm 6, chain/tie proof and recurrence"
+    },
+    {
+      "pdf": "research/library/1604.03655v12.pdf",
+      "pdf_sha256": "9cf69a31ce932c0246262a2ecd76bf1aaa9bd3d5986f5ea5a675149addcf5530",
+      "text": "research/library/1604.03655v12.md",
+      "text_sha256": "3123bd7345af351f4fa3fe4efb58ca39ed0719ebbe615accc1c9d10fc1782759",
+      "consulted_scope": "Algorithm 2 SubCore"
+    },
+    {
+      "pdf": "research/library/1941_kakutani_fixed_point.pdf",
+      "pdf_sha256": "43664334a2226151be997da257c6b38888c1de4d92cca48b1a84e6b19ae9f6e8",
+      "text": "research/library/1941_kakutani_fixed_point.md",
+      "text_sha256": "8e41c481cbba9b61d7f8a8bc4eb17f0987299f98be0abb8d6f2bdfe416c6ae7c",
+      "consulted_scope": "Fixed-point theorem statement"
+    },
+    {
+      "pdf": "research/library/2011_glasser_reitwiessner_witek_multicolor_full_v1.pdf",
+      "pdf_sha256": "7f11a9a73ac393627ba3514c81d7c96872844fba088b24f4de82dc5d0c6c5489",
+      "text": "research/library/2011_glasser_reitwiessner_witek_multicolor_full_v1.md",
+      "text_sha256": "dd1928019be28714c20bb9822056a7dcae848d1094e606cb6f9084b09c5fb158",
+      "consulted_scope": "Theorem 3.1 and floating-variable proof"
+    }
+  ],
+  "lean_scope_inspection": {
+    "path": "research/submission_focused/verification/lean/EnvyFreeResearch/R8Chores.lean",
+    "sha256": "7b8ae721a9304f0eb82c20ebde2f0d4307efd74052aadbd45561dcd9bbd91eba",
+    "statements": "Masked-value restriction, task injectivity, selected-root sums/budgets, physical credit (approximately lines 20-210)",
+    "compiled_by_this_reviewer": false,
+    "used_as_proof_of_full_continuous_protocol": false
+  },
+  "independence": {
+    "previous_review_reports_used": false,
+    "author_notes_used_as_correctness_evidence": false,
+    "manuscript_modified_by_reviewer": false,
+    "subagents_spawned": false,
+    "tests_independently_implemented": true
+  },
+  "findings": [
+    {
+      "id": "CHORES-C1",
+      "severity": "nonblocking clarification",
+      "locations": [
+        "sections/chore_proof.tex:131",
+        "sections/chore_proof.tex:362"
+      ],
+      "finding": "The union-of-perfect-matchings invariant already implies that every old edge lies inside its SCC. Stating this explicitly would make the exact-merger claim easier to audit.",
+      "action": "Optionally add the one-sentence permutation-cycle observation.",
+      "required_for_acceptance": false
+    },
+    {
+      "id": "CHORES-C2",
+      "severity": "nonblocking clarification",
+      "locations": [
+        "sections/chore_proof.tex:37",
+        "sections/core_proof.tex:8"
+      ],
+      "finding": "A fixed endpoint-membership convention would make literal disjoint physical coverage explicit. Nonatomicity makes this costless and no null interval may be discarded.",
+      "action": "Optionally specify consistent ownership of shared endpoints.",
+      "required_for_acceptance": false
+    }
+  ],
+  "blocking_findings": [],
+  "counterexamples_found": [],
+  "unresolved_questions": [],
+  "targeted_checks": [
+    {
+      "script": "research/submission_focused/review/chores_independent_checks/check_primitives.py",
+      "sha256": "e51f0ce9f9bd2daeea26c3571924489c590b65e12bd507d470882857f82e1631",
+      "result": {
+        "status": "passed",
+        "seed": 2718281828,
+        "core_profiles": 180,
+        "subcore_profiles": {
+          "clipped": 600,
+          "affine": 600
+        },
+        "calls": 1533,
+        "chain_repairs": 1,
+        "record_insertions": 4468,
+        "cuts": 3456,
+        "scope": "Independent rational finite-record simulator; not a full pooled protocol simulation."
+      }
+    },
+    {
+      "script": "research/submission_focused/review/chores_independent_checks/check_ledger.py",
+      "sha256": "c3f55c5879c0b29eeb967e91737ff3adffd5982c886d1ca9db55865c9fcf3349",
+      "result": {
+        "status": "passed",
+        "population_range": [
+          3,
+          100
+        ],
+        "subcore_recurrence_range": [
+          2,
+          30
+        ],
+        "arithmetic": "exact integers",
+        "least_L": "bounded using 14*n*W"
+      }
+    }
+  ],
+  "limits": [
+    "Acceptance is a direct mathematical review, not a complete machine-checked theorem.",
+    "Finite rational tests do not exhaust arbitrary measures, every transcript, or the enormous full pooled protocol.",
+    "No production oracle implementation or bit-complexity claim is certified.",
+    "Other main results and their appendices are outside this review."
+  ],
+  "pre_editorial_accepted_pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+  "editorial_reconciliation": {
+    "completed_at_utc": "2026-11-07T06:40:00.800391+00:00",
+    "status": "accepted within audited scope",
+    "previous_snapshot": "research/submission_focused/review/pre_editorial_snapshot.json",
+    "previous_snapshot_sha256": "ec15511df5208147296907fdceab319f4ac4f8574a6bd8d35f852c32835bbb9c",
+    "editorial_delta": "research/submission_focused/review/editorial_delta.json",
+    "editorial_delta_sha256": "2a2e12e3cf1d24e9e52ee3dea22256d896ca8f76b2e47511bd248c35a6bfc6f2",
+    "previous_pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+    "final_pdf_sha256": "11f7134516c4919b389fadfaaf692ca484267a80f9540eadb2f15b271219c21f",
+    "read_for_chore_facing_consistency": [
+      "sections/introduction.tex",
+      "sections/proof_overviews.tex",
+      "sections/related_work.tex",
+      "sections/upper_overview.tex"
+    ],
+    "all_original_reviewed_sources_unchanged": true,
+    "pdf_appendices_A_E_byte_identical": true,
+    "all_actual_lean_files_match_pre_editorial_hashes": true,
+    "new_findings": [],
+    "unresolved_questions": [],
+    "tests_rerun": false,
+    "reason_tests_not_rerun": "The theorem, model, all deterministic proof dependencies and Lean sources are unchanged; this is an exposition-only reconciliation."
+  }
+}

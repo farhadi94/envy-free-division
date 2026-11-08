@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T06:46:24.710481+00:00",
+  "pdf_sha256": "8274e3fe05605dde286cfb57eb8b8250d8eb11c4287fdc4544af57d1b077029c",
+  "pages": 67,
+  "final_rendered_pages_checked": [
+    3,
+    7,
+    8
+  ],
+  "preceding_complete_visual_pass_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    57,
+    58,
+    66,
+    67
+  ],
+  "scope": "Full selected-page visual pass before table rules and figure removal, followed by direct final-page checks of all presentation changes. The remaining sources and layout are covered by unchanged proof hashes and independent final whole-paper inspection.",
+  "observations": [
+    "Thin table row separators are legible; table remains on page3.",
+    "Figure and its references removed.",
+    "Introduction has no AI-methodology mention or procedural roadmap.",
+    "References precede appendices.",
+    "Main author names and affiliations consistent.",
+    "No clipped text, overlapping elements, unresolved references or build diagnostics observed."
+  ],
+  "render_sha256": {
+    "page01.png": "2f15dae571fca17ace4626c46e8fcf19c444da4b71d585067f2567d6d765f05c",
+    "page02.png": "f1b5c3b8152a593e6d78b70fe75ff5290f36bb45bd212e0123c0694a9108725f",
+    "page03.png": "7723c1f5d4f3d8e77a7ed5f8eab1d72461200bbe98da58e39bd21bc6f2c431e5",
+    "page04.png": "1fef41b79c402ad79faab8a9e9b78caeb26d39d51b31a3eb429bb55ab10121a2",
+    "page05.png": "8da6f164988487c92c597c5adc4805d2a55fa13f3ec80d81edde35991ebf616f",
+    "page06.png": "c8c56f0f88d8c1133053fb4fa5f84f9b33eeaf6c04b5c1dadbc42d92c18a96c4",
+    "page07.png": "225cf1f747f53499cd74504780042c4749f03d6c0381d99c1cd779939067634b",
+    "page08.png": "969514008bc2a1e5677761c720d09807b505d708b90fb5eb19ffc183392775f8",
+    "page09.png": "df1c9cdf96e0a2572807c815c0e9f43af02375808d38d93f5e195d20b207229b",
+    "page10.png": "ae5f85a98b66ea250e67ee0cb4bc9ea5e4e683b97e9ea15bfa12a97801711b56",
+    "page57.png": "e6b5aad31445c399e08cbca2f6ecb880234a312894ceb16ef618245ac0bfbd51",
+    "page58.png": "3f66a3a6dca0b2b9ea7c2a906b46d3f9e3e1a6bea767b80f2681af3e0d288b8a",
+    "page66.png": "ca0179d180b3c6a5fef7ea993de53538497e9eac49b428c369b1c3dc3ae88b3e",
+    "page67.png": "f1744c29688bf30eed693c39972d8ab4c2df89c76d8ab0b201b119bd097a66db"
+  }
+}

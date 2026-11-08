@@ -1,0 +1,31 @@
+'EnvyFreeResearch.TranscriptAdversary.frozen_coordinate_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.terminal_root_target_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.first_reply_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.legal_target_preserved_on_frozen_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.frozen_interval_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.frozen_bundle_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_new_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_new_level_lt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_terminal_ceiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_tail_slope_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.rebuild_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.anchored_prefix_cut_and_choose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EnvyFreeResearch.TranscriptAdversary.prefix_certificate_from_first_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

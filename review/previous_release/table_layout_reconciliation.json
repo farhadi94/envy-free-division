@@ -1,0 +1,14 @@
+{
+  "status": "only_four_table_rules_added",
+  "pre_table_snapshot": "review/pre_table_snapshot.json",
+  "reviewed_pdf_sha256": "8370c1da9ee87aedfeec7bfd0472bb63420acbb84f38427a2243baaaeb128a90",
+  "final_pdf_sha256": "151b40a104bead8c90f3d128368fc89767388c64e6ee1ed2c5d4f40ea218d123",
+  "changed_files": [
+    "paper.pdf",
+    "sections/results_table.tex"
+  ],
+  "exact_source_delta": "Four lines containing \\midrule[.25pt] added between table rows.",
+  "reversing_delta_reproduces_reviewed_table_hash": true,
+  "all_other_paper_sources_unchanged": true,
+  "all_lean_sources_unchanged": true
+}

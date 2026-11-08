@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "role": "lower",
+  "reviewer": "/root/lower_release_review",
+  "reviewed_at_utc": "2026-11-08T03:10:45.263457+00:00",
+  "status": "accepted",
+  "acceptance_scope": "Independent mathematical statement and source correspondence review of the nonnegative randomized lower bound only; not whole-candidate build certification or human/publication approval.",
+  "candidate_root": "/Users/alireza/temp/ef/research/formalization/final_release_candidate",
+  "pdf": {
+    "path": "paper/paper.pdf",
+    "sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+    "pages": 66,
+    "text_spot_checks_pages": [
+      57,
+      66
+    ],
+    "visual_layout_review": false
+  },
+  "public_declarations": [
+    "EnvyFreeResearch.Full.NonnegativeRawMain.optimized_attempted",
+    "EnvyFreeResearch.Full.NonnegativeRawMain.quadratic"
+  ],
+  "required_findings": [],
+  "source_hashes": {
+    "paper/paper.tex": "5fea7cd8956f9d6d01e3b18722214057de1f90364ab784bff88b5202b9cec590",
+    "paper/sections/model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+    "paper/sections/general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
+    "paper/sections/nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e",
+    "paper/sections/lower_overview.tex": "91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f",
+    "paper/sections/formal_scope.tex": "9bbb767af07618b809fcf0d09064a81ca6c3d7802cf3d9d99385364e47f39136",
+    "paper/sections/ai_methodology.tex": "0991f71b9b0ff36a01c8ef74b0e6bc47351ab7ab2f6e06845c6e494a7bef530c",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeRawMain.lean": "f7502eef7163684e13f51bf221d1a5038147bdfeee8a4321ef39701b22845a84",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeMain.lean": "ecff9065c2e89b5f4671e0fe2937f59bb194f00f121124c400763e0d2dd8ee65",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeInputClass.lean": "ead3ef0d53ec3ca5e8002e25a58ec2d444e94c13a2d5e800cc6b03660282ba49",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeLower.lean": "afdbdcc7ce9c21e14c668391c615ba06f7e03b25f4d006741ff19b32cf64b889",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeHardFamily.lean": "546e02d257d9127542239ec46e5077bf2fbd67e8cc18038223af6ac33dd12f59",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeMainEvents.lean": "f0006666e39a1d9f553f7ac00cee4166ddfd457c641235cb45fe08ecf70df29b",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeOracle.lean": "634ec2f7473898e1eab8472e1be8dba6a352140ccc37748746b0bcfeb160abc7",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeDetection.lean": "563db8f8f690de3e18c0962c084e427babd3e6e4533dc045114bfb3747a7acc7",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeDecoderLedger.lean": "e5a0766b0a2297cdc44d73f20400306787a9b0aa3b61159e8112615a5a43fc19",
+    "verification/lean/EnvyFreeResearch/Full/NonnegativeProbability.lean": "804b4ff5b64348923836063b87b4d083775a76a1060741b9eee5d36c5c788a95",
+    "verification/lean/EnvyFreeResearch/Full/RawIntervalPartition.lean": "dd4d9bb3aac7d463dacb50ca00bc6e5c85c0719dc3c2c3b090e59f799c5b923a",
+    "verification/lean/EnvyFreeResearch/Full/OutputPostprocess.lean": "30fc79a185950c7a667803960a81a0d826e79da89ced595be95396ad359e9df5",
+    "verification/lean/EnvyFreeResearch/Full/AttemptedQueries.lean": "711bf8c9e5bd1c9bfc08224856d5ac18b767fdd937f208f6d20d057417b71238",
+    "verification/lean/EnvyFreeResearch/Full/OracleProtocol.lean": "2850d7f5b3c7da9eefdd9da82b62fae8b3ec90d84db46a18214fc1d5ebcf1270",
+    "verification/lean/EnvyFreeResearch/R8Lower.lean": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
+    "verification/main_results.json": "92713387ec533e57a59250226784c63ae133e18db38e95ae5e91767f70e82dfb"
+  },
+  "source_inspection_note": "Entire public endpoint, input-class and main quantitative chain read; supporting modules inspected at the definitions/proof passages described in the report. Hashing does not imply line-by-line reproof of all imported sources.",
+  "prior_hash_comparisons": [
+    {
+      "report": "/Users/alireza/temp/ef/research/formalization/all_main_results/formalization/logs/lower_adapters_targeted/report.json",
+      "report_sha256": "7eceb3ad16e10410c4bbb3f4c7eeae7eb353f0ba3fdc94d356bf2d6048a03ab8",
+      "source_count": 13,
+      "mismatches": [],
+      "all_sources_match": true,
+      "reported_status": "all targeted exit codes zero",
+      "verification_scope": "Targeted source re-elaboration; available compiled dependencies reused; no production source or olean modified"
+    },
+    {
+      "report": "/Users/alireza/temp/ef/research/formalization/all_main_results/formalization/logs/lower_bounds_complete_closure/report.json",
+      "report_sha256": "4de736be2f1013c8e1ade018ae15ba8390335a5f087782e350788b1af2f79a6b",
+      "source_count": 95,
+      "mismatches": [],
+      "all_sources_match": true,
+      "reported_status": "passed",
+      "verification_scope": "Frozen complete local source import closure; external pinned package oleans reused"
+    }
+  ],
+  "prior_nonnegative_main_sha256_match": true,
+  "paper_build_manifest_all_hashes_match": true,
+  "prior_paper_correspondence_hashes_match": [
+    "sections/model.tex",
+    "sections/nonnegative_lower_proof.tex",
+    "sections/lower_overview.tex"
+  ],
+  "cold_candidate_audit": {
+    "performed_by_this_review": false,
+    "status": "pending_separate_root_audit",
+    "prior_lower_closure_reported_modules": 95,
+    "prior_lower_closure_reported_theorems": 1692,
+    "prior_lower_closure_external_package_oleans_reused": true
+  },
+  "limitations": [
+    "Standard semantic typed Eval/Cut and finite disjoint interval-record output encoding; no universal parser or redundant-overlap canonicalizer claim.",
+    "Fixed p>0 gives Omega_p(n^2); no superquadratic or fixed-positive-tolerance lower bound claimed.",
+    "Paper proof uses direct finite-query endpoint lists; formal proof uses finite caps followed by limits.",
+    "No source edits, expensive builds, fresh compiler elaboration, literature check, or inferred human approval."
+  ],
+  "human_approval": false,
+  "reviewed_snapshot": "review/candidate_source_snapshot.json",
+  "reviewed_snapshot_sha256": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee",
+  "scoped_review_context": true,
+  "accepted": true,
+  "unresolved_required_findings": []
+}

@@ -1,0 +1,8 @@
+{
+  "status": "author_requested_disclosure_update",
+  "base_snapshot": "review/pre_astra_snapshot.json",
+  "pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+  "change": "OpenAI Codex -> OpenAI Codex, using the Astra model",
+  "source_of_model_identification": "Explicit author instruction in the current conversation.",
+  "mathematical_and_lean_sources_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-07T07:06:47.388364+00:00",
+  "pdf_sha256": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+  "pages": 67,
+  "final_rendered_pages_checked": [
+    67
+  ],
+  "previous_visual_review": "review/pre_astra_visual_check.json",
+  "observations": [
+    "AI methodology names Astra as requested by the author.",
+    "Repository citation and Appendix I table separators retained.",
+    "No clipping or build diagnostics observed."
+  ],
+  "render_sha256": {
+    "astra_page67.png": "e0e5ef39eb422c59318f246ee08a29d7d470096b3595c3d4729b851abcaf1e42"
+  }
+}

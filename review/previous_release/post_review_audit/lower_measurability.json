@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/focused_review_lower",
+  "audit_kind": "fresh_targeted_mathematical_rederivation",
+  "completed_at_utc": "2026-11-07T07:53:01.902716+00:00",
+  "status": "accepted_scoped_final_snapshot",
+  "status_meaning": "A local null-set measurability defect was repaired and the joint-measurable protocol convention made explicit. The targeted probability interfaces were independently rederived; no main-theorem counterexample remains under the clarified model.",
+  "closure_level": "Exact final PDF/snapshot reconciled for the stated audit scope; no repeat proof or compilation required because all audited sources are unchanged.",
+  "scope": {
+    "primary": "Appendix G.6, label r8lb:probability, and common measurable-protocol definition in model.tex:31-37",
+    "dependencies": [
+      "G.1 next-action/tape convention",
+      "G.2 finite-query replay and illegal requests",
+      "G.3 parameterized pulse family and detection event",
+      "G.4 endpoint-list measurability, fixed extension, dominated convergence and wrong-output gap",
+      "G.5 measurable decoder and baseline failure retention",
+      "G.6 finite histories, output strata and Tonelli averaging",
+      "Final retention inequality, with no new optimization audit"
+    ],
+    "full_lower_proof_reread_for_context": true,
+    "final_lower_proof_lines": 352,
+    "main_statement_checked": "thm:nonnegative-lower only; other general_results theorem changes outside scope",
+    "topics": [
+      "joint legal inverse-root continuity",
+      "joint adaptive history composition",
+      "finite-query nonreturn without stopping-time assumption",
+      "standard Borel finite-output and endpoint-size strata",
+      "deterministic width fixed before independent input/tape draws",
+      "preservation of prior failures",
+      "Tonelli over fixed pulse inputs on arbitrary tape probability spaces"
+    ],
+    "excluded": [
+      "other main theorem proofs",
+      "new QueryProbability.lean",
+      "Lean builds",
+      "exhaustive novelty search",
+      "repeated window optimization review"
+    ]
+  },
+  "findings": [
+    {
+      "id": "LM-01",
+      "severity": "minor_technical_defect",
+      "status": "resolved",
+      "blocking_after_repair": false,
+      "location": "G.4 endpoint-list extension on the null infinite-query event",
+      "initial_issue": "An arbitrary modification on a null set need not be measurable on the allowed noncomplete tape probability space.",
+      "counterexample": "Borel [0,1] with Borel Lebesgue probability; a non-Borel subset V of a null Cantor set Z; choose different finite endpoint lists on V and its complement. The list length is not measurable.",
+      "adopted_repair": "On the measurable null event of infinite-query tapes, define the list to be (0,1). This fixed extension preserves measurability. The following replay sentence is explicitly restricted to outside that null event.",
+      "verified_in_final_source": true,
+      "theorem_scope_effect": "None; fixes the chosen representative on a measurable null event."
+    },
+    {
+      "id": "LM-02",
+      "severity": "model_precision",
+      "status": "resolved",
+      "blocking_after_repair": false,
+      "location": "Common model definition and G.1 measurable protocol convention",
+      "initial_issue": "Joint measurability was the natural intended reading, but was not explicit; separate measurability would not justify adaptive composition.",
+      "counterexample_to_weaker_interpretation": "d(omega,r)=1 iff omega=r is in a non-Borel V. Each one-variable section is Borel, but after Eval([0,omega]) on the uniform profile the decision is the nonmeasurable diagonal 1_V(omega).",
+      "adopted_repair": "Standard Borel finite transcript/action/output encoding spaces; next-action and finite-output rules jointly measurable in tape and finite transcript; semantic query-free nonreturn type without a decidability assumption.",
+      "verified_in_final_source": true,
+      "theorem_scope_effect": "Clarifies the standard joint-measurable model. Ordinary countable-step measurable oracle protocols remain covered. Merely separately measurable rules are explicitly excluded; they can fail to induce measurable adaptive executions."
+    }
+  ],
+  "unresolved_findings": 0,
+  "counterexamples_to_main_theorem_found": 0,
+  "counterexamples_to_weaker_or_inaccurate_claims_found": 2,
+  "independent_derivations": [
+    "For legal roots, |z-zprime| <= 4||F-Fprime||_infinity + 3|a-aprime| + 2|t-tprime|; the legal domain and oracle failure tags are Borel.",
+    "Joint histories follow by finite composition and measurable dummy-state extensions.",
+    "With reach events R_k, {Q=k}=R_k minus R_(k+1) and {Q=infinity}=intersection R_k. Return, terminal-illegal, and nonreturn strata are measurable without a last-query stopping-time condition.",
+    "Finite output code strata provide measurable endpoint vectors, counts, ownership, gaps and success. Fixed null-set extension avoids completeness assumptions.",
+    "Bounded domination of min(1,2hN) and decreasing positive-gap events give a common deterministic dyadic width without E[N]<infinity.",
+    "Old failure and decoder events give the failure inclusion after measurable loss events and the measurable null infinite-query event are removed.",
+    "Tonelli averages a jointly measurable bounded failure indicator over fixed pulse tuples; no regular conditional law, full-profile-space measurable structure, or tape-dependent selection is used."
+  ],
+  "source_hashes": [
+    {
+      "path": "research/submission_focused/paper/sections/nonnegative_lower_proof.tex",
+      "sha256_initial_targeted_audit": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa",
+      "sha256_final_targeted_audit": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e",
+      "current_hash_verified": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/model.tex",
+      "sha256_initial_targeted_audit": "90aff6b5313fd29bdf3437dfd81bcc05fa4259b43a5afb0842b531e6a1dcae44",
+      "sha256_final_targeted_audit": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
+      "current_hash_verified": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    },
+    {
+      "path": "research/submission_focused/paper/sections/general_results.tex",
+      "sha256_initial_targeted_audit": "0a35845e4a8044b39d594dee806641d8061165fdbf89ef245cf669363e87ead8",
+      "sha256_final_targeted_audit": "1aec573fa9119d53d4fe04bc7d4a7224b588bf82da9df9517726023426b48d9a",
+      "current_hash_verified": true,
+      "matches_reviewed_snapshot": true,
+      "current_hash_verified_at_final_closure": true
+    }
+  ],
+  "pdf_context": {
+    "sha256_observed_at_targeted_audit_start": "57a922d5eb1b7ed72d8c4f2b573562e3399e7233df4808c0dee016219fe58099",
+    "used_as_post_repair_evidence": false,
+    "post_repair_pdf_closure": "completed against the pinned final snapshot; repaired clauses verified in the final PDF",
+    "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+    "final_pdf_pages": 71
+  },
+  "independence": {
+    "prior_acceptance_used_as_evidence": false,
+    "historical_receipts_modified": false,
+    "paper_modified_by_this_reviewer": false,
+    "root_applied_reported_repairs": true,
+    "other_agents_files_modified": false,
+    "agents_spawned": false,
+    "files_owned_by_this_task_only": [
+      "research/submission_focused/review/post_review_audit/lower_measurability.md",
+      "research/submission_focused/review/post_review_audit/lower_measurability.json"
+    ]
+  },
+  "formal_verification": {
+    "new_lean_module_reviewed": false,
+    "lean_build_rerun": false,
+    "full_probability_theorem_claimed_formalized": false
+  },
+  "checks": {
+    "method": "direct mathematical construction and explicit pathology examples; no new finite numerical test claimed",
+    "current_source_hashes_verified": true
+  },
+  "report": {
+    "path": "research/submission_focused/review/post_review_audit/lower_measurability.md",
+    "sha256": "a4046e0a54519f486ba196e315e31f633c528837d0d9b033c1002340a64d1a02"
+  },
+  "proof_audit_status": "passed_after_measurability_repairs",
+  "proof_audit_completed_at_utc": "2026-11-07T07:38:42.386523+00:00",
+  "final_pdf_sha256": "fca21e71706d17b07a0fc272bbeabcd0e7ace0317d228ef48c7527d778f64295",
+  "reviewed_snapshot": "review/final_snapshot.json",
+  "reviewed_snapshot_sha256": "b446afd3d9512f9e684bfb406fdc46324c4b01fa3b46e470bc74596b2b1c7f6b",
+  "unresolved_required_findings": 0,
+  "scoped_final_verdict": "Accepted for Appendix G measurability, replay/loss interfaces and fixed-input comparison under the repaired model; no unresolved required findings.",
+  "final_closure": {
+    "completed_at_utc": "2026-11-07T07:53:01.902716+00:00",
+    "snapshot_copy_byte_identical": true,
+    "snapshot_copy": "review/post_review_audit/final_snapshot.json",
+    "pdf_pages": 71,
+    "audited_source_hashes_unchanged": true,
+    "model_and_appendix_g_hashes_match_snapshot": true,
+    "query_probability_hash_matches_snapshot": true,
+    "pdf_text_checks": {
+      "joint_measurability_model_page": 3,
+      "appendix_g1_protocol_invocation_page": 56,
+      "fixed_null_set_extension_and_almost_sure_replay_page": 59,
+      "probability_formal_scope_and_exclusions_page": 71
+    },
+    "proofs_or_compilations_repeated": false,
+    "global_audit_context": {
+      "reported_status": "passed",
+      "modules": 31,
+      "authored_theorems": 815,
+      "total_theorems": 1373,
+      "independently_rerun_by_this_reviewer": false,
+      "provenance": "parent final-closure report; counts match the pinned snapshot"
+    },
+    "main_theorems_fully_formalized_claimed": 0
+  },
+  "separate_probability_audit": {
+    "receipt": "review/post_review_audit/probability_independent.json",
+    "module_sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+    "theorems_independently_compiled_and_axiom_checked": 15,
+    "verdict": "accepted_scoped_final_snapshot"
+  }
+}

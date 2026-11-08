@@ -1,0 +1,21 @@
+{
+  "model": {
+    "identical": true,
+    "diff": ""
+  },
+  "main theorem": {
+    "identical": true,
+    "diff": ""
+  },
+  "Appendix G": {
+    "identical": true,
+    "diff": ""
+  },
+  "all_audited_non_pdf_sources_unchanged": true,
+  "previous_pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+  "current_pdf_sha256": "11f7134516c4919b389fadfaaf692ca484267a80f9540eadb2f15b271219c21f",
+  "lower_overview_source_unchanged": true,
+  "lower_overview_heading": "Randomized lower bound: indistinguishable perturbations",
+  "lower_facing_editorial_wording_reviewed": true,
+  "new_findings": []
+}

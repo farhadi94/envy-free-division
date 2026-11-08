@@ -1,0 +1,25 @@
+{
+  "reviewed_at_utc": "2026-11-08T01:45:54.432559+00:00",
+  "method": "Read-only source and manuscript correspondence review; no independent compilation in this review; separate repair_audit worker owns frozen rebuild.",
+  "source_sha256": {
+    "verification/lean/EnvyFreeResearch/Full/UpperRepair.lean": "6c3f6b24ef156297c2ebb84d3f3a56b8c99f405b9a0ea6ccec752081b126665e",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairLegality.lean": "64ce8f03cbbbf9c991c6ffc36f017c8849935611cbad95f96a823473e4462e47",
+    "verification/lean/EnvyFreeResearch/Full/UpperQueryLegality.lean": "159c1f49e780df07a9872402ff8e9f78a311a90fdb0ddacb2b25e89357dca840",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairHistory.lean": "9c3239c83a21d14dbee7982f5b9a9f15d24e23d18e7762cc952e54146d2ae49d",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairSuccess.lean": "f8b008013d51cf3f264b1eaa121c9b5ac2b4212aefe34216ab2a4939dfc3247e",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairProgram.lean": "a50a98ef55e117d02f86c60e41dd0265ad7f2f7f3c8432b9657c477103b1370e",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairTrialFull.lean": "e2dbd4d1d5505e66895bf7aa3e4488eb6347128f35509f8108958b9a13e21c05",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairTrialFullProbability.lean": "5faae5b3509d39ae9b7174afd9bb60566d7d5098b1ed79ead1e0e451e477b22b",
+    "verification/lean/EnvyFreeResearch/Full/UpperSnapshotCandidatesGuardProbability.lean": "25a29ca9c2649b369c264e44131366b85e2d3879301f1a92fea4e8542be7bb39",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairTrialLaw.lean": "7524e8e78d75113d2d6e5bd395c713e339fb275b6930eada098857d9a9df760c",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairPreparationChecks.lean": "23a9938e31711c2eb92b778fbeffb9091543c9c6ddd009007f1c029bb4fcb3bb",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairOutputMeasurable.lean": "077f106682ed47944a1c66496957585e19e89419d26bb0519f1637f9971fd39c",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairAllocation.lean": "101fb5515503185894318ed27fda7ebefd9d86e88b3319e9519f221e8ce08ada",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairPackages.lean": "160ea80d64fc225fa6997af397cb37a162a72d187096e194bab722ba69a986ad",
+    "verification/lean/EnvyFreeResearch/Full/UpperRepairSnapshotProbability.lean": "134c11889ef1f68c5f9f348326f95dcc4d869964d321fed40d7a33c3572ebf3a",
+    "verification/lean/EnvyFreeResearch/Full/UpperStageMeasurable.lean": "1324344c1bac584decbdfbe7ae6a12fe3ec4ad260407c7c6363c5915c1f78ea1",
+    "verification/lean/EnvyFreeResearch/Full/UpperCorrectionExecution.lean": "69e1c66497ee703b06f0ac63abce3b0013faa0a8273be85c2376d6ca8fbd1eac",
+    "verification/lean/EnvyFreeResearch/Full/UpperEndpointCache.lean": "9b28b22337a757c58ac8da4a00dc333e20a6c360399643bf05869f6fa29943a5",
+    "verification/lean/EnvyFreeResearch/GlobalCompletion.lean": "dab3c06a639377d8415d43286e4406212dfd47f1ccee938ee80886307ea0e54d"
+  }
+}

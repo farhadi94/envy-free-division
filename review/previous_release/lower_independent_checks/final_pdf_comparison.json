@@ -1,0 +1,21 @@
+{
+  "model": {
+    "identical": true,
+    "diff": ""
+  },
+  "main theorem": {
+    "identical": true,
+    "diff": ""
+  },
+  "overview": {
+    "identical": true,
+    "diff": ""
+  },
+  "Appendix G": {
+    "identical": false,
+    "diff": "--- \n+++ \n@@ -71,7 +71,8 @@\n \f Lemma G.2 (All-outcome replay). Fix a uniform tape with \ufb01nitely many answered calls. If\n another strictly positive pro\ufb01le preserves all its determining interval integrals, the requests, replies,\n-possible terminal illegal request, and subsequent outcome are unchanged on this tape.\n+possible terminal illegal request, and returned object or nonreturn behavior are unchanged on this\n+tape.\n \n Proof. Induct through the answered history. Equal past replies and the same full tape give the\n same request. An Eval value is preserved. The old successful Cut root is still the unique root, and\n"
+  },
+  "appendix_g_tex_only_change": true,
+  "pdf_sha256": "2cb128afb74e0bd288a08db4db36fcb5a1a4bb4b8165e506254a5544544aa7c8",
+  "tex_sha256": "416e23808768dd163dd5ba552818b89fbb32b007f3c6bccfaeecab288d79c3fa"
+}
