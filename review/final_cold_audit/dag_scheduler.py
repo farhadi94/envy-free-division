@@ -5,8 +5,8 @@ class BuildFailure(RuntimeError):
     pass
 
 def run_dag(dependencies, jobs, build, record, abort=lambda: None):
-    if not 1 <= jobs <= 4:
-        raise ValueError('jobs must be between1 and4')
+    if not 1 <= jobs <= 3:
+        raise ValueError('jobs must be between 1 and 3')
     deps = {name: set(ds) for name, ds in dependencies.items()}
     if any(not ds <= deps.keys() for ds in deps.values()):
         raise ValueError('Unknown local dependency')

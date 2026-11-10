@@ -1,0 +1,218 @@
+{
+  "schema": 2,
+  "kind": "historical_git_provenance",
+  "scope": "Previously released supporting proofs; historical sources need not be included in the current theorem dependency closure. These references do not substitute for current kernel verification.",
+  "requires_current_source_files": false,
+  "source_record_count": 34,
+  "git": {
+    "repository": "https://github.com/farhadi94/envy-free-division",
+    "object_format": "sha1",
+    "commit": "9b02b672db9d87f7987d8a7c594d723be1fdfefc"
+  },
+  "sources": {
+    "EnvyFreeResearch/ChoreComposition.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/ChoreComposition.lean",
+      "git_blob_oid": "0160844f8712f526c17592cf356dc194dd17324e",
+      "content_sha256": "117e580691cb0b15f0d3c5190cd4602155f4aa3f9a1b092668e25abb637b56f1",
+      "bytes": 40467
+    },
+    "EnvyFreeResearch/CoordinatedFamily.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/CoordinatedFamily.lean",
+      "git_blob_oid": "65f77fb62d958609000d56d3b1298a78b9710c47",
+      "content_sha256": "407fd0a322ab1298f1c2a52b6ff9de391256a0cdafcb055c478bc6bd4022b451",
+      "bytes": 6181
+    },
+    "EnvyFreeResearch/GlobalCompletion.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/GlobalCompletion.lean",
+      "git_blob_oid": "3198bdf8bd9896130a62ba65033972ca65e66961",
+      "content_sha256": "dab3c06a639377d8415d43286e4406212dfd47f1ccee938ee80886307ea0e54d",
+      "bytes": 41341
+    },
+    "EnvyFreeResearch/MixedApproximation.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/MixedApproximation.lean",
+      "git_blob_oid": "f41af2aad73e3444f1ba10c765cdfae588cb45ca",
+      "content_sha256": "8c05d27553a859ed033a3283dc6f24daa9185e5b32ed59ee0f208a345a5488ea",
+      "bytes": 11167
+    },
+    "EnvyFreeResearch/NearExact.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/NearExact.lean",
+      "git_blob_oid": "97a47e0f519dde01715fcebc17785654cb184543",
+      "content_sha256": "fd4cb9e9d803ca2de3ff5c4ba59282c03e8a231d5ca27023c94e02af283df3c5",
+      "bytes": 5068
+    },
+    "EnvyFreeResearch/QueryProbability.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/QueryProbability.lean",
+      "git_blob_oid": "dbb4d6ef5f6cf355017d6052b7eac3747d5c8044",
+      "content_sha256": "c050c1da43d681952b4529a783dbb11efcf42ab70e26d27665c20cc37ea47241",
+      "bytes": 12621
+    },
+    "EnvyFreeResearch/R2OnlinePotential.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R2OnlinePotential.lean",
+      "git_blob_oid": "03399e72f59dbb3899be2adf37fa0d7e3924205a",
+      "content_sha256": "dcc272f129a51cb2dffa409e79fb5665be48ba929af479fa1e68813b1e344a65",
+      "bytes": 7140
+    },
+    "EnvyFreeResearch/R2Variation.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R2Variation.lean",
+      "git_blob_oid": "728e24c1c0d27c384a8dc4d525857deebddce759",
+      "content_sha256": "0a9fa545e122d716e8efcb2d461425becdb8c82068efd1b3416347e3e38f94ad",
+      "bytes": 14708
+    },
+    "EnvyFreeResearch/R3ChoreAncestry.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R3ChoreAncestry.lean",
+      "git_blob_oid": "dc3487683cdf9db17cf61959238d41fd35314a15",
+      "content_sha256": "bbdb4b8e5ecc9de4eb967226c2e813dd4a5a9b3c0e7bf0c064a2ef4472f59c91",
+      "bytes": 4317
+    },
+    "EnvyFreeResearch/R3PrioritySelector.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R3PrioritySelector.lean",
+      "git_blob_oid": "b29f185cef01f47dd13517efd12dafbfe092aea8",
+      "content_sha256": "4212e5fb9f09e33f9b61f50c0d9866552c9234f45abfb39f0d029d726cdab949",
+      "bytes": 2744
+    },
+    "EnvyFreeResearch/R3QueryLower.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R3QueryLower.lean",
+      "git_blob_oid": "f621b67b3b52b53a531b291bffc7658c94b7dfc8",
+      "content_sha256": "c0b02f530fb6b5ae55956c9a2033b1c434eec0ae46396204898a774180210d61",
+      "bytes": 18329
+    },
+    "EnvyFreeResearch/R3Refinement.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R3Refinement.lean",
+      "git_blob_oid": "9af82df7db064e3307ce3f87281bb336308328a4",
+      "content_sha256": "58ed8315d4d6347a305d02a51b2123b70268b9042177bd6c3f61e94e27704c8e",
+      "bytes": 16073
+    },
+    "EnvyFreeResearch/R4GlobalPotential.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R4GlobalPotential.lean",
+      "git_blob_oid": "d58ebbfcfe677d97f4cbe4ca369f00064b815fe2",
+      "content_sha256": "304a4cfae6634b7c2bd0ed5dfcb1c72a3e938b45dbdbb963e4b9afd473406963",
+      "bytes": 19990
+    },
+    "EnvyFreeResearch/R4Refinement.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R4Refinement.lean",
+      "git_blob_oid": "a3331b68fd7cac9eb3fb0b9a0c06f61e41f1e912",
+      "content_sha256": "c7b47d5d8c6c96c5a88710e75c057547245a82483f5a1b91b91150c19a3a4e48",
+      "bytes": 22486
+    },
+    "EnvyFreeResearch/R4SignedLinear.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R4SignedLinear.lean",
+      "git_blob_oid": "73f93f9ae84e28b7cac8e2144506caf8233917a4",
+      "content_sha256": "54dfa3931c9f46c8207a2b75153e25737fb4a1488057b5942d7ac3d7eacc99e1",
+      "bytes": 37533
+    },
+    "EnvyFreeResearch/R5ChoreMatching.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R5ChoreMatching.lean",
+      "git_blob_oid": "81f130659e01573b93960e0f24c1ca42d89d3ccf",
+      "content_sha256": "cd8d7b6eae96955a5ded2155a585601930fdf87255f44597b7901a187539fd9f",
+      "bytes": 6545
+    },
+    "EnvyFreeResearch/R5ChoreSchedule.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R5ChoreSchedule.lean",
+      "git_blob_oid": "831bcc18c5ed2122802e1beb9884e4788bd8dd20",
+      "content_sha256": "18ddf84d583fb33fb9bccd18ca12e585398ba66d8ebb177eb1b760d740c95ee7",
+      "bytes": 10841
+    },
+    "EnvyFreeResearch/R5RankRefinement.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R5RankRefinement.lean",
+      "git_blob_oid": "60f40a22ab4cb8642475d29e21e822f1ba0e5d9b",
+      "content_sha256": "a0b8d31eebcb9ccc5e44d8c8622dd0019b5a291cedcf57628723e3d9e65f7c5a",
+      "bytes": 29988
+    },
+    "EnvyFreeResearch/R6Chores.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R6Chores.lean",
+      "git_blob_oid": "f0bdcb3a52799e183ebd36e48a42c44baae63d4c",
+      "content_sha256": "39325cc869c61475c6f04add83915d1479b5c6d305851368b5ef1483746b2630",
+      "bytes": 22780
+    },
+    "EnvyFreeResearch/R6Core.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R6Core.lean",
+      "git_blob_oid": "d09cd77b889611e32a4ec3dfd7c245aace3697aa",
+      "content_sha256": "d5382e40c65750c19eed71a932fab26af8f20e938f008f8a2a26564c667495a3",
+      "bytes": 16538
+    },
+    "EnvyFreeResearch/R6Lower.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R6Lower.lean",
+      "git_blob_oid": "33fc9467c6f170e9f66449277eddd23414310bbf",
+      "content_sha256": "a0c5959b5f57b7fe91193810aafc2e8edce43652278b3a420e86266af07c64b6",
+      "bytes": 18442
+    },
+    "EnvyFreeResearch/R6MixedMonteCarlo.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R6MixedMonteCarlo.lean",
+      "git_blob_oid": "d279980c7796672975f749c95ea73b815e551e26",
+      "content_sha256": "4687f618d3d87757a310fa248396f0a34cdbfdfd9d673a687157e6e72b5d9a04",
+      "bytes": 17518
+    },
+    "EnvyFreeResearch/R6Upper.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R6Upper.lean",
+      "git_blob_oid": "4693cb220549fe0a9e9d56d326ec77f09f667ea0",
+      "content_sha256": "b98c2d9960f93c358befcd49ffa12a6b25d855c3ff0448db10a13921b6d37978",
+      "bytes": 39756
+    },
+    "EnvyFreeResearch/R7Chores.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R7Chores.lean",
+      "git_blob_oid": "be1f72edc16cd865880d3d467d4656bf4a55aee2",
+      "content_sha256": "207c22120b5e112fdcb4298c6840de4fecf8745db838492ab545384d4d23815b",
+      "bytes": 21577
+    },
+    "EnvyFreeResearch/R7Core.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R7Core.lean",
+      "git_blob_oid": "0f8d51bdd1ce2c1fa07541bea0d31b8033e4a359",
+      "content_sha256": "6b6c15989630be62cf5687c653fb648bc7d2ef61cdc043e068fda95725fe3b54",
+      "bytes": 8332
+    },
+    "EnvyFreeResearch/R7Lower.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R7Lower.lean",
+      "git_blob_oid": "7ff6025cc1363bd62d4c17f93a352ce61e50f3e9",
+      "content_sha256": "e01cc88998e40ff364df74a56205e561a743944095c8c288a74ded3ae3ea937e",
+      "bytes": 8287
+    },
+    "EnvyFreeResearch/R8Chores.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R8Chores.lean",
+      "git_blob_oid": "02fd3d521a11355344c4f0155066e1611b019c81",
+      "content_sha256": "7b8ae721a9304f0eb82c20ebde2f0d4307efd74052aadbd45561dcd9bbd91eba",
+      "bytes": 20917
+    },
+    "EnvyFreeResearch/R8Core.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R8Core.lean",
+      "git_blob_oid": "339eeab595609bdcce0ba3a0371970c07b04d4d8",
+      "content_sha256": "637396824085e0f3b0450a4dd4bcd518d271240b2f77d1897e8a2866f7e2cc3f",
+      "bytes": 8613
+    },
+    "EnvyFreeResearch/R8Lower.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R8Lower.lean",
+      "git_blob_oid": "f7503046b382c37ccaa0ab9115aa8f4dd7569d8e",
+      "content_sha256": "1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379",
+      "bytes": 16729
+    },
+    "EnvyFreeResearch/R8Upper.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/R8Upper.lean",
+      "git_blob_oid": "067aad0a055e7584e108cb1c3773ab250662adea",
+      "content_sha256": "70afe251eae0767bdb3dc46ebabd1f87fbeea585dc1fe01ad7b77b52b9b4fa0d",
+      "bytes": 21452
+    },
+    "EnvyFreeResearch/RootPreservation.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/RootPreservation.lean",
+      "git_blob_oid": "878a460d986e9888fd9565ed0b0a59900781c7f3",
+      "content_sha256": "56a0fb03138da1e852b3f0fdda8390ea693323290eefb238b24a657de813d723",
+      "bytes": 14673
+    },
+    "EnvyFreeResearch/Signed.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/Signed.lean",
+      "git_blob_oid": "a449d16cd353c4952bec94f6b8cf8786bf4a148c",
+      "content_sha256": "c7d94938de433d6c4422005f946741eb3f806aa99cd51dc284e37be0426b8199",
+      "bytes": 13211
+    },
+    "EnvyFreeResearch/SubmissionMonteCarlo.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/SubmissionMonteCarlo.lean",
+      "git_blob_oid": "11f5f524645fca5772f491805e3029f584af2e60",
+      "content_sha256": "bc95434ba31de8616bb915203b21f7cc4ad93e3099b581765d20ca65e6a1386f",
+      "bytes": 9977
+    },
+    "EnvyFreeResearch/TranscriptAdversary.lean": {
+      "git_path": "verification/lean/EnvyFreeResearch/TranscriptAdversary.lean",
+      "git_blob_oid": "8902be1a15da619ca37eda04b2986803992d97b0",
+      "content_sha256": "a6f46cba0c168260e2863e0caf0fe9ec3d0d9e7ef1438e8adb2cc203d3a6bae3",
+      "bytes": 9628
+    }
+  }
+}

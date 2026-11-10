@@ -1,0 +1,18 @@
+{
+  "reviewer": "mixed_final_scope_review",
+  "checked_at_utc": "2026-11-10T14:39:39.757319+00:00",
+  "status": "closed",
+  "scope": "Targeted closure of the sole low-priority discrete-cutoff notation finding; no new full review or compilation.",
+  "source": "research/submission_focused/paper/sections/mixed_lower_proof.tex",
+  "source_sha256": "12a8f57574b50fa0dee956a712506462b0f4d45fb6f8d07e50399b9289fea146",
+  "previous_reviewed_source_sha256": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+  "replacement_before": "attempted calls. Fix $q\\ge0$.",
+  "replacement_after": "attempted calls. Fix an integer $q\\ge0$.",
+  "exact_one_replacement_verified_by_reverse_hash": true,
+  "previous_review": "research/formalization/fable_revision_2026_11_10/notes/mixed_final_scope_review.md",
+  "previous_review_sha256": "86446aa967fac8d20a177a082fa82b9d76ae3f00286eb99b843650dd65fdb9ec",
+  "repair_record": "research/formalization/fable_revision_2026_11_10/notes/mixed_review_repair.json",
+  "repair_record_sha256": "f9030bef1427015ba417eaaee300d9be9877f3847b7f95df1ebc8c1f9fc04e19",
+  "conclusion": "The explicit nonnegative integer q closes the sole notation recommendation. The no-blocking-defect verdict applies to this exact one-replacement revision of mixed_lower_proof.tex. No additional issue found in this targeted check.",
+  "limits": "This receipt does not refresh bindings for other paper sources, Lean dependencies, or a PDF. Final PDF/source context still requires the later scoped binding refresh; the mandatory fresh final whole-paper proofread remains separate."
+}

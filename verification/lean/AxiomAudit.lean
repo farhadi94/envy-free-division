@@ -2,12 +2,11 @@
 import EnvyFreeResearch
 import Lean.Util.CollectAxioms
 
-#check EnvyFreeResearch.Full.Chores.Main.deterministic_chores
-#check EnvyFreeResearch.Full.UpperGlobalPhysical.randomized_exact_envy_free_oracle
-#check EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_aemeasurable
-#check EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations
-#check EnvyFreeResearch.Full.NonnegativeRawMain.optimized_attempted
-#check EnvyFreeResearch.Full.NonnegativeRawMain.quadratic
+#check EnvyFreeResearch.Full.RefinedChoresMain.deterministic_chores
+#check EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.randomized_exact_envy_free_oracle
+#check EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_aemeasurable
+#check EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations
+#check EnvyFreeResearch.Full.MoatMain.raw
 #check EnvyFreeResearch.Full.MixedIntervalMain.attempted_expectations_unbounded
 #check EnvyFreeResearch.Full.MixedIntervalMain.relative_attempted_expectations_unbounded
 

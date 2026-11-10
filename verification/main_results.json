@@ -4,9 +4,9 @@
   "results": [
     {
       "id": "deterministic_chores",
-      "module": "EnvyFreeResearch.Full.ChoresMain",
+      "module": "EnvyFreeResearch.Full.RefinedChoresMain",
       "declarations": [
-        "EnvyFreeResearch.Full.Chores.Main.deterministic_chores"
+        "EnvyFreeResearch.Full.RefinedChoresMain.deterministic_chores"
       ],
       "model": "Actual ordinary adaptive Eval/Cut execution from empty history; complete literal closed-unit-interval output with inherited-or-Cut endpoints.",
       "hypotheses": [
@@ -14,15 +14,15 @@
         "Finite nonnegative chore-cost measures with null singletons",
         "Legal full-history Option oracle"
       ],
-      "conclusion": "Deterministic complete exact EF output; queries and Cuts bounded by min(n^(3n)2^(27n),2^(14n(ceil(log2 n)+1)))."
+      "conclusion": "Deterministic complete exact EF output; all ordinary queries and Cuts bounded by n! 2^(25n+18), at most 2^(n log_2 n+25n+18)."
     },
     {
       "id": "randomized_upper",
-      "module": "EnvyFreeResearch.Full.UpperGlobalOraclePublic",
+      "module": "EnvyFreeResearch.Full.RefinedUpperGlobalOraclePublic",
       "declarations": [
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.randomized_exact_envy_free_oracle",
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_aemeasurable",
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations"
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.randomized_exact_envy_free_oracle",
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_aemeasurable",
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations"
       ],
       "model": "One jointly Borel ordinary Eval/Cut next-action function; actual adaptive Option-oracle runs and sup-fuel query/Cut costs on one universal random stream.",
       "hypotheses": [
@@ -32,27 +32,26 @@
         "MeasurablePolicy of AdaptiveOracle.answer oracle",
         "Cake or chore direction selected by chores:Bool"
       ],
-      "conclusion": "Almost-sure complete exact EF finite return; expected actual queries O(n^21 log\u00b2(2n)) and Cuts O(n^20 log\u00b2(2n)), including2n initialization Evals.",
+      "conclusion": "Almost-sure complete exact EF finite return; expected actual queries O(n^12 log(2n)) and Cuts O(n^11 log(2n)), including initialization and every rejected attempt.",
       "supporting_modules": [
-        "EnvyFreeResearch.Full.UpperGlobalOracleCostMeasurable"
+        "EnvyFreeResearch.Full.RefinedUpperGlobalOracleCostMeasurable"
       ]
     },
     {
       "id": "randomized_lower",
-      "module": "EnvyFreeResearch.Full.NonnegativeRawMain",
+      "module": "EnvyFreeResearch.Full.MoatMain",
       "declarations": [
-        "EnvyFreeResearch.Full.NonnegativeRawMain.optimized_attempted",
-        "EnvyFreeResearch.Full.NonnegativeRawMain.quadratic"
+        "EnvyFreeResearch.Full.MoatMain.raw"
       ],
       "model": "Jointly measurable ordinary-query protocol with arbitrary probability-space tape and unsorted finite interval outputs; malformed/incomplete returns count as failure.",
       "hypotheses": [
         "n\u22652",
-        "Success probability at least p on every admissible normalized finite-step density profile, densities between1/2 and3/2 almost everywhere",
-        "0<p\u22641",
-        "Optimized bound: np\u22653\u22122/n; quadratic corollary: np\u22653",
-        "Either cake or chores; flagged oracle variant selected explicitly"
+        "0\u2264p\u22641",
+        "Jointly measurable protocol with an arbitrary probability-space tape",
+        "Success at least p on every normalized finite-step density profile with densities in [1/2,3/2]",
+        "Cake or chores; flagged or unflagged ordinary Eval/Cut oracle"
       ],
-      "conclusion": "Expected attempted-cost optimized lower bound n(np\u22121)^2/(2(n\u22121)); answered-cost quadratic lower bound at fixed positive p."
+      "conclusion": "Unconditional expected answered-query cost on the uniform input is at least max{0,n(np\u22121)/2,n\u00b2p/4\u22121}, with arbitrary raw finite interval outputs."
     },
     {
       "id": "mixed_impossibility",
@@ -76,9 +75,12 @@
     "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
     "fixed-point-theorems": "93a3eed3364281a9dbf9652bb52356a8db65057c"
   },
-  "freeze_status": "sources_frozen_by_root_pending_candidate_audit",
+  "freeze_status": "source_frozen_for_full_release_audit",
   "supplemental_modules": [
-    "EnvyFreeResearch.Full.UpperGlobalOracleCostMeasurable"
+    "EnvyFreeResearch.Full.RefinedUpperGlobalOracleCostMeasurable",
+    "EnvyFreeResearch.Full.RefinedUpperRepairAudit",
+    "EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolAudit",
+    "EnvyFreeResearch.Full.RefinedUpperShrinkAudit"
   ],
-  "source_inventory_sha256": "0444d44199f243f840c6ab3d4ff25a262dfaa01e0ddb36b0e1e6c2ebd542dd7d"
+  "source_inventory_sha256": "3a2beca398190cb8b1b97f4a85f1e6ee61ded993a41ad96521f2bc8eb1c7eb4c"
 }

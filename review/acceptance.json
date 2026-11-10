@@ -1,8 +1,8 @@
 {
   "status": "all_five_reviews_closed_no_required_repairs",
-  "created_utc": "2026-11-08T05:12:50.217949+00:00",
-  "pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
-  "final_snapshot_sha256": "a6bb5f1de274299cad7d36df4ae3eb5b8637cb2ad395e4a84fd82e150d05c885",
+  "created_utc": "2026-11-10T16:35:47.630965+00:00",
+  "pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
+  "final_snapshot_sha256": "f89de69559cf4fbce88a7eeb75912cc368e419bae0c5561746a45e1e129e66fc",
   "reviews": [
     {
       "role": "chores",
@@ -10,14 +10,14 @@
       "unresolved_required_findings": [],
       "receipt": "review/final_chores_review.json",
       "receipt_pdf_field": [
-        "pdf",
-        "sha256"
+        "pdf_sha256"
       ],
-      "reviewed_pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+      "reviewed_pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
       "reviewed_snapshot": "review/candidate_source_snapshot.json",
       "files_sha256": {
-        "review/final_chores_review.json": "117e3277d429ebed35661ee267c6a31e1a6b25b77808bb8bbbead7b2a89889c1",
-        "review/candidate_source_snapshot.json": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee"
+        "review/final_chores_review.json": "abc7edf0b78a4b0d4c1410a17fff6ea526b37af4b2d62f99f8a3281398966049",
+        "review/candidate_source_snapshot.json": "6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657",
+        "review/final_chores_review.md": "fbcbadf5a67ba1010f85886018179b1b99e4ee19fecf7178b3ec09eb408ce9c7"
       },
       "scope": "The original receipt defines the reviewed subset and qualifications. The full snapshot binds its frozen context, not a claim to line-by-line review of every module."
     },
@@ -29,12 +29,12 @@
       "receipt_pdf_field": [
         "pdf_sha256"
       ],
-      "reviewed_pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+      "reviewed_pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
       "reviewed_snapshot": "review/candidate_source_snapshot.json",
       "files_sha256": {
-        "review/final_upper_review.json": "b1343767deffac6d471883482165c2cb448a71c4898b9b41bd6f8d5622bf9564",
-        "review/candidate_source_snapshot.json": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee",
-        "review/final_upper_review.md": "f3ec5cfaf8109793a11e0193860af58db572115b614541aa2e0ad0f2a152ffc8"
+        "review/final_upper_review.json": "9107fd69a650757132f7a67b54ee65c33d0e20fa1570990e7c5ba1144a87d73c",
+        "review/candidate_source_snapshot.json": "6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657",
+        "review/final_upper_review.md": "5dc6ce948b77c250f3056c229f6d5718d118ff3dbc68c7bb99a041ccc97bbb85"
       },
       "scope": "The original receipt defines the reviewed subset and qualifications. The full snapshot binds its frozen context, not a claim to line-by-line review of every module."
     },
@@ -44,14 +44,14 @@
       "unresolved_required_findings": [],
       "receipt": "review/final_lower_review.json",
       "receipt_pdf_field": [
-        "pdf",
-        "sha256"
+        "pdf_sha256"
       ],
-      "reviewed_pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+      "reviewed_pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
       "reviewed_snapshot": "review/candidate_source_snapshot.json",
       "files_sha256": {
-        "review/final_lower_review.json": "ea9336e56208dd80790bb8e82fe1677fd15cf5b3033e3fa8789e5a9ab072897a",
-        "review/candidate_source_snapshot.json": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee"
+        "review/final_lower_review.json": "605edd5436b91b7914272e24b10c165942b415d851cee6f7ceaf027e25df8437",
+        "review/candidate_source_snapshot.json": "6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657",
+        "review/final_lower_review.md": "b9478f7c71c5789a866b714d51ddd02d841739e032d92fa8dacc136ac3a1a2fe"
       },
       "scope": "The original receipt defines the reviewed subset and qualifications. The full snapshot binds its frozen context, not a claim to line-by-line review of every module."
     },
@@ -63,11 +63,12 @@
       "receipt_pdf_field": [
         "pdf_sha256"
       ],
-      "reviewed_pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+      "reviewed_pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
       "reviewed_snapshot": "review/candidate_source_snapshot.json",
       "files_sha256": {
-        "review/final_mixed_review.json": "eb30bb4cacb42c8413a630c33f673ad7e4eecf31f8bf1d6889d7be102813dc2f",
-        "review/candidate_source_snapshot.json": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee"
+        "review/final_mixed_review.json": "443a79f9d225407ac8437b49edc51f2c5f1cbabeaf62d61fa33170d1fd7305c9",
+        "review/candidate_source_snapshot.json": "6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657",
+        "review/final_mixed_review.md": "704c129dc26c061dc27e59faba483e5bc2f3bcb73e647076e70568a5535849ca"
       },
       "scope": "The original receipt defines the reviewed subset and qualifications. The full snapshot binds its frozen context, not a claim to line-by-line review of every module."
     },
@@ -79,34 +80,39 @@
       "receipt_pdf_field": [
         "pdf_sha256"
       ],
-      "reviewed_pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
+      "reviewed_pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
       "reviewed_snapshot": "review/candidate_source_snapshot.json",
       "files_sha256": {
-        "review/whole_candidate_final_receipt.json": "8525e155390fe83453aff89813beec1327350e667b1f3d78e245ebd6fa94fe09",
-        "review/candidate_source_snapshot.json": "43e15783371fa35ef8cec39ab6358d5201f9eb167574f44675c9df5454c3deee",
-        "review/whole_candidate_final_review.md": "9443ee86f2710f34de5f840da7959d8d603243321f8e7d1003a8bdada391b4ff"
+        "review/whole_candidate_final_receipt.json": "252458dae5dd8e31a3d8357016db4d4371922f903f02a25d2cbe0deebaa5e1fd",
+        "review/candidate_source_snapshot.json": "6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657",
+        "review/whole_paper_final_review.md": "43c460d6ceacd7fe18ea7bec7e95e3119b6413a7d24100dd88d555bf77c06396"
       },
       "scope": "The original receipt defines the reviewed subset and qualifications. The full snapshot binds its frozen context, not a claim to line-by-line review of every module."
     }
   ],
   "unchanged_proof_and_statement_sha256": {
-    "sections/chore_proof.tex": "4e53573239e1f577e007b6feca9d7f566bbd1805b16974cec740e63c00f40712",
+    "sections/chore_proof.tex": "3b70e4b107d25e2ebe702a9dccaf3a5de02d197962af539b3290e7cdddd3d879",
     "sections/core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
-    "sections/general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
-    "sections/mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+    "sections/general_results.tex": "49f5d971f6033ca6467827ecf52b345ce155f92c90b91c94ebe56215248002f8",
+    "sections/mixed_lower_proof.tex": "12a8f57574b50fa0dee956a712506462b0f4d45fb6f8d07e50399b9289fea146",
     "sections/model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
-    "sections/nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e",
+    "sections/nonnegative_lower_proof.tex": "70ccd2452fba58437a68b8a287d79745538d07def0245ad9456cc9215a8e45aa",
     "sections/offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
-    "sections/proof_overviews.tex": "20179bf87f044f8fa5733afe43b58e51aacdf92725ec43b93937b44fd272c5de",
-    "sections/upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9"
+    "sections/proof_overviews.tex": "1f67dfecc8d95934421e97e5ff84422c8e4f726c5f27d9d8a39e76d94c0a7005",
+    "sections/upper_proof.tex": "9d5f1efb9b4e7103d64daf155e1ebac32f8dad1a799ac2d63ddb490d2912af04"
   },
   "cold_audit_evidence_sha256": {
-    "review/final_cold_audit/report.json": "6d3138ad559d6375390c660b043c81bdda4b8b9a221533b821c77f30d60941ac",
-    "review/final_cold_audit/axioms.log": "136e6bf8202c38a5bb1e8256346e74fb55dd17cec40c4acceb83f9bd4c686f00",
-    "review/final_cold_audit/audit_closure_parallel.py": "7b60c2cff11468e98a51cc6b028a465988f48c654dd8f6840f4862a0fd901812",
-    "review/final_cold_audit/dag_scheduler.py": "242d53dd25752f9a7dc8e1cb49c89e575c33e63fbbe8d9e1b8fa556ee95f8a3f",
-    "review/final_cold_audit/verify_lean.py": "b1ec359f4d5574f6b5a63cff2109772613da8cbdcffd67adeaacee8c2167230e",
-    "review/final_cold_audit/finalize_release_evidence.py": "9f86ca85d056cf7a784e1d5af3229afbb3f8ff29ce6faeee0343b4be92677f24"
+    "review/final_cold_audit/report.json": "fb8909d5126de672bf22266731cd7b7c6cb9f82553e5d764afbcc1d8c633e39f",
+    "review/final_cold_audit/axioms.log": "2d8fd5462a7b23301b74e5e1add9ab54243f390e27a09a63c986b7d7a912ced8",
+    "review/final_cold_audit/audit_closure_parallel.py": "388378a48d1a897d354bd87a9311f085590ffd82cd26e20b660bb0f88b28b2dd",
+    "review/final_cold_audit/dag_scheduler.py": "24302d0224c3f622d93ef97fd4c9a63db1a59945dd3882e5a075f1c40339750b",
+    "review/final_cold_audit/finalize_release_evidence.py": "45a890f3af0a18419d5a63c6406d91fa38c3f827288c099eb531b6a84d25797e",
+    "review/final_cold_audit/build_paper.py": "744d30e3c32823b57727a4217b916b879f06046fe48b2a951fc44a5cca5ac603",
+    "review/final_cold_audit/package_artifact.py": "ec7d28c929f2d88149499404a35c4cd8b18c4e9aa08535e9366dd55254437db8",
+    "review/final_cold_audit/package_arxiv.py": "676c087798398ee6c61503eaa4c08f7f622a5f909edd1aecc36c1dcce396ff18",
+    "review/final_cold_audit/source_selection.py": "418f6a4c83e2e4e6f41fe9564a0ce1633d39451d600d63dbcde61971cf21efcc",
+    "review/final_cold_audit/verify_lean.py": "26d33dd562713c6c746ea4cd6b511f853c87cb9acbd2a8ec8d9bb044c1ec0cd8",
+    "review/final_cold_audit/verify_package.py": "5a13844c7725ed14f6cbecc1db24a8442efc41a14e5296adfffc369eec67c532"
   },
   "scope": "Five actual scoped independent AI review receipts and one full cold Lean audit. Neither human referee approval nor a claim that every reviewer read all modules."
 }

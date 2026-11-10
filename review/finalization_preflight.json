@@ -1,0 +1,15 @@
+{
+  "status": "paper_review_coverage_preflight_passed_not_release_acceptance",
+  "cold_audit_status": "running",
+  "compiled_modules_at_check": 139,
+  "pdf_sha256": "9dd32b34f67bcc8ff45ed717e42e93ac07c0b5d3486e15a7ff2ccd791de0a11c",
+  "review_roles": [
+    "chores",
+    "upper",
+    "lower",
+    "mixed",
+    "whole"
+  ],
+  "source_context_sha256": "b9f81ea295a8f898a173ac5eeb00dd382f629fc7a13e85301202eb341999333f",
+  "scope": "Read-only preflight of actual final paper, five scoped review receipts, coverage draft and all their source hashes. Full cold audit is still running; no acceptance or Lean-status record written."
+}

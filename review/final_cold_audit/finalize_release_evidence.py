@@ -7,12 +7,12 @@ Use --write only after all gates close; the default validates without writing.
 """
 from __future__ import annotations
 import argparse
-import ast
 from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
 import re
+from audit_closure_parallel import load_release_helpers, release_snapshot, script_snapshot
 
 ROOT = Path(__file__).resolve().parents[2]
 PROJECT = ROOT / 'verification/lean'
@@ -54,14 +54,26 @@ def collect_lean_hashes():
             for p in sorted((PROJECT / 'EnvyFreeResearch').rglob('*.lean'))}
 
 
-def source_guard():
-    """Use exactly the verifier's lexical guard without invoking its main/build."""
-    tree = ast.parse((ROOT / 'scripts/verify_lean.py').read_text())
-    function = next(node for node in tree.body
-                    if isinstance(node, ast.FunctionDef) and node.name == 'lean_code_only')
-    scope = {}
-    exec(compile(ast.Module(body=[function], type_ignores=[]), 'audited_verify_lean_guard', 'exec'), scope)
-    return scope['lean_code_only']
+def verify_release_bindings(report):
+    """Recheck every current release input, including exact script membership."""
+    require(script_snapshot(ROOT) == report["verification_script_sha256"],
+            'Verification script set or contents changed')
+    staging = Path(__file__).resolve().parent
+    auditor_paths = [staging / name for name in
+                     ('audit_closure_parallel.py', 'dag_scheduler.py', 'finalize_release_evidence.py')]
+    auditor_paths += sorted((ROOT / 'scripts').glob('*.py'))
+    expected_auditors = {path.relative_to(ROOT).as_posix(): sha(path.read_bytes()) for path in auditor_paths}
+    require(report['auditor_sha256'] == expected_auditors, 'Auditor set or contents changed')
+    helpers = load_release_helpers(ROOT)
+    current = {}
+    release_snapshot(helpers, current, ROOT)
+    for key in ('main_results', 'main_results_sha256', 'configuration_sha256',
+                'expected_dependencies', 'historical_proofs_sha256', 'module_selection_sha256',
+                'verification_script_sha256', 'release_inputs_sha256', 'audit_inputs_sha256',
+                'release_project_module_count', 'release_project_modules'):
+        require(current[key] == report[key], 'Release snapshot differs: ' + key)
+    return helpers
+
 
 
 def validate_finalization_inputs(report, sources):
@@ -174,6 +186,9 @@ def prepare(audit_dir):
                   'auditor_changed_during_audit', 'release_inputs_changed_during_audit']:
         require(field in report and not report[field], 'Audit input changed or unchecked: ' + field)
     require(set(report['allowed_axioms']) == ALLOWED, 'Wrong axiom policy')
+    require(1 <= report['jobs'] <= 3 and report['lean_threads_per_job'] == 1,
+            'Unexpected compiler concurrency')
+    helpers = verify_release_bindings(report)
     for group, prefix in [('source_sha256', 'verification/lean'),
                           ('configuration_sha256', 'verification/lean'),
                           ('audit_inputs_sha256', 'verification/lean'),
@@ -191,18 +206,14 @@ def prepare(audit_dir):
             'Missing or failed module compilation')
     require(report['main_results'] == read('verification/main_results.json')['results'],
             'Main endpoints differ')
-    old = read('verification/original34.json')['source_sha256']
-    require(len(old) == 34 and old == report['original34_source_sha256'], 'Original34 mismatch')
-    check_hashes(old, 'verification/lean')
     selection = read('verification/module_selection.json')
-    require(selection['count'] == len(sources) and
-            {'EnvyFreeResearch/' + n.replace('.', '/') + '.lean' for n in selection['modules']} == set(sources),
-            'Selection mismatch')
+    selected = helpers['check_selection'](PROJECT, selection, read('verification/main_results.json'))
+    require(selected == set(sources), 'Selection differs from the audited exact closure')
     axiom_bytes = (audit_dir / 'axioms.log').read_bytes()
     marker = f"AXIOM AUDIT PASSED: {report['theorem_declaration_count']} theorem declarations"
     require(marker in axiom_bytes.decode(), 'Missing actual axiom success marker')
     require(report['theorem_declaration_count'] > 0, 'Vacuous axiom audit')
-    guard = source_guard()
+    guard = helpers["lean_code_only"]
     authored = 0
     for name in sources:
         code = guard((PROJECT / name).read_text())
@@ -216,7 +227,10 @@ def prepare(audit_dir):
     cold_prefix = 'review/final_cold_audit/'
     evidence = {cold_prefix + 'report.json': audit_bytes, cold_prefix + 'axioms.log': axiom_bytes}
     for path in report['auditor_sha256']:
-        evidence[cold_prefix + Path(path).name] = (ROOT / path).read_bytes()
+        target = cold_prefix + Path(path).name
+        content = (ROOT / path).read_bytes()
+        require(target not in evidence or evidence[target] == content, 'Audit evidence filename collision')
+        evidence[target] = content
     evidence[cold_prefix + Path(__file__).name] = Path(__file__).read_bytes()
     evidence_hashes = {name: sha(data) for name, data in evidence.items()}
     lean = {
@@ -231,6 +245,9 @@ def prepare(audit_dir):
         'main_results': report['main_results'], 'main_results_sha256': report['main_results_sha256'],
         'configuration_sha256': report['configuration_sha256'],
         'audit_inputs_sha256': report['audit_inputs_sha256'],
+        'historical_proofs_sha256': report['historical_proofs_sha256'],
+        'module_selection_sha256': report['module_selection_sha256'],
+        'verification_script_sha256': report['verification_script_sha256'],
         'verification_method': 'Translation of actual passed --release cold audit; no redundant second build and no inferred mathematical review.',
         'evidence_sha256': evidence_hashes,
         'release_input_sha256': report['release_inputs_sha256'],
@@ -270,6 +287,7 @@ def prepare(audit_dir):
                'verification/lean.log': log, 'review/final_snapshot.json': snapshot_bytes,
                'review/acceptance.json': encode(acceptance), 'review/visual_check.json': encode(visual)}
     # Recheck all audited inputs and review bytes immediately before any mutation.
+    verify_release_bindings(report)
     for group, prefix in [('source_sha256', 'verification/lean'), ('configuration_sha256', 'verification/lean'),
                           ('audit_inputs_sha256', 'verification/lean'), ('auditor_sha256', ''),
                           ('release_inputs_sha256', '')]:
@@ -289,7 +307,7 @@ def prepare(audit_dir):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--audit-dir', type=Path, default=ROOT / 'formalization/logs/final_release_all')
+    parser.add_argument('--audit-dir', type=Path, default=ROOT / 'formalization/logs/refined_release_all')
     parser.add_argument('--write', action='store_true', help='Write derived evidence only after every gate passes')
     args = parser.parse_args()
     outputs, details = prepare(args.audit_dir)

@@ -1,0 +1,8 @@
+{
+  "file": "paper/sections/mixed_lower_proof.tex",
+  "scope": "Explicit integer query horizon, matching existing formal statement",
+  "before_sha256": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43",
+  "after_sha256": "12a8f57574b50fa0dee956a712506462b0f4d45fb6f8d07e50399b9289fea146",
+  "before": "attempted calls. Fix $q\\ge0$.",
+  "after": "attempted calls. Fix an integer $q\\ge0$."
+}

@@ -8,13 +8,14 @@ the end, so the report distinguishes a passed snapshot from a changed tree.
 from __future__ import annotations
 
 import argparse
+import ast
+import importlib.util
 from datetime import datetime, timezone
 import hashlib
 import json
 import os
 from pathlib import Path
 import re
-import runpy
 import shutil
 import subprocess
 import tempfile
@@ -31,12 +32,50 @@ BIN = Path(os.environ.get("EF_LEAN_BIN", "")) if os.environ.get("EF_LEAN_BIN") e
 
 
 
-def release_snapshot(helpers, report):
+def script_snapshot(root=ROOT):
+    """Freeze the entire active verification-script set, including helper modules."""
+    return {path.relative_to(root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted((root / "scripts").glob("*.py"))}
+
+
+def load_release_helpers(root=ROOT):
+    """Load only the pure parser and literal audit template; never invoke a build."""
+    path = root / "scripts/source_selection.py"
+    spec = importlib.util.spec_from_file_location("_frozen_release_source_selection", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("Cannot load release source-selection helper")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    tree = ast.parse((root / "scripts/verify_lean.py").read_text())
+    audit_nodes = [node.value for node in tree.body if isinstance(node, ast.Assign)
+                   and any(isinstance(target, ast.Name) and target.id == "AUDIT" for target in node.targets)]
+    if len(audit_nodes) != 1:
+        raise RuntimeError("Expected one literal verifier AUDIT template")
+    audit = ast.literal_eval(audit_nodes[0])
+    if not isinstance(audit, str):
+        raise RuntimeError("Verifier AUDIT template must be a string")
+    return {"AUDIT": audit, "lean_code_only": module.code_only,
+            "project_imports": module.project_imports, "check_selection": module.check_selection,
+            "check_historical_provenance": module.check_historical_provenance}
+
+
+class FrozenSource:
+    """Path-like reader for applying the shared import parser to frozen text."""
+    def __init__(self, text):
+        self.text = text
+
+    def read_text(self):
+        return self.text
+
+
+
+def release_snapshot(helpers, report, root=ROOT):
     """Validate and pin release metadata without trusting previous build artifacts."""
-    names = ["verification/main_results.json", "verification/original34.json",
+    project = root / "verification/lean"
+    names = ["verification/main_results.json", "verification/historical_proofs.json",
              "verification/module_selection.json", "verification/lean/EnvyFreeResearch.lean",
              "verification/lean/AxiomAudit.lean"]
-    blobs = {name: (ROOT / name).read_bytes() for name in names}
+    blobs = {name: (root / name).read_bytes() for name in names}
     report["release_inputs_sha256"] = {
         name: hashlib.sha256(blob).hexdigest() for name, blob in blobs.items()}
     release = json.loads(blobs["verification/main_results.json"])
@@ -46,7 +85,7 @@ def release_snapshot(helpers, report):
         raise RuntimeError("Expected exactly four public main endpoints")
     report["main_results"] = rows
     report["main_results_sha256"] = report["release_inputs_sha256"]["verification/main_results.json"]
-    config = {name: (PROJECT / name).read_bytes()
+    config = {name: (project / name).read_bytes()
               for name in ("lean-toolchain", "lakefile.lean", "lake-manifest.json")}
     report["configuration_sha256"] = {name: hashlib.sha256(blob).hexdigest()
                                       for name, blob in config.items()}
@@ -61,28 +100,22 @@ def release_snapshot(helpers, report):
         if revisions.get(name) != revision:
             raise RuntimeError("Unexpected dependency revision: " + name)
     report["expected_dependencies"] = expected
-    old = json.loads(blobs["verification/original34.json"])["source_sha256"]
-    if len(old) != 34:
-        raise RuntimeError("Expected 34 original supporting modules")
-    for path, digest in old.items():
-        if hashlib.sha256((PROJECT / path).read_bytes()).hexdigest() != digest:
-            raise RuntimeError("Original supporting module changed: " + path)
-    report["original34_source_sha256"] = old
-    sources = sorted((PROJECT / "EnvyFreeResearch").rglob("*.lean"))
-    modules = [".".join(p.relative_to(PROJECT).with_suffix("").parts) for p in sources]
+    helpers["check_historical_provenance"](json.loads(blobs["verification/historical_proofs.json"]))
+    report["historical_proofs_sha256"] = report["release_inputs_sha256"]["verification/historical_proofs.json"]
+    current_scripts = script_snapshot(root)
+    if report.get("verification_script_sha256", current_scripts) != current_scripts:
+        raise RuntimeError("Verification scripts changed before release snapshot")
+    report["verification_script_sha256"] = current_scripts
     selected = json.loads(blobs["verification/module_selection.json"])
-    if selected["count"] != len(modules) or sorted("EnvyFreeResearch." + m for m in selected["modules"]) != modules:
-        raise RuntimeError("Selected module manifest does not match packaged source set")
-    required = set(release.get("supplemental_modules", []))
+    selected_paths = helpers["check_selection"](project, selected, release)
+    report["module_selection_sha256"] = report["release_inputs_sha256"]["verification/module_selection.json"]
+    sources = sorted((project / "EnvyFreeResearch").rglob("*.lean"))
+    modules = [".".join(path.relative_to(project).with_suffix("").parts) for path in sources]
+    if selected_paths != {path.relative_to(project).as_posix() for path in sources}:
+        raise RuntimeError("Selected closure differs from packaged sources")
     for row in rows:
         if not row["declarations"]:
             raise RuntimeError("Empty public declaration list")
-        required.add(row["module"])
-        required.update(row.get("supporting_modules", []))
-    if not required <= set(modules):
-        raise RuntimeError("Missing public main or companion module")
-    if not set(old) <= {str(p.relative_to(PROJECT)) for p in sources}:
-        raise RuntimeError("Original modules not all selected")
     umbrella = "-- Generated by scripts/verify_lean.py; imports every project module.\n"
     umbrella += "".join(f"import {module}\n" for module in modules)
     named = "".join("#check " + name + "\n" for row in rows for name in row["declarations"])
@@ -103,24 +136,31 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--name", required=True)
     parser.add_argument("modules", nargs="+")
-    parser.add_argument("--jobs", type=int, choices=range(1, 5), default=1)
+    parser.add_argument("--jobs", type=int, choices=range(1, 4), default=1)
     parser.add_argument("--release", action="store_true",
                         help="Audit the complete packaged release with exact hardened verifier inputs")
+    parser.add_argument("--preflight", action="store_true",
+                        help="Validate frozen source and release inputs without running Lean or writing receipts")
     args = parser.parse_args()
     if args.release and args.modules != ["EnvyFreeResearch"]:
         parser.error("--release requires exactly the entry EnvyFreeResearch")
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", args.name):
+        parser.error("--name must be a simple audit directory name")
     os.environ["PATH"] = str(BIN) + os.pathsep + os.environ.get("PATH", "")
     auditor_files = [Path(__file__).resolve(),
                      Path(__file__).resolve().with_name("dag_scheduler.py"),
-                     ROOT / "scripts/verify_lean.py"]
+                     Path(__file__).resolve().with_name("finalize_release_evidence.py"),
+                     *sorted((ROOT / "scripts").glob("*.py"))]
     auditor_hashes = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
                       for path in auditor_files}
-    helpers = runpy.run_path(str(ROOT / "scripts/verify_lean.py"))
+    verification_scripts = script_snapshot(ROOT)
+    helpers = load_release_helpers(ROOT)
     code_only = helpers["lean_code_only"]
     logs = ROOT / "formalization/logs" / args.name
-    if logs.exists():
+    if not args.preflight and logs.exists():
         raise SystemExit("Refusing to overwrite an existing audit: " + str(logs))
-    logs.mkdir(parents=True)
+    if not args.preflight:
+        logs.mkdir(parents=True)
     report_path = logs / "report.json"
     report = {
         "status": "running",
@@ -129,6 +169,7 @@ def main() -> int:
         "jobs": args.jobs,
         "release_mode": args.release,
         "auditor_sha256": auditor_hashes,
+        "verification_script_sha256": verification_scripts,
         "lean_threads_per_job": 1,
         "scope": "Frozen complete local source import closure; external pinned package oleans reused",
         "source_sha256": {},
@@ -136,28 +177,26 @@ def main() -> int:
     }
 
     def save():
-        report_path.write_text(json.dumps(report, indent=2) + "\n")
+        if not args.preflight:
+            report_path.write_text(json.dumps(report, indent=2) + "\n")
 
     sources, ordered, visiting, dependencies = {}, [], set(), {}
 
     def visit(module):
-        if not module.startswith("EnvyFreeResearch") or module in sources:
+        if not (module == "EnvyFreeResearch" or module.startswith("EnvyFreeResearch.")) or module in sources:
             return
         if module in visiting:
             raise RuntimeError("Import cycle: " + module)
         visiting.add(module)
         path = Path(*module.split(".")).with_suffix(".lean")
-        source = (PROJECT / path).read_text()
+        source = (PROJECT / path).read_bytes().decode("utf-8")
         code = code_only(source)
         forbidden = re.search(r"(?<![\w'])\b(sorry|admit|axiom)\b(?![\w'])", code)
         if forbidden:
             raise RuntimeError("Forbidden source token in " + module)
-        deps = set()
-        for match in re.finditer(r"^\s*(?:public\s+)?import\s+([^\n]+)", code, re.M):
-            for dep in match.group(1).split():
-                visit(dep)
-                if dep.startswith("EnvyFreeResearch"):
-                    deps.add(dep)
+        deps = helpers["project_imports"](FrozenSource(source))
+        for dep in sorted(deps):
+            visit(dep)
         dependencies[module] = deps
         sources[module] = (path, source)
         report["source_sha256"][str(path)] = hashlib.sha256(source.encode()).hexdigest()
@@ -172,19 +211,33 @@ def main() -> int:
         if args.release and set(ordered) != release_modules | {"EnvyFreeResearch"}:
             raise RuntimeError("Release closure does not exactly cover all packaged modules")
         if args.release:
-            for path, digest in report["original34_source_sha256"].items():
-                if report["source_sha256"].get(path) != digest:
-                    raise RuntimeError("Original supporting source changed before snapshot: " + path)
             if report["source_sha256"].get("EnvyFreeResearch.lean") != report["audit_inputs_sha256"]["EnvyFreeResearch.lean"]:
                 raise RuntimeError("Umbrella changed before snapshot")
         report["module_count"] = len(ordered)
         report["local_dependencies"] = {m: sorted(dependencies[m]) for m in sorted(dependencies)}
         report["source_lines"] = sum(len(s.splitlines()) for _, s in sources.values())
+        if args.preflight:
+            if script_snapshot(ROOT) != report["verification_script_sha256"]:
+                raise RuntimeError("Verification scripts changed during preflight")
+            print(json.dumps({"status": "preflight_passed_not_compiled_or_accepted",
+                              "release_mode": args.release, "module_count": len(ordered),
+                              "jobs": args.jobs, "entry_modules": args.modules}, indent=2))
+            return 0
         base_paths = subprocess.check_output(
             [str(BIN / "lake"), "env", "printenv", "LEAN_PATH"], cwd=PROJECT, text=True
         ).strip().split(os.pathsep)
         project_build = (PROJECT / ".lake/build/lib/lean").resolve()
-        external_paths = [p for p in base_paths if Path(p).resolve() != project_build]
+        external_paths = []
+        for entry in base_paths:
+            if not entry:
+                continue
+            path = Path(entry)
+            path = (path if path.is_absolute() else PROJECT / path).resolve()
+            if path == project_build:
+                continue
+            if (path / "EnvyFreeResearch").exists() or (path / "EnvyFreeResearch.olean").exists():
+                raise RuntimeError("External Lean path contains project artifacts: " + str(path))
+            external_paths.append(str(path))
         report["external_lean_paths"] = external_paths
         version = subprocess.check_output([str(BIN / "lean"), "--version"],
                                           cwd=PROJECT, text=True).strip()
@@ -204,7 +257,7 @@ def main() -> int:
             (src / "lean-toolchain").write_bytes((PROJECT / "lean-toolchain").read_bytes())
             for path, source in sources.values():
                 (src / path).parent.mkdir(parents=True, exist_ok=True)
-                (src / path).write_text(source)
+                (src / path).write_bytes(source.encode("utf-8"))
             env = os.environ.copy()
             env["LEAN_PATH"] = os.pathsep.join([str(build), *external_paths])
             rows = {}
@@ -273,14 +326,16 @@ def main() -> int:
                 raise RuntimeError("Axiom audit passed marker missing")
             report["theorem_declaration_count"] = int(match.group(1))
         changed = [path for path, digest in report["source_sha256"].items()
-                   if hashlib.sha256((PROJECT / path).read_bytes()).hexdigest() != digest]
+                   if not (PROJECT / path).is_file() or hashlib.sha256((PROJECT / path).read_bytes()).hexdigest() != digest]
         changed_config = [path for path, digest in report["configuration_sha256"].items()
-                          if hashlib.sha256((PROJECT / path).read_bytes()).hexdigest() != digest]
+                          if not (PROJECT / path).is_file() or hashlib.sha256((PROJECT / path).read_bytes()).hexdigest() != digest]
         changed_auditor = [path for path, digest in report["auditor_sha256"].items()
-                           if hashlib.sha256((ROOT / path).read_bytes()).hexdigest() != digest]
+                           if not (ROOT / path).is_file() or hashlib.sha256((ROOT / path).read_bytes()).hexdigest() != digest]
         changed_release = [path for path, digest in report.get("release_inputs_sha256", {}).items()
                            if not (ROOT / path).is_file() or
                            hashlib.sha256((ROOT / path).read_bytes()).hexdigest() != digest]
+        if script_snapshot(ROOT) != report["verification_script_sha256"]:
+            changed_auditor.append("verification_script_set_or_content")
         if args.release:
             current_modules = {".".join(p.relative_to(PROJECT).with_suffix("").parts)
                                for p in (PROJECT / "EnvyFreeResearch").rglob("*.lean")}

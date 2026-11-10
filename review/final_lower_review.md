@@ -1,73 +1,50 @@
-# Final lower-bound release review
+# Final scoped lower-bound review
 
-**Accepted for lower-bound statement/source correspondence.** No required mathematical or model finding was identified. This is a role-specific review of the current candidate, not certification of its pending full cold audit, the other three results, or human approval for publication.
+**Status: PASS. Accepted: true. No unresolved required findings.**
 
-Reviewer: `/root/lower_release_review`. Recorded at 2026-11-08T03:10:45.263457+00:00. Candidate: `/Users/alireza/temp/ef/research/formalization/final_release_candidate`. The current 66-page `paper/paper.pdf` has SHA-256 `5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5`. Its complete build-manifest hash map matches current files; extracted text on pages 57 and 66 agrees with the quantitative theorem and the new formal-scope/AI sections. This was not a visual layout review.
+Reviewer: independent lower-bound reviewer (`lower_final_scope_review`). This is an actual final scoped refresh following my independent mathematical and formal-correspondence review, copied without modification to `review/lower_previous_scope_review.md` (SHA-256 `79f135af1ac89ab9b62cd6194f89ad741888f35192ae5d00e0bef30e2e3c933d`). It is not a whole-paper mathematical review and not a new Lean compilation certificate.
 
-## Exact theorem and model
+## Exact candidate binding
 
-I independently read Appendix G in `paper/sections/nonnegative_lower_proof.tex`, its model and main theorem in `model.tex` and `general_results.tex`, the lower overview, and the new formal-scope and AI text. I then inspected the actual candidate public declaration and its input, success, cost, normalization, and quantitative dependencies. Earlier reports supplied hash/provenance evidence, not a substitute for that inspection.
+- Reviewed context: `review/candidate_source_snapshot.json`.
+- Context SHA-256: `6feec15ff3c71a532b7f63c0e006419822c3dbe015da3fcfe078476011e42657`.
+- PDF: `paper/paper.pdf`, 61 pages.
+- PDF SHA-256: `2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5`.
+- Public endpoint: `EnvyFreeResearch.Full.MoatMain.raw`.
+- Result: unconditional expected answered-query cost on the uniform profile at least `max{0,n(np-1)/2,n^2 p/4-1}`.
 
-`NonnegativeRawMain.SucceedsOnClass` quantifies over actual integrable rows satisfying `NonnegativeInputClass.Admissible`: total one, density between 1/2 and 3/2 almost everywhere on the resource, and finitely many step boundaries. `uniform_admissible` and `inputRows_admissible` prove that the baseline and all concrete pulse profiles belong to that class. Endpoint values and values outside the resource do not alter these nonatomic valuations. The public probability space is arbitrary, and the same next-action function is jointly measurable in tape and history. There is no finite-support randomness, expected fragmentation, finite-expectation, termination, detector, replay, or decoder assumption hidden in the endpoint.
+The full snapshot identifies the frozen review context. The subset maps in `final_lower_review.json` identify the actual reviewed scope; this receipt does not imply line-by-line review of every source in the full release.
 
-`RawFair` is the literal signed-density measure comparison of physical bundles, with the correct opposite inequalities for cake and chores. Success requires an actual finite return, valid geometry, and those comparisons. The flag parameter selects counted unavailable-target replies or terminal illegal requests. Positive hard densities make successful Cut roots unique; `cut_reply_preserved` uses only the left-to-returned-root integral, not an uncharged extra bracket-total reply. Malformed bracket geometry remains terminal in both variants.
+## Work performed on this final candidate
 
-The quantitative correspondence is exact:
+I parsed the 91-module local import manifest recorded in my earlier review, recursively computed the candidate import closure from `MoatMain.lean`, and compared every candidate source hash and the exact closure membership. All 91 files match; there are no missing files, changed hashes, or added/removed dependencies. I also checked each hash against the current snapshot's Lean map. Thus the inspected physical moat construction, adaptive replay, decoder, retained-failure ledger, probability limits, arbitrary-tape quantifiers, and raw finite-output adapter have no intervening source changes.
 
-| Declaration | Conclusion |
-| --- | --- |
-| `all_windows` / `all_windows_attempted` | The maximum of zero and `(np−1)/w − (n−1)/(2nw²)`, for `0<w≤1/2` |
-| `optimized_attempted` | `n(np−1)²/(2(n−1))` for `n≥2`, `0<p≤1`, and `np≥3−2/n` |
-| `quadratic` | A positive constant `p²/8` times `n²` when `np≥3`, first on answered cost |
+The candidate lower proof, lower overview, and model are byte-identical to the sources bound by the earlier review. I reread the current model and main lower theorem and read the final table, introductory lower claim, artifact scope, and endpoint manifest. The shared `general_results.tex` has changed because the randomized upper bounds now read `O(n^12 log(2n))` and `O(n^11 log(2n))`; the lower theorem and its explanatory paragraph still state the result previously reviewed. The current lower endpoint manifest correctly selects `MoatMain.raw` and states its fixed-input success and unconditional answered-cost scope.
 
-The proved pointwise answered-to-attempted domination transfers the quadratic conclusion to the paper's all-call interpretation. The optimized threshold is precisely the admissibility condition for the selected window, and the `p=2/3`, `n≥4` specialization is consistent. For fixed positive p these statements imply the advertised asymptotic order; they do not claim a stronger order or a fixed positive approximation tolerance. `verification/main_results.json` selects the correct two public declarations and describes their different cost formulations accurately.
+The reread confirms that success must be at least `p` on every normalized finite-step profile in the specified density window, while cost is charged on the uniform profile. Illegal requests and nonreturn remain failures. Randomness remains an input-independent arbitrary probability-space tape with a jointly measurable next-action rule. Returned allocations have a finite number of arbitrary real endpoints per return, without a uniform or expected fragmentation bound. The result is stated for cake and chores and already holds for answered calls, so it also bounds the paper's total-call convention. The table omits the trivial zero term but states a valid weaker display and points to the exact Theorem 2.3.
 
-## Failure accounting, free endpoints, and proof chain
+## Final PDF inspection
 
-The executor returns or diverges even at exhausted query fuel; only a pending request is capped. `queryCost` is the supremum of answered lengths. `AttemptedQueries.attemptedCost` adds exactly one for an exposed terminal illegal request and adds nothing for an unconsulted pending request. Expectations integrate over the entire tape space on the uniform profile, including wrong returns, malformed outputs, finite-query divergence, and infinite querying.
+I extracted text from the actual final PDF and rendered and visually inspected PDF pages **3, 4, 7, 53, 54, 55, and 60**. These are also the printed page numbers.
 
-`RawIntervalPartition` accepts a finite unsorted record count and arbitrary real endpoints, with no relation to query coordinates and no common count bound. `valid_iff_geometry` identifies its valuation-independent test with bounded, disjoint `(left,right]` records covering `(0,1]`, plus an explicit owner of zero. `decode_some_iff`, `decoded_share`, and `decoded_value` preserve physical shares and values. The rational-coverage proof uses the finite set of right endpoints below a hypothetical uncovered point; it does not infer full coverage from density of rationals alone. `decode_measurable` supplies the required measurable normalization.
+- Page 3: comparison-table lower row and complete protocol/model definitions.
+- Page 4: Theorem 2.3, both quantitative terms, the zero term, answered-query qualification, and resolved Appendix G reference.
+- Page 7: the lower proof overview, including one-row and two-row detection and retaining failed returns.
+- Pages 53–55: the complete lower appendix G, Theorem G.1, illegal-request correction, physical perturbation, strict decoder, failure retention, deterministic width selection, and final expectation/limit equations.
+- Page 60: artifact scope and the lower-bound verified-statement row.
 
-`OutputPostprocess.run_normalized` preserves the answered transcript exactly and turns invalid returns into query-free divergence. Its answered and attempted costs are pointwise unchanged. `normalized_success` identifies the full success event, and `malformed_return_failure` rules out later success after an invalid terminal return. Thus failed costs are preserved instead of discarded during normalization.
+The bound and assumptions in the rendered theorem agree with the reviewed source and public Lean statement. The appendix renders both orientation arguments and the probability accounting correctly. The success-probability elimination has the correct nonnegative difference `(n-2)(1-s)+2(nw-1)s`; both final lower-bound terms are present. Absolute-value delimiters, indicators, fractions, and inequality signs are visible. I found no missing formulas, clipping, overlap, unresolved references, or scope-changing typesetting defects on these pages. Temporary PNGs remain under `/tmp`; only inspected page numbers are recorded because the images are not packaged evidence.
 
-The precise encoding is a disjoint partition-record grammar. Redundant overlapping same-owner union expressions and arbitrary malformed program bytes are not a verified parser domain. Endpoint changes preserve every density value by `value_eq_of_endpoint_change`; no universal endpoint-tag or union-expression compiler is asserted. This is compatible with the paper's standard finite interval-output model and the new appendix's finite-representation claim. It does not limit arbitrary finite fragmentation or free endpoint choice.
+## Acceptance and limitations
 
-I also checked the current probability/retention assembly. Detection is a union bound over the whole fixed baseline transcript, with probability at most `w/n` per determining request; it does not condition adaptive requests on nondetection. The physical decoder uses equal ownership fibers of every uniform EF output and the correct favorable owner for each orientation. `retained_event_inclusion` supplies replay and wrong-output gap persistence for actual executions. `capped_retained_lower` combines that inclusion, the actual decoder/detection estimates, and fixed-input failure probabilities. The scalar retention lemma absorbs the terminal-illegal contribution using old failures, without an extra one-call loss.
+The mathematical and formal-scope conclusions of the independent review remain valid for this exact packaged lower result. In particular, the one extra possible uncounted illegal request is charged against failed capped executions, the width is fixed before drawing a tape/input, and no termination or finite expected-output-size assumption has appeared. The earlier report's note about disjoint half-open interval record encoding and nonatomic endpoint reassignment is an encoding explanation, not an open finding.
 
-`NonnegativeLower.all_windows` first disposes of infinite expectation, then chooses a deterministic finite cap and a deterministic sufficiently small width before sampling the tape/input. Endpoint and positive-gap losses tend to zero; only pointwise finite output counts are needed. It sends both errors to zero. This formal cap argument is a valid implementation of the paper's direct finite-query dominated-convergence argument, not an assumption of almost-sure termination. The same protocol and fixed-input guarantee remain in force throughout.
+No mathematical repair is required in this scope. This review accepts the lower result on the bound snapshot and PDF. It does not certify the separate upper-bound revisions or the cold compilation currently owned by the root agent. No Lean compiler, paper compiler, source/script modification, commit, or push was performed. The only packaged writes were this report, its receipt, and the unchanged historical review copy. All scoped source and PDF hashes were rechecked before writing the receipt.
 
-## Prior evidence and remaining release gate
+## Refresh after the Snapshot overview clarification
 
-All 95 candidate source hashes match the prior `lower_bounds_complete_closure/report.json`, whose recorded result is passed for 1,692 theorem declarations, with only the allowed axioms and external pinned-package oleans reused. All 13 hashes match `lower_adapters_targeted/report.json`. The earlier core-review hash of `NonnegativeMain.lean` also matches exactly. The model, Appendix G, and lower-overview hashes match the earlier final correspondence report. These comparisons establish preservation of that reviewed source evidence; they do not turn the prior worktree audit into a new whole-candidate cold audit.
+I compared `review/candidate_source_snapshot.before_snapshot_clarification.json` with the current snapshot rather than simply retargeting the acceptance. Their only paper-file differences are `sections/upper_overview.tex` and the rebuilt `paper.pdf`; the entire Lean map, endpoint manifest, configuration, audit inputs, and all lower-scope sources are unchanged. The new sentence distinguishes immediate completion from the positive-margin branch in the upper overview, outside this mathematical scope.
 
-The new appendix's lower-bound coverage claim is supported by the inspected endpoint. Its whole-package verifier and four-result claims still depend on the separate root-owned final audit and other role reviews. No expensive build, fresh compiler elaboration, or source mutation was performed here. No publication/human approval is inferred.
+I rechecked the actual bytes of all 91 bound lower Lean modules and every bound lower paper source. I extracted the current PDF text and rerendered and visually inspected pages 3, 4, 7, 53, 54, 55, and 60. The PDF remains 61 pages. Text differences are confined to pages 6–8, reflecting overview reflow. On page 7 the unchanged complete lower overview now begins slightly lower; its final paragraph remains on that page and all lower text and formulas remain legible and unclipped. The theorem, model/table, Appendix G, and formal-scope pages retain their content and page numbers. There are no new findings and acceptance remains PASS for the current exact snapshot and PDF listed above.
 
-The JSON receipt records all directly reviewed paper/Lean source hashes, the endpoint manifest hash, PDF hash, prior audit-report hashes, and exact scope. No other review file was changed.
-
-## Reviewed source hashes
-
-| Candidate-relative path | SHA-256 |
-| --- | --- |
-| `paper/paper.tex` | `5fea7cd8956f9d6d01e3b18722214057de1f90364ab784bff88b5202b9cec590` |
-| `paper/sections/model.tex` | `534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11` |
-| `paper/sections/general_results.tex` | `d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b` |
-| `paper/sections/nonnegative_lower_proof.tex` | `0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e` |
-| `paper/sections/lower_overview.tex` | `91738d525c21c3c04b79ccfe529bdc36bf47a818498a18c47890b13561fd3b7f` |
-| `paper/sections/formal_scope.tex` | `9bbb767af07618b809fcf0d09064a81ca6c3d7802cf3d9d99385364e47f39136` |
-| `paper/sections/ai_methodology.tex` | `0991f71b9b0ff36a01c8ef74b0e6bc47351ab7ab2f6e06845c6e494a7bef530c` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeRawMain.lean` | `f7502eef7163684e13f51bf221d1a5038147bdfeee8a4321ef39701b22845a84` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeMain.lean` | `ecff9065c2e89b5f4671e0fe2937f59bb194f00f121124c400763e0d2dd8ee65` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeInputClass.lean` | `ead3ef0d53ec3ca5e8002e25a58ec2d444e94c13a2d5e800cc6b03660282ba49` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeLower.lean` | `afdbdcc7ce9c21e14c668391c615ba06f7e03b25f4d006741ff19b32cf64b889` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeHardFamily.lean` | `546e02d257d9127542239ec46e5077bf2fbd67e8cc18038223af6ac33dd12f59` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeMainEvents.lean` | `f0006666e39a1d9f553f7ac00cee4166ddfd457c641235cb45fe08ecf70df29b` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeOracle.lean` | `634ec2f7473898e1eab8472e1be8dba6a352140ccc37748746b0bcfeb160abc7` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeDetection.lean` | `563db8f8f690de3e18c0962c084e427babd3e6e4533dc045114bfb3747a7acc7` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeDecoderLedger.lean` | `e5a0766b0a2297cdc44d73f20400306787a9b0aa3b61159e8112615a5a43fc19` |
-| `verification/lean/EnvyFreeResearch/Full/NonnegativeProbability.lean` | `804b4ff5b64348923836063b87b4d083775a76a1060741b9eee5d36c5c788a95` |
-| `verification/lean/EnvyFreeResearch/Full/RawIntervalPartition.lean` | `dd4d9bb3aac7d463dacb50ca00bc6e5c85c0719dc3c2c3b090e59f799c5b923a` |
-| `verification/lean/EnvyFreeResearch/Full/OutputPostprocess.lean` | `30fc79a185950c7a667803960a81a0d826e79da89ced595be95396ad359e9df5` |
-| `verification/lean/EnvyFreeResearch/Full/AttemptedQueries.lean` | `711bf8c9e5bd1c9bfc08224856d5ac18b767fdd937f208f6d20d057417b71238` |
-| `verification/lean/EnvyFreeResearch/Full/OracleProtocol.lean` | `2850d7f5b3c7da9eefdd9da82b62fae8b3ec90d84db46a18214fc1d5ebcf1270` |
-| `verification/lean/EnvyFreeResearch/R8Lower.lean` | `1c1c28defbc1b063f8ec4e718af03cb9605c79e6d60eb5666fe7c933f1979379` |
-| `verification/main_results.json` | `92713387ec533e57a59250226784c63ae133e18db38e95ae5e91767f70e82dfb` |
+The previous snapshot remains packaged under `review/candidate_source_snapshot.before_snapshot_clarification.json` with SHA-256 `b9f81ea295a8f898a173ac5eeb00dd382f629fc7a13e85301202eb341999333f`. This refresh performed no Lean or paper compilation and no source/script edits.

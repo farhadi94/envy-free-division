@@ -1,17 +1,15 @@
 {
-  "schema": 2,
-  "status": "complete_main_statements_verified",
+  "schema": 1,
+  "status": "complete_main_statements_release_audit_recorded_separately",
   "main_theorem_count": 4,
   "main_theorems_fully_formalized": 4,
-  "scope": "Complete public main statements in their explicit oracle and allocation models, including concrete upper-bound protocols and lower-bound transcript/probability arguments. Conservative formal upper-bound variants preserve the main bounds; auxiliary manuscript identities are not all formalized verbatim.",
-  "verification_authority": "verification/lean_status.json; review/final_cold_audit/report.json",
-  "main_endpoint_manifest_sha256": "92713387ec533e57a59250226784c63ae133e18db38e95ae5e91767f70e82dfb",
+  "main_endpoint_manifest_sha256": "6e72a479f59b2630e141225a1a988cf90999857b88fb19dcfcb3fd0c2ff8e098",
   "coverage": [
     {
       "id": "deterministic_chores",
-      "module": "EnvyFreeResearch.Full.ChoresMain",
+      "module": "EnvyFreeResearch.Full.RefinedChoresMain",
       "declarations": [
-        "EnvyFreeResearch.Full.Chores.Main.deterministic_chores"
+        "EnvyFreeResearch.Full.RefinedChoresMain.deterministic_chores"
       ],
       "model": "Actual ordinary adaptive Eval/Cut execution from empty history; complete literal closed-unit-interval output with inherited-or-Cut endpoints.",
       "hypotheses": [
@@ -19,29 +17,23 @@
         "Finite nonnegative chore-cost measures with null singletons",
         "Legal full-history Option oracle"
       ],
-      "conclusion": "Deterministic complete exact EF output; queries and Cuts bounded by min(n^(3n)2^(27n),2^(14n(ceil(log2 n)+1))).",
+      "conclusion": "Deterministic complete exact EF output; all ordinary queries and Cuts bounded by n! 2^(25n+18), at most 2^(n log_2 n+25n+18).",
       "formalization_status": "complete_main_statement",
       "proof_source_sha256": {
-        "general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
-        "model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
-        "chore_proof.tex": "4e53573239e1f577e007b6feca9d7f566bbd1805b16974cec740e63c00f40712",
+        "chore_proof.tex": "3b70e4b107d25e2ebe702a9dccaf3a5de02d197962af539b3290e7cdddd3d879",
         "core_proof.tex": "7f7b9233216c488d2de28e659639d0c6d1325a6d0fb1e613b819ffd4356208bf",
         "baseline_subcore.tex": "15baaa46e3c96f9e94e8d83500dbc0d66f35ac6ce36642b7d74dc453ec385c01",
         "offset_subcore_proof.tex": "8c9ddf586a21189ae2068843683e93dd33d20a598dc845598ef29a3e56492ea2",
         "baseline_completion.tex": "6b0ba931c2c3d8204666f40b576d4a0509eb9eab5ed7ada3bfce13684e025d52"
-      },
-      "qualifications": [
-        "Concrete formal protocol uses a fixed sufficient clearance length and explicitly charges endpoint recording.",
-        "Both the explicit envelope and the leading exponent 3n log2 n + O(n) are proved; not every sharper auxiliary SubCore/completion ledger is formalized verbatim."
-      ]
+      }
     },
     {
       "id": "randomized_upper",
-      "module": "EnvyFreeResearch.Full.UpperGlobalOraclePublic",
+      "module": "EnvyFreeResearch.Full.RefinedUpperGlobalOraclePublic",
       "declarations": [
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.randomized_exact_envy_free_oracle",
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_aemeasurable",
-        "EnvyFreeResearch.Full.UpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations"
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.randomized_exact_envy_free_oracle",
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_aemeasurable",
+        "EnvyFreeResearch.Full.RefinedUpperGlobalPhysical.single_protocol_actual_costs_totalized_expectations"
       ],
       "model": "One jointly Borel ordinary Eval/Cut next-action function; actual adaptive Option-oracle runs and sup-fuel query/Cut costs on one universal random stream.",
       "hypotheses": [
@@ -51,49 +43,36 @@
         "MeasurablePolicy of AdaptiveOracle.answer oracle",
         "Cake or chore direction selected by chores:Bool"
       ],
-      "conclusion": "Almost-sure complete exact EF finite return; expected actual queries O(n^21 log\u00b2(2n)) and Cuts O(n^20 log\u00b2(2n)), including2n initialization Evals.",
+      "conclusion": "Almost-sure complete exact EF finite return; expected actual queries O(n^12 log(2n)) and Cuts O(n^11 log(2n)), including initialization and every rejected attempt.",
       "supporting_modules": [
-        "EnvyFreeResearch.Full.UpperGlobalOracleCostMeasurable"
+        "EnvyFreeResearch.Full.RefinedUpperGlobalOracleCostMeasurable"
       ],
       "formalization_status": "complete_main_statement",
       "proof_source_sha256": {
-        "general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
-        "model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
-        "upper_proof.tex": "66955a399e1eaa71abf7df7f92662b23ba37b57e67998ee59482b75a4634fec9"
-      },
-      "qualifications": [
-        "The formal protocol charges each normalization: at most n(n-1)+1 calls, each with at most n+1 queries and one Cut.",
-        "This yields additional O(n^3) queries and O(n^2) Cuts, preserving the main O(n^21 log^2(2n)) and O(n^20 log^2(2n)) bounds.",
-        "A single jointly measurable protocol executes against an ordinary legal measurable answered-transcript oracle; the bounds concern actual supremum-fuel costs, not an assumed cost ledger.",
-        "Exact real arithmetic and ideal uniform sampling; no arithmetic running-time bound is asserted."
-      ]
+        "upper_proof.tex": "9d5f1efb9b4e7103d64daf155e1ebac32f8dad1a799ac2d63ddb490d2912af04",
+        "upper_overview.tex": "c9b21435489143f70001589d15850f2840500221773185d3c4fdf39271fdc6bb"
+      }
     },
     {
       "id": "randomized_lower",
-      "module": "EnvyFreeResearch.Full.NonnegativeRawMain",
+      "module": "EnvyFreeResearch.Full.MoatMain",
       "declarations": [
-        "EnvyFreeResearch.Full.NonnegativeRawMain.optimized_attempted",
-        "EnvyFreeResearch.Full.NonnegativeRawMain.quadratic"
+        "EnvyFreeResearch.Full.MoatMain.raw"
       ],
       "model": "Jointly measurable ordinary-query protocol with arbitrary probability-space tape and unsorted finite interval outputs; malformed/incomplete returns count as failure.",
       "hypotheses": [
         "n\u22652",
-        "Success probability at least p on every admissible normalized finite-step density profile, densities between1/2 and3/2 almost everywhere",
-        "0<p\u22641",
-        "Optimized bound: np\u22653\u22122/n; quadratic corollary: np\u22653",
-        "Either cake or chores; flagged oracle variant selected explicitly"
+        "0\u2264p\u22641",
+        "Jointly measurable protocol with an arbitrary probability-space tape",
+        "Success at least p on every normalized finite-step density profile with densities in [1/2,3/2]",
+        "Cake or chores; flagged or unflagged ordinary Eval/Cut oracle"
       ],
-      "conclusion": "Expected attempted-cost optimized lower bound n(np\u22121)^2/(2(n\u22121)); answered-cost quadratic lower bound at fixed positive p.",
+      "conclusion": "Unconditional expected answered-query cost on the uniform input is at least max{0,n(np\u22121)/2,n\u00b2p/4\u22121}, with arbitrary raw finite interval outputs.",
       "formalization_status": "complete_main_statement",
       "proof_source_sha256": {
-        "general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
-        "model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
-        "nonnegative_lower_proof.tex": "0e46119b7acce914a668234ebe3a322ff84fd983f874c2b4dd7c3c2498d68d8e"
-      },
-      "qualifications": [
-        "The exact typed Eval/Cut and finite disjoint interval-record semantics are explicit; no universal syntax parser or redundant-overlap canonicalizer is claimed.",
-        "The lower bound is quadratic at fixed positive success probability, not superquadratic or a fixed-positive-tolerance result."
-      ]
+        "nonnegative_lower_proof.tex": "70ccd2452fba58437a68b8a287d79745538d07def0245ad9456cc9215a8e45aa",
+        "lower_overview.tex": "7d7ea770ffbeaad8f4083cb106c8442f20b91b9a7e6d9c829694b5b124913d1d"
+      }
     },
     {
       "id": "mixed_impossibility",
@@ -113,16 +92,10 @@
       "conclusion": "Supremum over inputs of expected attempted query cost is infinite; separately for each fixed extremal-root rule.",
       "formalization_status": "complete_main_statement",
       "proof_source_sha256": {
-        "general_results.tex": "d22b1b2152ba7c6efdf175b8db56015cdd39bc8d5ef6cd4813ae38cb10a6928b",
-        "model.tex": "534b15490f651f91bad820971e5bd3a4e144cb277336b79808668c0cfee75b11",
-        "mixed_lower_proof.tex": "7c1138114db4d71cb4ad56010a8f05834bf6adef393035225390496888ab7f43"
-      },
-      "qualifications": [
-        "Signed inputs have normalized net total one and no common total-variation ceiling.",
-        "Both prescribed extremal-root rules are covered separately.",
-        "Finite interval outputs are encoded semantically; no universal output parser is claimed.",
-        "The relative approximation is the paper definition and agrees with the affine inequality on the positive-net hard instances."
-      ]
+        "mixed_lower_proof.tex": "12a8f57574b50fa0dee956a712506462b0f4d45fb6f8d07e50399b9289fea146",
+        "mixed_overview.tex": "3c354a9219e6b922d06b6ce59bf2ef34c00d95ba2a827bfb18a84668b639bde3"
+      }
     }
-  ]
+  ],
+  "scope": "Public endpoints and their hypotheses govern formal coverage. Auxiliary ledgers need not be formalized verbatim. See separate release evidence for compilation and independent review."
 }

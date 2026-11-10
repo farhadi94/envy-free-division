@@ -3,163 +3,106 @@
 This repository accompanies **The Query Complexity of Envy-Free Division:
 Cake, Chores, and Mixed Resources**, by Alireza Farhadi (Profound) and
 Mohammadtaghi Hajiaghayi (University of Maryland, College Park).
+The manuscript is maintained separately; the full submission artifact
+contains the paper and its sources.
 
-It contains Lean formalizations of the four main results, pinned dependencies,
-verification scripts, scoped correspondence reviews, and reproducible finite
-checks. The manuscript is maintained separately. All four main results passed
-a frozen-source cold build and transitive
-axiom audit: 1,188 project modules and 12,374 theorem declarations, using only
-`propext`, `Classical.choice`, and `Quot.sound`. Independent scoped source
-reviews also passed. The verification status and exact source hashes are
-recorded in `verification/lean_status.json`; the original audit evidence is in
-`review/final_cold_audit/`. Internal reviews are not human peer review.
+The artifact formalizes the following four main results in the models stated
+in the paper:
 
-## Four main results
-
-| Result | Public module | Guarantee |
-| --- | --- | --- |
-| Deterministic exact chores | `Full/ChoresMain.lean` | Complete exact envy-free allocation with `2^(3n log₂ n + O(n))` queries and Cuts. |
-| Randomized exact cake and chores | `Full/UpperGlobalOraclePublic.lean` | One measurable ordinary-query protocol; almost-sure exact envy-free return; expected queries `O(n^21 log²(2n))` and Cuts `O(n^20 log²(2n))`. |
-| Randomized exact lower bound | `Full/NonnegativeRawMain.lean` | Quadratic unconditional expected queries on the uniform profile at every fixed positive success probability. |
+| Result | Public Lean module | Guarantee |
+|---|---|---|
+| Deterministic exact chores | `Full/RefinedChoresMain.lean` | Complete envy-free allocation with at most `n! 2^(25n+18) ≤ 2^(n log₂ n+25n+18)` queries and Cuts. |
+| Randomized exact cake and chores | `Full/RefinedUpperGlobalOraclePublic.lean` | One measurable adaptive protocol, almost-sure exact envy-free termination, expected queries `O(n^12 log(2n))` and Cuts `O(n^11 log(2n))`. |
+| Randomized lower bound | `Full/MoatMain.lean` | Expected answered queries at least `max{0,n(np−1)/2,n²p/4−1}` on the uniform input, assuming success at least `p` throughout the stated cake/chore class. |
 | Mixed impossibility | `Full/MixedIntervalMain.lean` | No uniform finite expected-query bound for the stated multiplicative or additive guarantees, separately for always-leftmost and always-rightmost Cut replies. |
 
-Module paths are relative to `verification/lean/EnvyFreeResearch/`.
-[`verification/main_results.json`](verification/main_results.json) lists
-public declaration names and model/hypothesis summaries; the Lean sources
-contain the exact statements. The randomized actual-cost
-measurability and expectation companions are in
-`Full/UpperGlobalOracleCostMeasurable.lean`.
-[`verification/coverage.json`](verification/coverage.json) records the
-correspondence to the manuscript and the qualifications below.
+Paths in the table are relative to `verification/lean/EnvyFreeResearch/`.
+Public declaration names and model/hypothesis summaries are in
+`verification/main_results.json`; the Lean sources contain the exact statements.
+The randomized actual-cost measurability companion is
+`Full/RefinedUpperGlobalOracleCostMeasurable.lean`.
 
-### Models and scope
+The upper bounds concern oracle queries, with exact real arithmetic and ideal
+random sampling. The mixed lower bound permits signed valuations with no
+common total-variation ceiling; it does not assert the same impossibility
+under a fixed ceiling. Finite interval allocation representations and the
+measurability requirements are specified in the public declarations.
 
-The upper bounds use finite nonnegative nonatomic Borel measures and complete
-allocations into finite interval representations. They require neither
-densities, positive totals nor common support. The deterministic bound theorem
-is stated for `n ≥ 3`, with smaller populations handled by the construction.
-It permits every legal adaptive Cut response and proves the explicit envelope
-`2^(14n(ceil(log₂ n)+1))` as well as the leading exponent above.
+The chore protocol includes all preprocessing, compensation, recursive calls,
+and endpoint recording. The randomized protocol includes rejected trials and
+every normalization step. `verification/coverage.json` maps the manuscript
+proofs to the public formal statements and records their precise scope.
 
-The randomized protocol covers nonempty populations and either preference
-direction. Its legal oracle policy sees the answered query transcript and the
-current query; the totalized answer function is jointly measurable. The result
-uses ideal random sampling and exact real computation, counts rejected work,
-and bounds the actual query and Cut costs on the original tape law. It is a
-query-complexity theorem, without a polynomial arithmetic-time or
-bit-complexity claim.
+## Files and verification
 
-The nonnegative lower bound assumes success probability at least `p > 0` on
-every normalized finite-step density profile in `[1/2, 3/2]`. For
-`np ≥ 3 − 2/n`, the explicit attempted-query lower bound is
-`n(np − 1)^2 / (2(n − 1))`. The cost is unconditional and charged on the
-uniform input. It applies to either cake or chores; finite output fragmentation
-has no common bound, and output endpoints may be chosen without queries.
+- `verification/lean/`: the selected theorem dependencies and pinned build configuration.
+- `verification/lean_status.json` and `verification/lean.log`: compilation and axiom-audit evidence.
+- `review/`: independent, scoped proof-correspondence and presentation reviews, with source hashes.
+- `verification/module_selection.json`: the exact import closure of the main endpoints and declared checkpoint audits.
+- `verification/historical_proofs.json`: Git identities and hashes of earlier supporting proofs; superseded sources remain recoverable from repository history.
 
-The mixed result holds for at least three agents, already on finite
-piecewise-constant signed densities with each net total equal to one. It
-allows arbitrary measurable ideal-real tapes and has no common bound on total
-variation. For every fixed positive success probability, it rules out a
-uniform finite expected-query bound for signed relative multiplicative EF
-with `0 < α ≤ 1`, or additive EF with `0 ≤ ε < 1`. The signed relative condition
-is `v_i(A_j) − v_i(A_i) ≤ (1 − α) max(|v_i(A_i)|, |v_i(A_j)|)`.
-The extremal root rule is prescribed before execution. The conclusion is
-unbounded expectations across inputs, not one input of infinite expectation,
-and does not assert hardness with a fixed common variation ceiling.
+The release audit rebuilds every selected project module from frozen sources
+in an isolated directory. It reuses the pinned external dependencies, not
+previous project compilation artifacts. The source-selection check rejects
+missing dependencies and unused modules outside the declared closure. The
+axiom audit checks the transitive
+dependencies of every included theorem and permits only `propext`,
+`Classical.choice`, and `Quot.sound`. Proof placeholders and project axioms
+are rejected. Review receipts describe what each reviewer actually inspected;
+they are distinct from compiler verification and from human peer review.
 
-The lower-bound protocol semantics include incorrect or incomplete finite
-returns, illegal calls and nonreturn as failures. Raw outputs use finite
-disjoint interval records with a fixed endpoint convention; no universal
-parser for arbitrary program bytes or redundant overlapping union expressions
-is claimed.
+The endpoint manifest's freeze-status field records its state when the frozen
+audit began. The completed build and release status are recorded separately in
+`verification/lean_status.json` and `review/acceptance.json`.
 
-The formal upper algorithms make conservative choices: a sufficient fixed
-clearance length and explicit endpoint-recording costs for chores, and a charge
-for each normalization step in randomized completion. They prove the main
-bounds, but not every sharper auxiliary ledger in the manuscript verbatim.
+## Reproduce the Lean check
 
-## Contents and history
+Install Lean through elan, make `lake` available on `PATH`, and use Python 3.10 or later.
+The project pins Lean 4.35.0, mathlib commit
+`56a005855ea17e0b0958f73ec801ae140b0a1679`, and fixed-point-theorems commit
+`93a3eed3364281a9dbf9652bb52356a8db65057c`.
 
-| Path | Contents |
-| --- | --- |
-| [`verification/lean/`](verification/lean/) | 1,188 selected Lean source modules and pinned build configuration |
-| [`verification/main_results.json`](verification/main_results.json) | Public endpoints, models and hypotheses |
-| [`verification/coverage.json`](verification/coverage.json) | Main-result correspondence and conservative-variant qualifications |
-| [`verification/lean_status.json`](verification/lean_status.json), [`verification/lean.log`](verification/lean.log) | Recorded build status, source hashes and audit output |
-| [`verification/original34.json`](verification/original34.json) | Hashes of the original 34 supporting modules, preserved byte for byte |
-| [`review/formalization/`](review/formalization/) | Scoped internal source-correspondence reviews; each states its limits |
-| [`review/human_review_brief.md`](review/human_review_brief.md) | Questions for an external expert; no completed human review is implied |
-| [`experiments/`](experiments/), [`scripts/`](scripts/) | Finite checks and reproduction commands |
-| [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), [`licenses/`](licenses/) | Dependency notices and license texts |
-
-Historical modules such as `R6Upper`, `R8Chores`, `ChoreComposition`,
-`GlobalCompletion`, `QueryProbability`, `RootPreservation`,
-`TranscriptAdversary` and `CoordinatedFamily` remain intact. The new `Full/`
-development supplies the complete main endpoints and their dependencies.
-Earlier coverage and review records describe earlier source snapshots; they
-must not be read as certification of this revision. The finite checks remain
-useful regression and counterexample searches alongside the general proofs.
-
-## Reproduce the Lean audit
-
-Install [elan](https://github.com/leanprover/elan) and Python 3, with `lake`
-available on `PATH`. The project pins Lean **4.35.0**, mathlib **v4.35.0**
-(commit `56a005855ea17e0b0958f73ec801ae140b0a1679`), and
-fixed-point-theorems commit `93a3eed3364281a9dbf9652bb52356a8db65057c`.
-The complete transitive dependency lock is
-[`verification/lean/lake-manifest.json`](verification/lean/lake-manifest.json).
+From the repository root:
 
 ```sh
-git clone https://github.com/farhadi94/envy-free-division.git
-cd envy-free-division
 cd verification/lean
 lake exe cache get
 cd ../..
 python3 scripts/verify_lean.py
 ```
 
-The first run needs network access. `lake exe cache get` retrieves available
-mathlib caches; Lake fetches and builds the pinned fixed-point dependency as
-needed. The verifier builds every included project module, checks the named
-main endpoints and original-module hashes, and audits transitive axiom
-dependencies. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed.
-Proof placeholders, project axioms and unexpected transitive axioms are
-rejected. The audit includes dependencies of private/generated declarations.
+The first command downloads the available mathlib dependency cache. The
+verifier builds all project modules and runs the complete axiom audit. This
+is a substantial build; allow time and disk space for Lean dependencies.
+Do not run `lake update` to reproduce the pinned release.
 
-The verifier writes `verification/lean_status.json` and
-`verification/lean.log`. Allow time and disk space for this substantial build.
-Do not run `lake update` when reproducing the pinned revision. A routine
-incremental build may reuse local project artifacts; the release cold audit
-uses an isolated source tree without previously compiled project modules.
-The recorded source hashes determine which sources a passed audit covers.
+## Earlier proofs and finite checks
 
-To build without regenerating the verification report:
+The current Lean tree is the exact dependency closure of the four main
+endpoints and the declared primitive audit checkpoints. Superseded modules
+remain recoverable from Git history; `verification/historical_proofs.json`
+records identities and content hashes for the original supporting proofs.
+The earlier complete development is available at commit
+`9b02b672db9d87f7987d8a7c594d723be1fdfefc`.
 
-```sh
-cd verification/lean
-lake build
-lake env lean AxiomAudit.lean
-```
-
-The chore construction uses the fixed-point library's proved Kakutani theorem.
-Its use is included in the transitive axiom checks. Dependency notices do not
-assign a license to the authors' project sources.
-
-## Reproduce the finite checks
-
-These checks use Python's standard library and exact rational/integer
-arithmetic. They exercise finite cases and look for counterexamples; they do
-not prove the general continuous theorems.
+Historical exact-arithmetic finite checks remain in `experiments/`. Run them
+with Python's standard library:
 
 ```sh
-python3 scripts/run_checks.py
+python3 experiments/run_checks.py
 ```
 
-Results are written to `verification/finite_checks.json` and the relevant
-`experiments/` subdirectories.
-[`verification/check_sources.json`](verification/check_sources.json) records
-the check-source hashes. The historical finite-check programs are preserved;
-no numerical runtime benchmark or practical allocation implementation is
-claimed by these checks.
+These checks concern the finite constructions documented by their own
+sources and receipts; they are not substitutes for the general Lean proofs.
+The release audit evidence determines which main statements and source
+bytes were checked for this revision.
 
-Author and citation metadata are in [`CITATION.cff`](CITATION.cff).
+The scripts in `scripts/` are preserved byte-for-byte from the audited full
+submission artifact. `verify_lean.py` checks this repository. The paper-build,
+ZIP-packaging and complete-package integrity scripts require the full
+artifact directory, including the separately maintained manuscript; they do
+not operate on this Lean-only repository checkout.
+
+Dependency licenses and notices are in `licenses/` and
+`THIRD_PARTY_NOTICES.md`. The development repository is
+<https://github.com/farhadi94/envy-free-division>.

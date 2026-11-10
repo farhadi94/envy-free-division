@@ -1,0 +1,24 @@
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolProbability
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolSuccess
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolLegalityAll
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolLegality
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolJointMeasurableProgram
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolJointMeasurableExecute
+import EnvyFreeResearch.Full.RefinedUpperSnapshotProtocolLawProduct
+
+/-! Actual revised ordinary Snapshot: physical outputs, all-attempt query
+and cut counts, genuine legal Option execution, and Borel next-action and
+returned-state control, and unconditional actual acceptance probability. -/
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_success_facts
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_program_cost
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_option_executes
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_option_run
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_history_truthful
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_history_extension
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshotExecute_measurable
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_program_certified
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_next_measurable
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.joinTape_measurePreserving
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.snapshot_acceptance_probability
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.prepared_fiber_chance
+#print axioms EnvyFreeResearch.Full.RefinedUpperSnapshotProtocol.preparation_bad_bounds

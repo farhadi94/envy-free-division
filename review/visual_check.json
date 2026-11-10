@@ -1,23 +1,20 @@
 {
   "status": "passed",
-  "pdf_sha256": "5b24cbca4d65952a80ee85608842807a1e0104c26db7c4be99fc0fe25cde60a5",
-  "pages": 66,
+  "pdf_sha256": "2710485b12dd9caab97bf9af45ed1bc4fc969e3202e9ae20a2779a594594e8c5",
+  "pages": 61,
   "pages_inspected": [
-    1,
-    2,
     3,
     4,
     5,
     6,
     7,
-    8,
-    9,
-    10,
-    11,
-    65,
-    66
+    45,
+    46,
+    50,
+    60,
+    61
   ],
   "source_receipt": "review/whole_candidate_final_receipt.json",
-  "source_receipt_sha256": "8525e155390fe83453aff89813beec1327350e667b1f3d78e245ebd6fa94fe09",
+  "source_receipt_sha256": "252458dae5dd8e31a3d8357016db4d4371922f903f02a25d2cbe0deebaa5e1fd",
   "scope": "Translation of the actual whole-paper reviewer visual inspection on the listed pages; no additional visual inspection performed by this script."
 }
